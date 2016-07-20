@@ -1,0 +1,13 @@
+/* ======================================================== */
+/* CSS for control sap.ui.commons/HorizontalDivider.control */
+/* ======================================================== */
+
+.sapUiCommonsHoriDivTypePage{
+	border-width: 1px 0px 1px 0px;
+	border-top-color: #b1c8df;
+	border-bottom-color: gray; /*#c2ceda*/
+}
+
+.sapUiCommonsHoriDivTypeArea{
+	border-color: #b1c8df;
+}

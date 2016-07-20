@@ -1,0 +1,69 @@
+/* =============================================== */
+/* CSS for control sap.ui.commons/ComboBox.control */
+/* Platinum theme                                  */
+/* =============================================== */
+
+@sapUiTextFieldHeight: 20px;
+
+.sapUiTfCombo {
+	padding: 0 12px 0 0;
+	height: @sapUiTextFieldHeight;
+	margin-top: 1px;
+}
+
+.sapUiTfStd > .sapUiTfComboIcon,
+.sapUiTfDsbl > .sapUiTfComboIcon{
+	width: 11px;
+	height: 18px;
+	border-left: 1px solid transparent;
+	background-repeat: no-repeat;
+	background-position: top right;
+	background-color: transparent;
+}
+
+.sapUiTfBrd > .sapUiTfComboIcon{
+	-moz-border-radius: 0 2px 2px 0;
+	border-radius: 0 2px 2px 0;
+}
+
+.sapUiTfStd > .sapUiTfComboIcon{
+	background-image: url(img/combobox/cmb.png);
+}
+
+.sapUiTfDsbl > .sapUiTfComboIcon{
+	background-image: url(img/combobox/cmb_dsbl.png);
+}
+
+.sapUiTableCellEdit .sapUiTfStd > .sapUiTfComboIcon:hover,
+.sapUiTableCellEdit .sapUiTfFoc.sapUiTfStd > .sapUiTfComboIcon{
+	border-width: 0px;
+	background-image:  url(img/combobox/cmb.png), -moz-linear-gradient(top, #ffffff, #ffffff);
+	background-image:  url(img/combobox/cmb.png), -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));
+}
+
+.sapUiTableCellEdit .sapUiTfStd > .sapUiTfComboIcon:active{
+	border-width: 0px;
+	background-image:  url(img/combobox/cmb.png), -moz-linear-gradient(top, #ffffff, #ffffff);
+	background-image:  url(img/combobox/cmb.png), -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));	
+}
+
+.sapUiTfStd > .sapUiTfComboIcon:hover,
+.sapUiTfFoc.sapUiTfStd > .sapUiTfComboIcon{
+	border-color: #B0D5E7;
+	background-image: url(img/combobox/cmb_hov.png);
+	background-image: url(img/combobox/cmb.png), -moz-linear-gradient(top, #FDFEFE, #C2DDEF);
+	background-image: url(img/combobox/cmb.png), -webkit-gradient(linear, left top, left bottom, from(#FDFEFE), to(#C2DDEF));
+}
+
+.sapUiTfStd > .sapUiTfComboIcon:active{
+	border-color: #90BFD7;
+	background-image: url(img/combobox/cmb_act.png);
+	background-image: url(img/combobox/cmb.png), -moz-linear-gradient(top, #D6EEF6, #7FC6EA 1px, #D6EEF6 13px, #D6EEF6 16px, #F1FAFC);
+	background-image: url(img/combobox/cmb.png), -webkit-gradient(linear, left top, left bottom, from(#D6EEF6), color-stop(0.05, #7FC6EA), color-stop(0.75, #D6EEF6), color-stop(0.95, #D6EEF6),  to(#F1FAFC));
+}
+
+html[data-sap-ui-browser="ie8"] .sapUiTfComboIcon:active{
+	/* workaround for IE8 bug. In IE8 the background image of the opener disappears sometimes after open and close the list.
+	   So the active effect is lost, but this looks better than a missing background image at all. */
+	background-image: url(img/combobox/cmb_hov.png);
+}

@@ -1,0 +1,13 @@
+.confirmVerticalLayout .sapMLabel{
+    vertical-align: top;
+}
+
+.confirmVerticalLayout .sapMText{
+    vertical-align: top;
+}
+.confirmVerticalLayout .sapMLabel:after{
+    content:":";
+}
+.confirmVerticalLayout .sapMLabel:lang(fr):after{
+    content:" :";
+}

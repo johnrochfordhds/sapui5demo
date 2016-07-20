@@ -1,0 +1,40 @@
+.sapUshellEasyScanLayout {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+  white-space: nowrap;
+  height: 100%;
+  overflow-y: auto;
+  .sapUshellEasyScanLayoutInner {position: relative;}
+  .easyScanLayoutColumn { display: inline-block; vertical-align: top; padding-bottom: 1.25rem; padding-top: 1.25rem; margin-right: 1rem;
+    transition: width 0.5s ease-out; -webkit-transition: width 0.5s ease-out;}
+  .easyScanLayoutColumn:first-child {margin-left: 0.5rem;}
+  .easyScanLayoutColumn:last-child {margin-right: 0.4rem;}
+  .easyScanLayoutItemWrapper {margin-bottom: 1rem;
+                              transition: top .3s, left .3s;}
+  .easyScanLayoutItemWrapper:focus {outline: #005483 dotted 0.125rem;}
+  .easyScanLayoutItemWrapper-placeHolder {
+    outline: 0.13rem dashed @sapUiMediumBorder !important;
+    background-color: transparent !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    .sapUiComponentContainer {
+      visibility: hidden;
+    }
+  }
+  &.columns-blank .easyScanLayoutColumn{width: 0rem;}
+  &.columns-block .easyScanLayoutColumn:first-child {margin-left: 1rem;}
+  &.columns-block .easyScanLayoutColumn:last-child {margin-right: 1rem;}
+  &.columns-block .easyScanLayoutColumn{display: block;}
+  &.columns-narrow .easyScanLayoutColumn {width: 20rem;}
+  &.columns-wide .easyScanLayoutColumn {width: 25rem;}
+
+  &.dragAndDropMode {
+    .easyScanLayoutItemWrapper {
+      &.dragHovered {opacity: 0.6;}
+    }
+  }
+}

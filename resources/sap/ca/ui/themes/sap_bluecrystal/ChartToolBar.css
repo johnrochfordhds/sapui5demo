@@ -1,0 +1,44 @@
+/* ===================================================== */
+/* CSS for control sap.ca.ui.charts/ChartToolBar.control */
+/* ===================================================== */
+
+/* title - when no selects are displayed */
+.sapCaUiChartToolBar .chartToolBarTitle {
+    font-family: @sapCaUiChartToolBarTitleFontFamily;
+    font-size: @sapCaUiChartToolBarTitleFontSize;
+    font-weight: @sapCaUiChartToolBarTitleFontWeight;
+    color: @sapCaUiChartToolBarTitleFontColor;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    text-shadow: @sapCaUiChartToolBarTitleShadow;
+}
+
+/* styling */
+.sapCaUiChartToolBar .iconBar {
+    background: @sapCaUiChartToolBarBackground;
+}
+
+.sapCaUiOverlay .sapCaUiChartToolBar .iconBar {
+    background: @sapCaUiChartToolBarFullscreenBackground;
+}
+
+.sapCaUiOverlay .sapCaUiChartToolBar .sapMBar-CTX .sapMBtnContent>.sapUiIcon,
+.sapCaUiChartToolBar .sapMBar-CTX .sapMBtnContent>.sapUiIcon {
+    color: @sapCaUiChartToolBarIconColor;
+}
+
+.sapCaUiOverlay .sapCaUiChartToolBar .sapMBtnContent>.sapUiIcon,
+.sapCaUiChartToolBar .sapMBtnContent>.sapUiIcon  {
+    font-size: @sapCaUiChartToolBarIconSize;
+}
+
+.sapCaUiOverlay .sapCaUiChartToolBar .activeButton .sapMBtnContent > .sapUiIcon {
+    color: @sapCaUiChartToolBarActiveIconColor;
+}
+
+.sapCaUiOverlay .sapCaUiChartToolBar .sapMBtnActive .sapMBtnContent > .sapUiIcon {
+    color: @sapCaUiChartToolBarActiveIconColor;
+}

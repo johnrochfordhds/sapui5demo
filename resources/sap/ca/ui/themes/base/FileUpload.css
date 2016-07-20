@@ -1,0 +1,294 @@
+/* ============================================= */
+/* CSS for control sap.ca.ui/FileUpload.control */
+/* ============================================= */
+
+.sapCaUiFU .sapMCLI {
+    margin-bottom: 0;
+    border-bottom: 0;
+    border-top: 1px solid @sapUiExtraLightBorder;
+}
+
+.sapCaUiFU {
+    background-color: @sapUiListBG;
+}
+
+/* Form override */
+.sapUiForm .sapCaUiFU .sapMLabel:after {
+    content: "";
+}
+
+.sapUiFormEdit .sapCaUiFU .sapMLnk {
+    line-height: normal;
+}
+
+/* delete icon override */
+.sapCaUiFU .sapMLIBSelectD {
+    height: 2.500rem;
+    width: 2.500rem;
+    margin-right: 1rem;
+    border-radius: 0.125rem;
+}
+
+.sapCaUiFU .sapMLIBSelectD .sapUiIcon {
+    line-height: 2.375rem;
+    width: 2.375rem;
+}
+
+.sapCaUiFU .sapMLIBSelectD:hover {
+    border: none;
+}
+
+.sapCaUiFUItemHL {
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    height: 4.4rem;
+}
+
+.sapCaUiFUInner {
+    position: absolute;
+    top: 0;
+    bottom: 0.25rem;
+    left: 5.175rem;
+    right: 4rem;
+}
+
+html[data-sap-ui-browser="ie9"] .sapCaUiFUInner {
+    height: 4.4rem; /* needs to specify a height for IE 9 */
+}
+
+html[data-sap-ui-browser="ie9"] .sapCaUiFUEdit .sapCaUiFUInner {
+    height: 4.4rem; /* needs to specify a height for IE 9 */
+}
+
+.sapCaUiFUInner .sapCaUiInnerEditHL {
+    width: 100%;
+}
+
+.sapCaUiFUEdit .sapCaUiFUInner .sapCaUiInnerEditHL {
+    display: inline-block;
+    width: 100%;
+}
+
+.sapCaUiFUInnerHL {
+    width: 100%;
+    padding-bottom: 0.75rem;
+}
+
+.sapCaUiFUInnerHL > label {
+    color: @sapUiLightText;
+}
+
+.sapCaUiFUExtension {
+    line-height: 1.5rem;
+    padding-left: 0.5rem;
+    margin: 1.5rem 0 0.5rem 0;
+    height: 1.5rem;
+}
+
+.sapCaUiFileUploadFileSizeText {
+    margin-left: 0.4rem;
+}
+
+html[data-sap-ui-browser^="ff"] .sapCaUiFileUploadFileSizeText {
+    margin-top: -1.6em;
+}
+
+.sapCaUiFileUploadloadingIcon {
+    position: absolute;
+    left: 1.5rem;
+    top: 1rem;
+}
+
+.sapCaUiFileUploadFileLoadedText {
+    width: 100%;
+    padding-bottom: 0.250rem;
+    padding-top: 1rem;
+    outline: none;
+}
+
+.sapCaUiFileUploadItemIcon {
+    position: absolute;
+    font-size: 2.5rem;
+    left: 1.5rem;
+    top: 1rem;
+}
+
+.sapCaUiFUIcon {
+    font-size: 1.25em;
+    position: absolute;
+    top: .75rem;
+    right: .125rem;
+}
+
+.sapCaUiFileUploadEditIcon {
+.sapCaUiFUIcon;
+
+}
+
+.sapCaUiFileUploadEditIcon.sapMBtnTransparent.sapMBtnHover:not(.sapMBtnDisabled) {
+    background: none;
+}
+
+.sapCaUiFileUploadEditIcon > .sapMBtnContent > .sapUiIcon {
+    color: @sapLinkColor;
+}
+
+.sapCaUiFileUploadCancelIcon {
+.sapCaUiFUIcon;
+
+}
+
+.sapCaUiFileUploadCancelIcon.sapMBtnTransparent.sapMBtnHover:not(.sapMBtnDisabled) {
+    background: none;
+}
+
+.sapCaUiFileUploadCancelIcon > .sapMBtnContent > .sapUiIcon {
+    color: @sapLinkColor;
+}
+
+.sapCaUiFileUploadEditBox {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.sapCaUiFileUploadEditBox input::-ms-clear {
+    display: none;
+}
+
+.sap-phone .sapCaUiFileUploadEditBox {
+    width: 100%;
+}
+
+.sapCaUiFileUploadFileInputButton input {
+    display: block;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    margin: 0 0 0 0;
+    cursor: pointer;
+    width: 100%;
+    direction: ltr;
+    font-size: 60em;
+}
+
+.sapCaUiFileUploadFileInputButton > .sapCaUiFileUploadGlyphicon {
+    cursor: pointer;
+    padding: 1.25rem 1.5rem 1.25rem 2.25rem;
+    font-size: 1.375rem;
+}
+
+html[data-sap-ui-browser="ie9"] .sapCaUiFileUploadGlyphicon.sapUiIcon {
+    display: inline-block; /*otherwise the text goes to a new line*/
+}
+
+.sapCaUiFileUploadProgressLabel {
+    font-weight: bold;
+    width: 100%;
+}
+
+.sapCaUiFileUploadAttachmentLabel {
+    text-align: left;
+    display: block;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.sapCaUiFU input[type=file] {
+    visibility: hidden;
+    width: 0em;
+    height: 0em;
+}
+
+html[data-sap-ui-browser="ie9"] .sapCaUiFUHeader {
+    position: relative;
+}
+
+/* iOS specific */
+.sap-ios .sapCaUiFUHeader {
+    position: relative;
+}
+
+.sap-ios .sapCaUiFU input[type=file] {
+    position: absolute;
+    opacity: 0;
+    margin: 0;
+    top: 0;
+    font-size: 1.8em;
+    left: 0em;
+    visibility: visible;
+    width: 2.0em;
+    height: 1.4em;
+}
+
+html[data-sap-ui-browser="ie9"] .sapCaUiFU input[type=file] {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    margin: 0;
+    top: 0;
+    font-size: 2em;
+    left: 0em;
+    visibility: visible;
+    width: 1.9em;
+    height: 1.6em;
+}
+
+.sapCaUiFUHeader {
+    height: 3rem;
+    -webkit-transition: height .5s;
+    transition: height .5s;
+
+}
+
+.sapCaUiFUIsUploading .sapCaUiFUHeader {
+    height: 4.5rem;
+}
+
+.sapCaUiFUToolbar {
+    width: 100%;
+    padding-left: 0.7em;
+    border: none;
+}
+
+.sapCaUiFUProgressHeader {
+    width: 28%;
+    text-overflow: ellipsis;
+    display: inline-block;
+    float: right;
+}
+
+/* Compact Mode */
+
+.sapUiSizeCompact .sapCaUiFUHeader {
+    height: 2rem;
+}
+
+.sapCaUiFUIsUploading.sapUiSizeCompact .sapCaUiFUHeader {
+    height: 3.5rem;
+}
+
+.sapUiSizeCompact .sapCaUiFU .sapMLIBSelectD {
+    height: 1.5rem;
+    width: 2rem;
+    margin-right: .5rem;
+}
+
+.sapUiSizeCompact .sapCaUiFU .sapMLIBSelectD .sapUiIcon {
+    font-size: 1em;
+    line-height: 1.5rem;
+    width: auto;
+}
+
+.sapUiSizeCompact .sapCaUiFileUploadEditIcon {
+    top: auto;
+    bottom: 1rem;
+}
+
+.sapUiSizeCompact .sapCaUiFileUploadCancelIcon {
+    top: auto;
+    bottom: 1rem;
+}

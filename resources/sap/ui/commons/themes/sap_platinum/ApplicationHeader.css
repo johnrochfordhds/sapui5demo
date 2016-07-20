@@ -1,0 +1,33 @@
+/* ============================================= */
+/* SAP PLATINUM CSS 
+/* ============================================= */
+
+.sapUiAppHdr {
+	background-image: url(img/applicationheader/Header_bg.png);
+	background-color:white;
+}
+.sapUiAppHdrLogo{
+	padding-top:5px;
+}
+
+.sapUiAppHdr .sapUiLbl{
+	color: #233866;
+}
+
+.sapUiAppHdrWelcomeLogoffArea{
+	padding-top:5px;
+}
+
+.sapUiAppHdrWelcomeLogoffArea .sapUiBtnS.sapUiBtnLite {
+	color:#233866;
+	padding-left: 18px;
+	padding-right: 18px;
+}
+
+.sapUiAppHdr .sapUiTv{
+	color: #5e6b7b;
+}
+
+.sapUiAppHdrWelcomeLogoffArea.sapUiInverted-CTX .sapUiLbl {
+	color: #233866;
+}

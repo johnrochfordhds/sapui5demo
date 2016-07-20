@@ -1,0 +1,42 @@
+/* ============================================= */
+/* CSS for control commons/DatePicker.control    */
+/* ============================================= */
+/****************************************************************/
+/*                       Platinum DATEPICKER                        */
+/****************************************************************/
+
+/* Cloning some ComboBox hover and active styles */
+.sapUiTfBrd > .sapUiTfDateIcon{
+	-moz-border-radius: 0 2px 2px 0;
+	border-radius: 0 2px 2px 0;
+	background-position: 0 3px, left top;
+	background-repeat: no-repeat, repeat-x;
+	width: 15px;
+	height: 100%;
+}
+
+.sapUiTfStd > .sapUiTfDateIcon:hover,
+.sapUiTfFoc > .sapUiTfDateIcon {
+	background-image: url(img/datepicker/icon_cal.png), -moz-linear-gradient(top, #FDFEFE, #C2DDEF);
+	background-image: url(img/datepicker/icon_cal.png), -webkit-gradient(linear, left top, left bottom, from(#FDFEFE), to(#C2DDEF));
+	border-color: #B0D5E7;
+}
+
+html[data-sap-ui-browser^="ie"] .sapUiTfStd > .sapUiTfDateIcon:hover,
+html[data-sap-ui-browser^="ie"] .sapUiTfFoc > .sapUiTfDateIcon {
+	background-image: url(img/datepicker/icon_cal_hov.png);
+	background-position: left top;
+}
+
+.sapUiTfStd > .sapUiTfDateIcon:active,
+.sapUiTfFoc > .sapUiTfDateIcon:active {
+	background-image: url(img/datepicker/icon_cal.png), -moz-linear-gradient(top, #D6EEF6, #7FC6EA 1px, #D6EEF6 13px, #D6EEF6 16px, #F1FAFC);
+	background-image: url(img/datepicker/icon_cal.png), -webkit-gradient(linear, left top, left bottom, from(#D6EEF6), color-stop(0.05, #7FC6EA), color-stop(0.75, #D6EEF6), color-stop(0.95, #D6EEF6),  to(#F1FAFC));
+	border-color: #90BFD7;
+}
+
+html[data-sap-ui-browser^="ie"] .sapUiTfStd > .sapUiTfDateIcon:active,
+html[data-sap-ui-browser^="ie"] .sapUiTfFoc > .sapUiTfDateIcon:active {
+	background-image: url(img/datepicker/icon_cal_act.png);
+	background-position: left top;
+}

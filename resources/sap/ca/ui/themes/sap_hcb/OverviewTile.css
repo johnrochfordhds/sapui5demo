@@ -1,0 +1,15 @@
+
+/* ============================================= */
+/* CSS for control sap.ca.ui/OverviewTile.control */
+/* ============================================= */
+
+
+.sapCaUiOverviewTile {
+    border: 0.0625rem solid;
+
+}
+
+.sapCaUiOverviewTile:focus {
+    border: 0.0625rem dotted;
+    outline: 0;
+}

@@ -1,0 +1,69 @@
+/* ============================================= */
+/* CSS for control sap.ca.ui/AddPicture.control */
+/* ============================================= */
+
+.sapCaUiAddPicture{
+    width: 100%;
+    position: relative;
+}
+
+.sapCaUiAddPictureButton .sapMBtnContent{
+    text-align: left;
+}
+
+html[dir=rtl] .sapCaUiAddPictureButton .sapMBtnContent {
+    text-align: right;
+}
+
+.sapCaUiAddPictureHLayout {
+    white-space: normal;
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+}
+
+.sapCaUiHorizontalRuler {
+    width: 100%;
+}
+
+
+
+.sap-phone .sapCaAPAddButton,
+.sap-tablet .sapCaAPAddButton {
+	position: relative;
+}
+
+.sapCaAPInputFile {
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    margin: 0;
+}
+
+
+.sap-phone .sapCaAPInputFile,
+.sap-tablet .sapCaAPInputFile {    
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 100%;
+    left: 0;
+    visibility: visible;
+}
+
+
+
+html[data-sap-ui-browser="ie9"] .sapCaUiAddPicture .sapCaAPInputFile {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    margin: 0;
+    top: 0;
+    font-size: 2em;
+    left: -11em;
+    visibility: visible;
+}
+
+html[data-sap-ui-browser="ie9"] .sapCaUiAddPictureButton {
+    cursor: default;
+}

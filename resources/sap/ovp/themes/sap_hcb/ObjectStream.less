@@ -1,0 +1,54 @@
+.sapOvpStackedCardPopup {
+  background: fade(@sapHCReducedBG, 100%);
+  box-shadow: 0 0 2.5rem 0.125rem rgba(255,255,255,0.8);
+  .sapMDialogSection {
+    background-color: transparent;
+  }
+  .sapOvpObjectStreamHeader {
+    color: @sapHCStandardFG;
+  }
+  .sapOvpObjectStreamClose {
+    color: @sapHCStandardFG;
+    &:hover {
+      .sapUiIcon {
+        background-color: @sapHCHighlightBG;
+        border-color: white;
+        box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
+}
+
+.sapOvpOSEdgeLeft, .sapOvpOSEdgeRight {
+  & > span {
+    background-color: @sapUiButtonEmphasizedBG;
+    color: @sapHCStandardFG;
+    border-color: @sapHCStandardFG;
+    box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.1);
+  }
+  &:hover > span {
+    box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.4);
+    background-color: @sapHCHighlightBG;
+  }
+}
+
+.sapOvpBaseCard .sapOvpCardContentContainer {
+  &::after {
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+  }
+}
+
+.sapOvpStackedCardPopup {
+  .sapOvpObjectStreamHeader { @sapMFontHeader2Size; }
+  .sapOvpObjectStreamClose {
+    font-size: @sapMFontHeader5Size;
+  }
+  .sapMTB {
+    border-bottom: 0px;
+    border-top: 1px solid @sapHCStandardFG;
+  }
+}
+
+
+

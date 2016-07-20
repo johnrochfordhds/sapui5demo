@@ -1,0 +1,13 @@
+/* ===================================================== */
+/* CSS for control sap.ca.ui.charts/ChartToolBar.control */
+/* ===================================================== */
+
+.sap-ios .iconBar .sapMSlt > .sapMSltLabel,
+.sap-android .iconBar .sapMSlt > .sapMSltLabel,
+.sap-bb .iconBar .sapMSlt > .sapMSltLabel {
+	color: @sapUiWhite;
+}
+
+.sap-android .iconBar .sapMBtnTransparent{
+	color: @sapUiWhite;
+}

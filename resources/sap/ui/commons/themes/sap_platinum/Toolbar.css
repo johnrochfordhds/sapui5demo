@@ -1,0 +1,77 @@
+.sapUiTb {
+	height: 25px;
+}
+
+.sapUiTb.sapUiTbStandalone {
+	height: 27px;
+}
+
+.sapUiTbCont {
+	padding-top: 1px;
+	height: 24px;
+	line-height: 24px;
+	border-color: #C6D8E8;
+}
+
+.sapUiTbContLeft.sapUiTbCont{
+	padding: 1px 0px 1px 10px;
+}
+
+.sapUiTbDesignStandard .sapUiTbCont {
+	border-color: #94ABC5;
+}
+
+.sapUiTbDesignStandard {
+	background-color: #E4E9F0;
+}
+
+.sapUiTbDesignFlat {
+	background-image: url(img/toolbar/flat-bg.gif); /* size: 1px x 25px */
+	background-position: center top;
+	background-repeat: repeat-x;
+	background-color: white;
+}
+
+.sapUiTbStandalone.sapUiTbDesignFlat {
+	background-position: center 1px; /* start below border */
+}
+
+.sapUiTbDesignStandard .sapUiTbCover {
+	background-color: #E4E9F0;
+}
+
+.sapUiTbDesignFlat .sapUiTbCover {
+	background-image: url(img/toolbar/flat-bg.gif); /* size: 1px x 25px */
+	background-position: center;
+	background-repeat: repeat-x;
+}
+
+/* overflow button stuff */
+.sapUiTbOB {
+	top: 0px;
+	height: 22px;
+}
+
+.sapUiTbOB:hover {
+	background-image: url(img/toolbar/overflow-hov.png);
+}
+
+/* opened state of the overflow button */
+.sapUiTbOBAct,
+.sapUiTbOBAct:hover {
+	background-image: url(img/toolbar/overflow-act.png);
+}
+
+/* spacer */
+.sapUiTbSpacer {
+	width: 10px;
+}
+
+/* large space with separator line between Toolbar items */
+.sapUiTbSeparator {
+	height: 22px;
+	width: 10px;
+	background-image: url(img/toolbar/sep.gif);
+	background-position: center center;
+	background-repeat: no-repeat;
+}

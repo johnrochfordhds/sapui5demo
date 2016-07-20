@@ -1,0 +1,153 @@
+
+/* ============================================= */
+/* CSS for control sap.ca.ui/OverviewTile.control */
+/* ============================================= */
+
+
+.sapCaUiOverviewTile {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    -webkit-touch-callout: none;
+    box-sizing: border-box;
+}
+.sap-phone .sapCaUiOverviewTile {
+    overflow-x: hidden;
+}
+
+.sapCaUiOverviewTile * {
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+}
+
+.sapCaUiOverviewTileContent:focus {
+    outline: none;
+}
+
+.sapCaUiOverviewTileContent {
+    overflow: hidden;
+    padding: 1rem;
+}
+.sap-phone .sapCaUiOverviewTileContent {
+}
+.sapCaUiOTImageDiv {
+    vertical-align: top;
+    display: table-cell;
+}
+
+.sapCaUiOTTitleContentDiv {
+    vertical-align: top;
+    width: 100%;
+    padding-left: 1rem;
+    display: table-cell;
+}
+
+.sapCaUiOverviewTileTitle {
+    line-height: 1.4rem;
+    white-space:normal;
+    width:100%;
+    overflow: hidden;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    box-sizing: border-box;
+    -webkit-box-orient: vertical;
+    display: webkit-box;
+}
+
+html[data-sap-ui-browser*='ie'] .sapCaUiOverviewTileTitle {
+    display:  inline;
+}
+
+.sapCaUiOverviewTileHeader{
+    padding-top:1rem;
+    padding-left:1rem;
+    padding-right:1rem;
+    overflow: hidden;
+    display: table;
+    height: 5.875rem;
+}
+
+.sapCaUiOTTitleAddressDiv {
+    position: relative;
+}
+
+.sapCaUiOTAddress{
+    padding-top:0.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    display: webkit-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.sapCaUiOTTitleContactDiv {
+    position: relative;
+}
+
+.sapCaUiOverviewTileContact{
+    padding-top:0.25rem;
+    padding-bottom:0.25rem;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    position: absolute;
+    top: 1.5rem;
+    left: 0;
+    right: 0;
+}
+.sap-phone .sapCaUiOverviewTileContact {
+}
+
+.sapCaUiOTFormLine{
+    clear: both;
+}
+.sapCaUiOTFormLine:not(:first-child) {
+    padding-top: 0.5rem;
+}
+.sapCaUiOTFormLbl{
+    display: inline-block;
+    vertical-align: top;
+    width: 47%;
+    overflow: hidden;
+}
+
+.sapCaUiOTFormLbl:after {
+    content: ':';
+}
+
+
+
+/*html[data-sap-ui-browser*='ie'] .sapCaUiOTFormAdrVal {*/
+/* No clamp in ie9, use a max-height to limit the Text to 4 lines */
+/*max-height: 4.125rem;
+}*/
+
+.sapCaUiOTFormVal{
+    width: 53%;
+    padding-left: 0.5rem;
+    overflow: hidden;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    display: webkit-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: right;
+}

@@ -1,0 +1,79 @@
+.sapSuiteAmcTarget.Good,
+.sapSuiteAmcChart.Good,
+.sapSuiteAmcLine.Good {
+	color: @sapUiChartGood;	
+}
+
+.sapSuiteAmcTarget.Critical,
+.sapSuiteAmcChart.Critical,
+.sapSuiteAmcLine.Critical {
+	color: @sapUiChartCritical;	
+}
+
+.sapSuiteAmcTarget.Error,
+.sapSuiteAmcChart.Error,
+.sapSuiteAmcLine.Error {
+	color: @sapUiChartBad;	
+}
+
+.sapSuiteAmcChart {
+	width: 2px;
+}
+
+.sapSuiteAmcLbl {
+	font-family: @sapUiFontFamily;
+	font-size: @sapMFontMediumSize;
+}
+
+.sapSuiteAmcLbl.Neutral {
+	color: @sapUiLightText;	
+}
+
+.sapSuiteAmcLbl.Good {
+	color: @sapUiPositiveText;	
+}
+
+.sapSuiteAmcLbl.Critical {
+	color: @sapUiCriticalText;	
+}
+
+.sapSuiteAmcLbl.Error {
+	color: @sapUiNegativeText;	
+}
+
+.sapSuiteAmcThreshold {
+	color: @sapUiLightestBG;
+}
+
+.sapSuiteAmcThreshold.Error {
+	background-color: lighten(@sapUiChartBad, 20);
+}
+
+.sapSuiteAmcThreshold.Good {
+	background-color: lighten(@sapUiChartGood, 20);
+}
+
+.sapSuiteAmcThreshold.Critical {
+	background-color: lighten(@sapUiChartCritical, 20);
+}
+
+.sapSuiteAmcTarget {
+	outline-style: dotted;
+	outline-width: 2px;
+	width: 2px;
+}
+
+.sapSuiteAmcTarget.Neutral {
+	color: @sapUiStandardText;
+}
+
+.sapSuiteAmcChart.Neutral,
+.sapSuiteAmcLine.Neutral {
+	color: darken(@sapUiChartNeutral, 20);	
+}
+
+.sap-desktop .sapSuiteAmc:focus {
+	outline-color: @sapUiFocus;
+	outline-style: dotted;
+	outline-width: 1px;
+}

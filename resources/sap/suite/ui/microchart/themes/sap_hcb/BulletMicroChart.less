@@ -1,0 +1,140 @@
+
+/* ==================================================== */
+/* CSS for BulletMicroChart control for 'sap_hcb' theme */
+/* ==================================================== */
+
+.sapSuiteBMCContent {
+	font-family: @sapUiFontFamily;
+}
+
+.sap-desktop .sapSuiteBMCContent:focus {
+	outline-color: @sapHCStandardFG;
+	outline-style: dotted;
+	outline-width: .0625rem;
+}
+
+.sapSuiteBMCContent:focus:not([tabindex]) {
+	outline: none;
+}
+
+.sap-desktop .XS.sapSuiteBMCContent:focus {
+	outline: none;
+} 
+
+.sap-desktop .XS.sapSuiteBMCContent:focus::after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	top: -.3125rem;
+	left: -.125rem;
+	right: -.125rem;
+	bottom: -.75rem;
+	border: .0625rem dotted @sapHCStandardFG;
+}
+
+.sapSuiteBMCBarValue.Neutral,
+.sapSuiteBMCBarValueMarker.Neutral,
+.sapSuiteBMCThreshold.Neutral {
+	background-color: @sapHCNeutral;
+}
+
+.sapSuiteBMCBarValue.Good,
+.sapSuiteBMCBarValueMarker.Good,
+.sapSuiteBMCThreshold.Good {
+	background-color: @sapHCPositive;
+}
+
+.sapSuiteBMCBarValue.Critical,
+.sapSuiteBMCBarValueMarker.Critical,
+.sapSuiteBMCThreshold.Critical {
+	background-color: @sapHCCritical;
+}
+
+.sapSuiteBMCBarValue.Error,
+.sapSuiteBMCBarValueMarker.Error,
+.sapSuiteBMCThreshold.Error {
+	background-color: @sapHCNegative;
+}
+
+.sapSuiteBMCItemValue.Neutral {
+	color: @sapHCNeutral;
+}
+
+.sapSuiteBMCItemValue.Good {
+	color: @sapHCPositive;
+}
+
+.sapSuiteBMCItemValue.Critical {
+	color: @sapHCCritical;
+}
+
+.sapSuiteBMCItemValue.Error {
+	color: @sapHCNegative;
+}
+
+.sapSuiteBMCTargetBarValue {
+	border-left: .0625rem solid @sapHCStandardFG;
+	background-color: darken(@sapHCStandardFG,80); 
+}
+
+.sapSuiteBMCTargetValue {
+	color: @sapHCStandardFG;
+}
+
+.sapSuiteBMCDiamond {
+	background-color: @sapUiChartBad;
+}
+
+.sapSuiteBMCForecastBarValue.Neutral {
+	background-color: darken(@sapHCNeutral,20);
+}
+
+.sapSuiteBMCForecastBarValue.Good {
+	background-color: lighten(@sapHCPositive,25);
+}
+
+.sapSuiteBMCForecastBarValue.Critical {
+	background-color: lighten(@sapHCCritical,25);
+}
+
+.sapSuiteBMCForecastBarValue.Error {
+	background-color: lighten(@sapHCNegative,25);
+}
+
+.sapSuiteBMCBar {
+	box-sizing: border-box;
+	background-color: @sapHCStandardBG;
+	border: .0625rem @sapUiFieldBorderColor solid;
+}
+
+.sapSuiteBMCBarValue {
+	box-sizing: border-box;
+	border-left: .0625rem @sapHCStandardBG solid;
+	border-right: .0625rem @sapHCStandardBG solid;
+}
+
+.sapSuiteBMCBarValue.sapSuiteBMCForecast {
+	border-bottom: .0625rem @sapHCStandardBG solid ;
+	border-left: 0;
+	border-right: 0;
+}
+
+html[dir=rtl] .sapSuiteBMCForecastBarValue {
+	border-left: .0625rem @sapHCStandardBG solid;
+	border-right: 0;
+}
+
+.sapSuiteBMCForecastBarValue {
+	border-left: 0;
+	border-right: .0625rem @sapHCStandardBG solid;
+}
+
+.sapSuiteBMCBarValueMarker.Delta {
+	border-left: .0625rem @sapHCStandardBG solid;
+	border-right: .0625rem @sapHCStandardBG solid;
+}
+
+.sapSuiteBMCBar.Transparent {
+	background-color: transparent;
+}
+

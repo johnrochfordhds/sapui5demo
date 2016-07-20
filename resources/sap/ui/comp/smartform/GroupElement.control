@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>smartform/GroupElement</name>
+    <derived/>
+    <author>Alexander Fürbach</author>
+    <documentation>A GroupElement is a combination of one label and different controls associated to this label.</documentation>
+    <baseType>sap.ui.layout/form/FormElement</baseType>
+    <properties>
+        <property group="Misc" type="sap.ui.core/boolean" name="useHorizontalLayout">
+            <documentation>Specifies whether the groups shall be rendered in a ResponsiveLayout with label on top of the group element. Each group will be
+rendered in a new line.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/int" name="horizontalLayoutGroupElementMinWidth">
+            <documentation>Specifies the minimal size in pixels of all group elements of the form if horizontal Layout is used.</documentation>
+        </property>
+        <property group="Misc" defaultValue="0" type="sap.ui.core/int" name="elementForLabel">
+            <documentation>Index of element to be used for label determination</documentation>
+        </property>
+    </properties>
+    <events>
+        <event allowPreventDefault="false" name="visibleChanged">
+            <documentation>The event is fired after the visibility of the control has changed.</documentation>
+        </event>
+    </events>
+    <aggregations default="elements">
+        <aggregation cardinality="0..n" type="sap.ui.core/Control" name="elements">
+            <documentation>Aggregation of controls to be displayed together with a label.</documentation>
+        </aggregation>
+    </aggregations>
+</control>

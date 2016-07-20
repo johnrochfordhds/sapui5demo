@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<library xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+  <name>sap.apf</name>
+  <vendor>SAP SE</vendor>
+  <version>1.36.10</version>
+  
+  <documentation>Analysis Path Framework</documentation>
+  
+  <dependencies>
+    <dependency>
+      <libraryName>sap.ui.core</libraryName>
+    </dependency>
+     <dependency>
+      <libraryName>sap.ca.ui</libraryName>
+    </dependency>
+     <dependency>
+      <libraryName>sap.m</libraryName>
+    </dependency>
+     <dependency>
+      <libraryName>sap.ui.layout</libraryName>
+    </dependency>
+    <dependency>
+      <libraryName>sap.ushell</libraryName>
+    </dependency>
+    <dependency>
+      <libraryName>sap.viz</libraryName>
+    </dependency>
+  </dependencies>
+  
+  <appData>
+  <manifest xmlns="http://www.sap.com/ui5/buildext/manifest" >
+	<i18n>resources/i18n/apfUi.properties</i18n>
+    <offline>false</offline>
+    <deviceTypes desktop="true" phone="false" tablet="false"/>
+     <supportedTheme>sap_hcb</supportedTheme>
+     <supportedTheme>sap_bluecrystal</supportedTheme>
+    </manifest>
+    
+    
+    <ownership xmlns="http://www.sap.com/ui5/buildext/ownership">
+        <component>CA-EPT-ANL-APF</component>
+    </ownership>
+    <!-- excludes for the JSDoc -->
+    <jsdoc xmlns="http://www.sap.com/ui5/buildext/jsdoc" >
+        <exclude name="sap/apf/ui/libs/cvom/" />
+    </jsdoc>
+    <!-- excludes for the JSCoverage > -->
+    <jscoverage xmlns="http://www.sap.com/ui5/buildext/jscoverage" >
+    </jscoverage>
+    
+    <documentation xmlns="http://www.sap.com/ui5/buildext/documentation"
+    indexUrl="../../../test-resources/sap/apf/demokit/docuindex.json"
+    resolve="lib" />
+  </appData>
+  
+</library>

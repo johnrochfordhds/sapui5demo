@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>navpopover/LinkData</name>
+    <derived/>
+    <documentation>Stores display text together with a navigation target hyperlink.&lt;br&gt;
+       The LinkData class is used by {@link sap.ui.comp.navpopover.SmartLink SmartLink} and
+       {@link sap.ui.comp.navpopover.SemanticObjectController SemanticObjectController} to define the visible links on
+       {@link sap.ui.comp.navpopover.NavigationPopover NavigationPopover}.</documentation>
+    <baseType>sap.ui.core/Element</baseType>
+    <properties>
+        <property since="1.28.0" type="sap.ui.core/string" name="text">
+            <documentation>Text which can be displayed on the UI</documentation>
+        </property>
+        <property since="1.28.0" type="sap.ui.core/string" name="href">
+            <documentation>Destination link for a navigation operation in internal format. &lt;b&gt;Note&lt;/b&gt;: The link will be encoded before it is shown in external
+format using the &lt;code&gt;hrefForExternal&lt;/code&gt; method of the CrossApplicationNavigation service.</documentation>
+        </property>
+        <property type="sap.ui.core/string" name="target">
+            <documentation>The standard values for the &lt;code&gt;target&lt;/code&gt; property are: _self, _top, _blank, _parent, _search. Alternatively, a frame name
+can be entered. This property is only used if the &lt;code&gt;href&lt;/code&gt; property is set.</documentation>
+        </property>
+    </properties>
+</control>

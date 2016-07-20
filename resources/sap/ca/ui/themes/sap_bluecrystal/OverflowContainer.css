@@ -1,0 +1,53 @@
+
+/* =================================================== */
+/* CSS for control sap.ca.ui/OverflowContainer.control */
+/* =================================================== */
+
+.sapCaUiOC{
+    overflow: hidden;
+    position: relative;
+    transition: height 200ms linear;
+    -webkit-transition: height 200ms linear;
+    -moz-transition: height 200ms linear;
+    -ms-transition: height 200ms linear;
+    -o-transition: height 200ms linear;
+    background-color: @sapUiLightestBG;
+    padding:0;
+    margin:0;
+}
+
+.sapCaUiOCOverlay{
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    height:2rem;
+    background: -moz-linear-gradient( fade(@sapUiLightestBG, 20%) 0%, fade(@sapUiLightestBG, 90%) 100%);
+    background: -ms-linear-gradient(top, @sapUiLightestBG 20%, @sapUiLightestBG 90%);
+    background: -webkit-linear-gradient(top, @sapUiLightestBG 20%,@sapUiLightestBG 90%);                                                       /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, @sapUiLightestBG 20%,@sapUiLightestBG 90%);                                                            /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, @sapUiLightestBG 20%,@sapUiLightestBG 90%);                                                           /* IE10+ */
+    background: linear-gradient(to bottom, @sapUiLightestBG 20%,@sapUiLightestBG 90%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', endColorstr='#e6ffffff',GradientType=0 ); /* IE6-9 */
+    background: -webkit-gradient(linear, left top, left bottom, from(fade(@sapUiLightestBG, 20%)),to(fade(@sapUiLightestBG, 90%)));
+}
+
+
+.sapCaUiOCBtn{
+    position: absolute;
+    right: 0rem;
+    height: 3rem;
+    width: 3rem;
+    bottom: 0;
+    border: none;
+    background-color: fade(@sapUiLightestBG, 20%);
+    outline: none;
+    cursor: pointer;
+    color: @sapUiElement;
+}
+
+.sapCaUiOC > .sapMBtnIcon > .sapMBtnCustomIcon.sapUiIcon.sapUiIconMirrorInRTL{
+    font-size: 1.5rem;
+    width: 2.875rem;
+    text-align: center;
+    margin: 0;
+}

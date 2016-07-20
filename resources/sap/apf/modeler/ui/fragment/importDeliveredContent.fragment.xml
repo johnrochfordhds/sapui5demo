@@ -1,0 +1,25 @@
+<core:FragmentDefinition xmlns="sap.m"
+	xmlns:core="sap.ui.core" xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+	<Dialog xmlns="sap.m" id="idImportDeliveredContentDialog" showHeader="true" class="sapUiSizeCompact"
+		type="Standard" contentWidth="700px">
+		<VBox>
+			<HBox>
+				<Label xmlns="sap.m" id="idConfigLabel" class="importFileUploaderDialogLabels" />
+				<ComboBox xmlns="sap.m" id="idAppConfigCombobox" visible="true" showSecondaryValues="true" items="{/aAllAppConfig}" selectionChange="handleSelectionChangeOfAppConfigTextField" change="handleChangeOfAppConfigTextField" class="appCofigCombo">
+							<core:ListItem text="{applicationText}" additionalText="{configurationText}" app:value="{value}"></core:ListItem>
+				</ComboBox>
+			</HBox>
+		</VBox>
+		<beginButton>
+			<Button xmlns="sap.m" id="idImportOfConfig" type="Default"
+				width="" enabled="true" visible="true" press="_handleImportOfDeliveredContent">
+			</Button>
+		</beginButton>
+		<endButton>
+			<Button xmlns="sap.m" id="idCancelImportOfConfig" type="Default"
+				width="" enabled="true" visible="true" press="closeImportConfigDialog">
+			</Button>
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>
+

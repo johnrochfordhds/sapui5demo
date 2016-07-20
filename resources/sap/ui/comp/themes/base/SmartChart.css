@@ -1,0 +1,10 @@
+/* ============================================= */
+/* CSS for control sap.ui.comp/SmartChart.control */
+/* ============================================= */
+
+.sapUiCompSmartChart{	
+}
+
+.sapUiCompSmartChart .sapUiCompSmartChartToolbar{
+	padding-left: 0.25rem;
+}

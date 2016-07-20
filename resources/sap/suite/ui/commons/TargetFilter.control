@@ -1,0 +1,67 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>TargetFilter</name>
+
+	<documentation>The analytical filter control. The control works only with the OData model connected to the analytical OData service (for example, HANA XS Analytical view exposed as an OData service).</documentation>
+
+	<baseType>sap.ui.core/Control</baseType>
+	<developmentState state="deprecated" since="1.34">Deprecated.</developmentState>
+	<deprecation since="1.34">Deprecated.</deprecation>
+	<properties>
+		<property group="Misc" name="entitySet" type="sap.ui.core/string">
+			<documentation>The name of the entity set from OData service metadata. The filtering applies to this entity set.</documentation>
+		</property>
+	</properties>
+	<events>
+        <event name="search">
+            <documentation>This event is fired if the user chooses the Show Selected link.</documentation>
+        </event>
+        <event name="filterChange">
+        	<documentation>This event is fired if the user changes a selected filter set.</documentation>
+        </event>
+        <event name="cancel">
+        	<documentation>This event is fired if the user changes a selected filter set to the filter set used for the last search.</documentation>
+        </event>
+    </events>
+
+    <aggregations>
+		<aggregation cardinality="0..n" name="columns" type="TargetFilterColumn">
+			<documentation>The list of the columns.</documentation>
+		</aggregation>
+		<aggregation cardinality="0..1" name="_countDisplay" type="sap.ui.core/Control" visibility="hidden">
+			<documentation>The hidden aggregation for the internal control that displays the number of entries in the filtered set.</documentation>
+		</aggregation>
+		<aggregation cardinality="0..1" name="_quad0" type="sap.ui.core/Control" visibility="hidden">
+			<documentation>The hidden aggregation for the internal control that represents the right top quadrant.</documentation>
+		</aggregation>
+		<aggregation cardinality="0..1" name="_quad1" type="sap.ui.core/Control" visibility="hidden">
+			<documentation>The hidden aggregation for the internal control that represents the left top quadrant.</documentation>
+		</aggregation>
+		<aggregation cardinality="0..1" name="_quad2" type="sap.ui.core/Control" visibility="hidden">
+			<documentation>The hidden aggregation for the internal control that represents the left bottom quadrant.</documentation>
+		</aggregation>
+		<aggregation cardinality="0..1" name="_quad3" type="sap.ui.core/Control" visibility="hidden">
+			<documentation>The hidden aggregation for the internal control that represents the right bottom quadrant.</documentation>
+		</aggregation>
+		<aggregation cardinality="0..1" name="measureColumn" type="TargetFilterMeasureColumn">
+			<documentation>The measure column.</documentation>
+		</aggregation>
+	</aggregations>
+    <associations>
+    	<association cardinality="0..n" name="selectedColumns" type="TargetFilterColumn">
+    		<documentation>The list of selected columns. The index of the columns in this list corresponds to the quadrant.</documentation>
+    	</association>
+    </associations>
+    <methods>
+    	<method name="getFilters" type="sap.ui.core/any">
+    		<documentation>Returns a selected filter set.</documentation>
+    	</method>
+    	<method name="getParameters" type="sap.ui.core/any">
+    		<documentation>Returns the binding parameters for the controls that use this control.</documentation>
+    	</method>
+    	<method name="search" type="TargetFilter">
+    		<documentation>Triggers filtering in the controls that use this control. Returns this control for the method chaining.</documentation>
+    	</method>
+    </methods>
+</control>

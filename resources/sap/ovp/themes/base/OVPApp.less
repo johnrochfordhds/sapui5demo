@@ -1,0 +1,105 @@
+/* clearing the header's inherited Dark background, so we will benefit the light text from the header's dark design
+and in addition see our background and not the original dark design header background image*/
+.ovpApplication .ovpPageHeader, .ovpApplication .sapUxAPObjectPageHeader {
+  background-size: 0 !important;
+  background-color: transparent;
+}
+
+.ovpApplication {
+  position: relative;
+  & > .sapUiFixFlexFixed > .sapMVBox, & > .sapUiFixFlexFlexible {
+    transition: transform 250ms linear;
+    -webkit-transition: -webkit-transform 250ms linear;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+  }
+  & > .sapUiFixFlexFlexible {
+    overflow: visible
+  }
+
+  /* It's just temporary till bug with white background will be fixed */
+  .showFilterButton .sapMBtnDefault {
+    background: transparent;
+    border: none;
+  }
+}
+
+.sapOVPBusyDialog {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  .sapMDialogSection {
+    background: transparent;
+    .sapMBusyDialogLabel {
+      color: @sapUiWhite;
+    }
+  }
+}
+
+.ovpApplication {
+  .ovpGlobalFilterWrapper {
+    border-bottom: 1px solid;
+    transition: height 0.25s linear;
+    overflow: hidden;
+  }
+  .sapUiCompFilterBar {
+    background-color: unset;
+    position: relative;
+    transition: top 0.25s linear;
+  }
+}
+
+.ovpApplication .ovpSmartFilterBar label, .ovpApplication .ovpSmartFilterBar button span.sapMBtnContent, .ovpApplication .ovpSmartFilterBar button .sapMBtnIcon {
+  text-shadow: none !important;
+}
+
+.ovpApplication .ovpSmartFilterBar {
+  background-color: transparent;
+}
+
+/* Object Page Header - remove background color and mimic dark font color - since the dark loads an unnecessary image  */
+.ovpPageHeader {
+  .sapUxAPObjectPageHeaderIdentifier {
+    background-color: unset;
+    background-color: transparent;
+  }
+}
+
+/* Object Page Header - make sure that image visible*/
+.sapUxAPObjectPageHeaderIdentifier .sapUxAPObjectPageHeaderObjectImageContainer .sapMImg{
+  opacity: 1;
+}
+
+.sapOVPDisableUserSelect {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.sapOVPDisableImageDrag img{
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+
+.sapOVPCardsVisibilityDialog {
+
+  #sapOVPHideCardsTable table>tbody>tr>td {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    height: 2.94rem;
+
+    > div {
+      padding: 0.375rem 0 0.375rem 0;
+    }
+  }
+}
+
+.ovpLayoutElement {
+  transition: opacity 2500ms;
+  opacity: 0;
+  &.ovpLayoutElementShow {
+    opacity: 1;
+  }
+}

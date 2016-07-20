@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>CalendarLegend</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>Legend for the calendar control</documentation>
+    <deprecation since="1.34.0">This control was experimental since 1.12. Please use the sap.ui.unified.CalendarLegend instead!</deprecation>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property group="Misc" type="sap.ui.core/string" name="legendForType00">
+            <documentation>legend for type 00</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="legendForType01">
+            <documentation>legend for type 01</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="legendForType04">
+            <documentation>legend for type 04</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="legendForType06">
+            <documentation>legend for type 06</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="legendForType07">
+            <documentation>legend for type 07</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="legendForToday">
+            <documentation>legend for today</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="legendForSelected">
+            <documentation>legend for selected</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="legendForSelected00">
+            <documentation>legend for selected 00</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="legendForNormal">
+            <documentation>legend for normal</documentation>
+        </property>
+        <property group="Misc" defaultValue="true" type="sap.ui.core/boolean" name="expandable">
+            <documentation>Indicates if the legend can be collapsed and expanded</documentation>
+        </property>
+        <property group="Misc" defaultValue="true" type="sap.ui.core/boolean" name="expanded">
+            <documentation>Indicates if the legend is expanded or not</documentation>
+        </property>
+        <property group="Dimension" defaultValue="auto" type="sap.ui.core/CSSSize" name="width">
+            <documentation>Indicates the whole component width</documentation>
+        </property>
+        <property group="Dimension" defaultValue="12.5rem" type="sap.ui.core/CSSSize" name="legendWidth">
+            <documentation>Indicates the legend items width</documentation>
+        </property>
+        <property group="Appearance" defaultValue="true" type="sap.ui.core/boolean" name="visible">
+            <documentation>Indicates if the legend is visible</documentation>
+        </property>
+        <property group="Appearance" defaultValue="Approval" type="sap.me/CalendarDesign" name="design">
+            <documentation>design name for the legend</documentation>
+        </property>
+    </properties>
+    <aggregations>
+        <aggregation visibility="hidden" cardinality="0..n" type="sap.m/Label" name="labels">
+            <documentation>label aggregation</documentation>
+        </aggregation>
+        <aggregation visibility="hidden" cardinality="0..n" type="sap.ui.core/Control" name="colors">
+            <documentation>colors aggregation</documentation>
+        </aggregation>
+        <aggregation visibility="hidden" cardinality="0..1" type="sap.ui.core/Icon" name="icon">
+            <documentation>Expand / collapse icon</documentation>
+        </aggregation>
+    </aggregations>
+</control>

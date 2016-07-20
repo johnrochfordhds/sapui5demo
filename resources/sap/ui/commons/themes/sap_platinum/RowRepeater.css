@@ -1,0 +1,23 @@
+/* =========================================================== */
+/* platinum CSS for control sap.ui.commons/RowRepeater.control */
+/* =========================================================== */
+
+/** Common Design **/
+
+/** Standard Design **/
+.sapUiRrDesignStandard > .sapUiRrPtb {
+	background-image: -moz-linear-gradient(center top , #BBC8DE 0pt, #96A8C3 4px, #96A8C3);
+	background-color: #96A8C3;
+}
+
+.sapUiRrDesignStandard .sapUiRrTitle {
+	color: #FFFFFF;
+}
+
+.sapUiRrDesignStandard .sapUiRrSortBy {
+	background-image: url(img/toolbar/flat-bg.gif);
+}
+
+/** Transparent Design **/
+
+/** BareShell Design **/

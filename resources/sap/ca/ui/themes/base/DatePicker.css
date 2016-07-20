@@ -1,0 +1,25 @@
+
+/* ============================================= */
+/* CSS for control sap.ca.ui/DatePicker.control */
+/* ============================================= */
+
+.sapCaUiDatePicker{
+}
+
+/*As we inherit the properties from the sap.m.input, we still need to override some properties that will create issues in the following cases:
+1) when the control is in readonly mode (editable=false) the "value helper" is displayed with white background
+2) when the control is displayed in a bar, it is mis-aligned wrt "the value helper".
+ */
+.sapCaUiDatePicker.sapMInputBaseReadonly > .sapMInputValHelp {
+  border-color: transparent;
+  background-color: transparent;
+}
+.sapCaUiDatePicker .sapMInputBaseInner {
+    line-height: inherit;
+    vertical-align: inherit;
+}
+
+/* Fix for CSS I-0120031469 0000179939 2014  */
+.sapCaUiDatePicker .sapCaUiGreyIcon {
+    color: @sapUiLightText;
+}

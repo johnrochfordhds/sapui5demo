@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ui5/data/MeasureDefinition</name>
+    <derived/>
+    <documentation>Definition of a single Measure</documentation>
+    <since>1.7.2</since>
+    <baseType>sap.ui.core/Element</baseType>
+    <properties>
+        <property group="Misc" defaultValue="1" type="sap.ui.core/int" name="group">
+            <documentation>Measure group this measure belongs to. Order is significant, number should start from 1.
+Skip this property when use VizFrame.</documentation>
+        </property>
+        <property group="Data" type="sap.ui.core/any" name="value">
+            <documentation>Value for the measure. Usually bound to some model field.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="name">
+            <documentation>Name of the measure as displayed in the chart</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="identity">
+            <documentation>Id of the measure as displayed in the chart</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/any" name="format">
+            <documentation>Format pattern for values of the measure</documentation>
+        </property>
+        <property group="Misc" defaultValue="[]" type="sap.ui.core/any[]" name="range">
+            <documentation>Value range</documentation>
+        </property>
+    </properties>
+</control>

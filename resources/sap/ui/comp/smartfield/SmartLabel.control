@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>smartfield/SmartLabel</name>
+    <derived/>
+    <documentation>The SmartLabel control extends {@link sap.m.Label sap.m.Label} and displays the label for
+       {@link sap.ui.comp.smartfield.SmartField SmartField}. It uses the annotations &lt;code&gt;sap:label&lt;/code&gt; or
+       &lt;code&gt;com.sap.vocabularies.Common.v1.Label&lt;/code&gt; for the label text and &lt;code&gt;sap:quickinfo&lt;/code&gt; or
+       &lt;code&gt;com.sap.vocabularies.Common.v1.QuickInfo&lt;/code&gt; for the tooltip. The mandatory indicator is obtained from the SmartField
+       control. The association with a SmartField control is built using the setLabelFor method.</documentation>
+    <baseType>sap.m/Label</baseType>
+</control>

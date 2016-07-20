@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>filterbar/FilterItem</name>
+    <derived/>
+    <documentation>Represents a filter belonging to the basic group.</documentation>
+    <baseType>sap.ui.core/Element</baseType>
+    <properties>
+        <property group="Misc" type="sap.ui.core/string" name="label">
+            <documentation>Label of the filter.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="name">
+            <documentation>Name of the filter. This is an identifier for the filter and has to be unique.</documentation>
+        </property>
+        <property group="Misc" defaultValue="false" type="sap.ui.core/boolean" name="mandatory">
+            <documentation>Mandatory flag.</documentation>
+        </property>
+        <property group="Misc" defaultValue="true" type="sap.ui.core/boolean" name="visible">
+            <documentation>Visibility state of the filter.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="labelTooltip">
+            <documentation>Tooltip for the filter.</documentation>
+        </property>
+        <property since="1.26.1" group="Misc" defaultValue="false" type="sap.ui.core/boolean" name="partOfCurrentVariant">
+            <documentation>Determines if a filter is part of the currently selected variant. This property is ONLY used internally and must not be used by the
+filter bar consumers.</documentation>
+        </property>
+        <property since="1.26.1" group="Misc" defaultValue="true" type="sap.ui.core/boolean" name="visibleInFilterBar">
+            <documentation>Controls the visibility of a filter item in the filter bar.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event allowPreventDefault="false" name="change">
+            <documentation>This event is fired when one of the properties is changed.</documentation>
+            <parameters>
+                <parameter type="sap.ui.core/string" name="propertyName">
+                    <documentation>Name of the changed property</documentation>
+                </parameter>
+            </parameters>
+        </event>
+    </events>
+    <aggregations>
+        <aggregation cardinality="0..1" type="sap.ui.core/Control" name="control">
+            <documentation>The control of the filter.</documentation>
+        </aggregation>
+    </aggregations>
+</control>

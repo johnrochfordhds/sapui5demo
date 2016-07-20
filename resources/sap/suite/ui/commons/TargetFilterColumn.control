@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>TargetFilterColumn</name>
+	<documentation>The configuration element for the column in the TargetFilter control.</documentation>
+
+	<baseType>sap.ui.core/Element</baseType>
+	<properties>
+		<property group="Misc" name="path" type="sap.ui.core/string">
+			<documentation>The binding path.</documentation>
+		</property>
+		<property group="Misc" name="title" type="sap.ui.core/string">
+			<documentation>The column title.</documentation>
+		</property>
+		<property group="Misc" name="length" type="sap.ui.core/int" defaultValue="10">
+			<documentation>The number of the retrieved entries for the cloud of the links in the quadrant. The quadrant can display fewer links than retrieved.
+			The font size of the links in the quadrant depends on the measure number. The font size of the links is relative in the retrieved group.</documentation>
+		</property>
+		<property group="Misc" name="type" type="sap.ui.core/any">
+			<documentation>The type of the displayed data. The type of the property must be sap.ui.model.SimpleType or its descedants. By default, sap.ui.model.type.String.
+			This property is used for formatting the displayed values. If sap.ui.model.type.String, the filter operator in the Search field of the column selection dialog is 'Contains'.
+			In other cases, the filter operator is 'EQ'.</documentation>
+		</property>
+	</properties>
+</control>

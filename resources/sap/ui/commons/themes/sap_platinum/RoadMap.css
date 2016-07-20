@@ -1,0 +1,126 @@
+/* ============================================= */
+/* CSS for control sap.ui.commons/RoadMap.control */
+/* ============================================= */
+
+/* Step Styles */
+.sapUiRoadMapDisabled{
+	color: #7B8694;
+}
+
+.sapUiRoadMapStepAdd1,
+.sapUiRoadMapStepAdd2{
+	background-color: #96A8C3;
+}
+
+.sapUiRoadMapStepBox{
+	background-image: url('img/roadmap/stepdefault.png');
+	background-image: -moz-linear-gradient(center 0px, #D0DBE9, #E5EAF2 5.3%, white 10.6%, #DBE1EC 47.7%, #DBE1EC 84.8%, #CDD5E4 90%, #CAD9E9);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#D0DBE9), color-stop(0.053, #E5EAF2), color-stop(0.106, white), color-stop(0.477, #DBE1EC), color-stop(0.848, #DBE1EC), color-stop(0.9, #CDD5E4), to(#CAD9E9));
+	border-width: 1px;
+	border-sytle: solid;
+	border-color: #A4B8D6 #A4B8D6 #95A7C2 #A4B8D6;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.sapUiRoadMapStepBox:focus{
+	outline: 1px dotted #96A8C3;
+}
+
+.sapUiRoadMapSelected > .sapUiRoadMapStepBox{
+	border-color: #749AAD #749AAD #90BFD7 #749AAD;
+	background-image: url('img/roadmap/stepactive.png');
+	background-image: -moz-linear-gradient(center 0px, #A3C1D3, #C6DEEF 5.3%, #E0F5F9 47.7%, white 90%, #C7DCE7);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#A3C1D3), color-stop(0.053, #C6DEEF), color-stop(0.477, #E0F5F9), color-stop(0.9, white), to(#C7DCE7));
+}
+
+.sapUiRoadMapDisabled > .sapUiRoadMapStepBox{
+	background-image: url('img/roadmap/stepdisabled.png');
+	background-image: -moz-linear-gradient(center 0px, #DEE6F0, #EDF0F6 5.3%, white 10.6%, #E5E9F2 47.7%, #E5E9F2 84.8%, #DCE2EC 90%, #DAE4F0);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#DEE6F0), color-stop(0.053, #EDF0F6), color-stop(0.106, white), color-stop(0.477, #E5E9F2), color-stop(0.848, #E5E9F2), color-stop(0.9, #DCE2EC), to(#DAE4F0));
+	border: 1px solid #BFCDE2;
+}
+
+.sapUiRoadMapTitle{
+	height: 26px;/*double line-height*/
+}
+
+.sapUiRoadMapStepIco{
+	display: inline;
+	position: absolute;
+	bottom: 0px;
+	left: 3px;
+	height: 16px;
+	width: 16px;
+	background-image: url("img/roadmap/roundtrip.gif");
+}
+
+.sapUiRoadMapDisabled > .sapUiRoadMapStepBox > .sapUiRoadMapStepIco{
+	background-image: url("img/roadmap/roundtrip_dsbl.gif");
+}
+
+.sapUiRoadMapExpanded > .sapUiRoadMapStepBox > .sapUiRoadMapStepIco{
+	right: 2px;
+	left: auto;
+	height: 12px;
+	width: 12px;
+	background-image: url("img/roadmap/roundtrip_start.gif");
+}
+
+.sapUiRoadMapExpanded.sapUiRoadMapDisabled > .sapUiRoadMapStepBox > .sapUiRoadMapStepIco{
+	background-image: url("img/roadmap/roundtrip_start_dsbl.gif");
+}
+
+.sapUiRoadMapStepEnd.sapUiRoadMapExpanded > .sapUiRoadMapStepBox > .sapUiRoadMapStepIco{
+	left: 2px;
+	background-image: url("img/roadmap/roundtrip_end.gif");
+}
+
+.sapUiRoadMapStepEnd.sapUiRoadMapExpanded.sapUiRoadMapDisabled > .sapUiRoadMapStepBox > .sapUiRoadMapStepIco{
+	background-image: url("img/roadmap/roundtrip_end_dsbl.gif");
+}
+
+.sapUiRoadMapStep:hover > .sapUiRoadMapStepBox{
+	border-color: #90BFD7 #87B3C9 #87B3C9 #87B3C9; 
+	background-image: url('img/roadmap/stephover.png');
+	background-image: -moz-linear-gradient(center 0px, #DAEAF1, white 5.3%, #E0F4F9 47.7%, #C5DCEE 90%, #B3D3E7);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#DAEAF1), color-stop(0.053, white), color-stop(0.477, #E0F4F9), color-stop(0.9, #C5DCEE), to(#B3D3E7));
+}
+
+.sapUiRoadMapStep.sapUiRoadMapDisabled:hover > .sapUiRoadMapStepBox{
+	background-image: url('img/roadmap/stepdisabled.png');
+	background-image: -moz-linear-gradient(center 0px, #DEE6F0, #EDF0F6 5.3%, white 10.6%, #E5E9F2 47.7%, #E5E9F2 84.8%, #DCE2EC 90%, #DAE4F0);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#DEE6F0), color-stop(0.053, #EDF0F6), color-stop(0.106, white), color-stop(0.477, #E5E9F2), color-stop(0.848, #E5E9F2), color-stop(0.9, #DCE2EC), to(#DAE4F0));
+	border: 1px solid #BFCDE2;
+}
+
+.sapUiRoadMapStep.sapUiRoadMapSelected:hover > .sapUiRoadMapStepBox{
+	border-color: #749AAD #749AAD #90BFD7 #749AAD;
+	background-image: url('img/roadmap/stepactive.png');
+	background-image: -moz-linear-gradient(center 0px, #A3C1D3, #C6DEEF 5.3%, #E0F5F9 47.7%, white 90%, #C7DCE7);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#A3C1D3), color-stop(0.053, #C6DEEF), color-stop(0.477, #E0F5F9), color-stop(0.9, white), to(#C7DCE7));
+}
+
+/* Delimiter Styles */
+.sapUiRoadMapStartScroll{
+	background-image: url("img/roadmap/morebefore.gif");
+}
+
+.sapUiRoadMapStartFixed{
+	background-image: url("img/roadmap/startpoint.gif");
+}
+
+.sapUiRoadMapEndScroll{
+	background-image: url("img/roadmap/moreafter.gif");
+}
+
+.sapUiRoadMapEndFixed{
+	background-image: url("img/roadmap/endpoint.gif");
+}
+
+.sapUiRoadMapStartScroll:after,
+.sapUiRoadMapStartFixed:after,
+.sapUiRoadMapEndScroll:after,
+.sapUiRoadMapEndFixed:after{
+	content: "";
+}

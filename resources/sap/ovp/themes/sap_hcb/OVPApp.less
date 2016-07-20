@@ -1,0 +1,24 @@
+.ovpApplication {
+  .ovpGlobalFilterWrapper {
+    border-bottom-color: @sapHCStandardFG;
+  }
+}
+.ovpApplication .ovpSmartFilterBar label, .ovpApplication .ovpSmartFilterBar button span.sapMBtnContent, .ovpApplication .ovpSmartFilterBar button .sapMBtnIcon {
+  color: @sapHCStandardFG !important;
+}
+
+/* Object Page Header - remove background color and mimic dark font color - since the dark loads an unnecessary image  */
+.ovpPageHeader {
+  .sapUxAPObjectPageHeaderIdentifier .sapUxAPObjectPageHeaderIdentifierContainer {
+    .sapUxAPObjectPageHeaderIdentifierTitle, .sapUxAPObjectPageHeaderIdentifierDescription {
+      color: @sapHCStandardFG;
+    }
+  }
+
+  .sapUxAPObjectPageHeaderIdentifier .sapUxAPObjectPageHeaderIdentifierActions {
+    .sapMBtnIcon, .sapMBtnTransparent, .sapMBtnTransparent > .sapMBtnIcon, .sapMBtnIcon, .sapMBtnTransparent, .sapMBtnTransparent > .sapMBtnIcon {
+      color: @sapHCStandardFG;
+    }
+  }
+}
+

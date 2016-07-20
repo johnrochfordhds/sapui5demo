@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>odata/FieldSelector</name>
+    <derived/>
+    <documentation>Reuse control which displays the properties of OData entity sets.</documentation>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property group="Misc" defaultValue="true" type="sap.ui.core/boolean" name="showSearchBar">
+            <documentation>Indicates to show a search bar for property names inside a selected entity set.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event allowPreventDefault="false" name="fieldSelectionChanged">
+            <documentation>User selected a different field.</documentation>
+        </event>
+    </events>
+    <aggregations>
+        <aggregation cardinality="0..1" type="sap.ui.core/Control" name="content">
+            <documentation>Content of the control itself</documentation>
+        </aggregation>
+    </aggregations>
+    <methods>
+        <method type="sap.ui.core/object" name="getSelectedField">
+            <documentation>Returns a map with the name of the entity set and the key of the selected field.</documentation>
+        </method>
+    </methods>
+</control>

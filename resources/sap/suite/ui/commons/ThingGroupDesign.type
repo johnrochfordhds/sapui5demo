@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>ThingGroupDesign</name>
+	<author></author>
+	<documentation>Defines the way how UnifiedThingGroup control is rendered.</documentation>
+	<baseType>sap.ui.core/string</baseType>
+	<developmentState state="deprecated" since="1.32">Deprecated. Object page should be used instead.</developmentState>
+	<deprecation since="1.32">Deprecated. Object page should be used instead.</deprecation>
+	<enumeration>
+		<value name="ZeroIndent">
+			<documentation>In this design there is no indentation between header and content of the group.</documentation>
+		</value>
+		<value name="TopIndent">
+			<documentation>In this design there is indentation between header and content of the group.</documentation>
+		</value>
+	</enumeration>
+</simple-type>

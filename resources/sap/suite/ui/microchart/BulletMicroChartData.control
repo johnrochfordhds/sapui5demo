@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>BulletMicroChartData</name>
+    <derived/>
+    <documentation>Contains the thresholds data.</documentation>
+    <baseType>sap.ui.core/Element</baseType>
+    <properties>
+        <property group="Misc" defaultValue="0" type="sap.ui.core/float" name="value">
+            <documentation>The actual value.</documentation>
+        </property>
+        <property group="Misc" defaultValue="Neutral" type="sap.m/ValueColor" name="color">
+            <documentation>The semantic color of the actual value.</documentation>
+        </property>
+    </properties>
+</control>

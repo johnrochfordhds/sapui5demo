@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>RichTextEditor</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>The RichTextEditor-Control is used to enter formatted text.</documentation>
+    <developmentState since="1.6.0" state="disclaimer">The RichTextEditor of SAPUI5 contains a third party component TinyMCE provided by Moxiecode Systems AB. The SAP license agreement covers the development of applications with RichTextEditor of SAPUI5 (as of May 2014).</developmentState>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property group="Data" defaultValue="" type="sap.ui.core/string" name="value">
+            <documentation>An HTML string representing the editor content. Because this is HTML, the value cannot be generically escaped to prevent cross-site scripting, so the application is responsible for doing so.</documentation>
+        </property>
+        <property group="Appearance" defaultValue="Inherit" type="sap.ui.core/TextDirection" name="textDirection">
+            <documentation>The text direction</documentation>
+        </property>
+        <property group="Dimension" type="sap.ui.core/CSSSize" name="width">
+            <documentation>Width of RichTextEditor control in CSS units.</documentation>
+        </property>
+        <property group="Dimension" type="sap.ui.core/CSSSize" name="height">
+            <documentation>Height of RichTextEditor control in CSS units.</documentation>
+        </property>
+        <property group="Misc" defaultValue="TinyMCE" type="sap.ui.core/string" name="editorType">
+            <documentation>The editor implementation to use.
+Valid values are the ones found under sap.ui.richtexteditor.EditorType and any other editor identifier that may be introduced by other groups (hence this is not an enumeration).
+Any attempts to set this property after the first rendering will not have any effect.</documentation>
+        </property>
+        <property group="Misc" defaultValue="js/tiny_mce/tiny_mce_src.js" type="sap.ui.core/string" name="editorLocation">
+            <documentation>Relative or absolute URL where the editor is available. Must be on the same server.
+Any attempts to set this property after the first rendering will not have any effect.</documentation>
+            <deprecation since="1.25.0">The editorLocation is set implicitly when choosing the editorType.</deprecation>
+        </property>
+        <property group="Misc" defaultValue="true" type="sap.ui.core/boolean" name="editable">
+            <documentation>Whether the editor content can be modified by the user. When set to &quot;false&quot; there might not be any editor toolbar.</documentation>
+        </property>
+        <property group="Misc" defaultValue="true" type="sap.ui.core/boolean" name="showGroupFontStyle">
+            <documentation>Whether the toolbar button group containing commands like Bold, Italic, Underline and Strikethrough is available. Changing this after the initial rendering will result in some visible redrawing.</documentation>
+        </property>
+        <property group="Misc" defaultValue="true" type="sap.ui.core/boolean" name="showGroupTextAlign">
+            <documentation>Whether the toolbar button group containing text alignment commands is available. Changing this after the initial rendering will result in some visible redrawing.</documentation>
+        </property>
+        <property group="Misc" defaultValue="true" type="sap.ui.core/boolean" name="showGroupStructure">
+            <documentation>Whether the toolbar button group containing commands like Bullets and Indentation is available. Changing this after the initial rendering will result in some visible redrawing.</documentation>
+        </property>
+        <property group="Misc" defaultValue="false" type="sap.ui.core/boolean" name="showGroupFont">
+            <documentation>Whether the toolbar button group containing commands like Font, Font Size and Colors is available. Changing this after the initial rendering will result in some visible redrawing.</documentation>
+        </property>
+        <property group="Misc" defaultValue="true" type="sap.ui.core/boolean" name="showGroupClipboard">
+            <documentation>Whether the toolbar button group containing commands like Cut, Copy and Paste is available. Changing this after the initial rendering will result in some visible redrawing.</documentation>
+        </property>
+        <property group="Misc" defaultValue="false" type="sap.ui.core/boolean" name="showGroupInsert">
+            <documentation>Whether the toolbar button group containing commands like Insert Image and Insert Smiley is available. Changing this after the initial rendering will result in some visible redrawing.</documentation>
+        </property>
+        <property group="Misc" defaultValue="false" type="sap.ui.core/boolean" name="showGroupLink">
+            <documentation>Whether the toolbar button group containing commands like Create Link and Remove Link is available. Changing this after the initial rendering will result in some visible redrawing.</documentation>
+        </property>
+        <property group="Misc" defaultValue="false" type="sap.ui.core/boolean" name="showGroupUndo">
+            <documentation>Whether the toolbar button group containing commands like Undo and Redo is available. Changing this after the initial rendering will result in some visible redrawing.</documentation>
+        </property>
+        <property group="Appearance" defaultValue="true" type="sap.ui.core/boolean" name="wrapping">
+            <documentation>Whether the text in the editor is wrapped. This does not affect the editor's value, only the representation in the control.</documentation>
+        </property>
+        <property group="Misc" defaultValue="false" type="sap.ui.core/boolean" name="required">
+            <documentation>Whether a value is required.</documentation>
+        </property>
+        <property group="Misc" defaultValue="true" type="sap.ui.core/boolean" name="sanitizeValue">
+            <documentation>Whether to run the HTML sanitizer once the value (HTML markup) is applied or not. To configure allowed URLs please use the whitelist API via jQuery.sap.addUrlWhitelist</documentation>
+        </property>
+        <property group="Behavior" defaultValue="[]" type="sap.ui.core/object[]" name="plugins">
+            <documentation>An array of plugin configuration objects with the obligatory property &quot;name&quot;.
+Each object has to contain a property &quot;name&quot; which then contains the plugin name/ID.</documentation>
+        </property>
+        <property group="Appearance" defaultValue="true" type="sap.ui.core/boolean" name="useLegacyTheme">
+            <documentation>Whether or not to use the legacy theme for the toolbar buttons. If this is set to false, the default theme for the editor will be used (which might change slightly with every update). The legacy theme has the disadvantage that not all functionality has its own icon, so using non default buttons might lead to invisible buttons with the legacy theme - use the default editor theme in this case.</documentation>
+        </property>
+        <property group="Behavior" defaultValue="[]" type="sap.ui.core/object[]" name="buttonGroups">
+            <documentation>An array of button configurations. These configurations contain the names of buttons as array in the property &quot;buttons&quot; and the name of the group in &quot;name&quot;, they can also contain the &quot;row&quot; where the buttons should be placed, a &quot;priority&quot; and whether the buttons are &quot;visible&quot;. See method addButtonGroup() for more details on the structure of the objects in this array.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event allowPreventDefault="false" name="change">
+            <documentation>Event is fired when the text in the field has changed AND the focus leaves the editor or when the Enter key is pressed.</documentation>
+            <parameters>
+                <parameter type="sap.ui.core/string" name="newValue">
+                    <documentation>The new control value.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event allowPreventDefault="false" name="ready">
+            <documentation>Fired when the used editor is loaded and ready (its HTML is also created).</documentation>
+        </event>
+        <event allowPreventDefault="false" name="beforeEditorInit">
+            <documentation>This event is fired right before the TinyMCE instance is created and can be used to change the settings object that will be given to TinyMCE. The parameter &quot;configuration&quot; is the javascript oject that will be given to TinyMCE upon first instantiation. The configuration parameter contains a map that can be changed in the case of TinyMCE.</documentation>
+        </event>
+    </events>
+    <methods>
+        <method type="sap.ui.core/object" name="getNativeApi">
+            <documentation>Returns the current editor's instance.
+CAUTION: using the native editor introduces a dependency to that editor and breaks the wrapping character of the RichTextEditor control, so it should only be done in justified cases.</documentation>
+        </method>
+    </methods>
+</control>

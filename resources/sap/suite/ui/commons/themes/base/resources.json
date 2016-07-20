@@ -1,0 +1,429 @@
+{
+  "_version": "1.1.0",
+  "resources": [
+    {
+      "name": ".theming",
+      "theme": "base"
+    },
+    {
+      "name": "BusinessCard.css",
+      "theme": "base"
+    },
+    {
+      "name": "ChartContainer.css",
+      "theme": "base"
+    },
+    {
+      "name": "ChartContainerContent.css",
+      "theme": "base"
+    },
+    {
+      "name": "ChartTile.css",
+      "theme": "base"
+    },
+    {
+      "name": "DateRangeScroller.css",
+      "theme": "base"
+    },
+    {
+      "name": "DateRangeSlider.css",
+      "theme": "base"
+    },
+    {
+      "name": "DateRangeSliderInternal.css",
+      "theme": "base"
+    },
+    {
+      "name": "FacetOverview.css",
+      "theme": "base"
+    },
+    {
+      "name": "FeedItemHeader.css",
+      "theme": "base"
+    },
+    {
+      "name": "FeedTile.css",
+      "theme": "base"
+    },
+    {
+      "name": "GenericTile2X2.css",
+      "theme": "base"
+    },
+    {
+      "name": "HeaderCell.css",
+      "theme": "base"
+    },
+    {
+      "name": "HeaderContainer.css",
+      "theme": "base"
+    },
+    {
+      "name": "InfoTile.css",
+      "theme": "base"
+    },
+    {
+      "name": "InfoTileSize.css",
+      "theme": "base"
+    },
+    {
+      "name": "KpiTile.css",
+      "theme": "base"
+    },
+    {
+      "name": "LaunchTile.css",
+      "theme": "base"
+    },
+    {
+      "name": "LinkActionSheet.css",
+      "theme": "base"
+    },
+    {
+      "name": "MonitoringContent.css",
+      "theme": "base"
+    },
+    {
+      "name": "MonitoringTile.css",
+      "theme": "base"
+    },
+    {
+      "name": "NoteTaker.css",
+      "theme": "base"
+    },
+    {
+      "name": "NoteTakerCard.css",
+      "theme": "base"
+    },
+    {
+      "name": "NoteTakerFeeder.css",
+      "theme": "base"
+    },
+    {
+      "name": "NumericTile.css",
+      "theme": "base"
+    },
+    {
+      "name": "PictureZoomIn.css",
+      "theme": "base"
+    },
+    {
+      "name": "ProcessFlow.css",
+      "theme": "base"
+    },
+    {
+      "name": "ProcessFlowConnection.css",
+      "theme": "base"
+    },
+    {
+      "name": "ProcessFlowConnectionLabel.css",
+      "theme": "base"
+    },
+    {
+      "name": "ProcessFlowLaneHeader.css",
+      "theme": "base"
+    },
+    {
+      "name": "ProcessFlowNode.css",
+      "theme": "base"
+    },
+    {
+      "name": "SplitButton.css",
+      "theme": "base"
+    },
+    {
+      "name": "TargetFilter.css",
+      "theme": "base"
+    },
+    {
+      "name": "ThingCollection.css",
+      "theme": "base"
+    },
+    {
+      "name": "ThreePanelThingViewer.css",
+      "theme": "base"
+    },
+    {
+      "name": "TileContent2X2.css",
+      "theme": "base"
+    },
+    {
+      "name": "Timeline.css",
+      "theme": "base"
+    },
+    {
+      "name": "TimelineFilterListItem.css",
+      "theme": "base"
+    },
+    {
+      "name": "TimelineItem.css",
+      "theme": "base"
+    },
+    {
+      "name": "UnifiedThingGroup.css",
+      "theme": "base"
+    },
+    {
+      "name": "UnifiedThingInspector.css",
+      "theme": "base"
+    },
+    {
+      "name": "VerticalNavigationBar.css",
+      "theme": "base"
+    },
+    {
+      "name": "ViewRepeater.css",
+      "theme": "base"
+    },
+    {
+      "name": "fonts/PFBusinessSuiteInAppSymbols.eot",
+      "theme": "base"
+    },
+    {
+      "name": "fonts/PFBusinessSuiteInAppSymbols.ttf",
+      "theme": "base"
+    },
+    {
+      "name": "img-RTL/arrow_left.png",
+      "theme": "base"
+    },
+    {
+      "name": "img-RTL/arrow_left_hover.png",
+      "theme": "base"
+    },
+    {
+      "name": "img-RTL/arrow_right.png",
+      "theme": "base"
+    },
+    {
+      "name": "img-RTL/arrow_right_hover.png",
+      "theme": "base"
+    },
+    {
+      "name": "img-RTL/attachment_16.png",
+      "theme": "base"
+    },
+    {
+      "name": "img-RTL/attachment_24.png",
+      "theme": "base"
+    },
+    {
+      "name": "img-RTL/btn_actions_hover.png",
+      "theme": "base"
+    },
+    {
+      "name": "img-RTL/btn_actions_regular.png",
+      "theme": "base"
+    },
+    {
+      "name": "img-RTL/btn_nav_left_a.png",
+      "theme": "base"
+    },
+    {
+      "name": "img-RTL/btn_nav_left_p.png",
+      "theme": "base"
+    },
+    {
+      "name": "img-RTL/btn_nav_right_a.png",
+      "theme": "base"
+    },
+    {
+      "name": "img-RTL/btn_nav_right_p.png",
+      "theme": "base"
+    },
+    {
+      "name": "img-RTL/bubble.png",
+      "theme": "base"
+    },
+    {
+      "name": "img-RTL/bubble_1.png",
+      "theme": "base"
+    },
+    {
+      "name": "img-RTL/decline_16.png",
+      "theme": "base"
+    },
+    {
+      "name": "img-RTL/delete_16.png",
+      "theme": "base"
+    },
+    {
+      "name": "img-RTL/edit_24.png",
+      "theme": "base"
+    },
+    {
+      "name": "img-RTL/edit_grey_24.png",
+      "theme": "base"
+    },
+    {
+      "name": "img-RTL/home_24.png",
+      "theme": "base"
+    },
+    {
+      "name": "img-RTL/img_bg.png",
+      "theme": "base"
+    },
+    {
+      "name": "img-RTL/img_bg_ti.png",
+      "theme": "base"
+    },
+    {
+      "name": "img-RTL/search_24.png",
+      "theme": "base"
+    },
+    {
+      "name": "img-RTL/stripes.png",
+      "theme": "base"
+    },
+    {
+      "name": "img-RTL/tag_24.png",
+      "theme": "base"
+    },
+    {
+      "name": "img-RTL/thumbDown_24.png",
+      "theme": "base"
+    },
+    {
+      "name": "img-RTL/thumbUp_24.png",
+      "theme": "base"
+    },
+    {
+      "name": "img/arrow_left.png",
+      "theme": "base"
+    },
+    {
+      "name": "img/arrow_left_hover.png",
+      "theme": "base"
+    },
+    {
+      "name": "img/arrow_right.png",
+      "theme": "base"
+    },
+    {
+      "name": "img/arrow_right_hover.png",
+      "theme": "base"
+    },
+    {
+      "name": "img/attachment_16.png",
+      "theme": "base"
+    },
+    {
+      "name": "img/attachment_24.png",
+      "theme": "base"
+    },
+    {
+      "name": "img/btn_actions_hover.png",
+      "theme": "base"
+    },
+    {
+      "name": "img/btn_actions_regular.png",
+      "theme": "base"
+    },
+    {
+      "name": "img/btn_nav_left_a.png",
+      "theme": "base"
+    },
+    {
+      "name": "img/btn_nav_left_p.png",
+      "theme": "base"
+    },
+    {
+      "name": "img/btn_nav_right_a.png",
+      "theme": "base"
+    },
+    {
+      "name": "img/btn_nav_right_p.png",
+      "theme": "base"
+    },
+    {
+      "name": "img/bubble.png",
+      "theme": "base"
+    },
+    {
+      "name": "img/bubble_1.png",
+      "theme": "base"
+    },
+    {
+      "name": "img/decline_16.png",
+      "theme": "base"
+    },
+    {
+      "name": "img/delete_16.png",
+      "theme": "base"
+    },
+    {
+      "name": "img/edit_24.png",
+      "theme": "base"
+    },
+    {
+      "name": "img/edit_grey_24.png",
+      "theme": "base"
+    },
+    {
+      "name": "img/home_24.png",
+      "theme": "base"
+    },
+    {
+      "name": "img/img_bg.png",
+      "theme": "base"
+    },
+    {
+      "name": "img/img_bg_ti.png",
+      "theme": "base"
+    },
+    {
+      "name": "img/search_24.png",
+      "theme": "base"
+    },
+    {
+      "name": "img/stripes.png",
+      "theme": "base"
+    },
+    {
+      "name": "img/tag_24.png",
+      "theme": "base"
+    },
+    {
+      "name": "img/thumbDown_24.png",
+      "theme": "base"
+    },
+    {
+      "name": "img/thumbUp_24.png",
+      "theme": "base"
+    },
+    {
+      "name": "library-RTL-dbg.css",
+      "isDebug": true,
+      "theme": "base"
+    },
+    {
+      "name": "library-RTL.css",
+      "theme": "base"
+    },
+    {
+      "name": "library-dbg.css",
+      "isDebug": true,
+      "theme": "base"
+    },
+    {
+      "name": "library-parameters.json",
+      "theme": "base"
+    },
+    {
+      "name": "library.css",
+      "theme": "base"
+    },
+    {
+      "name": "library.less",
+      "designtime": true,
+      "theme": "base"
+    },
+    {
+      "name": "library.source.less",
+      "designtime": true,
+      "theme": "base"
+    },
+    {
+      "name": "shared.css",
+      "theme": "base"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>BulletChart</name>
+	<developmentState state="deprecated" since="1.34">Deprecated. sap.suite.ui.microchart.BulletMicroChart should be used.</developmentState>
+	<deprecation since="1.34">Deprecated. sap.suite.ui.microchart.BulletMicroChart should be used.</deprecation>
+	<documentation>Chart that displays an actual value as a horizontal bar in semantic color on the top of the background bar, the numeric value, the scaling factor, along with the thresholds, and a target value as vertical bars.</documentation>
+	<baseType>sap.ui.core/Control</baseType>
+	<properties>
+		<property group="Misc" name="size" type="sap.suite.ui.commons/InfoTileSize" defaultValue="Auto">
+			<documentation>The size of the chart. If not set, the default size is applied based on the size of the device tile.</documentation>
+		</property>
+		<property group="Misc" name="mode" type="sap.suite.ui.commons/BulletChartMode" defaultValue="Actual" since="1.23">
+			<documentation>The mode of displaying the actual value itself or the delta between the actual value and the target value. If not set, the actual value is displayed.</documentation>
+		</property>
+		<property group="Misc" name="scale" type="sap.ui.core/string">
+			<documentation>The scaling suffix that is added to the actual and target values.</documentation>
+		</property>
+		<property group="Misc" name="forecastValue" type="sap.ui.core/float" since="1.21">
+			<documentation>The forecast value that is displayed in Actual  mode only. If set, the forecast value bar appears in the background of the actual value bar.</documentation>
+		</property>
+		<property group="Misc" name="targetValue" type="sap.ui.core/float">
+			<documentation>The target value that is displayed as a black vertical bar.</documentation>
+		</property>
+		<property group="Misc" name="minValue" type="sap.ui.core/float">
+			<documentation>The minimum scale value for the bar chart used for defining a fixed size of the scale in different instances of this control.</documentation>
+		</property>
+		<property group="Misc" name="maxValue" type="sap.ui.core/float">
+			<documentation>The maximum scale value for the bar chart used for defining a fixed size of the scale in different instances of this control.</documentation>
+		</property>
+		<property group="Misc" name="showActualValue" type="sap.ui.core/boolean" defaultValue="true">
+			<documentation>If set to true, shows the numeric actual value. This property works in Actual mode only.</documentation>
+		</property>
+		<property group="Misc" name="showDeltaValue" type="sap.ui.core/boolean" defaultValue="false" since="1.23">
+			<documentation>If set to true, shows the calculated delta value instead of the numeric actual value regardless of the showActualValue setting. This property works in Delta mode only.</documentation>
+		</property>
+		<property group="Misc" name="showTargetValue" type="sap.ui.core/boolean" defaultValue="true">
+			<documentation>If set to true, shows the numeric target value.</documentation>
+		</property>
+		<property group="Misc" name="showValueMarker" type="sap.ui.core/boolean" defaultValue="false" since="1.23">
+			<documentation>If set to true, shows the value marker.</documentation>
+		</property>
+		<property group="Misc" name="actualValueLabel" type="sap.ui.core/string">
+			<documentation>If set, displays a specified label instead of the numeric actual value.</documentation>
+		</property>
+		<property group="Misc" name="deltaValueLabel" type="sap.ui.core/string" since="1.23">
+			<documentation>If set, displays a specified label instead of the calculated numeric delta value.</documentation>
+		</property>
+		<property group="Misc" name="targetValueLabel" type="sap.ui.core/string">
+			<documentation>If set, displays a specified label instead of the numeric target value.</documentation>
+		</property>
+		<property group="Misc" name="width" type="sap.ui.core/string"  since="1.22">
+			<documentation>The width of the chart. If it is not set, the size of the control is defined by the size property.</documentation>
+		</property>
+		<property group="Misc" name="scaleColor" type="sap.suite.ui.commons/CommonBackground" defaultValue="MediumLight" since="1.23">
+			<documentation>The background color of the scale.</documentation>
+		</property>
+	</properties>
+	<events>
+		<event name="press">
+			<documentation>The event is fired when the user chooses the bullet chart.</documentation>
+		</event>
+	</events>
+	<aggregations>
+		<aggregation cardinality="0..1" name="actual" type="BulletChartData">
+			<documentation>The bullet chart actual data.</documentation>
+		</aggregation>
+		<aggregation cardinality="0..n" name="thresholds" type="BulletChartData">
+			<documentation>The bullet chart thresholds data.</documentation>
+		</aggregation>
+	</aggregations>
+</control>

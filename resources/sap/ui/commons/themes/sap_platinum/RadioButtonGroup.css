@@ -1,0 +1,10 @@
+
+/* ======================================================= */
+/* CSS for control sap.ui.commons/RadioButtonGroup.control */
+/* SAP-Platinum theme                                      */
+/* ======================================================= */
+
+.sapUiRbG > .sapUiRb,
+.sapUiRbGCol > .sapUiRb{
+	line-height: 19px;
+}

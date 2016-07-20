@@ -1,0 +1,378 @@
+/*!
+ * SAP UI development toolkit for HTML5 (SAPUI5)
+
+		(c) Copyright 2009-2015 SAP SE. All rights reserved
+	
+ */
+/*!
+ * ${copyright}
+ */
+/* =========================== */
+/* Global CSS for 'base' theme */
+/* =========================== */
+/* =========================== */
+/* Semantic Theming Mapping    */
+/* =========================== */
+/* ---------------------------------------------------------------------------------------- */
+/* TMP during LESS convertion ---- to be deleted */
+/* may be required by SubstitutionRulesManager.css in inbox lib */
+/* ---------------------------------------------------------------------------------------- */
+/**
+  * This parameter is used in the Shell control to calculate the size when it grows.
+  * !!! ONLY PX-VALUES ARE ALLOWED HERE.
+  */
+/**
+  * This parameter is used in the Shell control to calculate the size of the margin when showing
+  * an overflow button in the right pane. As of 1.18.0 this value contains the _maximum_ height
+  * of the overflow button, if the text inside the button is smaller, the button shrinks with it.
+  * !!! ONLY PX-VALUES ARE ALLOWED HERE.
+  */
+/* Approved by UX to use a hard coded color value for this */
+/* NotificationBar */
+/* The maximized height will be calculated corresponding to the window's height.*/
+/* ToolPopup */
+/* Telling the ToolPopup if it's inverted per default */
+/* transparent; */
+/* Default margins classes to be used by the application for all controls */
+/*make tiny margin themable*/
+/*make small margin themable*/
+/*make medium margin themable*/
+/*make large margin themable*/
+/*
+ * This is a mixin for creating the predefined container content padding
+ * classes:
+ * sapUiNoContainerContentPadding
+ * sapUiContainerContentPadding
+ * sapUiResponsiveContainerContentPadding
+ * These classes can be set on many UI5 containers and will
+ * add padding inside the container's content padding based
+ * on the selectors that are arguments for this mixin.
+ *
+ * Arguments to this function-like mixin are the rootClass selector and
+ * the content selector where the padding should be applied.
+ */
+/*
+  * the sapLess-parser has problems with an escaped string as default value for the parameterized mixin
+  * therefore we need to temporarily use a parameter assigning the default value
+  */
+/*!
+ * ${copyright}
+ */
+/*** CSS - 'default' theme ***/
+.sapUiTableCol {
+  display: flex;
+  align-items: center;
+}
+.sapGanttTimeHeaderSvgText0 {
+  font-size: 10px;
+  fill: #999999;
+}
+.sapGanttTimeHeaderSvgText1 {
+  font-size: 10px;
+  fill: #000000;
+}
+html[data-sap-ui-browser^="ie"][dir=rtl] .sapGanttTimeHeaderSvgText1 {
+  text-anchor: end;
+}
+.sapGanttChart {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.sapGanttTimeHeaderSvgPath {
+  stroke: #000000;
+  stroke-width: 1px;
+  stroke-dasharray: none;
+}
+.sapGanttShapeSvgText {
+  fill: #000000;
+}
+.sapGanttChartHeader {
+  min-height: 83px;
+  height: 83px;
+  width: 100%;
+  background-color: #f7f7f7;
+  overflow: hidden;
+  /*border-bottom: 1px solid @sapGanttHeaderBorderColor;*/
+}
+.sapGanttChartSvgCtn {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+}
+.sapGanttChartTT {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.sapGanttChartSPMSvgCtn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+}
+.sapGanttExpandChartCloseButton {
+  cursor: pointer;
+  pointer-events: auto;
+  stroke: black;
+  stroke-width: 0.5;
+  fill: white;
+}
+.sapGanttExpandChartBG {
+  pointer-events: auto;
+  fill: #000000;
+  opacity: 1;
+}
+.sapGanttExpandChartContent text {
+  fill: #ffffff;
+}
+.sapGanttSPMaskSvg {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.sapGanttChartLayoutBG {
+  background-color: #000000;
+}
+.sapUiSettingBox {
+  padding-right: 10px;
+}
+.sapUiSettingBoxItem {
+  max-width: 100%;
+}
+.sap-desktop .sapGanttViewSplitterH > div[role=separator],
+.sap-tablet .sapGanttViewSplitterH > div[role=separator],
+.sap-phone .sapGanttViewSplitterH > div[role=separator] {
+  width: 2px !important;
+  border-right: solid 1px #cccccc;
+  background-color: #000000;
+}
+.sap-desktop .sapGanttViewSplitterH > div[role=separator] span,
+.sap-tablet .sapGanttViewSplitterH > div[role=separator] span,
+.sap-phone .sapGanttViewSplitterH > div[role=separator] span {
+  visibility: hidden;
+}
+.sapGanttInvisiblePaintServer {
+  float: left;
+  height: 0;
+  width: 0;
+}
+.sapGanttViewContainer {
+  clear: left;
+  float: left;
+}
+.sapGanttCursorLineHeader {
+  width: 64px;
+  height: 30px;
+  fill: #000000;
+  font-size: 10px;
+  stroke: #1da9c1;
+  stroke-width: 1;
+  pointer-events: none;
+}
+text.sapGanttCursorLineLabel {
+  fill: #1da9c1;
+  font-size: 10px;
+  text-anchor: middle;
+  alignment-baseline: baseline;
+  dominant-baseline: central;
+}
+.sapGanttCursorLineBody {
+  shape-rendering: crispEdges;
+  stroke: #1da9c1;
+  stroke-width: 1;
+  stroke-dasharray: none;
+  pointer-events: none;
+}
+.sapGanttChartVerticalLine {
+  stroke: #dddddd;
+  stroke-width: 1;
+  stroke-dasharray: none;
+}
+.sapGanttNowLine {
+  stroke: #03b803;
+  stroke-width: 1;
+  shape-rendering: crispEdges;
+}
+.sapGanttNowLineHeaderSvgPath {
+  stroke: #03b803;
+  stroke-width: 1;
+  shape-rendering: crispEdges;
+  fill: #03b803;
+}
+.sapGanttNowLineBodySvgLine {
+  stroke: #03b803;
+  stroke-width: 1;
+  shape-rendering: crispEdges;
+  stroke-dasharray: 10, 5;
+}
+.sapGanttChartColumnHeight .sapUiTableColHdrCnt > .sapUiTableColHdrScr {
+  height: 102px;
+}
+.sapGanttSkipToolbar {
+  height: 0;
+}
+.sapGanttToolbar .sapMSlider {
+  width: 200px !important;
+}
+.sapGanttDraggingCursor {
+  cursor: move;
+}
+/* ------------------------------------------------ */
+/* Cozy size                                     */
+/* ------------------------------------------------ */
+.sapUiSizeCozy .sapGanttChartHeader {
+  min-height: 104px;
+  height: 104px;
+}
+/* ------------------------------------------------ */
+/* Compact size                                     */
+/* ------------------------------------------------ */
+html[data-sap-ui-browser^="ff"] .sapUiSizeCompact .sapGanttChartHeader {
+  min-height: 74px;
+}
+.sapUiSizeCompact .sapGanttChartHeader {
+  height: 72px;
+  min-height: 72px;
+}
+.sapUiSizeCompact .sapGanttChartSvgCtn {
+  top: 0;
+}
+.sapUiSizeCompact .sapGanttCursorLineHeader {
+  width: 64px;
+  height: 25px;
+}
+.sapUiSizeCompact text.sapGanttCursorLineLabel {
+  font-size: 10px;
+}
+.sapUiSizeCompact .sapGanttChartColumnHeight .sapUiTableColHdrCnt > .sapUiTableColHdrScr {
+  height: 70px;
+}
+.sapGanttTrNoBorder > td {
+  border-bottom: 1px solid transparent !important;
+}
+.sapGanttTHeaderNoBorder {
+  border-bottom: 1px solid transparent !important;
+}
+.sapGanttChartContainer .sapUiLocalBusyIndicator,
+.sapGanttChartWithTable .sapUiLocalBusyIndicator,
+.sapGanttChart .sapUiLocalBusyIndicator {
+  z-index: 999;
+}
+.sapGanttLLItem {
+  width: 100%;
+  position: relative;
+}
+.sapGanttLLItemSvg {
+  position: absolute;
+  left: 0;
+  height: 100%;
+}
+.sapGanttLLItemTxt {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-left: 5px;
+  vertical-align: middle;
+}
+/* Global CSS for 'sap_hcb' theme */
+/* Background Colors */
+/* Foreground Colors */
+/* Semantic Colors */
+/* Shadow Color */
+/* StandardListItem */
+/* ==================================== */
+/* Font styling                         */
+/* ==================================== */
+/* ==================================== */
+/* Chart Colors                         */
+/* ==================================== */
+/* Semantic Chart Colors */
+/* Note Explicit UX decision not to derive from @sapUiCritical, ... */
+/* Accent Chart Colors */
+/* Sequential Chart Colors */
+/* Derived Chart Colors */
+/* Shell */
+/* NotificationBar */
+/* ToolPopup */
+/* RatingIndicator */
+/* DateTimeInput Custom Picker JavaScript	  */
+/* mixed, scroller, clickpick */
+/* mixed, scroller, clickpick */
+/* modal, bubble, bottom, top */
+/* modal, bubble, bottom, top */
+/* Toolbar Separator */
+/* ------------------------------------------------------------------- */
+/* Generic Mapping: not for usage in standard control development !!!! */
+/* ------------------------------------------------------------------- */
+/* Semantic Text Colors */
+/* Semantic Element Colors */
+/* Semantic Backgrounds */
+/* Background Brand */
+/* Text Colors */
+/* Border Colors */
+/* @sapUiLightBorder: @sapHCStandardFG; */
+/* @sapUiExtraLightBorder: @sapHCStandardFG; */
+/* Accent */
+/* Backgrounds Header/Footer */
+/* Background */
+/* SAP.ME */
+/* OverlapCalendar Event Type */
+/* Calendar Legend */
+/*!
+ * ${copyright}
+ */
+.sapGanttChartHeader {
+  background-color: #000000;
+}
+.sapGanttTimeHeaderSvgText0 {
+  fill: #ffffff;
+}
+.sapGanttTimeHeaderSvgText1 {
+  fill: #ffffff;
+  font-size: small;
+}
+.sapGanttTimeHeaderSvgPath {
+  stroke: #ffffff;
+}
+.sapGanttCursorLineHeader {
+  stroke: #ffffff;
+  fill: #7a5100;
+  stroke-width: 2px;
+}
+text.sapGanttCursorLineLabel {
+  fill: #ffffff;
+}
+.sapGanttCursorLineBody {
+  stroke: #ffffff;
+}
+.sapGanttChartVerticalLine {
+  stroke: #ffffff;
+}
+.sapGanttExpandChartBG {
+  fill: #000000;
+}
+.sapGanttExpandChartContent text {
+  fill: #ffffff;
+}
+.sapGanttChartWithTable {
+  border: 1px solid white;
+  box-sizing: border-box;
+}
+/* ------------------------------------------------ */
+/* Compact size                                     */
+/* ------------------------------------------------ */
+.sapUiSizeCompact text.sapGanttCursorLineLabel {
+  font-size: small;
+}

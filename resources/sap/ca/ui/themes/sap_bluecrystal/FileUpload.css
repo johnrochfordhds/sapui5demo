@@ -1,0 +1,37 @@
+/* ============================================= */
+/* CSS for control sap.ca.ui/FileUpload.control */
+/* ============================================= */
+
+
+
+.sapCaUiFU .sapMLIBSelectD:hover {
+    background-color: @sapUiBtnBGTransparentHover;
+}
+
+.sapCaUiFUInnerHL > label {
+    font-size: @sapMFontMediumSize;
+}
+
+
+.sapCaUiFileUploadFileLoadedText {
+    color: @sapLinkColor;
+    font-size: @sapMFontLargeSize;
+}
+
+.sapCaUiFileUploadItemIcon {
+    color: @sapUiElement;
+}
+
+.sapCaUiFileUploadAttachmentLabel {
+    color: @sapUiStandardText;
+    font-size: @sapMFontLargeSize;
+}
+
+/* Compact Mode */
+.sapUiSizeCompact .sapCaUiFileUploadAttachmentLabel {
+    font-size: @sapMFontMediumSize;
+}
+
+.sapUiSizeCompact .sapCaUiFileUploadFileLoadedText {
+    font-size: @sapMFontMediumSize;
+}

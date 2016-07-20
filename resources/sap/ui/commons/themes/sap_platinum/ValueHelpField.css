@@ -1,0 +1,38 @@
+/* ===================================================== */
+/* CSS for control sap.ui.commons/ValueHelpField.control */
+/* ===================================================== */
+
+/* SAP Platinum */
+
+@sapUiValueHelpIconRegularUrl: ~"/img/valuehelpfield/ico12_f4.gif";
+@sapUiValueHelpIconHoverUrl: ~"/img/valuehelpfield/ico12_f4.gif";
+@sapUiValueHelpIconDsblUrl: ~"/img/valuehelpfield/ico12_f4_dsbl.gif";
+
+/* textField icon */
+.sapUiTfCombo > img.sapUiTfValueHelpIcon {
+	height: 12px;
+	padding: 3px;
+	width: 12px;
+}
+
+.sapUiTfCombo > span.sapUiTfValueHelpIcon {
+	height: 14px;
+	width: 14px;
+	padding: 2px;
+	font-size: 14px;
+	color: @sapUiBaseText;
+}
+
+/* textField icon */
+.sapUiTfCombo > .sapUiTfValueHelpRegularIcon:hover,
+.sapUiTfCombo > span.sapUiTfValueHelpIcon:hover {
+	border-left: 1px solid #B0D5E7;
+	background-image: -moz-linear-gradient(top, #FDFEFE, #C2DDEF);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#FDFEFE), to(#C2DDEF));
+}
+
+.sapUiTfCombo.sapUiTfDsbl > span.sapUiTfValueHelpIcon:hover,
+.sapUiTfCombo.sapUiTfRo > span.sapUiTfValueHelpIcon:hover {
+	background-image: none;
+	border-left: none;
+}

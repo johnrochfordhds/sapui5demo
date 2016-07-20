@@ -1,0 +1,17 @@
+.sapUiVerticalSplitterBar{
+	background-image: url(img/splitter/splitter_vert_grip.gif);
+	background-color: #dbe5ec;
+}
+
+.sapUiHorizontalSplitterBar{
+	background-image: url(img/splitter/splitter_horiz_grip.gif);	
+	background-color: #dbe5ec;
+}
+
+.sapUiVerticalSplitterBar:hover{
+	background-color: #c9dae5;
+}
+
+.sapUiHorizontalSplitterBar:hover{
+	background-color: #c9dae5;
+}

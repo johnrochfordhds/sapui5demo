@@ -1,0 +1,29 @@
+
+/* ============================================= */
+/* CSS for control sap.ca.ui/PictureItem.control */
+/* ============================================= */
+
+.sapCaUiPictureItem {
+    display: inline-block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    overflow: hidden;
+}
+
+.sapCaUiPictureItemAlignLeft {
+    margin-left: 0;
+    margin-right: 1em;
+}
+
+.sapCaUiPictureItemAlignRight {
+    margin-left: 1em;
+    margin-right: 0;
+}
+
+.sapCaUiPictureItemImage {
+    display: block;
+}
+
+.sapCaUiPictureItemNoPress .sapMPointer {
+    cursor: default;
+}

@@ -1,0 +1,165 @@
+.sapMeOverlapCalendar {
+	background : @sapUiLightestBG;
+}
+
+.sapMeOverlapCalendarCalendar > .sapMeCalendar > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarWeekendDay.sapMeCalendarDayNotInCurrentMonth,
+.sapMeOverlapCalendarCalendar > .sapMeCalendar > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay  {
+	background: @sapUiExtraLightBG;
+	color : @sapUiLightText;
+}
+/* Overlap Calendar Grid */
+.sapMeOverlapCalendarGrid{
+	border-bottom-color: @sapUiExtraLightBorder;
+}
+
+.sapMeOverlapCalendarOverlapIndicator{
+	border-top-color: @sapUiExtraLightBorder;
+	border-bottom-color: @sapUiExtraLightBorder;
+}
+
+
+.sapMeOverlapCalendarDay{
+	border-bottom-color: @sapUiLightestBorder;
+	border-left-color: @sapUiLightestBorder;
+	background: @sapUiExtraLightBG;
+}
+.sapMeOverlapCalendarHalfDay {
+    border-bottom-color: @sapUiLightestBorder;
+    border-left-color: @sapUiLightestBorder;
+}
+
+.sapMeOverlapCalendarTypeHalfDayEnd {
+    z-index: 2;
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(53%, rgba(255, 255, 255, 0)), color-stop(50%, @sapUiExtraLightBG));
+    background: -webkit-linear-gradient(top left, rgba(255, 255, 255, 0) 53%, @sapUiExtraLightBG 50%);
+    background: -moz-linear-gradient(top left, rgba(255, 255, 255, 0) 53%, @sapUiExtraLightBG 50%);
+    background: -o-linear-gradient(top left, rgba(255, 255, 255, 0) 53%, @sapUiExtraLightBG 50%);
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0) 53%, @sapUiExtraLightBG 50%);
+}
+
+.sapMeOverlapCalendarType00 {
+	background-color : @sapMeOverlapCalendarType00;
+	z-index: -2;
+}
+
+.sapMeOverlapCalendarType00HalfDayStart {
+    z-index: 2;
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, @sapMeOverlapCalendarType00), color-stop(50%, rgba(255, 255, 255, 0)));
+    background: -webkit-linear-gradient(top left, @sapMeOverlapCalendarType00 50%, rgba(255, 255, 255, 0) 50%);
+    background: -moz-linear-gradient(top left, @sapMeOverlapCalendarType00 50%, rgba(255, 255, 255, 0) 50%);
+    background: -o-linear-gradient(top left, @sapMeOverlapCalendarType00 50%, rgba(255, 255, 255, 0) 50%);
+    background: linear-gradient(to bottom right, @sapMeOverlapCalendarType00 50%, rgba(255, 255, 255, 0) 50%);
+}
+
+.sapMeOverlapCalendarType00HalfDayEnd {
+    z-index: 2;
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(53%, rgba(255, 255, 255, 0)), color-stop(50%, @sapMeOverlapCalendarType00));
+    background: -webkit-linear-gradient(top left, rgba(255, 255, 255, 0) 53%, @sapMeOverlapCalendarType00 50%);
+    background: -moz-linear-gradient(top left, rgba(255, 255, 255, 0) 53%, @sapMeOverlapCalendarType00 50%);
+    background: -o-linear-gradient(top left, rgba(255, 255, 255, 0) 53%, @sapMeOverlapCalendarType00 50%);
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0) 53%, @sapMeOverlapCalendarType00 50%);
+}
+
+.sapMeOverlapCalendarType01 {
+	background-color : @sapMeOverlapCalendarType01;
+}
+
+.sapMeOverlapCalendarType01HalfDayStart {
+    z-index: 2;
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, @sapMeOverlapCalendarType01), color-stop(50%, rgba(255, 255, 255, 0)));
+    background: -webkit-linear-gradient(top left, @sapMeOverlapCalendarType01 50%, rgba(255, 255, 255, 0) 50%);
+    background: -moz-linear-gradient(top left, @sapMeOverlapCalendarType01 50%, rgba(255, 255, 255, 0) 50%);
+    background: -o-linear-gradient(top left, @sapMeOverlapCalendarType01 50%, rgba(255, 255, 255, 0) 50%);
+    background: linear-gradient(to bottom right, @sapMeOverlapCalendarType01 50%, rgba(255, 255, 255, 0) 50%);
+}
+
+.sapMeOverlapCalendarType01HalfDayEnd {
+    z-index: 2;
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(53%, rgba(255, 255, 255, 0)), color-stop(50%, @sapMeOverlapCalendarType01));
+    background: -webkit-linear-gradient(top left, rgba(255, 255, 255, 0) 53%, @sapMeOverlapCalendarType01 50%);
+    background: -moz-linear-gradient(top left, rgba(255, 255, 255, 0) 53%, @sapMeOverlapCalendarType01 50%);
+    background: -o-linear-gradient(top left, rgba(255, 255, 255, 0) 53%, @sapMeOverlapCalendarType01 50%);
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0) 53%, @sapMeOverlapCalendarType01 50%);
+}
+
+.sapMeOverlapCalendarType04 {
+	background-color : @sapMeOverlapCalendarType04;
+	background-image : url(img/bg_white_transparent.png);
+}
+
+.sapMeOverlapCalendarType04HalfDayStart {
+    z-index: 1;
+    background-image: url(img/bg_white_transparent.png);
+    background: url(img/bg_white_transparent.png), -webkit-gradient(linear, left top, right bottom, color-stop(50%, @sapMeOverlapCalendarType04), color-stop(50%, rgba(255, 255, 255, 0)));
+    background: url(img/bg_white_transparent.png), -webkit-linear-gradient(top left, @sapMeOverlapCalendarType04 50%, rgba(255, 255, 255, 0) 50%);
+    background: url(img/bg_white_transparent.png), -moz-linear-gradient(top left, @sapMeOverlapCalendarType04 50%, rgba(255, 255, 255, 0) 50%);
+    background: url(img/bg_white_transparent.png), -o-linear-gradient(top left, @sapMeOverlapCalendarType04 50%, rgba(255, 255, 255, 0) 50%);
+    background: url(img/bg_white_transparent.png), linear-gradient(to bottom right, @sapMeOverlapCalendarType04 50%, rgba(255, 255, 255, 0) 50%);
+}
+
+.sapMeOverlapCalendarType04HalfDayEnd {
+    z-index: 1;
+    background-image: url(img/bg_white_transparent.png);
+    background: url(img/bg_white_transparent.png), -webkit-gradient(linear, left top, right bottom, color-stop(53%, rgba(255, 255, 255, 0)), color-stop(50%, @sapMeOverlapCalendarType04));
+    background: url(img/bg_white_transparent.png), -webkit-linear-gradient(top left, rgba(255, 255, 255, 0) 53%, @sapMeOverlapCalendarType04 50%);
+    background: url(img/bg_white_transparent.png), -moz-linear-gradient(top left, rgba(255, 255, 255, 0) 53%, @sapMeOverlapCalendarType04 50%);
+    background: url(img/bg_white_transparent.png), -o-linear-gradient(top left, rgba(255, 255, 255, 0) 53%, @sapMeOverlapCalendarType04 50%);
+    background: url(img/bg_white_transparent.png), linear-gradient(to bottom right, rgba(255, 255, 255, 0) 53%, @sapMeOverlapCalendarType04 50%);
+}
+
+
+.sapMeOverlapCalendarType06 {
+	background-color : @sapMeOverlapCalendarType06;
+	z-index: -1;
+}
+
+.sapMeOverlapCalendarType06HalfDayStart {
+    z-index: 2;
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, @sapMeOverlapCalendarType06), color-stop(50%, rgba(255, 255, 255, 0)));
+    background: -webkit-linear-gradient(top left, @sapMeOverlapCalendarType06 50%, rgba(255, 255, 255, 0) 50%);
+    background: -moz-linear-gradient(top left, @sapMeOverlapCalendarType06 50%, rgba(255, 255, 255, 0) 50%);
+    background: -o-linear-gradient(top left, @sapMeOverlapCalendarType06 50%, rgba(255, 255, 255, 0) 50%);
+    background: linear-gradient(to bottom right, @sapMeOverlapCalendarType06 50%, rgba(255, 255, 255, 0) 50%);
+}
+
+.sapMeOverlapCalendarType06HalfDayEnd {
+    z-index: 2;
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(53%, rgba(255, 255, 255, 0)), color-stop(50%, @sapMeOverlapCalendarType06));
+    background: -webkit-linear-gradient(top left, rgba(255, 255, 255, 0) 53%, @sapMeOverlapCalendarType06 50%);
+    background: -moz-linear-gradient(top left, rgba(255, 255, 255, 0) 53%, @sapMeOverlapCalendarType06 50%);
+    background: -o-linear-gradient(top left, rgba(255, 255, 255, 0) 53%, @sapMeOverlapCalendarType06 50%);
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0) 53%, @sapMeOverlapCalendarType06 50%);
+}
+
+.sapMeOverlapCalendarType07 {
+	background-color : @sapMeOverlapCalendarType07;
+	background-image : url(img/bg_white_transparent.png);
+}
+
+.sapMeOverlapCalendarType07HalfDayStart {
+    z-index: 1;
+    background-image: url(img/bg_white_transparent.png);
+    background: url(img/bg_white_transparent.png), -webkit-gradient(linear, left top, right bottom, color-stop(50%, @sapMeOverlapCalendarType07), color-stop(50%, rgba(255, 255, 255, 0)));
+    background: url(img/bg_white_transparent.png), -webkit-linear-gradient(top left, @sapMeOverlapCalendarType07 50%, rgba(255, 255, 255, 0) 50%);
+    background: url(img/bg_white_transparent.png), -moz-linear-gradient(top left, @sapMeOverlapCalendarType07 50%, rgba(255, 255, 255, 0) 50%);
+    background: url(img/bg_white_transparent.png), -o-linear-gradient(top left, @sapMeOverlapCalendarType07 50%, rgba(255, 255, 255, 0) 50%);
+    background: url(img/bg_white_transparent.png), linear-gradient(to bottom right, @sapMeOverlapCalendarType07 50%, rgba(255, 255, 255, 0) 50%);
+}
+
+.sapMeOverlapCalendarType07HalfDayEnd {
+    z-index: 1;
+    background-image: url(img/bg_white_transparent.png);
+    background: url(img/bg_white_transparent.png), -webkit-gradient(linear, left top, right bottom, color-stop(53%, rgba(255, 255, 255, 0)), color-stop(50%, @sapMeOverlapCalendarType07));
+    background: url(img/bg_white_transparent.png), -webkit-linear-gradient(top left, rgba(255, 255, 255, 0) 53%, @sapMeOverlapCalendarType07 50%);
+    background: url(img/bg_white_transparent.png), -moz-linear-gradient(top left, rgba(255, 255, 255, 0) 53%, @sapMeOverlapCalendarType07 50%);
+    background: url(img/bg_white_transparent.png), -o-linear-gradient(top left, rgba(255, 255, 255, 0) 53%, @sapMeOverlapCalendarType07 50%);
+    background: url(img/bg_white_transparent.png), linear-gradient(to bottom right, rgba(255, 255, 255, 0) 53%, @sapMeOverlapCalendarType07 50%);
+}
+
+.sapMeOverlapCalendarNameLbl{
+	color : @sapUiStandardText;
+}
+
+.sapMeOverlapCalendarTypeLbl {
+    color: @sapUiDarkText;
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+  <name>ProcessFlowConnectionType</name>
+  <author></author>
+  <documentation>Describes the type of a connection.</documentation>
+  <baseType>sap.ui.core/string</baseType>
+  <enumeration>
+    <value name="Planned">
+      <documentation>Planned connection.</documentation>
+    </value>
+    <value name="Normal">
+      <documentation>Normal connection.</documentation>
+    </value>
+  </enumeration>
+</simple-type>

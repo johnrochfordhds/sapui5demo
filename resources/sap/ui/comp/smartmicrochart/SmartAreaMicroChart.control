@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>smartmicrochart/SmartAreaMicroChart</name>
+    <derived/>
+    <documentation>The SmartAreaMicroChart control creates a AreaMicroChart based on OData metadata and the configuration
+       specified. The entitySet attribute must be specified to use the control. This attribute is used to fetch
+       fields from OData metadata, from which Micro Area Chart UI will be generated; it can also be used to fetch
+       the actual chart data.&lt;br&gt;
+       &lt;b&gt;&lt;i&gt;Note:&lt;/i&gt;&lt;/b&gt;&lt;br&gt;
+       Most of the attributes/properties are not dynamic and cannot be changed once the control has been
+       initialised.</documentation>
+    <developmentState since="1.34.0" state="experimental">This is currently under development. The API could be changed at any point in time.</developmentState>
+    <baseType>sap.suite.ui.microchart/AreaMicroChart</baseType>
+    <properties>
+        <property group="Misc" type="sap.ui.core/string" name="entitySet">
+            <documentation>The entity set name from which to fetch data and generate the columns. Note that this is not a dynamic UI5
+property</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="smartFilterId">
+            <documentation>ID of the corresponding SmartFilter control; When specified, the SmartAreaMicroChart searches for the
+SmartFilter (also in the closest parent View) and attaches to the relevant events of the SmartFilter; to
+fetch data, show overlay etc.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="ignoredFields">
+            <documentation>CSV of fields that must be ignored in the OData metadata by the SmartAreaMicroChart control.&lt;br&gt;
+&lt;i&gt;Note:&lt;/i&gt;&lt;br&gt;
+No validation is done. Please ensure that you do not add spaces or special characters.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="ignoreFromPersonalisation">
+            <documentation>CSV of fields that is not shown in the personalization dialog.&lt;br&gt;
+&lt;i&gt;Note:&lt;/i&gt;&lt;br&gt;
+No validation is done. Please ensure that you do not add spaces or special characters.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="chartType">
+            <documentation>Specifies the type of Chart to be created in the SmartAreaMicroChart control.</documentation>
+        </property>
+        <property group="Misc" defaultValue="true" type="sap.ui.core/boolean" name="useVariantManagement">
+            <documentation>The useVariantManagement attribute can be set to true or false depending on whether you want to use variants.
+As a prerequisite you need to specify the persistencyKey property.</documentation>
+        </property>
+        <property group="Misc" defaultValue="true" type="sap.ui.core/boolean" name="useChartPersonalisation">
+            <documentation>The useChartPersonalisation attribute can be set to true or false depending on whether you want to define
+personalized chart settings. If you want to persist the chart personalization, you need to specify the
+persistencyKey property.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="persistencyKey">
+            <documentation>Key used to access personalization data.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="currentVariantId">
+            <documentation>Retrieves or sets the current variant.</documentation>
+        </property>
+        <property group="Misc" defaultValue="false" type="sap.ui.core/boolean" name="enableAutoBinding">
+            <documentation>When set to true, this enables automatic binding of the chart using the chartBindingPath (if it exists) or
+entitySet property. This happens just after the &lt;code&gt;initialise&lt;/code&gt; event has been fired.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="chartBindingPath">
+            <documentation>This attribute can be used to specify the path that is used during the binding of the chart. If not
+specified, the entitySet attribute is used instead. (used only if binding is established
+internally/automatically - See enableAutoBinding)</documentation>
+        </property>
+    </properties>
+    <events>
+        <event allowPreventDefault="false" name="initialise">
+            <documentation>Event fired once the control has been initialised.</documentation>
+        </event>
+        <event allowPreventDefault="false" name="beforeRebindChart">
+            <documentation>Event fired just before the binding is being done.</documentation>
+        </event>
+        <event allowPreventDefault="false" name="afterVariantInitialise">
+            <documentation>Event fired after variant management in the SmartAreaMicroChart has been initialised.</documentation>
+        </event>
+        <event allowPreventDefault="false" name="afterVariantSave">
+            <documentation>Event fired after a variant has been saved. This event can be used to retrieve the ID of the saved variant.</documentation>
+        </event>
+        <event allowPreventDefault="false" name="afterVariantApply">
+            <documentation>Event fired after a variant has been applied.</documentation>
+        </event>
+        <event allowPreventDefault="false" name="showOverlay">
+            <documentation>Event fired just before the overlay is being shown.</documentation>
+        </event>
+    </events>
+</control>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ui5/data/DimensionDefinition</name>
+    <derived/>
+    <documentation>Definition of a single dimension in a dataset</documentation>
+    <since>1.7.2</since>
+    <baseType>sap.ui.core/Element</baseType>
+    <properties>
+        <property group="Misc" type="sap.ui.core/int" name="axis">
+            <documentation>Number of axis this dimension belongs to. Currently must be 1 or 2.
+Skip this property when use VizFrame.</documentation>
+        </property>
+        <property group="Data" type="sap.ui.core/any" name="value">
+            <documentation>Value for the dimension. Usually bound to some model field.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="name">
+            <documentation>Name of the dimension as displayed in the chart</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="identity">
+            <documentation>Id of the dimension as displayed in the chart</documentation>
+        </property>
+        <property group="Data" type="sap.ui.core/any" name="displayValue">
+            <documentation>Display value for the dimension. Usually bound to some model field.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="dataType">
+            <documentation>Data type of the dimension as displayed in the chart. Enumeration: string, number, date. Currently only in time series chart, it is required to set data type to 'date' if this column is going to be fed on 'timeAxis'.</documentation>
+        </property>
+    </properties>
+</control>

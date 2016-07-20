@@ -1,0 +1,129 @@
+/* =========================================================== */
+/* CSS for control sap.suite.ui.microchart/AreaMicroChart.control */
+/* =========================================================== */
+.sapSuiteAmc {
+  background-color: transparent;
+  display: inline-block;
+  position: relative;
+  outline: none;
+}
+.sapSuiteAmcSideLabels {
+  position: absolute;
+  width: 23%;
+  top: 0px;
+  bottom: 0px;
+  min-width: 64px;
+  max-width: 80px;
+}
+.sapSuiteAmcSideLabels.Left {
+  left: 0px;
+}
+.sapSuiteAmcSideLabels.Right {
+  right: 0px;
+}
+.sapSuiteAmcCanvas {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+}
+.sapSuiteAmc.topLbls > .sapSuiteAmcSideLabels,
+.sapSuiteAmc.topLbls > .sapSuiteAmcCanvas {
+  top: 1rem;
+}
+.sapSuiteAmc.btmLbls > .sapSuiteAmcSideLabels,
+.sapSuiteAmc.btmLbls > .sapSuiteAmcCanvas {
+  bottom: 1rem;
+}
+.sapSuiteAmcTarget {
+  width: 2px;
+}
+.sapSuiteAmcChart {
+  width: 2px;
+}
+.sapSuiteAmcLine {
+  width: 2px;
+}
+.sapSuiteAmcThreshold {
+  width: 1px;
+}
+.sapSuiteAmcLbl {
+  float: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-height: 1px;
+  width: 0%;
+}
+.sapSuiteAmcLbl.Top {
+  position: absolute;
+  top: 0px;
+}
+.sapSuiteAmcLbl.Btm {
+  position: absolute;
+  bottom: 0px;
+}
+.sapSuiteAmcLbl.Top,
+.sapSuiteAmcLbl.Btm,
+.sapSuiteAmcLbl.Left.L,
+.sapSuiteAmcLbl.Center.C,
+.sapSuiteAmcLbl.Right.R {
+  width: 100%;
+}
+.sapSuiteAmcLbl.Left.LR,
+.sapSuiteAmcLbl.Right.LR {
+  width: 50%;
+}
+.sapSuiteAmcLbl.LCR,
+.sapSuiteAmcLbl.LC,
+.sapSuiteAmcLbl.CR {
+  width: 33.33%;
+}
+.sapSuiteAmcLbl.Left {
+  text-align: left;
+}
+.sapSuiteAmcLbl.Center {
+  text-align: center;
+}
+.sapSuiteAmcLbl.Right {
+  text-align: right;
+}
+.sapSuiteAmcSideLabels > .sapSuiteAmcLbl.Left {
+  padding-right: 8px;
+  text-align: right;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.sapSuiteAmcSideLabels > .sapSuiteAmcLbl.Right {
+  padding-left: 8px;
+  text-align: left;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.sapSuiteAmcLabels {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+}
+.sapSuiteAmcLabels.Top {
+  top: 0px;
+}
+.sapSuiteAmcLabels.Btm {
+  bottom: 0px;
+}
+.sapSuiteAmc:focus:not([tabindex]) {
+  outline: none;
+}
+html[dir=rtl] .sapSuiteAmcLbl.Right {
+  text-align: left;
+}
+html[dir=rtl] .sapSuiteAmcLbl.Left {
+  text-align: right;
+}
+html[dir=rtl] .sapSuiteAmcSideLabels > .sapSuiteAmcLbl.Right {
+  text-align: right;
+}
+html[dir=rtl] .sapSuiteAmcSideLabels > .sapSuiteAmcLbl.Left {
+  text-align: left;
+}

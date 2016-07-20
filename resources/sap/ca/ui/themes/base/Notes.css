@@ -1,0 +1,51 @@
+
+/* ============================================= */
+/* CSS for control sap.ca.ui/Notes.control */
+/* ============================================= */
+
+.sapCaUiNotes{
+    padding: 2rem 1rem 1rem 1rem;
+    background-color: white;
+}
+
+.sapCaUiNotes .sapCaUiNoteInput {
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.sapCaUiNotes .sapMBtn {
+    float:right;
+    margin: 0 1rem 0 1rem;
+}
+
+.sapCaUiNotes .sapMTextArea {
+    overflow: hidden;
+    display: block;
+    margin: 0 0 0 1rem;
+}
+
+.sapCaUiNotes .sapMTextArea {
+    overflow: hidden;
+    display: block;
+    margin: 0 0 0 1rem;
+}
+
+.sapCaUiNotes .sapMTextArea .sapMTextAreaInner {
+/*    overflow: hidden; */
+    width: 100%;
+}
+
+.sap-phone .sapCaUiNotes .sapMBtn {
+    clear: both;
+    float: right;
+    margin: 1rem 1rem 0 0;
+}
+
+.sap-phone .sapCaUiNotes .sapMTextArea {
+    margin: 0 1rem 0 1rem;
+}
+
+.sapUiMedia-Std-Phone .sapCaUiNotes .sapCaUiNoteInput {
+    margin-bottom: 1rem;
+}

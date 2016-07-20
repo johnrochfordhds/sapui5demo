@@ -1,0 +1,19 @@
+/* ================================================ */
+/* CSS for control sap.ui.commons/Accordion.control */
+/* ================================================ */
+
+.sapUiAcd{
+	display: block;
+	position:relative;
+	border: 1px solid #a4a6a7;
+}
+
+.sapUiAcd-section{
+	display: block;
+	position:relative;
+}
+
+.sapUiAcd-panel{
+	display: block; 
+	position:relative;
+}

@@ -1,0 +1,258 @@
+/*
+*BEGIN LESS PARAMETER DEFINITION
+*/
+
+/* Semantic Theming Mapping*/
+
+@sapCaUiChartSemanticColor-Neutral-Dark: darken(@sapUiChartNeutral, 10);
+
+@sapCaUiChartSemanticColor-Neutral: @sapUiChartNeutral;
+
+@sapCaUiChartSemanticColor-Neutral-Light: lighten(@sapUiChartNeutral, 10);
+
+@sapCaUiChartSemanticColor-Good-Dark:  darken(@sapUiChartGood, 10);
+
+@sapCaUiChartSemanticColor-Good: @sapUiChartGood;
+
+@sapCaUiChartSemanticColor-Good-Light: lighten(@sapUiChartGood, 10);
+
+@sapCaUiChartSemanticColor-Critical-Dark: darken(@sapUiChartCritical, 10);
+
+@sapCaUiChartSemanticColor-Critical: @sapUiChartCritical;
+
+@sapCaUiChartSemanticColor-Critical-Light: lighten(@sapUiChartCritical, 10);
+
+@sapCaUiChartSemanticColor-Bad-Dark: darken(@sapUiChartBad, 10);
+
+@sapCaUiChartSemanticColor-Bad: @sapUiChartBad;
+
+@sapCaUiChartSemanticColor-Bad-Light: lighten(@sapUiChartBad, 10);
+
+/*Chart parameters*/
+
+@sapCaUiChartBackgroundColor: lighten(#808080, 100);
+
+@sapCaUiChartAxisStroke: lighten(hsl(hue(#808080), saturation(#808080), lightness(#808080)), 30%);
+
+@sapCaUiChartAxisGridlineColor:lighten(hsl(hue(#808080), saturation(#808080), lightness(#808080)), 30%);
+
+@sapCaUiChartBackgroundStroke: @sapCaUiChartAxisGridlineColor;
+
+@sapCaUiChartFontFamily: @sapUiFontFamily;
+
+@sapCaUiChartFontSize: @sapMFontSmallSize;
+
+@sapCaUiChartAxisFontSize: @sapMFontSmallSize;
+
+@sapCaUiChartFontColor:#000;
+
+@sapCaUiChartFontWeight: normal;
+
+@sapCaUiChartDataLabelShadow: 0px 0px 5px rgba(255,255,255,0.5);
+
+/*Chart ToolBar parameters*/
+
+@sapCaUiChartToolBarBackground: lighten(#ddd, 100);
+
+@sapCaUiChartToolBarFullscreenBackground: @sapUiHeaderBG;
+
+@sapCaUiChartToolBarTitleShadow: #fff;
+
+@sapCaUiChartToolBarTitleFontFamily: @sapUiFontFamily;
+
+@sapCaUiChartToolBarTitleFontSize: @sapMFontLargeSize;
+
+@sapCaUiChartToolBarTitleFontWeight: normal;
+
+@sapCaUiChartToolBarTitleFontColor: lighten(#000, 20%);
+
+@sapCaUiChartToolBarIconColor: #666;
+
+@sapCaUiChartToolBarActiveIconColor: #fff;
+
+@sapCaUiChartToolBarIconSize: 1.375rem;
+
+/*Chart Popover parameters*/
+
+@sapCaUiChartPopoverItemFontFamily: @sapUiFontFamily;
+
+@sapCaUiChartPopoverItemFontSize: @sapMFontMediumSize;
+
+@sapCaUiChartPopoverItemFontColor: #000;
+
+@sapCaUiChartPopoverItemFontWeight: normal;
+
+@sapCaUiChartPopoverGroupFontFamily: @sapUiFontFamily;
+
+@sapCaUiChartPopoverGroupFontSize: @sapMFontMediumSize;
+
+@sapCaUiChartPopoverGroupFontColor: #000;
+
+@sapCaUiChartPopoverGroupFontWeight: bold;
+
+@sapCaUiChartPopoverCloseIconSize:38px;
+
+@sapCaUiChartTitleColor: #000;
+
+@sapCaUiChartTitleFontFamily: @sapCaUiChartFontFamily;
+
+@sapCaUiChartTitleFontSize: 16px;
+
+@sapCaUiChartPopoverCloseIconColor: #666;
+
+@sapCaUiChartPopoverCloseIcon: decline;
+
+/*
+*END LESS PARAMETER DEFINITION
+*/
+
+.sapCaUiChart {
+    position: relative;
+    padding-top: 1rem;
+}
+
+/* Hide the border on select*/
+.sapCaUiChart  .v-datapoint-selected {
+    stroke: @sapUiWhiteBorder;
+    stroke-width: 0.063rem;
+}
+
+
+.sapCaUiChart line.v-categoryaxisline,
+.sapCaUiChart line.v-valueaxisline,
+.sapCaUiChart line.v-fixed-valueaxisline {
+    stroke: @sapCaUiChartAxisStroke;
+    stroke-width: 0.063rem;
+}
+
+.sapCaUiChart .v-categoryaxisline,
+.sapCaUiChart .v-valueaxisline,
+.sapCaUiChart .v-fixed-categoryaxisline,
+.sapCaUiChart .v-fixed-valueaxisline {
+    stroke:@sapCaUiChartAxisStroke;
+    stroke-width: 0.063rem;
+}
+
+.sapCaUiChart path.v-categoryaxisline {
+    stroke: @sapCaUiChartAxisGridlineColor;
+    stroke-width: 0.063rem;
+}
+
+.sapCaUiChart path.v-valueaxisline {
+    stroke: none
+}
+
+.sapCaUiChart .v-hoverline {
+    stroke: @sapUiActive;
+}
+
+.sapCaUiChart .v-gridline {
+    stroke: @sapCaUiChartAxisGridlineColor;
+    stroke-width: 0.063rem;
+}
+
+.sapCaUiChart .v-datalabel {
+    font-family: @sapCaUiChartFontFamily;
+    font-size: @sapCaUiChartFontSize;
+    font-weight: @sapCaUiChartFontWeight;
+    text-shadow: @sapCaUiChartDataLabelShadow;
+    fill:@sapCaUiChartFontColor;
+}
+
+.sapCaUiChart .v-datalabel text:hover,
+.sapCaUiChart .v-datalabel text:focus{
+    cursor: pointer;
+}
+
+.sapCaUiChart .v-lines {
+    stroke-width : 0.125rem;
+}
+
+.sapCaUiChartMarkerSize {
+    font-size: 0.563rem;
+}
+.sapCaUiChart .v-datapoint {
+    stroke-width : 0.063rem;
+    stroke : #FFF;
+    cursor: pointer;
+}
+
+.sapCaUiChart .v-m-main .v-label,
+.sapCaUiChart .v-m-legend .v-label {
+    font-family: @sapCaUiChartFontFamily;
+    font-size: @sapCaUiChartFontSize;
+    font-weight: @sapCaUiChartFontWeight;
+    fill:@sapCaUiChartFontColor;
+}
+
+.sapCaUiChart .v-m-main .v-axis .v-label {
+    font-size: @sapCaUiChartAxisFontSize;
+}
+
+.sapCaUiChart .v-background-border {
+    stroke: @sapCaUiChartBackgroundStroke;
+}
+
+.sapCaUiChart .v-labelarea {
+   cursor: pointer;
+}
+
+.sapCaUiChart .v-backgroundutil .v-background-body {
+    fill: @sapCaUiChartBackgroundColor !important; /* Sorry overriden by CVOM */
+    opacity: 0.8;
+}
+
+.sapCaUiChart  .v-background-body {
+    opacity: 0;
+}
+
+.sapCaUiChart.sapCaUiChartNoHover .v-hovershadow {
+    fill: transparent;
+}
+
+.sapCaUiChart.sapCaUiChartNoHover .v-hovershadow-mousedown {
+    fill: transparent;
+}
+
+/* Bubble Specific */
+.sapCaUiChart .sapBubbleTxtDiv {
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.sapCaUiChart .sapBubbleTxt {
+    cursor:default;
+    text-align:center;
+    overflow:hidden;
+    white-space:nowrap;
+    font-family: @sapCaUiChartFontFamily;
+    font-size: @sapCaUiChartFontSize;
+    color:@sapCaUiChartFontColor;
+    font-weight: @sapCaUiChartFontWeight;
+    text-shadow: @sapCaUiChartDataLabelShadow;
+}
+
+.sapCaUiChart .v-valueLabels{
+    font-family: @sapCaUiChartFontFamily;
+    font-size: @sapCaUiChartFontSize;
+    font-weight: @sapCaUiChartFontWeight;
+    text-shadow: @sapCaUiChartDataLabelShadow;
+    fill:@sapCaUiChartFontColor;
+}
+
+.sapCaUiChartSelectionNoneCursor .v-datapoint,
+.sapCaUiChartSelectionNoneCursor .v-labelarea,
+.sapCaUiChartSelectionNoneCursor .v-datalabel text:hover,
+.sapCaUiChartSelectionNoneCursor .v-datalabel text:focus {
+    cursor: default
+}
+
+.sapCaUiChart .v-m-title .v-title{
+    fill:@sapCaUiChartTitleColor;
+    font-family:@sapCaUiChartTitleFontFamily;
+    font-size:@sapCaUiChartTitleFontSize;
+}
+
+.sapCaUiChartPopOver .sapMBar-CTX .sapMBtnContent>.sapUiIcon {
+    color: @sapCaUiChartPopoverCloseIconColor;
+}

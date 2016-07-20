@@ -1,0 +1,7 @@
+/*!
+ * SAP UI development toolkit for HTML5 (SAPUI5)
+
+		(c) Copyright 2009-2015 SAP SE. All rights reserved
+	
+ */
+sap.ui.define(["sap/ui/core/Control","sap/m/Label"],function(C,L){"use strict";var a=C.extend("sap.gantt.control.Cell",{metadata:{properties:{cellCallback:{type:"object"},columnConfig:{type:"sap.gantt.config.HierarchyColumn"}}}});a.prototype.setColumnConfig=function(c){this.setProperty("columnConfig",c);if(c){var A=c.getAttributes();if(A&&A.length>0){this._oMapAttributes={};A.forEach(function(o){this._oMapAttributes[o.getObjectTypeKey()]=o.getAttribute();}.bind(this));}}return this;};a.prototype.createCellContent=function(c){var o=this.getCellCallback();if(o&&o.createCellContent){return o.createCellContent(c);}return new L();};a.prototype.updateCellContent=function(c,o,A,O,b){var d=this.getCellCallback();if(d&&d.updateCellContent){d.updateCellContent(c,o,A,O,b);}else{c.setText(o.getProperty(A));}};a.prototype._updateTableCell=function(c,o,$,A){if(!o){return;}this._oContext=o;var O=o.getProperty("type");if(this._oMapAttributes){this.updateCellContent(this._oAttributeControl,o,this._oMapAttributes[O],O,this.getColumnConfig());}else{this.updateCellContent(this._oAttributeControl,o,this.getColumnConfig().getAttribute(),O,this.getColumnConfig());}};a.prototype.getContentToRender=function(){if(!this._oAttributeControl){this._oAttributeControl=this.createCellContent(this.getColumnConfig());}return this._oAttributeControl;};return a;},true);

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ColumnMicroChart</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>Compares different values which are represented as vertical bars. This control replaces the deprecated sap.suite.ui.commons.ColumnMicroChart.</documentation>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property group="Misc" defaultValue="Auto" type="sap.m/Size" name="size">
+            <documentation>Updates the size of the chart. If not set then the default size is applied based on the device tile.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/CSSSize" name="width">
+            <documentation>The width of the chart. If it is not set, the width of the control is defined by the size property.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/CSSSize" name="height">
+            <documentation>The height of the chart. If it is not set, the height of the control is defined by the size property.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event allowPreventDefault="false" name="press">
+            <documentation>The event is fired when the user chooses the column chart.</documentation>
+        </event>
+    </events>
+    <aggregations>
+        <aggregation cardinality="0..n" type="sap.suite.ui.microchart/ColumnMicroChartData" name="columns">
+            <documentation>The column chart data.</documentation>
+        </aggregation>
+        <aggregation cardinality="0..1" type="sap.suite.ui.microchart/ColumnMicroChartLabel" name="leftTopLabel">
+            <documentation>The label on the left top corner of the chart.</documentation>
+        </aggregation>
+        <aggregation cardinality="0..1" type="sap.suite.ui.microchart/ColumnMicroChartLabel" name="rightTopLabel">
+            <documentation>The label on the right top corner of the chart.</documentation>
+        </aggregation>
+        <aggregation cardinality="0..1" type="sap.suite.ui.microchart/ColumnMicroChartLabel" name="leftBottomLabel">
+            <documentation>The label on the left bottom corner of the chart.</documentation>
+        </aggregation>
+        <aggregation cardinality="0..1" type="sap.suite.ui.microchart/ColumnMicroChartLabel" name="rightBottomLabel">
+            <documentation>The label on the right bottom corner of the chart.</documentation>
+        </aggregation>
+    </aggregations>
+</control>

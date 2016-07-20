@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>smartform/flexibility/FieldList</name>
+    <derived/>
+    <documentation>Contains list of forms, groups and fields which can could be modified by the SAPUI5 flexibility services</documentation>
+    <baseType>sap.ui.core/Control</baseType>
+    <events>
+        <event allowPreventDefault="false" name="selectionChanged">
+            <documentation>Event is fired when the selected node has changed</documentation>
+        </event>
+        <event allowPreventDefault="false" name="labelChanged">
+            <documentation>Event is fired when the label of the node has changed</documentation>
+        </event>
+        <event allowPreventDefault="false" name="nodeHidden">
+            <documentation>Event is fired when a node was hidden</documentation>
+        </event>
+    </events>
+    <aggregations>
+        <aggregation cardinality="0..n" type="sap.ui.comp/smartform/flexibility/FieldListNode" name="nodes">
+            <documentation>Nodes representing either a Form, a Group or a field</documentation>
+        </aggregation>
+    </aggregations>
+</control>

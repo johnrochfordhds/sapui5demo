@@ -1,0 +1,33 @@
+
+/* ============================================= */
+/* CSS for control sap.ca.ui/OverviewTile.control */
+/* ============================================= */
+
+
+.sapCaUiOverviewTile {
+  border: 0.0625rem solid @sapUiExtraLightBorder;
+  background-color: @sapUiLightestBG;
+}
+.sapCaUiOverviewTile.sapMTileActive {
+  background-color: @sapUiHighlight;
+}
+
+.sapCaUiOverviewTileTitle {
+	font-family: @sapUiFontHeaderFamily;
+    font-size: @sapMFontHeader5Size;
+    font-weight: @sapUiFontHeaderWeight;
+    color: @sapUiHeaderText;
+}
+
+.sapCaUiOverviewTileContact{
+    font-family: @sapUiFontFamily;
+    font-size: @sapMFontMediumSize;
+}
+.sapCaUiOTFormLbl{
+	color: @sapUiLightText;
+}
+
+.sapCaUiOverviewTile:focus {
+    border: 0.0625rem dotted @sapUiFocus;
+    outline: 0;
+}

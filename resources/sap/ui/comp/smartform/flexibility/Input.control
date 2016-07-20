@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>smartform/flexibility/Input</name>
+    <derived/>
+    <documentation>Input field with special focus handling</documentation>
+    <baseType>sap.m/Input</baseType>
+    <events>
+        <event allowPreventDefault="false" name="selectedByKeyboard">
+            <documentation>Fired when the field is readonly, focused and user pressed Space</documentation>
+        </event>
+    </events>
+</control>

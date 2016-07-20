@@ -1,0 +1,70 @@
+/*!
+ * SAP UI development toolkit for HTML5 (SAPUI5)
+
+		(c) Copyright 2009-2015 SAP SE. All rights reserved
+	
+ */
+@sapGanttChartHeaderHeight: 104px;
+@sapGanttChartCompactHeaderHeight: 72px;
+@sapGanttHeaderBorderColor: #FFFFFF;
+
+@sapGanttNowLineStroke: #03B803;
+@sapGanttExpandChartBG: #000000;
+@sapGanttExpandChartText: #FFFFFF;
+
+
+.sapGanttChartHeader {
+	background-color: @sapHCStandardBG;
+}
+.sapGanttTimeHeaderSvgText0 {
+	fill: @sapHCStandardFG;
+}
+
+.sapGanttTimeHeaderSvgText1 {
+	fill: @sapHCStandardFG;
+	font-size: small;
+}
+
+.sapGanttTimeHeaderSvgPath {
+	stroke: @sapHCStandardFG;
+}
+
+.sapGanttCursorLineHeader {
+	stroke: @sapHCStandardFG;
+	fill: @sapHCHighlightBG;
+	stroke-width: 2px;
+}
+
+text.sapGanttCursorLineLabel {
+	fill: @sapHCStandardFG;
+}
+
+.sapGanttCursorLineBody {
+	stroke: @sapHCStandardFG;
+}
+
+.sapGanttChartVerticalLine {
+	stroke: @sapHCStandardFG;
+}
+
+.sapGanttExpandChartBG {
+	fill: @sapGanttExpandChartBG;
+}
+
+.sapGanttExpandChartContent text{
+	fill: @sapGanttExpandChartText;
+}
+
+.sapGanttChartWithTable{
+	border: 1px solid white;
+	box-sizing: border-box;
+}
+
+/* ------------------------------------------------ */
+/* Compact size                                     */
+/* ------------------------------------------------ */
+.sapUiSizeCompact {
+	text.sapGanttCursorLineLabel {
+		font-size: small;
+	}
+}

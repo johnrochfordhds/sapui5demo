@@ -1,0 +1,637 @@
+/* NOTE: This file was generated as an optimized version of "library.source.less" for the Theme Designer. */
+
+/*!
+ * ${copyright}
+ */
+
+@import "../base/library.less";
+@import "../../../../../../../Base/baseLib/sap_bluecrystal/base.less"; /* ORIGINAL IMPORT PATH: "../../../../../../sap/ui/core/themes/sap_bluecrystal/base.less" */
+
+@import "../../../../../../sap/ui/core/themes/sap_bluecrystal/global.less";
+
+/* START "AreaMicroChart.less" */
+.sapSuiteAmcTarget.Good,
+.sapSuiteAmcChart.Good,
+.sapSuiteAmcLine.Good {
+	color: @sapUiChartGood;	
+}
+
+.sapSuiteAmcTarget.Critical,
+.sapSuiteAmcChart.Critical,
+.sapSuiteAmcLine.Critical {
+	color: @sapUiChartCritical;	
+}
+
+.sapSuiteAmcTarget.Error,
+.sapSuiteAmcChart.Error,
+.sapSuiteAmcLine.Error {
+	color: @sapUiChartBad;	
+}
+
+.sapSuiteAmcChart {
+	width: 2px;
+}
+
+.sapSuiteAmcLbl {
+	font-family: @sapUiFontFamily;
+	font-size: @sapMFontMediumSize;
+}
+
+.sapSuiteAmcLbl.Neutral {
+	color: @sapUiLightText;	
+}
+
+.sapSuiteAmcLbl.Good {
+	color: @sapUiPositiveText;	
+}
+
+.sapSuiteAmcLbl.Critical {
+	color: @sapUiCriticalText;	
+}
+
+.sapSuiteAmcLbl.Error {
+	color: @sapUiNegativeText;	
+}
+
+.sapSuiteAmcThreshold {
+	color: @sapUiLightestBG;
+}
+
+.sapSuiteAmcThreshold.Error {
+	background-color: lighten(@sapUiChartBad, 20);
+}
+
+.sapSuiteAmcThreshold.Good {
+	background-color: lighten(@sapUiChartGood, 20);
+}
+
+.sapSuiteAmcThreshold.Critical {
+	background-color: lighten(@sapUiChartCritical, 20);
+}
+
+.sapSuiteAmcTarget {
+	outline-style: dotted;
+	outline-width: 2px;
+	width: 2px;
+}
+
+.sapSuiteAmcTarget.Neutral {
+	color: @sapUiStandardText;
+}
+
+.sapSuiteAmcChart.Neutral,
+.sapSuiteAmcLine.Neutral {
+	color: darken(@sapUiChartNeutral, 20);	
+}
+
+.sap-desktop .sapSuiteAmc:focus {
+	outline-color: @sapUiFocus;
+	outline-style: dotted;
+	outline-width: 1px;
+}
+/* END "AreaMicroChart.less" */
+
+/* START "BulletMicroChart.less" */
+
+/* ============================================================ */
+/* CSS for BulletMicroChart control for 'sap_bluecrystal' theme */
+/* ============================================================ */
+
+.sapSuiteBMCContent {
+	font-family: @sapUiFontHeaderFamily;
+}
+
+.sap-desktop .sapSuiteBMCContent:focus {
+	outline-color: @sapUiFocus;
+	outline-style: dotted;
+	outline-width: .0625rem;
+}
+
+.sapSuiteBMCContent:focus:not([tabindex]) {
+	outline: none;
+}
+
+.sap-desktop .XS.sapSuiteBMCContent:focus {
+	outline: none;
+} 
+
+.sap-desktop .XS.sapSuiteBMCContent:focus::after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	top: -.3125rem;
+	left: -.125rem;
+	right: -.125rem;
+	bottom: -.75rem;
+	border: .0625rem dotted @sapUiFocus;
+}
+
+.sapSuiteBMCBarValue.Neutral,
+.sapSuiteBMCBarValueMarker.Neutral,
+.sapSuiteBMCThreshold.Neutral {
+	background-color: @sapUiChartNeutral;
+}
+
+.sapSuiteBMCBarValue.Good,
+.sapSuiteBMCBarValueMarker.Good,
+.sapSuiteBMCThreshold.Good {
+	background-color: @sapUiChartGood;
+}
+
+.sapSuiteBMCBarValue.Critical,
+.sapSuiteBMCBarValueMarker.Critical,
+.sapSuiteBMCThreshold.Critical {
+	background-color: @sapUiChartCritical;
+}
+
+.sapSuiteBMCBarValue.Error,
+.sapSuiteBMCBarValueMarker.Error,
+.sapSuiteBMCThreshold.Error {
+	background-color: @sapUiChartBad;
+}
+
+.sapSuiteBMCItemValue.Neutral {
+	color: @sapUiLightText;
+}
+
+.sapSuiteBMCItemValue.Good {
+	color: @sapUiPositiveText;
+}
+
+.sapSuiteBMCItemValue.Critical {
+	color: @sapUiCriticalText;
+}
+
+.sapSuiteBMCItemValue.Error {
+	color: @sapUiNegativeText;
+}
+
+.sapSuiteBMCTargetBarValue {
+	border-left: .0625rem solid @sapUiLightestBorder;
+	background-color: darken(@sapUiExtraDarkBorder,33);
+}
+
+.sapSuiteBMCTargetValue {
+	color: @sapUiDarkText;
+}
+
+.sapSuiteBMCDiamond {
+	background-color: @sapUiChartBad;
+}
+
+.sapSuiteBMCForecastBarValue.Neutral {
+	background-color: lighten(@sapUiChartNeutral,30);
+}
+
+.sapSuiteBMCForecastBarValue.Good {
+	background-color: lighten(@sapUiChartGood,30);
+}
+
+.sapSuiteBMCForecastBarValue.Critical {
+	background-color: lighten(@sapUiChartCritical,30);
+}
+
+.sapSuiteBMCForecastBarValue.Error {
+	background-color: lighten(@sapUiChartBad,35);
+}
+
+.sapSuiteBMCBar.Lightest {
+	background-color: @sapUiLightestBG;
+}
+
+.sapSuiteBMCBar.ExtraLight {
+	background-color: @sapUiExtraLightBG;
+}
+
+.sapSuiteBMCBar.Light {
+	background-color: @sapUiLightBG;
+}
+
+.sapSuiteBMCBar.Medium {
+	background-color: @sapUiMediumBG;
+}
+
+.sapSuiteBMCBar.MediumLight {
+	background-color: lighten(@sapUiChartNeutral,38.5);
+}
+
+.sapSuiteBMCBar.Dark {
+	background-color: @sapUiDarkBG;
+}
+
+.sapSuiteBMCBar.ExtraDark {
+	background-color: @sapUiExtraDarkBG;
+}
+
+.sapSuiteBMCBar.Darkest {
+	background-color: @sapUiDarkestBG;
+}
+
+.sapSuiteBMCBar.Transparent {
+	background-color: transparent;
+}
+
+
+/* END "BulletMicroChart.less" */
+
+/* START "ColumnMicroChart.less" */
+.sap-desktop .sapSuiteCmc:focus {
+	outline-color: @sapUiFocus;
+	outline-style: dotted;
+	outline-width: 1px;
+}
+
+.sapSuiteCmcBar.Error {
+	background-color: @sapUiChartBad;
+}
+
+.sapSuiteCmcBar.Good {
+	background-color: @sapUiChartGood;
+}
+
+.sapSuiteCmcBar.Critical {
+	background-color: @sapUiChartCritical;
+}
+
+.sapSuiteCmcBar.Neutral {
+	background-color: @sapUiChartNeutral;	
+}
+
+.sapSuiteCmcLbl {
+	font-family: @sapUiFontFamily;
+	font-size: @sapMFontMediumSize;
+}
+
+.sapSuiteCmcLbl.Neutral {
+	color: darken(@sapUiChartNeutral, 10);
+}
+
+.sapSuiteCmcLbl.Good {
+	color: @sapUiPositiveText;
+}
+
+.sapSuiteCmcLbl.Critical {
+	color: @sapUiCriticalText;	
+}
+
+.sapSuiteCmcLbl.Error {
+	color: @sapUiNegativeText;	
+}
+
+.sapSuiteCmcBar {
+	outline: none;
+}
+
+.sap-desktop .sapSuiteCmcBar:focus {
+	border-color: @sapUiFocus;
+	border-style: dotted;
+	border-width: 1px;
+}
+/* END "ColumnMicroChart.less" */
+
+/* START "ComparisonMicroChart.less" */
+/* ======================================================================================= */
+/* CSS for sap.suite.ui.microchart/ComparisonMicroChart control for 'sap_bluecrystal' theme*/
+/* ======================================================================================= */
+
+.sapSuiteCmpChartItemValue {
+	color: @sapUiDarkText;
+}
+
+.sapSuiteCmpChartItemValue.Neutral {
+	color: @sapUiLightText;
+}
+
+.sapSuiteCmpChartItemValue.Good {
+	color: @sapUiPositiveText;
+}
+
+.sapSuiteCmpChartItemValue.Critical {
+	color: @sapUiCriticalText;
+}
+
+.sapSuiteCmpChartItemValue.Error {
+	color: @sapUiNegativeText;
+}
+
+.sapSuiteCmpChartBarValue.Neutral {
+	background-color: @sapUiChartNeutral;
+}
+
+.sapSuiteCmpChartBarValue.Good {
+	background-color: @sapUiChartGood;
+}
+
+.sapSuiteCmpChartBarValue.Critical {
+	background-color: @sapUiChartCritical;
+}
+
+.sapSuiteCmpChartBarValue.Error {
+	background-color: @sapUiChartBad;
+}
+
+.sapSuiteCmpChartContent {
+	font-family: @sapUiFontHeaderFamily;
+	font-weight: @sapUiFontHeaderWeight;
+	font-size: @sapMFontSmallSize;
+	line-height: 0.9375rem;
+}
+
+.sapSuiteCmpChartContent.L {
+	font-size: @sapMFontMediumSize;
+	line-height: 1rem;
+}
+
+.sap-desktop .sapSuiteCmpChartContent:focus {
+	outline-color: @sapUiFocus;
+	outline-style: dotted;
+	outline-width: 1px;
+}
+
+.sapSuiteCmpChartBar {
+	outline: none;
+}
+
+.sap-desktop .sapSuiteCmpChartBar:focus {
+	border-color: @sapUiFocus;
+	border-style: dotted;
+	border-width: 1px;
+}
+
+.sapSuiteCmpChartContent:focus:not([tabindex]) {
+	outline: none;
+}
+
+.sapSuiteCmpChartBarNegNoValue {
+	background-color: darken(@sapUiExtraLightBG,6.3);
+}
+
+.sapSuiteCmpChartBarNoValue {
+	background-color: darken(@sapUiExtraLightBG,6.3);
+}
+
+.sapSuiteCmpChartItemTitle {
+	color: @sapUiLightText;
+}
+/* END "ComparisonMicroChart.less" */
+
+/* START "DeltaMicroChart.less" */
+
+/* ============================================= */
+/* CSS for control sap.suite.ui.microchart/DeltaMicroChart.control */
+/* ============================================= */
+
+.sapSuiteDmc {
+    font-family: @sapUiFontHeaderFamily;
+	font-weight: @sapUiFontHeaderWeight; 
+	font-color: @sapUiExtraDarkText;
+}
+
+.sapUiMedia-Std-Desktop .sapSuiteDmc.Auto,
+.sapUiMedia-Std-Tablet .sapSuiteDmc.Auto,
+.sapSuiteDmc.M,
+.sapSuiteDmc.L {
+	font-size: @sapMFontMediumSize;
+}
+
+.sapUiMedia-Std-Phone .sapSuiteDmc.Auto,
+.sapSuiteDmc.S,
+.sapSuiteDmc.XS {
+	font-size: @sapMFontSmallSize;
+}
+
+.sap-desktop .sapSuiteDmc:focus {
+	outline-color: @sapUiFocus;
+	outline-style: dotted;
+	outline-width: .0625rem;
+}
+
+.sapSuiteDmc:focus:not([tabindex]) {
+	outline: none;
+}
+
+.sapSuiteDmcDelta.Neutral {
+    color: @sapUiLightText;
+}
+
+.sapSuiteDmcDelta.Good {
+    color: @sapUiPositiveText;
+}
+
+.sapSuiteDmcDelta.Critical {
+    color: @sapUiCriticalText;
+}
+
+.sapSuiteDmcDelta.Error {
+    color: @sapUiNegativeText;
+}
+
+.sapSuiteDmcBarDeltaInt.Neutral {
+    background-color: @sapUiChartNeutral;
+    border-color: @sapUiChartNeutral;
+}
+
+.sapSuiteDmcBarDeltaInt.Good {
+    background-color: @sapUiChartGood;
+    border-color: @sapUiChartGood;
+}
+
+.sapSuiteDmcBarDeltaInt.Critical {
+    background-color: @sapUiChartCritical;
+    border-color: @sapUiChartCritical;
+}
+
+.sapSuiteDmcBarDeltaInt.Error {
+    background-color: @sapUiChartBad;
+    border-color: @sapUiChartBad;
+}
+
+.sapSuiteDmcBarDeltaStripe {
+	background-color: @sapUiDarkestBG;
+}
+
+.sapSuiteDmcBarInternal {
+	background-color: @sapUiDarkBG;
+}
+/* END "DeltaMicroChart.less" */
+
+/* START "HarveyBallMicroChart.less" */
+
+/* ============================================================================================ */
+/* CSS for sap.suite.ui.microchart/HarveyBallMicroChart.control for 'sap_bluecrystal' theme     */
+/* ============================================================================================ */
+
+.sap-desktop .suiteHBMC:focus {
+	outline-color: @sapUiFocus;
+	outline-style: dotted;
+	outline-width: .0625rem;
+}
+
+.suiteHBMC:focus:not([tabindex]) {
+	outline: none;
+}
+
+.suiteHBMCValSclCnt.Good {
+	color: @sapUiPositiveText;	
+}
+
+.suiteHBMCValSclCnt.Critical {
+	color: @sapUiCriticalText;	
+}
+
+.suiteHBMCValSclCnt.Error {
+	color: @sapUiNegativeText;	
+}
+
+.suiteHBMCTtlSclCnt,
+.suiteHBMCValSclCnt.CP,
+.suiteHBMCValSclCnt.Neutral {
+	color: darken(@sapUiChartNeutral,30);
+}
+
+.suiteHBMCValSclCnt.CP > .suiteHBMCVal,
+.suiteHBMCValSclCnt.Neutral > .suiteHBMCVal {
+	color: darken(@sapUiChartNeutral, 10);
+}
+
+.suiteHBMCSgmnt.Error {
+	fill: @sapUiChartBad;
+}
+
+.suiteHBMCSgmnt.Neutral {
+	fill: @sapUiChartNeutral;	
+}
+
+.suiteHBMCSgmnt.Good {
+	fill: @sapUiChartGood;	
+}
+
+.suiteHBMCSgmnt.Critical {
+	fill: @sapUiChartCritical;	
+}
+
+.suiteHBMCSgmnt {
+	stroke: @sapUiLightestBorder;
+	stroke-width: 1.5;
+}
+
+.suiteHBMCSBall {
+	fill: lighten(@sapUiChartNeutral, 30);
+}
+
+/* Common scale css*/
+.sapUiMedia-Std-Desktop .suiteHBMCTtlScale.Auto,
+.sapUiMedia-Std-Tablet .suiteHBMCTtlScale.Auto,
+.suiteHBMCTtlScale.M {
+	font-size: @sapMFontMediumSize;
+	line-height: @sapMFontMediumSize;
+}
+
+.sapUiMedia-Std-Desktop .suiteHBMCValScale.Auto,
+.sapUiMedia-Std-Tablet .suiteHBMCValScale.Auto,
+.suiteHBMCValScale.M {
+	font-size: @sapMFontMediumSize;
+}
+
+.sapUiMedia-Std-Phone .suiteHBMCTtlScale.Auto,
+.suiteHBMCTtlScale.S,
+.suiteHBMCTtlScale.XS,
+
+.sapUiMedia-Std-Phone .suiteHBMCValScale.Auto,
+.suiteHBMCValScale.S,
+.suiteHBMCValScale.XS {
+	font-size: @sapMFontSmallSize;
+	line-height: @sapMFontSmallSize;
+}
+
+.sapUiMedia-Std-Phone .suiteHBMCTtl.Auto,
+.suiteHBMCTtl.S,
+.suiteHBMCTtl.XS {
+	font-size: @sapMFontMediumSize;
+	line-height: @sapMFontMediumSize;
+	height: @sapMFontMediumSize;
+}
+
+.sapUiMedia-Std-Desktop .suiteHBMCTtl.Auto,
+.sapUiMedia-Std-Tablet .suiteHBMCTtl.Auto,
+.suiteHBMCTtl.M {
+	font-size: @sapMFontLargeSize;
+	height: @sapMFontLargeSize;
+}
+
+html[data-sap-ui-os^="bb"] {
+	.sapUiMedia-Std-Desktop .suiteHBMCTtl.Auto,
+	.sapUiMedia-Std-Tablet .suiteHBMCTtl.Auto,
+	.suiteHBMCTtl.M {
+		line-height: @sapMFontLargeSize;
+	}
+}
+
+/* END "HarveyBallMicroChart.less" */
+
+/* START "RadialMicroChart.less" */
+/* ============================================================================================ */
+/* CSS for sap.suite.ui.microchart/RadialMicroChart.control for 'sap_bluecrystal' theme         */
+/* ============================================================================================ */
+
+.sap-desktop .sapSuiteUiMicroChartRMC:focus {
+	outline-color: @sapUiFocus;
+	outline-style: dotted;
+	outline-width: 0.0625rem;
+}
+
+.sapSuiteUiMicroChartRMC:focus:not([tabindex]) {
+	outline: none;
+}
+
+.sapSuiteUiMicroChartRMCPathNeutral {
+	stroke: @sapUiChartPaletteSequentialHue1;
+}
+/* Inner borders are transparent for blue crystal */
+.sapSuiteUiMicroChartRMCHCBIncompleteBorder{
+	fill: transparent;
+	stroke: transparent;
+	stroke-width: 0.25rem;
+}
+
+.sapSuiteUiMicroChartRMCPathIncomplete {
+	stroke: @sapUiLightBG;
+}
+
+.sapSuiteUiMicroChartRMCPathGood {
+	stroke: @sapUiChartPaletteSemanticGood;
+}
+
+.sapSuiteUiMicroChartRMCPathError {
+	stroke: @sapUiChartPaletteSemanticBad;
+}
+
+.sapSuiteUiMicroChartRMCPathCritical {
+	stroke: @sapUiChartPaletteSemanticCritical;
+}
+
+.sapSuiteUiMicroChartRMCNeutralTextColor {
+	fill: @sapUiLightText;
+}
+
+.sapSuiteUiMicroChartRMCAccessibleTextColor {
+	fill: @sapUiMediumText;
+}
+
+.sapSuiteUiMicroChartRMCGoodTextColor {
+	fill: @sapUiPositiveText;
+}
+
+.sapSuiteUiMicroChartRMCErrorTextColor {
+	fill: @sapUiNegativeText;
+}
+
+.sapSuiteUiMicroChartRMCCriticalTextColor {
+	fill: @sapUiCriticalText;
+}
+
+.sapSuiteUiMicroChartRMCCircleBackground {
+	fill: @sapUiLightestBG;
+	stroke: @sapUiLightestBG;
+}
+/* END "RadialMicroChart.less" */

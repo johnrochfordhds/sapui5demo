@@ -1,0 +1,255 @@
+<?xml version="1.0" ?>
+<library  version="2.0" name="sap.suite.ui.microchart">
+  <module name="sap/suite/ui/microchart/AreaMicroChart.js" size="24982" compressedSize="13376">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2016 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/AreaMicroChartItem.js" size="1669" compressedSize="559">
+    <description>This control displays the history of values as a line mini chart or an area mini chart.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/core/Element.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/AreaMicroChartLabel.js" size="1448" compressedSize="467">
+    <description>This control displays the history of values as a line mini chart or an area mini chart.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/core/Element.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/AreaMicroChartPoint.js" size="3094" compressedSize="1087">
+    <description>This control displays the history of values as a line mini chart or an area mini chart.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/core/Element.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/AreaMicroChartRenderer.js" size="5238" compressedSize="3183">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2016 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/BulletMicroChart.js" size="16866" compressedSize="8326">
+    <description>Provides control sap.suite.ui.microchart.BulletMicroChart.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/BulletMicroChartData.js" size="1918" compressedSize="828">
+    <description>Provides control sap.suite.ui.microchart.BulletMicroChartData.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/core/Element.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/BulletMicroChartRenderer.js" size="8746" compressedSize="5212">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2016 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/ColumnMicroChart.js" size="13996" compressedSize="7380">
+    <description>Provides control sap.suite.ui.microchart.Example.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/ColumnMicroChartData.js" size="2223" compressedSize="961">
+    <description>This control displays the history of values as a line mini chart or an area mini chart.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/core/Element.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/ColumnMicroChartLabel.js" size="1401" compressedSize="469">
+    <description>This control displays the history of values as a line mini chart or an area mini chart.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/core/Element.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/ColumnMicroChartRenderer.js" size="4942" compressedSize="2903">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2016 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/ComparisonMicroChart.js" size="11742" compressedSize="6022">
+    <description>Provides control sap.suite.ui.microchart.ComparisonMicroChart.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/ComparisonMicroChartData.js" size="3039" compressedSize="1394">
+    <description>Provides control sap.suite.ui.microchart.ComparisonMicroChartData.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/core/Element.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/ComparisonMicroChartRenderer.js" size="6358" compressedSize="3965">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2016 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/DeltaMicroChart.js" size="8723" compressedSize="4836">
+    <description>Provides control sap.suite.ui.microchart.Example.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/DeltaMicroChartRenderer.js" size="7486" compressedSize="4814">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2016 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/HarveyBallMicroChart.js" size="9094" compressedSize="4670">
+    <description>This file defines behavior for the control.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/HarveyBallMicroChartItem.js" size="2092" compressedSize="627">
+    <description>This control displays the history of values as a line mini chart or an area mini chart.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/core/Element.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/HarveyBallMicroChartRenderer.js" size="6761" compressedSize="3980">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2016 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/RadialMicroChart.js" size="8763" compressedSize="3597">
+    <description>This file defines the behavior for the control.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/suite/ui/microchart/RadialMicroChartRenderer.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/RadialMicroChartRenderer.js" size="20891" compressedSize="8152">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2016 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/library.js" size="4803" compressedSize="1940">
+    <description>Initialization Code and shared classes of library sap.suite.ui.microchart.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/library.js"/>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="sap/m/library.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/microchart/manifest.json" size="821">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle.properties" size="2007">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_ar.properties" size="2720">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_bg.properties" size="3098">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_ca.properties" size="1978">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_cs.properties" size="2033">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_da.properties" size="1952">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_de.properties" size="1908">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_el.properties" size="2811">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_en.properties" size="1877">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_es.properties" size="1972">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_et.properties" size="1961">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_fi.properties" size="1930">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_fr.properties" size="1957">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_hi.properties" size="2911">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_hr.properties" size="1998">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_hu.properties" size="2115">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_it.properties" size="1949">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_iw.properties" size="2494">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_ja.properties" size="2168">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_kk.properties" size="2871">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_ko.properties" size="2093">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_lt.properties" size="2045">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_lv.properties" size="2059">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_nl.properties" size="1953">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_no.properties" size="1912">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_pl.properties" size="2032">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_pt.properties" size="1987">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_ro.properties" size="2004">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_ru.properties" size="3194">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_sh.properties" size="1990">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_sk.properties" size="2100">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_sl.properties" size="1970">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_sv.properties" size="1945">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_th.properties" size="2769">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_tr.properties" size="1971">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_uk.properties" size="3133">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_vi.properties" size="2333">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_zh_CN.properties" size="2048">
+  </module>
+  <module name="sap/suite/ui/microchart/messagebundle_zh_TW.properties" size="2060">
+  </module>
+</library>

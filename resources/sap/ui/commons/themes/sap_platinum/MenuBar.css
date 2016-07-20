@@ -1,0 +1,66 @@
+.sapUiMnuBar {
+	background-color: #E4E9F0;
+	border-color: #94ABC5;
+}
+
+.sapUiMnuBarDsbl {
+	border-color: #94ABC5;
+}
+
+.sapUiMnuBarArea {
+	height: 25px;
+}
+
+.sapUiMnuBarItm {
+	border: 1px solid transparent;
+	margin-right: 1px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	outline: medium none;
+	padding: 3px 0 3px 5px;
+}
+
+.sapUiMnuBarItm > span {
+	background-image: url(img/menu/trg.png);
+	background-position: right top;
+	background-repeat: no-repeat;
+	padding-right: 15px;
+	padding-left: 0px;
+	margin-right: 1px;
+}
+
+.sapUiMnuBarItm.sapUiMnuBarItmDsbl > span {
+	background-image: url("img/menu/trg-dis.png");
+}
+
+.sapUiMnuBarItm:hover,
+.sapUiMnuBarItm:focus {
+	background-image: url('img/menu/bar-act.png');
+	border: 1px solid #8BC1D9;
+	background-repeat: repeat-x;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.sapUiMnuBarItm.sapUiMnuBarItmDsbl:hover {
+	background-image: none;
+	border: 1px solid transparent;
+}
+
+.sapUiMnuBarItm.sapUiMnuBarItmDsbl:focus {
+	background-image: none;
+	border: 1px dotted gray;
+}
+
+.sapUiMnuBarOvrFlw:after{
+	content: "";
+}
+
+.sapUiMnuBarOvrFlw > span{
+	background-image: url(img/menu/bar-overflow.png);
+}
+
+.sapUiMnuBarItm.sapUiMnuBarOvrFlw {
+	padding: 0 0 6px 0;
+	top: 1px;
+}

@@ -1,0 +1,102 @@
+/* ===================================================== */
+/* CSS for control sap.ca.ui.charts/ChartToolBar.control */
+/* ===================================================== */
+
+/* overall theme & positionning */
+.sapCaUiChartToolBar {
+	background: @sapUiWhiteBG;
+    font-family: @sapUiFontFamily;
+    font-weight: normal;
+    color: @sapUiLightText;
+}
+.sapCaUiOverlay .sapCaUiChartToolBar {
+	background: @sapUiWhiteBG;
+    height: 100%;
+	max-height: 100%;
+    overflow: auto;
+}
+
+.sapCaUiChartToolBar .activeButton .sapMBtnContent > .sapUiIcon,
+.sapCaUiChartToolBar .activeButton.sapMBtnHover:not(.sapMBtnDisabled) .sapMBtnContent > .sapUiIcon {
+    background-color: @sapActiveColor;
+}
+
+.sapCaUiChartToolBar .activeButton .sapMBtnContent > .sapUiIcon {
+    color: @sapUiTextSelection;
+}
+
+/* from Denis Timur : displaying arrow */
+.sapCaUiChartToolBar .iconBar.sapMBar-CTX .sapMSltArrow {
+    display: block;
+    line-height:3rem;
+}
+
+.sapCaUiChartToolBar .iconBar.sapMBar-CTX .sapMSltWithArrow > .sapMSltLabel,
+.sapCaUiChartToolBar .iconBar.sapMBar-CTX .sapMSltWithArrow > select {
+    padding: 0 3rem 0 0.625rem;
+}
+
+
+/* selected icon of the showAllChart popover */
+.sapCaUiChartToolBarShowAllChartListPopover .sapMLIBSelected .sapMSLIImgIcon {
+    color: @sapActiveColor;
+}
+
+/* no separators between icons except on the left of the legend */
+.sapCaUiChartToolBar .sapMBtn {
+    border:none;
+}
+
+.sapCaUiChartToolBar .sapMBtn.legendSmallIcon,
+.sapCaUiChartToolBar .sapMBtn.legendIcon {
+    border-left: 1px solid @sapUiLightBorder;
+}
+
+/* behavior S */
+.sapUiMedia-Std-Phone .sapCaUiChartToolBar .legendSmallIcon,
+.sapUiMedia-Std-Phone .sapCaUiChartToolBar .allChartsIcon {
+    display:inline-block;
+}
+
+.sapUiMedia-Std-Phone .sapCaUiChartToolBar .chartIcon,
+.sapUiMedia-Std-Phone .sapCaUiChartToolBar .legendIcon,
+.sapUiMedia-Std-Phone .sapCaUiChartToolBar .personalizationIcon{
+    display:none;
+}
+
+/* behavior S-L */
+.sapUiMedia-Std-Tablet .sapCaUiChartToolBar .personalizationIcon,
+.sapUiMedia-Std-Tablet .sapCaUiChartToolBar .legendIcon,
+.sapUiMedia-Std-Tablet .sapCaUiChartToolBar .allChartsIcon {
+    display:inline-block;
+}
+
+.sapUiMedia-Std-Tablet .sapCaUiChartToolBar .chartIcon,
+.sapUiMedia-Std-Tablet .sapCaUiChartToolBar .legendSmallIcon{
+    display:none;
+}
+
+.sapUiMedia-Std-Desktop .sapMSplitContainerDetail .sapCaUiChartToolBar .personalizationIcon,
+.sapUiMedia-Std-Desktop .sapMSplitContainerDetail .sapCaUiChartToolBar .legendIcon,
+.sapUiMedia-Std-Desktop .sapMSplitContainerDetail .sapCaUiChartToolBar .allChartsIcon {
+    display:inline-block;
+}
+
+.sapUiMedia-Std-Desktop .sapMSplitContainerDetail .sapCaUiChartToolBar .chartIcon,
+.sapUiMedia-Std-Desktop .sapMSplitContainerDetail .sapCaUiChartToolBar .legendSmallIcon{
+    display:none;
+}
+
+/* behavior XL */
+
+.sapUiMedia-Std-Desktop .sapCaUiChartToolBar .legendIcon,
+.sapUiMedia-Std-Desktop .sapCaUiChartToolBar .personalizationIcon,
+.sapUiMedia-Std-Desktop .sapCaUiChartToolBar .chartIcon {
+    display:inline-block;
+}
+
+.sapUiMedia-Std-Desktop .sapCaUiChartToolBar .allChartsIcon,
+.sapUiMedia-Std-Desktop .sapCaUiChartToolBar .legendSmallIcon {
+    display:none;
+}
+

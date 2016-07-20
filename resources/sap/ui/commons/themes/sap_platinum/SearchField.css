@@ -1,0 +1,47 @@
+
+/* =========================================================== */
+/* Platinum CSS for control sap.ui.commons/SearchField.control */
+/* =========================================================== */
+
+.sapUiSearchField {
+	height: 20px; /*@sapUiTextFieldHeight;*/
+}
+
+.sapUiSearchFieldTf {
+	height: 20px; /*@sapUiTextFieldHeight;*/
+	margin-top: 0;
+}
+
+.sapUiSearchFieldCb .sapUiTfComboIcon {
+	color: transparent;
+    font-size: 0;
+}
+
+.sapUiSearchFieldCb {
+	margin-top: 0;
+}
+
+.sapUiSearchFieldProvIco {
+	margin-top: 1px;
+}
+
+.sapUiSearchFieldIco {
+	margin-top: 2px;
+}
+
+.sapUiSearchField > .sapUiBtn {
+	height: 20px; /*@sapUiTextFieldHeight;*/
+}
+
+.sapUiSearchFieldClear.sapUiSearchFieldVal > .sapUiSearchFieldTf > .sapUiSearchFieldIco,
+.sapUiSearchFieldClear.sapUiSearchFieldVal > .sapUiSearchFieldCb > .sapUiSearchFieldIco {
+	font-size: 0;
+  	color: transparent; 
+  	background-image: url("img/search/clear.gif");
+  	margin-top: 1px;
+}
+
+.sapUiSearchFieldClear.sapUiSearchFieldVal.sapUiSearchFieldDsbl > .sapUiSearchFieldTf > .sapUiSearchFieldIco,
+.sapUiSearchFieldClear.sapUiSearchFieldVal.sapUiSearchFieldDsbl > .sapUiSearchFieldCb > .sapUiSearchFieldIco {
+	margin-top: 2px;
+}

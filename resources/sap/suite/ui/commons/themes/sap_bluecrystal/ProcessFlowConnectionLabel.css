@@ -1,0 +1,113 @@
+/* ====================================================================================== */
+/* CSS for control sap.suite.ui.commons/ProcessFlowConnectionLabel.control (bluecrystal theme) */
+/* ====================================================================================== */
+
+/* Configures inner element of a label (e.g. for border, background, etc.) to display states (e.g. hover, active, etc.) */
+
+/* Needs to be in the theme file since font variables are only available there */
+.sapSuiteUiCommonsProcessFlowConnectionLabel.sapMBtn > .sapMBtnInner {
+  font-size: @sapMFontMediumSize;
+}
+
+/* Disabled/ReadOnly */
+.sapSuiteUiCommonsProcessFlowConnectionLabel.sapMBtnDisabled {
+  opacity: 1;
+}
+.sapSuiteUiCommonsProcessFlowConnectionLabel.sapMBtnDisabled > .sapMBtnInner {
+  background-color: @sapUiButtonStandardBG;
+  border-style: none;
+}
+
+/* Selected */
+.sapSuiteUiCommonsProcessFlowConnectionLabel.labelSelected:not(:hover) > div:not(:active) {
+  background-image: none;
+  background-color: @sapUiLightestBG;
+  box-shadow: 0 0 0.313rem 0.1rem fade(@sapUiDarkShadowTint, 10%);
+  border-color: darken(@sapUiButtonStandardBG,37);
+}
+
+/* Highlighted */
+.sapSuiteUiCommonsProcessFlowConnectionLabel.labelHighlighted:not(:hover):not(.sapMBtnDisabled) > div:not(:active) {
+  background-image: none;
+  background-color: @sapUiLightestBG;
+  box-shadow: 0 0 0.313rem 0.1rem fade(@sapUiDarkShadowTint, 10%);
+  border-color: darken(@sapUiButtonStandardBG,37);
+}
+
+/* Dimmed */
+.sapSuiteUiCommonsProcessFlowConnectionLabel.labelDimmed:not(:hover) > div:not(:active) {
+  background-image: none;
+  background-color: darken(@sapUiButtonStandardBG,2);
+  border-color: darken(@sapUiButtonStandardBG,17);
+}
+
+/* Configure inner text and icon elements of Label for specific state. */
+.sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateNegative > .sapMBtnInner,
+.sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateNegative > .sapMBtnInner > .sapMBtnIcon { 
+  color: @sapUiNegativeText;
+}
+.sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateCritical > .sapMBtnInner,
+.sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateCritical > .sapMBtnInner > .sapMBtnIcon {
+  color: @sapUiCriticalText;
+}
+.sapSuiteUiCommonsProcessFlowConnectionLabel.labelStatePositive > .sapMBtnInner,
+.sapSuiteUiCommonsProcessFlowConnectionLabel.labelStatePositive > .sapMBtnInner > .sapMBtnIcon {
+  color: @sapUiPositiveText;
+}
+.sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateNeutral.labelDimmed > .sapMBtnInner {
+  color: @sapUiLightText;
+}
+.sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateNeutral > .sapMBtnInner {
+  color: @sapUiDarkText;
+}
+.sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateNeutral > .sapMBtnInner > .sapMBtnIcon {
+  color: @sapUiElement;
+}
+
+/* handle the keyboard press event for active state (both text and icon) */
+:not(.sapMBtnDisabled).sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateCritical > .sapMBtnInner.sapMBtnActive,
+:not(.sapMBtnDisabled).sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateNeutral > .sapMBtnInner.sapMBtnActive,
+:not(.sapMBtnDisabled).sapSuiteUiCommonsProcessFlowConnectionLabel.labelStatePositive > .sapMBtnInner.sapMBtnActive,
+:not(.sapMBtnDisabled).sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateNegative > .sapMBtnInner.sapMBtnActive {
+  color: @sapUiTextInverted;
+  background-image: none;
+  background-color: @sapUiHighlight;
+  border-color: @sapUiHighlight;
+  text-shadow: none;
+  outline-style: none;
+}
+:not(.sapMBtnDisabled).sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateNegative > .sapMBtnInner.sapMBtnActive > .sapMBtnIcon,
+:not(.sapMBtnDisabled).sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateCritical > .sapMBtnInner.sapMBtnActive > .sapMBtnIcon,
+:not(.sapMBtnDisabled).sapSuiteUiCommonsProcessFlowConnectionLabel.labelStatePositive > .sapMBtnInner.sapMBtnActive > .sapMBtnIcon,
+:not(.sapMBtnDisabled).sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateNeutral > .sapMBtnInner.sapMBtnActive > .sapMBtnIcon {
+  color: @sapUiTextInverted;
+  background-image: none;
+  background-color: @sapUiHighlight;
+  border-color: @sapUiHighlight;
+  text-shadow: none;
+  outline-style: none;
+}
+
+/* handle the mouse press event for active state (both text and icon) */
+:not(.sapMBtnDisabled).sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateCritical > .sapMBtnInner.sapSuiteUiCommonsProcessFlowLabelActive,
+:not(.sapMBtnDisabled).sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateNeutral > .sapMBtnInner.sapSuiteUiCommonsProcessFlowLabelActive,
+:not(.sapMBtnDisabled).sapSuiteUiCommonsProcessFlowConnectionLabel.labelStatePositive > .sapMBtnInner.sapSuiteUiCommonsProcessFlowLabelActive,
+:not(.sapMBtnDisabled).sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateNegative > .sapMBtnInner.sapSuiteUiCommonsProcessFlowLabelActive {
+  color: @sapUiTextInverted;
+  background-image: none;
+  background-color: @sapUiHighlight;
+  border-color: @sapUiHighlight;
+  text-shadow: none;
+  outline-style: none;
+}
+:not(.sapMBtnDisabled).sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateNegative > .sapMBtnInner.sapSuiteUiCommonsProcessFlowLabelActive > .sapMBtnIcon,
+:not(.sapMBtnDisabled).sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateCritical > .sapMBtnInner.sapSuiteUiCommonsProcessFlowLabelActive > .sapMBtnIcon,
+:not(.sapMBtnDisabled).sapSuiteUiCommonsProcessFlowConnectionLabel.labelStatePositive > .sapMBtnInner.sapSuiteUiCommonsProcessFlowLabelActive > .sapMBtnIcon,
+:not(.sapMBtnDisabled).sapSuiteUiCommonsProcessFlowConnectionLabel.labelStateNeutral > .sapMBtnInner.sapSuiteUiCommonsProcessFlowLabelActive > .sapMBtnIcon {
+  color: @sapUiTextInverted;
+  background-image: none;
+  background-color: @sapUiHighlight;
+  border-color: @sapUiHighlight;
+  text-shadow: none;
+  outline-style: none;
+}

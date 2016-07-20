@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>smarttable/SmartTable</name>
+    <derived/>
+    <author>Pavan Nayak, Benjamin Spieler</author>
+    <documentation>The SmartTable control creates a table based on OData metadata and the configuration specified. The entitySet attribute must be
+       specified to use the control. This attribute is used to fetch fields from OData metadata, from which columns will be generated; it can
+       also be used to fetch the actual table data.&lt;br&gt;
+       Based on the tableType property, this control will render a standard, analytical, or responsive table.&lt;br&gt;
+       &lt;b&gt;&lt;i&gt;Note:&lt;/i&gt;&lt;/b&gt;&lt;br&gt;
+       Most of the attributes/properties are not dynamic and cannot be changed once the control has been initialized.</documentation>
+    <baseType>sap.m/VBox</baseType>
+    <properties>
+        <property since="1.26.0" group="Misc" type="sap.ui.core/string" name="entitySet">
+            <documentation>The entity set name from which to fetch data and generate the columns. Note that this is not a dynamic UI5 property</documentation>
+        </property>
+        <property since="1.26.0" group="Misc" type="sap.ui.core/string" name="smartFilterId">
+            <documentation>ID of the corresponding SmartFilter control; When specified, the SmartTable searches for the SmartFilter (also in the closest
+parent View) and attaches to the relevant events of the SmartFilter; to fetch data, show overlay etc.</documentation>
+        </property>
+        <property since="1.26.0" group="Misc" type="sap.ui.core/string" name="ignoredFields">
+            <documentation>CSV of fields that must be ignored in the OData metadata by the SmartTable control.&lt;br&gt;
+&lt;i&gt;Note:&lt;/i&gt;&lt;br&gt;
+No validation is done. Please ensure that you do not add spaces or special characters.</documentation>
+        </property>
+        <property since="1.32.0" group="Misc" type="sap.ui.core/string" name="initiallyVisibleFields">
+            <documentation>CSV of fields that must be shown initially in the SmartTable as visible columns and in the order specified.&lt;br&gt;
+This property is mainly meant to be used when no LineItem annotation exists.&lt;br&gt;
+If you have fields in the XMLView they are always shown first; then, the columns are added based on the LineItem annotation and
+finally based on this property.&lt;br&gt;
+&lt;i&gt;Note:&lt;/i&gt;&lt;br&gt;
+If both this property and the LineItem annotation exist, the order of fields cannot be guaranteed to be as mentioned here.&lt;br&gt;
+No validation is done. Please ensure that you do not add spaces or special characters.</documentation>
+        </property>
+        <property since="1.32.0" group="Misc" type="sap.ui.core/string" name="requestAtLeastFields">
+            <documentation>CSV of fields that must be always requested from the backend&lt;br&gt;
+This property is mainly meant to be used when there is no PresentationVariant annotation.&lt;br&gt;
+If both this property and the PresentationVariant annotation exist, the select request sent to the backend would be a combination
+of both.&lt;br&gt;
+&lt;i&gt;Note:&lt;/i&gt;&lt;br&gt;
+This property has no effect when AnalyticalTable is used.&lt;br&gt;
+No validation is done. Please ensure that you do not add spaces or special characters.</documentation>
+        </property>
+        <property since="1.32.0" group="Misc" type="sap.ui.core/string" name="ignoreFromPersonalisation">
+            <documentation>CSV of fields that is not shown in the personalization dialog.&lt;br&gt;
+&lt;i&gt;Note:&lt;/i&gt;&lt;br&gt;
+No validation is done. Please ensure that you do not add spaces or special characters.</documentation>
+        </property>
+        <property since="1.26.0" group="Misc" type="sap.ui.comp/smarttable/TableType" name="tableType">
+            <documentation>Specifies the type of table to be created in the SmartTable control.&lt;br&gt;
+&lt;i&gt;Note:&lt;/i&gt;&lt;br&gt;
+If you add a table to the content of the SmartTable in the view, this property has no effect.</documentation>
+        </property>
+        <property since="1.26.0" group="Misc" defaultValue="true" type="sap.ui.core/boolean" name="useVariantManagement">
+            <documentation>The useVariantManagement attribute can be set to true or false depending on whether you want to use variants. As a prerequisite you
+need to specify the persistencyKey property.</documentation>
+        </property>
+        <property since="1.26.0" group="Misc" defaultValue="true" type="sap.ui.core/boolean" name="useExportToExcel">
+            <documentation>Can be set to true or false depending on whether you want to export data to MS Excel®.</documentation>
+        </property>
+        <property since="1.26.0" group="Misc" defaultValue="true" type="sap.ui.core/boolean" name="useTablePersonalisation">
+            <documentation>The useTablePersonalisation attribute can be set to true or false depending on whether you want to define personalized table
+settings. If you want to persist the table personalization, you need to specify the persistencyKey property.</documentation>
+        </property>
+        <property since="1.26.0" group="Misc" defaultValue="true" type="sap.ui.core/boolean" name="showRowCount">
+            <documentation>If the showRowCount attribute is set to true number of rows is shown along with the header text.</documentation>
+        </property>
+        <property since="1.26.0" group="Misc" type="sap.ui.core/string" name="header">
+            <documentation>Specifies header text that is shown in table</documentation>
+        </property>
+        <property since="1.26.0" group="Misc" type="sap.ui.core/string" name="toolbarStyleClass">
+            <documentation>A style class which is defined for the toolbar of the table.</documentation>
+        </property>
+        <property since="1.26.0" group="Misc" defaultValue="true" type="sap.ui.core/boolean" name="enableCustomFilter">
+            <documentation>Can be used to override the filter behavior. If set to true (default), instead of the filter input box a button is rendered. When
+pressing this button, the SmartTable control opens the filter panel directly in the table personalization dialog.</documentation>
+        </property>
+        <property since="1.26.0" group="Misc" type="sap.ui.core/string" name="persistencyKey">
+            <documentation>Key used to access personalization data.</documentation>
+        </property>
+        <property since="1.26.0" group="Misc" defaultValue="false" type="sap.ui.core/boolean" name="useOnlyOneSolidToolbar">
+            <documentation>If set to true, the standard toolbar and custom toolbar will be merged into one toolbar. The combined toolbar will have a solid
+style.</documentation>
+            <deprecation since="1.29">This property has no effect</deprecation>
+        </property>
+        <property since="1.28.0" group="Misc" type="sap.ui.core/string" name="currentVariantId">
+            <documentation>Retrieves or sets the current variant.</documentation>
+        </property>
+        <property since="1.28.0" group="Misc" defaultValue="false" type="sap.ui.core/boolean" name="editable">
+            <documentation>This attribute can be used to specify if the controls created by the SmartTable control are editable.</documentation>
+        </property>
+        <property since="1.28.0" group="Misc" defaultValue="false" type="sap.ui.core/boolean" name="enableAutoBinding">
+            <documentation>When set to true, this enables automatic binding of the table using the tableBindingPath (if it exists) or entitySet property. This
+happens just after the &lt;code&gt;initialise&lt;/code&gt; event has been fired.</documentation>
+        </property>
+        <property since="1.28.0" group="Misc" type="sap.ui.core/string" name="tableBindingPath">
+            <documentation>This attribute can be used to specify the path that is used during the binding of the table. If not specified, the entitySet
+attribute is used instead. (used only if binding is established internally/automatically - See enableAutoBinding)</documentation>
+        </property>
+        <property since="1.28.0" group="Misc" defaultValue="false" type="sap.ui.core/boolean" name="editTogglable">
+            <documentation>Specifies whether the editable property can be toggled via a button on the toolbar. (The automatic toggle of controls works only
+for the SmartField scenario)</documentation>
+        </property>
+        <property since="1.30.0" group="Misc" defaultValue="false" type="sap.ui.core/boolean" name="demandPopin">
+            <documentation>The demandPopin attribute can be set to true or false depending on whether you want to display columns as popins on the responsive
+table</documentation>
+        </property>
+    </properties>
+    <events>
+        <event allowPreventDefault="false" since="1.26.0" name="initialise">
+            <documentation>Event fired once the control has been initialized.</documentation>
+        </event>
+        <event allowPreventDefault="false" since="1.26.0" name="beforeRebindTable">
+            <documentation>Event fired just before the binding is being done.</documentation>
+        </event>
+        <event allowPreventDefault="false" since="1.28.0" name="editToggled">
+            <documentation>Event fired when display/edit button is clicked.</documentation>
+        </event>
+        <event allowPreventDefault="false" since="1.28.0" name="dataReceived">
+            <documentation>Event fired when data is received after binding. The event is fired if the binding for the table is done by the SmartTable itself.</documentation>
+        </event>
+        <event allowPreventDefault="false" since="1.28.0" name="afterVariantInitialise">
+            <documentation>Event fired after variant management in the SmartTable has been initialized.</documentation>
+        </event>
+        <event allowPreventDefault="false" since="1.28.0" name="afterVariantSave">
+            <documentation>Event fired after a variant has been saved. This event can be used to retrieve the ID of the saved variant.</documentation>
+        </event>
+        <event allowPreventDefault="false" since="1.28.0" name="afterVariantApply">
+            <documentation>Event fired after a variant has been applied.</documentation>
+        </event>
+        <event allowPreventDefault="false" since="1.32.0" name="showOverlay">
+            <documentation>Event fired just before the overlay is being shown.</documentation>
+        </event>
+        <event allowPreventDefault="false" since="1.34.0" name="fieldChange">
+            <documentation>Event fired when an editable field, created internally by the SmartTable control, is changed.</documentation>
+        </event>
+    </events>
+    <aggregations>
+        <aggregation cardinality="0..1" since="1.26.0" type="sap.m/Toolbar" name="customToolbar">
+            <documentation>A toolbar that can be added by the user to define their own custom buttons, icons, etc. If this is specified, the SmartTable
+control does not create an additional toolbar, but makes use of this one.</documentation>
+        </aggregation>
+        <aggregation cardinality="0..1" since="1.28.0" type="sap.ui.comp/navpopover/SemanticObjectController" name="semanticObjectController">
+            <documentation>The Semantic Object Controller allows the user to specify and overwrite functionality for semantic object navigation.</documentation>
+        </aggregation>
+        <aggregation cardinality="0..1" since="1.32.0" type="sap.ui.core/Control" name="noData">
+            <documentation>The value for the noData aggregation can be either a string value or a control instance.&lt;br&gt;
+The control is shown, in case there is no data for the Table available. In case of a string value this will simply replace the no
+data text.&lt;br&gt;
+Currently the Responsive Table only supports string values.</documentation>
+        </aggregation>
+    </aggregations>
+</control>

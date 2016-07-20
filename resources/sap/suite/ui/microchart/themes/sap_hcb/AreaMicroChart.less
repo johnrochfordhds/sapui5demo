@@ -1,0 +1,59 @@
+.sapSuiteAmcLbl {
+	font-family: @sapUiFontFamily;
+	font-size: @sapMFontMediumSize;
+}
+
+.sapSuiteAmcLine.Neutral,
+.sapSuiteAmcTarget.Neutral,
+.sapSuiteAmcChart.Neutral
+.sapSuiteAmcLbl.Neutral {
+	color: @sapHCNeutral;
+}
+
+.sapSuiteAmcLine.Good,
+.sapSuiteAmcTarget.Good,
+.sapSuiteAmcChart.Good,
+.sapSuiteAmcLbl.Good {
+	color: @sapHCPositive;
+}
+
+.sapSuiteAmcLine.Critical,
+.sapSuiteAmcTarget.Critical,
+.sapSuiteAmcChart.Critical,
+.sapSuiteAmcLbl.Critical {
+	color: @sapHCCritical;
+}
+
+.sapSuiteAmcLine.Error,
+.sapSuiteAmcTarget.Error,
+.sapSuiteAmcChart.Error,
+.sapSuiteAmcLbl.Error {
+	color: @sapHCNegative;
+}
+
+.sapSuiteAmcThreshold {
+	color: @sapHCStandardBG;
+}
+
+.sapSuiteAmcThreshold.Error {
+	background-color: darken(@sapHCNegative, 33);
+}
+
+.sapSuiteAmcThreshold.Good {
+	background-color: darken(@sapHCPositive, 41);
+}
+
+.sapSuiteAmcThreshold.Critical {
+	background-color: darken(@sapHCCritical, 31);
+}
+
+.sap-desktop .sapSuiteAmc:focus {
+	outline-color: @sapHCStandardFG;
+	outline-style: dotted;
+	outline-width: 1px;
+}
+
+.sapSuiteAmcTarget {
+	outline-style: dotted;
+	outline-width: 7px;
+}

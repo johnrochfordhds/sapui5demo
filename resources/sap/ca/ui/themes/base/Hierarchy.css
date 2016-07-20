@@ -1,0 +1,81 @@
+
+/* ============================================= */
+/* CSS for control sap.ca.ui/Hierarchy.control */
+/* ============================================= */
+
+.sapCaUiHierarchy{
+
+}
+.sapCaUiHierarchyItemLine{
+    padding-bottom: 0.875em;
+    display: table;            /* IE9 */
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-box-align: baseline;
+    -webkit-flex-align: baseline;
+    -ms-flex-align: baseline;
+    -webkit-align-items: baseline;
+    align-items: baseline;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+
+.sapCaUiHierarchyIconContainer{
+
+}
+
+.sapCaUiHierarchyItemLineContent{
+    display: table-cell;       /* IE9 */
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    -webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1;         /* OLD - Firefox 19- */
+    -webkit-flex: 1;          /* Chrome */
+    -ms-flex: 1;              /* IE 10 */
+    flex: 1;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    padding-left: 0.5em;
+}
+.sapCaUiHierarchyIcon{
+    display: block;
+    height:2rem;
+    width: 1.250rem;
+    position: relative;
+    vertical-align: bottom;
+    float: right;
+}
+.sapCaUiHierarchyIconTriangle {
+    border-style: solid;
+    width: 0px;
+    height: 0px;
+    line-height: 0px;
+    border-color: transparent transparent transparent #dddddd;
+    border-width: 0.30rem 0px 0px 0.30rem;
+    position: absolute;
+    right: 0;
+    bottom: 0.125rem;
+}
+.sapCaUiHierarchyIconVertRec{
+    width: 0.125rem;
+    height: 100%;
+    background: #dddddd;
+    position: absolute; left: 0; top:0 ;
+}
+.sapCaUiHierarchyIconHorizRec{
+    height: 0.125rem;
+    width: 100%;
+    background: #dddddd;
+    position: absolute; left: 0; bottom:0 ;
+}
+
+.sapCaUiHierarchyHidden{
+    display: none;
+}
+

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ui5/HorizontalArea100</name>
+    <derived/>
+    <documentation>Chart sap.viz.ui5.HorizontalArea100</documentation>
+    <since>1.7.2</since>
+    <developmentState since="1.7.2" state="experimental">Charting API is not finished yet and might change completely.</developmentState>
+    <deprecation since="1.32.0">The chart controls in the &lt;code&gt;sap.viz.ui5&lt;/code&gt; package (which were always marked as &lt;i&gt;experimental&lt;/i&gt;) have been deprecated since 1.32.0. 
+They are no longer actively developed and won't receive new features or improvements, only important bug fixes. They will only remain in the 
+SAPUI5 distribution for backward compatibility. 
+
+&lt;b&gt;SAP strongly recommends that existing consumers of those controls migrate to the new {@link sap.viz.ui5.controls.VizFrame VizFrame} 
+control to benefit from new charting enhancements and timely support. &lt;/b&gt;
+
+&lt;b&gt;Note&lt;/b&gt;: As the feature set, design and API usage of VizFrame might differ from the old chart controls, make sure you evaluate it thoroughly before migration.</deprecation>
+    <baseType>sap.viz/ui5/core/BaseChart</baseType>
+    <events>
+        <event allowPreventDefault="false" name="selectData">
+            <documentation>Event fires when certain data point(s) is(are) selected, data context of selected item(s) would be passed in accordance with the following format.&lt;code&gt;{name: &quot;selectData&quot;,data:[{
+//selected element's detail
+target:&quot;Dom Element&quot;,//an object pointed to corresponding dom element
+data:[{val: &quot;...&quot;,//value of this element
+ctx:{type:&quot;Dimension&quot;||&quot;Measure&quot;||&quot;MND&quot;,
+//for Dimension
+path:{aa:&quot;...&quot;,di:&quot;...&quot;,dii:&quot;...&quot;},
+//for Measure
+path:{mg:&quot;...&quot;,mi:&quot;...&quot;,dii_a1:&quot;...&quot;,dii_a2:&quot;...&quot;},
+//for MND
+path:{mg:&quot;...&quot;,mi:&quot;...&quot;}
+//path: analysis path
+//aa: analysis axis index // 0 for analysis axis 1,  1 for analysis 2
+//di: dimension index //zero based
+//dii: dimension item index //zero based
+//mg: measure group index // 0 for measure group 1,1 for measure group 2
+//mi: measure index // measure index in measure group zero based
+//dii_a1: each dii of di in analysis axis 1 index
+//dii_a2: each dii of di in analysis axis 2 index
+}},{
+//for bubble, tagcloud and scatter, there will be more than one values in one selected element.
+var:&quot;...&quot;,ctx:&quot;...&quot;}]},{
+//if under multi selection, there will be more than one selected elements
+target:&quot;...&quot;,data:[&quot;...&quot;]}]}</documentation>
+        </event>
+        <event allowPreventDefault="false" name="deselectData">
+            <documentation>Event fires when certain data point(s) is(are) deselected, data context of deselected item(s) would be passed in accordance with the following format.&lt;code&gt;{name: &quot;deselectData&quot;,data:[&quot;---the same as selectedData---&quot;]}</documentation>
+        </event>
+        <event allowPreventDefault="false" name="showTooltip">
+            <documentation>This event is deprecated, please use showDetail decoration (refer to properties: interaction.decorations) instead. Event fires when the mouse hover onto the specific part of chart, data context of tooltip would be passed in accordance with the following format.&lt;code&gt;{name:&quot;showTooltip&quot;,data:{body:[{
+//All measures
+name:&quot;...&quot;,val:[{//measure value is an array containing only one item
+value:&quot;...&quot;}]},&quot;...&quot;],footer:[{label:&quot;...&quot;,value:&quot;...&quot;},&quot;...&quot;],plotArea:{
+//this object specifies the plot area of the chart
+height:&quot;...&quot;,width:&quot;...&quot;,x:&quot;...&quot;,y:&quot;...&quot;},point:{
+//this object specifies a point which affects the position of tooltip
+x:&quot;...&quot;,y:&quot;...&quot;},selectedValues:...//this number specify how many values are selected}}</documentation>
+            <deprecation since="1.19">This Property has been deprecated. This interface will be removed from the SAPUI5 delivery in one of the next releases.</deprecation>
+        </event>
+        <event allowPreventDefault="false" name="hideTooltip">
+            <documentation>This event is deprecated, please use hideDetail decoration (refer to properties: interaction.decorations) instead. Event fires when the mouse hover out of the specific part of chart, no data is passed.</documentation>
+            <deprecation since="1.19">This Property has been deprecated. This interface will be removed from the SAPUI5 delivery in one of the next releases.</deprecation>
+        </event>
+        <event allowPreventDefault="false" name="initialized">
+            <documentation>Event fires when the loading ends. To use the event listener when creating charts, you must use an event that is passed by the events option. For more information on events options, see the usrOptions section of the &lt;a href=&quot;sap.viz.core.html#createViz&quot; target=&quot;_blank&quot;&gt;createViz&lt;/a&gt; function in the API document.</documentation>
+        </event>
+    </events>
+    <aggregations>
+        <aggregation cardinality="0..1" type="sap.viz/ui5/types/RootContainer" name="general">
+            <documentation>Module sap.viz.modules.rootContainer</documentation>
+        </aggregation>
+        <aggregation cardinality="0..1" type="sap.viz/ui5/types/controller/Interaction" name="interaction">
+            <documentation>Module sap.viz.modules.controller.interaction</documentation>
+        </aggregation>
+        <aggregation cardinality="0..1" type="sap.viz/ui5/types/Title" name="title">
+            <documentation>Module sap.viz.modules.title</documentation>
+        </aggregation>
+        <aggregation cardinality="0..1" type="sap.viz/ui5/types/Legend" name="legendGroup">
+            <documentation>Module sap.viz.modules.legend</documentation>
+        </aggregation>
+        <aggregation cardinality="0..1" type="sap.viz/ui5/types/legend/Common" name="legend">
+            <documentation>Module sap.viz.modules.legend.common</documentation>
+        </aggregation>
+        <aggregation cardinality="0..1" type="sap.viz/ui5/types/Tooltip" name="toolTip">
+            <documentation>Module sap.viz.chart.elements.Tooltip</documentation>
+        </aggregation>
+        <aggregation cardinality="0..1" type="sap.viz/ui5/types/XYContainer" name="xyContainer">
+            <documentation>Module sap.viz.modules.xycontainer</documentation>
+        </aggregation>
+        <aggregation cardinality="0..1" type="sap.viz/ui5/types/Datalabel" name="dataLabel">
+            <documentation>Module sap.viz.modules.datalabel</documentation>
+        </aggregation>
+        <aggregation cardinality="0..1" type="sap.viz/ui5/types/Axis" name="xAxis">
+            <documentation>Module sap.viz.modules.axis</documentation>
+        </aggregation>
+        <aggregation cardinality="0..1" type="sap.viz/ui5/types/Axis" name="yAxis">
+            <documentation>Module sap.viz.modules.axis</documentation>
+        </aggregation>
+        <aggregation cardinality="0..1" type="sap.viz/ui5/types/Background" name="background">
+            <documentation>Module sap.viz.modules.background</documentation>
+        </aggregation>
+        <aggregation cardinality="0..1" type="sap.viz/ui5/types/Area" name="plotArea">
+            <documentation>Module sap.viz.modules.area</documentation>
+        </aggregation>
+    </aggregations>
+</control>

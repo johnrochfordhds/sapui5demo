@@ -1,0 +1,19 @@
+/****** Safari + Chrome on Desktop ******/
+
+.sap-desktop ::-webkit-scrollbar {
+	width: 16px;
+	height: 16px;
+	background-color: #fff;
+}
+
+.sap-desktop ::-webkit-scrollbar-thumb {
+	background-color: #b8c2cc;
+}
+
+.sap-desktop ::-webkit-scrollbar-thumb:hover {
+	background-color: #9fa5b1;
+}
+
+.sap-desktop ::-webkit-scrollbar-corner {
+	background-color: #fff;
+}

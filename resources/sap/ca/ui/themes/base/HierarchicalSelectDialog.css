@@ -1,0 +1,8 @@
+
+/* ============================================= */
+/* CSS for control sap.ca.ui/HierarchicalSelectDialog.control */
+/* ============================================= */
+
+.sapCaUiHSD .sapMBar.sapMPageHeader:before{
+    border-top: none;
+}

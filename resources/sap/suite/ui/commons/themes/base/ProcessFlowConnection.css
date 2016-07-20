@@ -1,0 +1,189 @@
+/* ================================================================== */
+/* CSS for control sap.suite.ui.commons/ProcessFlowConnection.control */
+/* ================================================================== */
+.parentPosition {
+  position: relative;
+}
+.floatLeft {
+  float: left;
+}
+.floatClear {
+  clear: both;
+}
+.boxMiddleWidth {
+  width: 0.125rem;
+}
+.sapSuiteUiPFWithLabel.boxMiddleWidth {
+  width: 0.09375rem;
+}
+html[data-sap-ui-browser^="cr"] .sapSuiteUiPFWithLabel.boxMiddleWidth,
+html[data-sap-ui-os^="iOS"] .sapSuiteUiPFWithLabel.boxMiddleWidth,
+html[data-sap-ui-browser^="sf"] .sapSuiteUiPFWithLabel.boxMiddleWidth {
+  width: 0.125rem;
+}
+html[data-sap-ui-browser^="ie"] .boxMiddleWidth {
+  width: 0.14rem;
+}
+html[data-sap-ui-browser^="ie"] .sapSuiteUiPFWithLabel.boxMiddleWidth {
+  width: 0.1rem;
+}
+.boxMiddleBorderWidth {
+  width: 0rem;
+}
+/* The left part of the arrow before the branch */
+.boxZoom1Width {
+  width: 1.9375rem;
+}
+.boxZoom2Width {
+  width: 1.4375rem;
+}
+.boxZoom3Width {
+  width: 1.9375rem;
+}
+.boxZoom4Width {
+  width: 2.4375rem;
+}
+/* The left part of the arrow before the branch when PF has labels*/
+.sapSuiteUiPFWithLabel.boxZoom1Width {
+  width: 1rem;
+}
+.boxZoom2Width.sapSuiteUiPFWithLabel {
+  width: 1rem;
+}
+.boxZoom3Width.sapSuiteUiPFWithLabel {
+  width: 1rem;
+}
+.boxZoom4Width.sapSuiteUiPFWithLabel {
+  width: 1rem;
+}
+/* The connection when there is no arrow. */
+.boxZoom1WidthWithLabel {
+  width: 6rem;
+}
+/*Blackberry doesn't work fine with 6rem instead, works for 5.99rem*/
+html[data-sap-ui-os^="bb"] .boxZoom1WidthWithLabel {
+  width: 5.99rem;
+}
+.boxZoom2WidthWithLabel {
+  width: 6rem;
+}
+html[data-sap-ui-os^="bb"] .boxZoom2WidthWithLabel {
+  width: 5.99rem;
+}
+.boxZoom3WidthWithLabel {
+  width: 6rem;
+}
+html[data-sap-ui-os^="bb"] .boxZoom3WidthWithLabel {
+  width: 5.99rem;
+}
+.boxZoom4WidthWithLabel {
+  width: 6rem;
+}
+html[data-sap-ui-os^="bb"] .boxZoom4WidthWithLabel {
+  width: 5.99rem;
+}
+/* The right part of the arrow, after the branch. */
+.boxArrowZoom1Width {
+  width: 1.3125rem;
+}
+.boxArrowZoom2Width {
+  width: 0.8125rem;
+}
+.boxArrowZoom3Width {
+  width: 1.3125rem;
+}
+.boxArrowZoom4Width {
+  width: 1.8125rem;
+}
+/* The right part of the arrow, after the branch when PF has labels. */
+.boxArrowZoom1Width.sapSuiteUiPFWithLabel {
+  width: 5.45rem;
+}
+.boxArrowZoom2Width.sapSuiteUiPFWithLabel {
+  width: 5.45rem;
+}
+.boxArrowZoom3Width.sapSuiteUiPFWithLabel {
+  width: 5.45rem;
+}
+.boxArrowZoom4Width.sapSuiteUiPFWithLabel {
+  width: 5.45rem;
+}
+.boxWideWidth {
+  width: 100%;
+}
+/* The whole arrow, when there is no branch. */
+.boxWideArrowZoom1Width {
+  width: 3.375rem;
+}
+.boxWideArrowZoom2Width {
+  width: 2.375rem;
+}
+.boxWideArrowZoom3Width {
+  width: 3.375rem;
+}
+.boxWideArrowZoom4Width {
+  width: 4.375rem;
+}
+/* The whole arrow, when there is no branch and PF has labels. */
+.boxWideArrowZoom1Width.sapSuiteUiPFWithLabel {
+  width: 6.5rem;
+}
+.boxWideArrowZoom2Width.sapSuiteUiPFWithLabel {
+  width: 6.5rem;
+}
+.boxWideArrowZoom3Width.sapSuiteUiPFWithLabel {
+  width: 6.5rem;
+}
+.boxWideArrowZoom4Width.sapSuiteUiPFWithLabel {
+  width: 6.5rem;
+}
+.boxWideZoom1Height {
+  height: 14.8125rem;
+}
+.boxWideZoom2Height {
+  height: 13.5625rem;
+}
+.boxWideZoom3Height {
+  height: 9.5rem;
+}
+.boxWideZoom4Height {
+  height: 4.75rem;
+}
+.boxTopZoom1Height {
+  height: 6rem;
+}
+.boxTopZoom2Height {
+  height: 5.5625rem;
+}
+.boxTopZoom3Height {
+  height: 4.0625rem;
+}
+.boxTopZoom4Height {
+  height: 1.75rem;
+}
+.boxMiddleHeight {
+  height: 0.125rem;
+}
+.boxMiddleBorderHeight {
+  height: 0rem;
+}
+.boxBottomZoom1Height {
+  height: 8.6875rem;
+}
+.boxBottomZoom2Height {
+  height: 7.875rem;
+}
+.boxBottomZoom3Height {
+  height: 5.3125rem;
+}
+.boxBottomZoom4Height {
+  height: 2.875rem;
+}
+
+.arrowRight {
+  width: 0rem;
+  height: 0rem;
+  position: absolute;
+  right: -1rem;
+  bottom: -0.3125rem;
+}

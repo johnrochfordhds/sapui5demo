@@ -1,0 +1,90 @@
+{
+  "controls": {
+	"sap": {
+	  "suite": {
+		"ui": {
+		  "microcharts": {
+			"AreaMicroChart": {
+			  "owner": "Bohdan Pukalskyi",
+			  "owner-email": "bohdan.pukalskyi@sap.com",
+			  "substitute": "Oliver Rooke",
+			  "substitute-email": "oliver.rooke@sap.com",
+			  "sprint": "",
+			  "comment": "",
+			  "themes": [
+				"sap_hcb",
+				"sap-bluecrystal"
+			  ],
+			  "links": []
+			},
+			"BulletMicroChart": {
+			  "owner": "Oliver Rooke",
+			  "owner-email": "oliver.rooke@sap.com",
+			  "substitute": "Pia Kinkel",
+			  "substitute-email": "pia.kinkel@sap.com",
+			  "sprint": "",
+			  "comment": "",
+			  "themes": [
+				"sap_hcb",
+				"sap-bluecrystal"
+			  ],
+			  "links": []
+			},
+			"ColumnMicroChart": {
+			  "owner": "Petr Stribrny",
+			  "owner-email": "petr.stribrny@sap.com",
+			  "substitute": "Gernot Kuhr",
+			  "substitute-email": "gernot.kuhr@sap.com",
+			  "sprint": "",
+			  "comment": "",
+			  "themes": [
+				"sap_hcb",
+				"sap-bluecrystal"
+			  ],
+			  "links": []
+			},
+			"ComparisonMicroChart": {
+			  "owner": "Petr Stribrny",
+			  "owner-email": "petr.stribrny@sap.com",
+			  "substitute": "Gernot Kuhr",
+			  "substitute-email": "gernot.kuhr@sap.com",
+			  "sprint": "",
+			  "comment": "",
+			  "themes": [
+				"sap_hcb",
+				"sap-bluecrystal"
+			  ],
+			  "links": []
+			},
+			"DeltaMicroChart": {
+			  "owner": "Gernot Kuhr",
+			  "owner-email": "gernot.kuhr@sap.com",
+			  "substitute": "Pia Kinkel",
+			  "substitute-email": "pia.kinkel@sap.com",
+			  "sprint": "",
+			  "comment": "",
+			  "themes": [
+				"sap_hcb",
+				"sap-bluecrystal"
+			  ],
+			  "links": []
+			},
+			"HarveyBallMicroChart": {
+			  "owner": "Bohdan Pukalskyi",
+			  "owner-email": "bohdan.pukalskyi@sap.com",
+			  "substitute": "Gernot Kuhr",
+			  "substitute-email": "gernot.kuhr@sap.com",
+			  "sprint": "",
+			  "comment": "",
+			  "themes": [
+				"sap_hcb",
+				"sap-bluecrystal"
+			  ],
+			  "links": []
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

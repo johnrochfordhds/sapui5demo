@@ -1,0 +1,49 @@
+/* ===================================================== */
+/* CSS for control sap.ca.ui.charts/BarListItem.control  */
+/* ===================================================== */
+.sapMBLI {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	height: 2.75em;
+}
+
+.sapMBLIAxis {
+	-webkit-box-flex: 1;
+	-ms-flex: 1 0 auto;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.sapMBLIGroup {
+	-webkit-box-flex: 1;
+	-ms-flex: 1 0 auto;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	min-width: 3em;
+	display: block;
+}
+
+.sap-desktop .sapMLIBCursor .sapMBLIGroup {
+	cursor: pointer;
+}
+
+.sapMBLIValue {
+	-webkit-box-flex: 1;
+	-ms-flex: 1 0 auto;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	min-width: 3em;
+}
+
+.sapMBLI > .sapMLIBContent{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	-webkit-box-flex: 1;
+	-ms-flex: 1 0 auto;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

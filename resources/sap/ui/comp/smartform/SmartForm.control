@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>smartform/SmartForm</name>
+    <derived/>
+    <author>Alexander Fürbach</author>
+    <documentation>The SmartForm control renders a form (sap.ui.layout.form.Form) and supports key user personalization, such as adding/hiding fields and
+       groups, changing the order of fields and groups, and changing labels. When used with the SmartField control the label is taken from the
+       metadata annotation &lt;code&gt;sap:label&lt;/code&gt; if not specified in the XML view.</documentation>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property group="Misc" type="sap.ui.core/string" name="title">
+            <documentation>Title of the form.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/boolean" name="useHorizontalLayout">
+            <documentation>Specifies whether the groups are rendered in a {@link sap.ui.layout.form.ResponsiveLayout ResponsiveLayout} with the label above
+the field. Each group is rendered in a new line.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/int" name="horizontalLayoutGroupElementMinWidth">
+            <documentation>Specifies the minimal size in pixels of all group elements of the form if the horizontal layout is used.</documentation>
+        </property>
+        <property group="Misc" defaultValue="false" type="sap.ui.core/boolean" name="checkButton">
+            <documentation>Specifies whether a check button is added to the toolbar.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="entityType">
+            <documentation>CSV of entity types for which the flexibility features are available.&lt;br&gt;
+For more information about SAPUI5 flexibility, refer to the Developer Guide.&lt;br&gt;
+&lt;i&gt;Note:&lt;/i&gt;&lt;br&gt;
+No validation is done. Please ensure that you do not add spaces or special characters.</documentation>
+        </property>
+        <property group="Misc" defaultValue="false" type="sap.ui.core/boolean" name="expandable">
+            <documentation>Specifies whether the control is expandable. Per default the control is not rendered as expanded.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/boolean" name="expanded">
+            <documentation>If expandable, this property indicates whether the state is expanded or not. If expanded, then the toolbar (if available) and the
+content is rendered; if expanded is false, then only the headerText/headerToolbar is rendered.</documentation>
+        </property>
+        <property group="Misc" defaultValue="false" type="sap.ui.core/boolean" name="editTogglable">
+            <documentation>Specifies whether the editable property is togglable via button.</documentation>
+        </property>
+        <property group="Misc" defaultValue="false" type="sap.ui.core/boolean" name="editable">
+            <documentation>Specifies whether the form is editable.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="ignoredFields">
+            <documentation>CSV of fields that must be ignored in the OData metadata by the SmartForm control.&lt;br&gt;
+&lt;i&gt;Note:&lt;/i&gt;&lt;br&gt;
+No validation is done. Please ensure that you do not add spaces or special characters.</documentation>
+        </property>
+        <property group="Misc" defaultValue="true" type="sap.ui.core/boolean" name="flexEnabled">
+            <documentation>Specifies whether the form enables flexibility features, such as adding new fields.&lt;br&gt;
+For more information about SAPUI5 flexibility, refer to the Developer Guide.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event allowPreventDefault="false" name="editToggled">
+            <documentation>This event is fired when the editable property is toggled.</documentation>
+        </event>
+        <event allowPreventDefault="false" name="checked">
+            <documentation>This event is fired after check was performed.</documentation>
+        </event>
+    </events>
+    <aggregations default="groups">
+        <aggregation cardinality="0..n" type="sap.ui.comp/smartform/Group" name="groups">
+            <documentation>Groups are used to group form elements.</documentation>
+        </aggregation>
+        <aggregation visibility="hidden" cardinality="0..1" type="sap.ui.core/Control" name="content">
+            <documentation>Content to be rendered.</documentation>
+        </aggregation>
+        <aggregation cardinality="0..1" type="sap.ui.comp/smartform/Layout" name="layout">
+            <documentation>Layout settings to adjust ResponsiveGridLayout</documentation>
+        </aggregation>
+        <aggregation cardinality="0..1" type="sap.ui.comp/navpopover/SemanticObjectController" name="semanticObjectController">
+            <documentation>The Semantic Object Controller allows the user to specify and overwrite functionality for semantic object navigation.</documentation>
+        </aggregation>
+        <aggregation cardinality="0..1" type="sap.m/Toolbar" name="customToolbar">
+            <documentation>An additional toolbar that can be added by the users, which can contain further custom buttons, controls, etc.</documentation>
+        </aggregation>
+        <aggregation visibility="hidden" cardinality="0..1" type="sap.m/Toolbar" name="toolbar">
+            <documentation>Toolbar</documentation>
+        </aggregation>
+    </aggregations>
+</control>

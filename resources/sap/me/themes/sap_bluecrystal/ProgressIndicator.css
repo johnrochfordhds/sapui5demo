@@ -1,0 +1,85 @@
+
+/* ======================================================== */
+/* CSS for control sap.me/ProgressIndicator.control */
+/* ======================================================== */
+
+.sapUIMeProgInd{
+    display:inline-block;
+    background: -moz-linear-gradient(top, #cecece 0%, #e3e3e3 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cecece), color-stop(100%,#e3e3e3)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #cecece 0%,#e3e3e3 100%); /* Chrome10+,Safari5.1+ */
+    background: -ms-linear-gradient(top, #cecece 0%,#e3e3e3 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #cecece 0%,#e3e3e3 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#cecece, endColorstr=#e3e3e3,GradientType=0 ); /* IE6-9 */
+    height: 1rem;
+    padding-bottom: 2px;
+}
+
+.sapUIMeProgIndBorder{
+    display: inline-block;
+}
+
+.sapUIMeProgIndBar{
+    position: relative;
+    background: -moz-linear-gradient(top, #779ECB 0%, #77C8CB 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#779ECB), color-stop(100%,#77C8CB)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #779ECB 0%,#77C8CB 100%); /* Chrome10+,Safari5.1+ */
+    background: -ms-linear-gradient(top, #779ECB 0%,#77C8CB 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #779ECB 0%,#77C8CB 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#779ECB, endColorstr=#77C8CB,GradientType=0 ); /* IE6-9 */
+    height: 1rem;
+}
+
+.sapUIMeProgIndBarPOSITIVE{
+    background: -moz-linear-gradient(top, #8fc24d 0%, #406d05 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #8fc24d), color-stop(100%,#406d05)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #8fc24d 0%,#406d05 100%); /* Chrome10+,Safari5.1+ */
+    background: -ms-linear-gradient(top, #8fc24d 0%,#406d05 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #8fc24d 0%,#406d05 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#8fc24d, endColorstr=#406d05,GradientType=0 ); /* IE6-9 */
+}
+
+.sapUIMeProgIndBarNEGATIVE{
+    background: -moz-linear-gradient(top, #f7801f 0%, #be6007 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f7801f), color-stop(100%,#be6007)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #f7801f 0%,#be6007 100%); /* Chrome10+,Safari5.1+ */
+    background: -ms-linear-gradient(top, #f7801f 0%,#be6007 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #f7801f 0%,#be6007 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#f7801f, endColorstr=#be6007,GradientType=0 ); /* IE6-9 */
+}
+
+.sapUIMeProgIndBarCRITICAL{
+    background: -moz-linear-gradient(top, #FF4F00 0%, #FF9E73 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FF4F00), color-stop(100%,#FF9E73)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #FF4F00 0%,#FF9E73 100%); /* Chrome10+,Safari5.1+ */
+    background: -ms-linear-gradient(top, #FF4F00 0%,#FF9E73 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #FF4F00 0%,#FF9E73 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#FF4F00, endColorstr=#FF9E73,GradientType=0 ); /* IE6-9 */
+}
+
+.sapUIMeProgIndFont{
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-left: 5px;
+    vertical-align: top;
+    font-size: 11px;
+    white-space: nowrap;
+}
+
+.sapUIMeProgIndEndHidden{
+    display: inline-block;
+    width: 1px;
+    visibility: hidden;
+}
+
+.sapUIMeProgIndEnd{
+    display: inline-block;
+    width: 1px;
+    visibility: visible;
+    height: 1rem;
+    background-image: -webkit-linear-gradient(top, #cecece 0%, #e3e3e3 100%);
+}
+
+

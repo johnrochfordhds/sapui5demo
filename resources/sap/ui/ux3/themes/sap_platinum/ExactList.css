@@ -1,0 +1,41 @@
+/* ===================================================== */
+/* Platinum CSS for control sap.ui.ux3/ExactList.control */
+/* ===================================================== */
+
+/* Header */
+.sapUiUx3ExactLstExp,
+.sapUiUx3ExactLstHead {
+	background-color: @sapUiMediumBG;
+	background: -moz-linear-gradient(top, #d0dbe9 0%, #ffffff 10%, #dbe1ec 47%, #dbe1ec 85%, #cdd5e4 90%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d0dbe9), color-stop(10%,#ffffff), color-stop(47%,#dbe1ec), color-stop(85%,#dbe1ec), color-stop(90%,#cdd5e4));
+	background: -webkit-linear-gradient(top, #d0dbe9 0%,#ffffff 10%,#dbe1ec 47%,#dbe1ec 85%,#cdd5e4 90%);
+	background: -ms-linear-gradient(top, #d0dbe9 0%,#ffffff 10%,#dbe1ec 47%,#dbe1ec 85%,#cdd5e4 90%);
+	background: linear-gradient(top, #d0dbe9 0%,#ffffff 10%,#dbe1ec 47%,#dbe1ec 85%,#cdd5e4 90%);
+}
+
+.sapUiUx3ExactLstCollapsed > .sapUiUx3ExactLstHead {
+	background-color: @sapUiMediumBG;
+	background: -moz-linear-gradient(left, #d0dbe9 0%, #ffffff 10%, #dbe1ec 47%, #dbe1ec 85%, #cdd5e4 90%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#d0dbe9), color-stop(10%,#ffffff), color-stop(47%,#dbe1ec), color-stop(85%,#dbe1ec), color-stop(90%,#cdd5e4));
+	background: -webkit-linear-gradient(left, #d0dbe9 0%,#ffffff 10%,#dbe1ec 47%,#dbe1ec 85%,#cdd5e4 90%);
+	background: -ms-linear-gradient(left, #d0dbe9 0%,#ffffff 10%,#dbe1ec 47%,#dbe1ec 85%,#cdd5e4 90%);
+	background: linear-gradient(left, #d0dbe9 0%,#ffffff 10%,#dbe1ec 47%,#dbe1ec 85%,#cdd5e4 90%);
+}
+
+.sapUiUx3ExactLstTop > .sapUiUx3ExactLstHead {
+	background-color: @sapUiMediumBorder;
+}
+
+/* Expander */
+.sapUiUx3ExactLstExp {
+	border-top: 1px solid @sapUiMediumBorder;
+}
+
+/*Top Menu*/
+.sapUiUx3ExactLstHeadTopIco {
+	display: none;
+}
+
+.sapUiUx3ExactLstTopActive.sapUiUx3ExactLstTop > .sapUiUx3ExactLstHead:hover > .sapUiUx3ExactLstHeadTopTxt {
+	color: @sapUiText;
+}

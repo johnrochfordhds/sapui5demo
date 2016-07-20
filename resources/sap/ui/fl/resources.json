@@ -1,0 +1,590 @@
+{
+  "_version": "1.1.0",
+  "resources": [
+    {
+      "name": ".library"
+    },
+    {
+      "name": "Cache-dbg.js",
+      "module": "sap/ui/fl/Cache.js",
+      "isDebug": true,
+      "required": [
+        "sap/ui/fl/Utils.js"
+      ]
+    },
+    {
+      "name": "Cache.js",
+      "module": "sap/ui/fl/Cache.js",
+      "required": [
+        "sap/ui/fl/Utils.js"
+      ]
+    },
+    {
+      "name": "Change-dbg.js",
+      "module": "sap/ui/fl/Change.js",
+      "isDebug": true,
+      "required": [
+        "sap/ui/base/EventProvider.js",
+        "sap/ui/fl/Utils.js",
+        "sap/ui/fl/registry/Settings.js"
+      ]
+    },
+    {
+      "name": "Change.js",
+      "module": "sap/ui/fl/Change.js",
+      "required": [
+        "sap/ui/base/EventProvider.js",
+        "sap/ui/fl/Utils.js",
+        "sap/ui/fl/registry/Settings.js"
+      ]
+    },
+    {
+      "name": "ChangePersistence-dbg.js",
+      "module": "sap/ui/fl/ChangePersistence.js",
+      "isDebug": true,
+      "required": [
+        "sap/ui/fl/Change.js",
+        "sap/ui/fl/Utils.js",
+        "jquery.sap.global.js",
+        "sap/ui/fl/LrepConnector.js",
+        "sap/ui/fl/Cache.js"
+      ]
+    },
+    {
+      "name": "ChangePersistence.js",
+      "module": "sap/ui/fl/ChangePersistence.js",
+      "required": [
+        "sap/ui/fl/Change.js",
+        "sap/ui/fl/Utils.js",
+        "jquery.sap.global.js",
+        "sap/ui/fl/LrepConnector.js",
+        "sap/ui/fl/Cache.js"
+      ]
+    },
+    {
+      "name": "ChangePersistenceFactory-dbg.js",
+      "module": "sap/ui/fl/ChangePersistenceFactory.js",
+      "isDebug": true,
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/fl/ChangePersistence.js",
+        "sap/ui/fl/Utils.js"
+      ]
+    },
+    {
+      "name": "ChangePersistenceFactory.js",
+      "module": "sap/ui/fl/ChangePersistenceFactory.js",
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/fl/ChangePersistence.js",
+        "sap/ui/fl/Utils.js"
+      ]
+    },
+    {
+      "name": "DefaultVariant-dbg.js",
+      "module": "sap/ui/fl/DefaultVariant.js",
+      "isDebug": true,
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/fl/Change.js"
+      ]
+    },
+    {
+      "name": "DefaultVariant.js",
+      "module": "sap/ui/fl/DefaultVariant.js",
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/fl/Change.js"
+      ]
+    },
+    {
+      "name": "FakeLrepConnector-dbg.js",
+      "module": "sap/ui/fl/FakeLrepConnector.js",
+      "isDebug": true,
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/thirdparty/URI.js",
+        "sap/ui/fl/Utils.js",
+        "sap/ui/fl/LrepConnector.js",
+        "sap/ui/fl/Cache.js"
+      ]
+    },
+    {
+      "name": "FakeLrepConnector.js",
+      "module": "sap/ui/fl/FakeLrepConnector.js",
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/thirdparty/URI.js",
+        "sap/ui/fl/Utils.js",
+        "sap/ui/fl/LrepConnector.js",
+        "sap/ui/fl/Cache.js"
+      ]
+    },
+    {
+      "name": "FlexController-dbg.js",
+      "module": "sap/ui/fl/FlexController.js",
+      "isDebug": true,
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/fl/Persistence.js",
+        "sap/ui/fl/registry/ChangeRegistry.js",
+        "sap/ui/fl/Utils.js",
+        "sap/ui/fl/Change.js",
+        "sap/ui/fl/registry/Settings.js",
+        "sap/ui/fl/ChangePersistenceFactory.js",
+        "sap/ui/core/mvc/View.js"
+      ]
+    },
+    {
+      "name": "FlexController.js",
+      "module": "sap/ui/fl/FlexController.js",
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/fl/Persistence.js",
+        "sap/ui/fl/registry/ChangeRegistry.js",
+        "sap/ui/fl/Utils.js",
+        "sap/ui/fl/Change.js",
+        "sap/ui/fl/registry/Settings.js",
+        "sap/ui/fl/ChangePersistenceFactory.js",
+        "sap/ui/core/mvc/View.js"
+      ]
+    },
+    {
+      "name": "FlexControllerFactory-dbg.js",
+      "module": "sap/ui/fl/FlexControllerFactory.js",
+      "isDebug": true,
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/fl/FlexController.js",
+        "sap/ui/fl/Utils.js"
+      ]
+    },
+    {
+      "name": "FlexControllerFactory.js",
+      "module": "sap/ui/fl/FlexControllerFactory.js",
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/fl/FlexController.js",
+        "sap/ui/fl/Utils.js"
+      ]
+    },
+    {
+      "name": "LrepConnector-dbg.js",
+      "module": "sap/ui/fl/LrepConnector.js",
+      "isDebug": true,
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/thirdparty/URI.js",
+        "sap/ui/fl/Utils.js"
+      ]
+    },
+    {
+      "name": "LrepConnector.js",
+      "module": "sap/ui/fl/LrepConnector.js",
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/thirdparty/URI.js",
+        "sap/ui/fl/Utils.js"
+      ]
+    },
+    {
+      "name": "Persistence-dbg.js",
+      "module": "sap/ui/fl/Persistence.js",
+      "isDebug": true,
+      "required": [
+        "sap/ui/fl/Change.js",
+        "sap/ui/fl/DefaultVariant.js",
+        "sap/ui/fl/Utils.js",
+        "jquery.sap.global.js",
+        "sap/ui/fl/LrepConnector.js",
+        "sap/ui/fl/Cache.js"
+      ]
+    },
+    {
+      "name": "Persistence.js",
+      "module": "sap/ui/fl/Persistence.js",
+      "required": [
+        "sap/ui/fl/Change.js",
+        "sap/ui/fl/DefaultVariant.js",
+        "sap/ui/fl/Utils.js",
+        "jquery.sap.global.js",
+        "sap/ui/fl/LrepConnector.js",
+        "sap/ui/fl/Cache.js"
+      ]
+    },
+    {
+      "name": "Preprocessor-dbg.js",
+      "module": "sap/ui/fl/Preprocessor.js",
+      "isDebug": true,
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/base/Object.js",
+        "sap/ui/fl/PreprocessorImpl.js"
+      ]
+    },
+    {
+      "name": "Preprocessor.js",
+      "module": "sap/ui/fl/Preprocessor.js",
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/base/Object.js",
+        "sap/ui/fl/PreprocessorImpl.js"
+      ]
+    },
+    {
+      "name": "PreprocessorImpl-dbg.js",
+      "module": "sap/ui/fl/PreprocessorImpl.js",
+      "isDebug": true,
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/core/Component.js",
+        "sap/ui/fl/FlexControllerFactory.js",
+        "sap/ui/fl/Utils.js",
+        "sap/ui/fl/LrepConnector.js",
+        "sap/ui/fl/Cache.js"
+      ],
+      "condRequired": [
+        "sap/ui/core/mvc/Controller.js"
+      ]
+    },
+    {
+      "name": "PreprocessorImpl.js",
+      "module": "sap/ui/fl/PreprocessorImpl.js",
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/core/Component.js",
+        "sap/ui/fl/FlexControllerFactory.js",
+        "sap/ui/fl/Utils.js",
+        "sap/ui/fl/LrepConnector.js",
+        "sap/ui/fl/Cache.js"
+      ],
+      "condRequired": [
+        "sap/ui/core/mvc/Controller.js"
+      ]
+    },
+    {
+      "name": "Transports-dbg.js",
+      "module": "sap/ui/fl/Transports.js",
+      "isDebug": true,
+      "required": [
+        "sap/ui/fl/LrepConnector.js",
+        "sap/ui/fl/Utils.js"
+      ]
+    },
+    {
+      "name": "Transports.js",
+      "module": "sap/ui/fl/Transports.js",
+      "required": [
+        "sap/ui/fl/LrepConnector.js",
+        "sap/ui/fl/Utils.js"
+      ]
+    },
+    {
+      "name": "Utils-dbg.js",
+      "module": "sap/ui/fl/Utils.js",
+      "isDebug": true,
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/core/Component.js"
+      ]
+    },
+    {
+      "name": "Utils.js",
+      "module": "sap/ui/fl/Utils.js",
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/core/Component.js"
+      ]
+    },
+    {
+      "name": "changeHandler/Base-dbg.js",
+      "module": "sap/ui/fl/changeHandler/Base.js",
+      "isDebug": true,
+      "required": [
+        "sap/ui/fl/Utils.js",
+        "jquery.sap.global.js"
+      ]
+    },
+    {
+      "name": "changeHandler/Base.js",
+      "module": "sap/ui/fl/changeHandler/Base.js",
+      "required": [
+        "sap/ui/fl/Utils.js",
+        "jquery.sap.global.js"
+      ]
+    },
+    {
+      "name": "changeHandler/HideControl-dbg.js",
+      "module": "sap/ui/fl/changeHandler/HideControl.js",
+      "isDebug": true,
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/fl/changeHandler/Base.js"
+      ]
+    },
+    {
+      "name": "changeHandler/HideControl.js",
+      "module": "sap/ui/fl/changeHandler/HideControl.js",
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/fl/changeHandler/Base.js"
+      ]
+    },
+    {
+      "name": "changeHandler/MoveElements-dbg.js",
+      "module": "sap/ui/fl/changeHandler/MoveElements.js",
+      "isDebug": true,
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/fl/changeHandler/Base.js"
+      ]
+    },
+    {
+      "name": "changeHandler/MoveElements.js",
+      "module": "sap/ui/fl/changeHandler/MoveElements.js",
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/fl/changeHandler/Base.js"
+      ]
+    },
+    {
+      "name": "changeHandler/PropertyChange-dbg.js",
+      "module": "sap/ui/fl/changeHandler/PropertyChange.js",
+      "isDebug": true,
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/fl/changeHandler/Base.js",
+        "sap/ui/fl/Utils.js"
+      ]
+    },
+    {
+      "name": "changeHandler/PropertyChange.js",
+      "module": "sap/ui/fl/changeHandler/PropertyChange.js",
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/fl/changeHandler/Base.js",
+        "sap/ui/fl/Utils.js"
+      ]
+    },
+    {
+      "name": "changeHandler/UnhideControl-dbg.js",
+      "module": "sap/ui/fl/changeHandler/UnhideControl.js",
+      "isDebug": true,
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/fl/changeHandler/Base.js"
+      ]
+    },
+    {
+      "name": "changeHandler/UnhideControl.js",
+      "module": "sap/ui/fl/changeHandler/UnhideControl.js",
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/fl/changeHandler/Base.js"
+      ]
+    },
+    {
+      "name": "core/EventDelegate-dbg.js",
+      "module": "sap/ui/fl/core/EventDelegate.js",
+      "isDebug": true,
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/fl/Utils.js",
+        "sap/ui/base/EventProvider.js",
+        "sap/ui/fl/registry/ChangeRegistry.js",
+        "sap/ui/fl/core/FlexVisualizer.js"
+      ]
+    },
+    {
+      "name": "core/EventDelegate.js",
+      "module": "sap/ui/fl/core/EventDelegate.js",
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/fl/Utils.js",
+        "sap/ui/base/EventProvider.js",
+        "sap/ui/fl/registry/ChangeRegistry.js",
+        "sap/ui/fl/core/FlexVisualizer.js"
+      ]
+    },
+    {
+      "name": "core/FlexVisualizer-dbg.js",
+      "module": "sap/ui/fl/core/FlexVisualizer.js",
+      "isDebug": true,
+      "required": [
+        "jquery.sap.global.js"
+      ]
+    },
+    {
+      "name": "core/FlexVisualizer.js",
+      "module": "sap/ui/fl/core/FlexVisualizer.js",
+      "required": [
+        "jquery.sap.global.js"
+      ]
+    },
+    {
+      "name": "fieldExt/Access-dbg.js",
+      "module": "sap/ui/fl/fieldExt/Access.js",
+      "isDebug": true
+    },
+    {
+      "name": "fieldExt/Access.js",
+      "module": "sap/ui/fl/fieldExt/Access.js"
+    },
+    {
+      "name": "library-all-dbg.js",
+      "isDebug": true,
+      "merged": true
+    },
+    {
+      "name": "library-all.js",
+      "merged": true
+    },
+    {
+      "name": "library-dbg.js",
+      "module": "sap/ui/fl/library.js",
+      "isDebug": true,
+      "required": [
+        "sap/ui/core/Core.js",
+        "sap/ui/core/library.js",
+        "sap/ui/core/mvc/XMLView.js",
+        "sap/ui/core/mvc/View.js",
+        "sap/ui/fl/registry/ChangeRegistry.js",
+        "sap/ui/fl/registry/SimpleChanges.js"
+      ]
+    },
+    {
+      "name": "library-preload.json",
+      "merged": true
+    },
+    {
+      "name": "library.dependencies.json"
+    },
+    {
+      "name": "library.dependencies.xml"
+    },
+    {
+      "name": "library.js",
+      "module": "sap/ui/fl/library.js",
+      "required": [
+        "sap/ui/core/Core.js",
+        "sap/ui/core/library.js",
+        "sap/ui/core/mvc/XMLView.js",
+        "sap/ui/core/mvc/View.js",
+        "sap/ui/fl/registry/ChangeRegistry.js",
+        "sap/ui/fl/registry/SimpleChanges.js"
+      ]
+    },
+    {
+      "name": "manifest.json",
+      "module": "sap/ui/fl/manifest.json"
+    },
+    {
+      "name": "registry/ChangeRegistry-dbg.js",
+      "module": "sap/ui/fl/registry/ChangeRegistry.js",
+      "isDebug": true,
+      "required": [
+        "sap/ui/fl/Utils.js",
+        "jquery.sap.global.js",
+        "sap/ui/fl/registry/ChangeRegistryItem.js",
+        "sap/ui/fl/registry/SimpleChanges.js",
+        "sap/ui/fl/registry/ChangeTypeMetadata.js",
+        "sap/ui/fl/registry/Settings.js"
+      ]
+    },
+    {
+      "name": "registry/ChangeRegistry.js",
+      "module": "sap/ui/fl/registry/ChangeRegistry.js",
+      "required": [
+        "sap/ui/fl/Utils.js",
+        "jquery.sap.global.js",
+        "sap/ui/fl/registry/ChangeRegistryItem.js",
+        "sap/ui/fl/registry/SimpleChanges.js",
+        "sap/ui/fl/registry/ChangeTypeMetadata.js",
+        "sap/ui/fl/registry/Settings.js"
+      ]
+    },
+    {
+      "name": "registry/ChangeRegistryItem-dbg.js",
+      "module": "sap/ui/fl/registry/ChangeRegistryItem.js",
+      "isDebug": true,
+      "required": [
+        "sap/ui/fl/Utils.js",
+        "jquery.sap.global.js"
+      ]
+    },
+    {
+      "name": "registry/ChangeRegistryItem.js",
+      "module": "sap/ui/fl/registry/ChangeRegistryItem.js",
+      "required": [
+        "sap/ui/fl/Utils.js",
+        "jquery.sap.global.js"
+      ]
+    },
+    {
+      "name": "registry/ChangeTypeMetadata-dbg.js",
+      "module": "sap/ui/fl/registry/ChangeTypeMetadata.js",
+      "isDebug": true,
+      "required": [
+        "sap/ui/fl/Utils.js",
+        "jquery.sap.global.js"
+      ]
+    },
+    {
+      "name": "registry/ChangeTypeMetadata.js",
+      "module": "sap/ui/fl/registry/ChangeTypeMetadata.js",
+      "required": [
+        "sap/ui/fl/Utils.js",
+        "jquery.sap.global.js"
+      ]
+    },
+    {
+      "name": "registry/Settings-dbg.js",
+      "module": "sap/ui/fl/registry/Settings.js",
+      "isDebug": true,
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/fl/LrepConnector.js",
+        "sap/ui/fl/Cache.js",
+        "sap/ui/fl/Utils.js",
+        "sap/ui/base/EventProvider.js"
+      ]
+    },
+    {
+      "name": "registry/Settings.js",
+      "module": "sap/ui/fl/registry/Settings.js",
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/fl/LrepConnector.js",
+        "sap/ui/fl/Cache.js",
+        "sap/ui/fl/Utils.js",
+        "sap/ui/base/EventProvider.js"
+      ]
+    },
+    {
+      "name": "registry/SimpleChanges-dbg.js",
+      "module": "sap/ui/fl/registry/SimpleChanges.js",
+      "isDebug": true,
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/fl/changeHandler/HideControl.js",
+        "sap/ui/fl/changeHandler/UnhideControl.js",
+        "sap/ui/fl/changeHandler/MoveElements.js",
+        "sap/ui/fl/changeHandler/PropertyChange.js"
+      ]
+    },
+    {
+      "name": "registry/SimpleChanges.js",
+      "module": "sap/ui/fl/registry/SimpleChanges.js",
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/fl/changeHandler/HideControl.js",
+        "sap/ui/fl/changeHandler/UnhideControl.js",
+        "sap/ui/fl/changeHandler/MoveElements.js",
+        "sap/ui/fl/changeHandler/PropertyChange.js"
+      ]
+    },
+    {
+      "name": "resources.json"
+    }
+  ]
+}

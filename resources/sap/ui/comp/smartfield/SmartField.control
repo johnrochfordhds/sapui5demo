@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>smartfield/SmartField</name>
+    <derived/>
+    <documentation>The SmartField control is a wrapper for other controls. It interprets OData metadata to determine the control that has to be
+       instantiated. The OData entity is derived from the control's binding context. The OData entity's property that is changed or displayed
+       with the control is derived from the control's value property.</documentation>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property group="Misc" type="sap.ui.core/any" name="value">
+            <documentation>The value property keeps the current value of the control. If a binding expression is configured, this is used to determine the
+property of an OData entity.</documentation>
+        </property>
+        <property group="Misc" defaultValue="true" type="sap.ui.core/boolean" name="enabled">
+            <documentation>Enables the control.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="entitySet">
+            <documentation>The name of an entity set for which the control manages values. This is an optional property.</documentation>
+        </property>
+        <property group="Misc" defaultValue="true" type="sap.ui.core/boolean" name="editable">
+            <documentation>Sets the control into an editable mode or a display mode.</documentation>
+        </property>
+        <property since="1.31.0" group="Misc" defaultValue="true" type="sap.ui.core/boolean" name="contextEditable">
+            <documentation>Notifies the control whether controls using the SmartField are editable or not.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/CSSSize" name="width">
+            <documentation>The width can be set to an absolute value.</documentation>
+        </property>
+        <property group="Misc" defaultValue="Initial" type="sap.ui.core/TextAlign" name="textAlign">
+            <documentation>Horizontal alignment of the text.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="placeholder">
+            <documentation>Text shown when no value available.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="name">
+            <documentation>To be used in the HTML code (for example, for HTML forms that send data to the server via 'submit').</documentation>
+        </property>
+        <property group="Appearance" defaultValue="None" type="sap.ui.core/ValueState" name="valueState">
+            <documentation>Visualizes warnings or errors.</documentation>
+        </property>
+        <property group="Appearance" type="sap.ui.core/string" name="valueStateText">
+            <documentation>The text which is shown in the value state message popup.</documentation>
+        </property>
+        <property group="Appearance" defaultValue="true" type="sap.ui.core/boolean" name="showValueStateMessage">
+            <documentation>The text which is shown in the value state message popup.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.comp/smartfield/JSONType" name="jsontype">
+            <documentation>Data types to be used, if the SmartField control is interacting with a JSON model. If the value property of the control is bound to
+a property of an OData entity set, this property is not considered.</documentation>
+            <deprecation since="1.31.0"></deprecation>
+        </property>
+        <property group="Misc" defaultValue="false" type="sap.ui.core/boolean" name="mandatory">
+            <documentation>Mandatory property.</documentation>
+        </property>
+        <property group="Misc" defaultValue="0" type="sap.ui.core/int" name="maxLength">
+            <documentation>Maximum number of characters. Value &lt;code&gt;0&lt;/code&gt; means the feature is switched off.</documentation>
+        </property>
+        <property group="Misc" defaultValue="true" type="sap.ui.core/boolean" name="showSuggestion">
+            <documentation>If set to &lt;code&gt;true&lt;/code&gt;, the suggestion feature for a hosted control is enabled, if the hosted control supports it.</documentation>
+        </property>
+        <property group="Misc" defaultValue="true" type="sap.ui.core/boolean" name="showValueHelp">
+            <documentation>If set to true, a value help indicator will be displayed inside the hosted control, if the hosted control supports this.</documentation>
+        </property>
+        <property group="Appearance" defaultValue="true" type="sap.ui.core/boolean" name="showLabel">
+            <documentation>If set to false the label is not displayed.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="textLabel">
+            <documentation>This property contains the text of an associated smart label.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="tooltipLabel">
+            <documentation>This property contains the tool tip of the associated smart label.</documentation>
+        </property>
+        <property group="Misc" defaultValue="true" type="sap.ui.core/boolean" name="uomVisible">
+            <documentation>Visible state of the unit, if the SmartField control addresses unit of measure use cases, for example, an amount and its associated
+currency.</documentation>
+        </property>
+        <property group="Misc" defaultValue="true" type="sap.ui.core/boolean" name="uomEditable">
+            <documentation>Editable state of the unit, if the SmartField control addresses unit of measure use cases, for example, an amount and its
+associated currency.</documentation>
+        </property>
+        <property group="Misc" defaultValue="true" type="sap.ui.core/boolean" name="uomEnabled">
+            <documentation>Enabled state of the unit, if the SmartField control addresses unit of measure use cases, for example, an amount and its associated
+currency.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="url">
+            <documentation>Contains a URL which is used to render a link. The link is rendered, if the OData property which the value property of the control
+is bound to is of type &lt;code&gt;Edm.String&lt;/code&gt; and the Smart Field is in display mode.</documentation>
+        </property>
+        <property since="1.31.0" group="Misc" defaultValue="-1" type="sap.ui.core/int" name="uomEditState">
+            <documentation>This property is for internal use only.</documentation>
+        </property>
+        <property since="1.31.0" group="Misc" defaultValue="None" type="sap.ui.comp/smartfield/ControlContextType" name="controlContext">
+            <documentation>Defines in which context the layout of the smart field has to be interpreted.</documentation>
+        </property>
+        <property since="1.31.0" group="Misc" defaultValue="None" type="sap.ui.comp/smartfield/ControlProposalType" name="proposedControl">
+            <documentation>Proposes a control to be rendered. The smart field may ignore the proposal.</documentation>
+            <deprecation since="1.32.0"></deprecation>
+        </property>
+        <property since="1.36.6" group="Misc" defaultValue="true" type="sap.ui.core/boolean" name="wrapping">
+            <documentation>Allow the wrapping to be set for table based control context.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event allowPreventDefault="false" name="entitySetFound">
+            <documentation>The OData entity set is either derived from the control's binding context or from control's entity set property, if a value for it
+is specified. In both cases this event is fired.</documentation>
+        </event>
+        <event allowPreventDefault="false" name="change">
+            <documentation>The event is fired after the text in the field has changed and the focus leaves the TextField or Enter is pressed.</documentation>
+        </event>
+        <event allowPreventDefault="false" name="initialise">
+            <documentation>The event is fired after the smart field has calculated its metadata.</documentation>
+        </event>
+        <event allowPreventDefault="false" name="visibleChanged">
+            <documentation>The event is fired after the visibility of the control has changed.</documentation>
+        </event>
+        <event allowPreventDefault="false" since="1.30.0" name="editableChanged">
+            <documentation>The event is fired after the value of editable property of the control has changed.</documentation>
+        </event>
+        <event allowPreventDefault="false" since="1.31.0" name="contextEditableChanged">
+            <documentation>The event is fired after the context editable property of the control has changed.</documentation>
+        </event>
+        <event allowPreventDefault="false" name="innerControlsCreated">
+            <documentation>The event is fired after the inner controls have been created.</documentation>
+        </event>
+        <event allowPreventDefault="false" since="1.31.0" name="valueListChanged">
+            <documentation>The event is fired when after selection of values with value help or auto-suggest, the model is updated with the selected data.</documentation>
+        </event>
+        <event allowPreventDefault="false" since="1.36.0" name="press">
+            <documentation>Fires when the user triggers the link control or taps/clicks on an active title of the object identifier control.</documentation>
+        </event>
+    </events>
+    <aggregations>
+        <aggregation visibility="hidden" cardinality="0..1" type="sap.ui.core/Control" name="_content">
+            <documentation>The content aggregation is used to hold the control that is hosted by the SmartField control.</documentation>
+        </aggregation>
+        <aggregation cardinality="0..1" type="sap.ui.comp/smartfield/Configuration" name="configuration">
+            <documentation>Optional configuration for SmartField.</documentation>
+        </aggregation>
+        <aggregation cardinality="0..1" since="1.32.0" type="sap.ui.comp/smartfield/ControlProposal" name="controlProposal">
+            <documentation>Proposes a control to be rendered. The smart field may ignore the proposal.</documentation>
+            <deprecation since="1.34.0"></deprecation>
+        </aggregation>
+        <aggregation visibility="hidden" cardinality="0..n" since="1.34.2" type="sap.ui.core/InvisibleText" name="_ariaLabelInvisibleText">
+            <documentation>Collects the texts to be used for the ARIA labels.&lt;br&gt;
+The InvisibleText controls will be added to the DOM by the SmartField control.</documentation>
+        </aggregation>
+    </aggregations>
+    <associations>
+        <association since="1.34.2" cardinality="0..n" type="sap.ui.core/Control" name="ariaLabelledBy">
+            <documentation>Association with controls / IDs that label this control (see WAI-ARIA attribute aria-labelledby).</documentation>
+        </association>
+    </associations>
+    <methods>
+        <method type="sap.ui.core/string" name="getDataType">
+            <documentation>Returns the Edm data type of either the OData property to which the value property of the control is bound or the data type of the attribute in
+the JSON model used. If no model is available null is returned.</documentation>
+        </method>
+        <method type="sap.ui.core/string" name="getUnitOfMeasure">
+            <documentation>If the control's value property is bound to an OData property that semantically represents a unit of measure, the value of the current unit of
+measure is returned. Otherwise &lt;code&gt;null&lt;/code&gt; is returned.</documentation>
+        </method>
+        <method type="sap.ui.core/void" name="setUnitOfMeasure">
+            <documentation>If the control's value property is bound to an OData property that semantically represents a unit of measure, the value of the current unit of
+measure can be changed.</documentation>
+            <parameters>
+                <parameter type="sap.ui.core/string" name="sUnit">
+                    <documentation>The new unit of measure to be set.</documentation>
+                </parameter>
+            </parameters>
+        </method>
+    </methods>
+</control>

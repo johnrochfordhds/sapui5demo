@@ -1,0 +1,40 @@
+/* ==================================================== */
+/* CSS for control sap.ca.ui/HorizontalBarChart.control */
+/* ==================================================== */
+
+.sapCaUiHorizontalBarChart{
+  color: @sapUiTextColor;
+}
+
+.sapCaUiHorizontalBarChart .v-datalabel text{
+  font-weight: bold;
+}
+
+.sapCaUiHorizontalBarChart .v-hovershadow {
+  fill: none;
+}
+
+#hbar {
+  max-width: 300px !important;
+}
+
+.sapCaUiHorizontalBarChart .v-datapoint-selected {
+  stroke: none;
+}
+
+.sapCaUiHorizontalBarChart path.v-valueaxisline {
+  stroke: none;
+  stroke-width: 0;
+}
+
+.sapCaUiHorizontalBarChart line.v-background-border.viz-plot-background-border:nth-child(0),
+.sapCaUiHorizontalBarChart line.v-background-border.viz-plot-background-border:nth-child(1) {
+  stroke: none;
+  stroke-width: 0;
+}
+
+.sapCaUiHorizontalBarChart .v-categoryaxisline,
+.sapCaUiHorizontalBarChart .v-valueaxisline {
+  stroke: @sapUiLightBorder;
+}
+

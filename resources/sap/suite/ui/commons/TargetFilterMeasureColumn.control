@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>TargetFilterMeasureColumn</name>
+	<documentation>The configuration element for the measure column in the TargetFilter control.</documentation>
+
+	<baseType>sap.ui.core/Element</baseType>
+	<properties>
+		<property group="Misc" name="path" type="sap.ui.core/string">
+			<documentation>The binding path.</documentation>
+		</property>
+		<property group="Misc" name="type" type="sap.ui.core/any">
+			<documentation>This property is used for formatting the displayed values. The type of the property must be sap.ui.model.SimpleType or its descedants. By default, sap.ui.model.type.Integer with enabled grouping.
+			</documentation>
+		</property>
+	</properties>
+</control>

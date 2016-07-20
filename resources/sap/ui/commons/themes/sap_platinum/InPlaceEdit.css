@@ -1,0 +1,82 @@
+/* ================================================== */
+/* CSS for control sap.ui.commons/InPlaceEdit.control */
+/* Platinum                                           */
+/* ================================================== */
+
+.sapUiIpe{
+	height: 21px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.sapUiIpe:not(.sapUiIpeEdit){
+	/* to fade success color out if removed after some seconds */
+	transition: background-color 1s linear;
+	-moz-transition: background-color 1s linear;
+	-webkit-transition: background-color 1s linear;
+	-ms-transition: background-color 1s linear;
+}
+
+.sapUiIpeUndo > .sapUiIpeCont > .sapUiTfBrd{
+	border-right: none;
+	border-top-right-radius: 0;
+	-moz-border-radius-topright: 0;
+	border-bottom-right-radius: 0;
+	-moz-border-radius-bottomright: 0;
+	outline: none; /* hide webkit outline*/
+}
+
+/* since focusout handling is delayed simulate focus on TextField */
+.sapUiIpeFocus > .sapUiIpeCont > .sapUiTfBrd{
+	border-color: @sapUiHighlight;
+}
+
+.sapUiIpeCombo:hover,
+.sapUiIpeFocus.sapUiIpeCombo,
+.sapUiIpeFocus > .sapUiIpeCombo{
+	background-image: url(img/combobox/cmb.png);
+	background-position: center right;
+	background-repeat: no-repeat;
+	padding-right: 12px;
+}
+
+.sapUiIpeEdit.sapUiIpeFocus > .sapUiIpeCombo{
+	background-image: none;
+	padding-right: 0;
+}
+
+/* Revert/Edit Button */
+.sapUiIpe > .sapUiBtnS.sapUiBtnLite,
+.sapUiIpeCont > .sapUiBtnS.sapUiBtnLite{
+	width: 22px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.sapUiIpe.sapUiIpeLink > .sapUiBtnS.sapUiBtnLite,
+.sapUiIpeLink > .sapUiIpeCont > .sapUiBtnS.sapUiBtnLite{
+	right: 0;
+}
+
+.sapUiIpeEdit.sapUiIpe > .sapUiBtnLite,
+.sapUiIpeEdit > .sapUiIpeCont > .sapUiBtnLite{
+	height: 20px;
+	margin-top: 1px;
+	border-top-left-radius: 0;
+	-moz-border-radius-topleft: 0;
+	border-bottom-left-radius: 0;
+	-moz-border-radius-bottomleft: 0;
+	background-image:url(img/textfield/tf_std.png);
+	background-image: -moz-linear-gradient(center 1px, white, #EBF0F6 0px, @sapUiFieldBackground 9px);
+	background-image: -webkit-gradient(linear, 0 1, 0 11, from(white), color-stop(0.05, #EBF0F6), to(@sapUiFieldBackground));
+}
+
+.sapUiIpeErr.sapUiIpeEdit:hover > .sapUiBtnS.sapUiBtnLite{
+	border-color: @sapUiFieldInvalidColor;
+}
+
+.sapUiIpeWarn.sapUiIpeEdit:hover > .sapUiBtnS.sapUiBtnLite{
+	border-color: @sapUiFieldWarningColor;
+}
+
+@sapUiIpeUndoImageURL: ~"/img/search/clear.gif";

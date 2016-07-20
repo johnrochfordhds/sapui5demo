@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>smartvariants/SmartVariantManagement</name>
+    <derived/>
+    <documentation>The SmartVariantManagement control is a specialization of the {@link sap.ui.comp.variants.VariantManagement VariantManagement} control
+       and communicates with the layer that offers SAPUI5 flexibility services to manage the variants.&lt;br&gt;
+       For more information about SAPUI5 flexibility, refer to the Developer Guide.</documentation>
+    <baseType>sap.ui.comp/variants/VariantManagement</baseType>
+    <events>
+        <event allowPreventDefault="false" name="initialise">
+            <documentation>This event is fired when the SmartVariantManagement control is initialized.</documentation>
+        </event>
+        <event allowPreventDefault="false" name="afterSave">
+            <documentation>This event is fired after a variant has been saved. This event can be used to retrieve the ID of the saved variant.</documentation>
+        </event>
+    </events>
+    <aggregations>
+        <aggregation cardinality="0..n" type="sap.ui.comp/smartvariants/PersonalizableInfo" name="personalizableControls">
+            <documentation>All controls that rely on variant handling have to be added to this aggregation.</documentation>
+        </aggregation>
+    </aggregations>
+    <methods>
+        <method since="1.28.1" type="sap.ui.core/void" name="setCurrentVariantId">
+            <documentation>Sets the current variant ID.</documentation>
+            <parameters>
+                <parameter type="sap.ui.core/string" name="variantKey">
+                    <documentation>The variant key</documentation>
+                </parameter>
+                <parameter type="sap.ui.core/boolean" name="doNotApplyVariant">
+                    <documentation>If set to &lt;code&gt;true&lt;/code&gt;, the &lt;code&gt;applyVariant&lt;/code&gt; method is not executed yet. Relevant during</documentation>
+                </parameter>
+            </parameters>
+        </method>
+        <method since="1.28.1" type="sap.ui.core/string" name="getCurrentVariantId">
+            <documentation>Retrieves the current variant ID. If a standard variant is currently set, an empty string is returned.</documentation>
+        </method>
+    </methods>
+</control>

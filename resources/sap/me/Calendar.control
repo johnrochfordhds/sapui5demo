@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>Calendar</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>This is the Calendar control</documentation>
+    <deprecation since="1.26.0">This control was experimental since 1.12. Please use the sap.ui.unified.Calendar instead!</deprecation>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property group="Misc" defaultValue="true" type="sap.ui.core/boolean" name="visible">
+            <documentation>visibility of the control</documentation>
+        </property>
+        <property group="Misc" defaultValue="false" type="sap.ui.core/boolean" name="hideNavControls">
+            <documentation>hides the area of navigation controls</documentation>
+        </property>
+        <property group="Misc" defaultValue="false" type="sap.ui.core/boolean" name="hideMonthTitles">
+            <documentation>hides the area of month titles</documentation>
+        </property>
+        <property group="Misc" defaultValue="1" type="sap.ui.core/int" name="monthsPerRow">
+            <documentation>months to display in a row. This sets the width of the whole control in order to contain the desired number of months per row</documentation>
+        </property>
+        <property group="Misc" defaultValue="45" type="sap.ui.core/int" name="dayWidth">
+            <documentation>the width of a day</documentation>
+        </property>
+        <property group="Misc" defaultValue="50" type="sap.ui.core/int" name="dayHeight">
+            <documentation>the height of a day</documentation>
+        </property>
+        <property group="Misc" defaultValue="1" type="sap.ui.core/int" name="weeksPerRow">
+            <documentation>weeks to display in a row</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/boolean" name="singleRow">
+            <documentation>boolean that sets the view to week mode or month mode</documentation>
+        </property>
+        <property group="Misc" defaultValue="1" type="sap.ui.core/int" name="monthsToDisplay">
+            <documentation>number of months in a row.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="currentDate">
+            <documentation>the center date where the month/week will be built around</documentation>
+        </property>
+        <property group="Misc" defaultValue="false" type="sap.ui.core/boolean" name="enableMultiselection">
+            <documentation>to enable multiselection feature</documentation>
+        </property>
+        <property group="Misc" defaultValue="0" type="sap.ui.core/int" name="firstDayOffset">
+            <documentation>to offset the first day of the week (0 = sunday)</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/any" name="disabledWeekDays">
+            <documentation>Array of weekDays (as integers where 0=Sunday, 1=Monday etc) to be disabled. Interaction will be disabled for these week days.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/any" name="disabledDates">
+            <documentation>Array of specific dates (strings or Date objects) that will be disabled/non interactive</documentation>
+        </property>
+        <property group="Misc" defaultValue="false" type="sap.ui.core/boolean" name="swipeToNavigate">
+            <documentation>When enabled, swipe gestures will navigate and not select</documentation>
+        </property>
+        <property group="Appearance" defaultValue="Approval" type="sap.me/CalendarDesign" name="design">
+            <documentation>Indicates the design of the calendar (mainly colors)</documentation>
+        </property>
+        <property group="Behavior" defaultValue="SINGLE" type="sap.me/CalendarSelectionMode" name="selectionMode">
+            <documentation>Indicates the design of the calendar (mainly colors)</documentation>
+        </property>
+        <property group="Dimension" defaultValue="100%" type="sap.ui.core/CSSSize" name="width">
+            <documentation>The width of the calendar</documentation>
+        </property>
+        <property group="Appearance" type="sap.ui.core/any" name="days">
+            <documentation>Array of day names, default value is sap.m.getLocaleData().getDays(&quot;abbreviated&quot;)
+Check sap.ui.core.LocaleData documentation for more info.</documentation>
+        </property>
+        <property group="Appearance" type="sap.ui.core/any" name="months">
+            <documentation>Array of month names, default value is sap.m.getLocaleData().getMonths(&quot;abbreviated&quot;)
+Check sap.ui.core.LocaleData documentation for more info.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event allowPreventDefault="false" name="tapOnDate">
+            <documentation>event fired when a date is tapped</documentation>
+            <parameters>
+                <parameter type="sap.ui.core/string" name="date">
+                    <documentation>date tapped</documentation>
+                </parameter>
+                <parameter type="sap.ui.core/boolean" name="didSelect">
+                    <documentation>if day was selected</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event allowPreventDefault="false" name="changeCurrentDate">
+            <documentation>event fired when tap to next or previous button and currentDate is updated</documentation>
+            <parameters>
+                <parameter type="sap.ui.core/string" name="currentDate">
+                    <documentation>new date</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event allowPreventDefault="false" name="changeRange">
+            <documentation>when the range of selected dates changes</documentation>
+            <parameters>
+                <parameter type="sap.ui.core/string" name="fromDate">
+                    <documentation>from date</documentation>
+                </parameter>
+                <parameter type="sap.ui.core/string" name="toDate">
+                    <documentation>to date</documentation>
+                </parameter>
+            </parameters>
+        </event>
+    </events>
+    <methods>
+        <method type="sap.ui.core/any" name="getSelectedDates">
+            <documentation>returns an array of the currently selected dates (dates are strings formatted as Date.toDateString())</documentation>
+        </method>
+        <method type="sap.ui.core/void" name="toggleDatesSelection">
+            <documentation>it toggles the passed dates to selected/unselected</documentation>
+            <parameters>
+                <parameter type="sap.ui.core/any" name="dates">
+                    <documentation>Array of the dates to be toggled. they can be Strings or Date objects.</documentation>
+                </parameter>
+                <parameter type="sap.ui.core/boolean" name="selected">
+                    <documentation>select/unselect. Optional, if omitted it inverts each date's current state</documentation>
+                </parameter>
+            </parameters>
+        </method>
+        <method type="sap.ui.core/void" name="toggleDatesType">
+            <documentation>Change the type of the given dates</documentation>
+            <parameters>
+                <parameter type="sap.ui.core/any" name="dates">
+                    <documentation>An array of dates in string representation</documentation>
+                </parameter>
+                <parameter type="sap.me/CalendarEventType" name="type">
+                    <documentation>The type of event</documentation>
+                </parameter>
+                <parameter type="sap.ui.core/boolean" name="selected">
+                    <documentation>Add/remove the type, if ommited it will toggle</documentation>
+                </parameter>
+            </parameters>
+        </method>
+        <method type="sap.ui.core/void" name="unselectAllDates">
+            <documentation>unselect all the dates</documentation>
+        </method>
+        <method type="sap.ui.core/void" name="toggleDatesRangeSelection">
+            <documentation>it toggles the selection of the dates within the passed range to selected/unselected</documentation>
+            <parameters>
+                <parameter type="sap.ui.core/any" name="dateStart">
+                    <documentation>starting date of the range. It can be Strings or Date objects.</documentation>
+                </parameter>
+                <parameter type="sap.ui.core/any" name="dateEnd">
+                    <documentation>ending date of the range. It can be Strings or Date objects.</documentation>
+                </parameter>
+                <parameter type="sap.ui.core/boolean" name="selected">
+                    <documentation>selected/unselected. Optional, if omitted it inverts each date's current state</documentation>
+                </parameter>
+            </parameters>
+        </method>
+    </methods>
+</control>

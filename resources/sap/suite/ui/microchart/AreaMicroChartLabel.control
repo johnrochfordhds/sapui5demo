@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>AreaMicroChartLabel</name>
+    <derived/>
+    <documentation>Displays or hides the labels for start and end dates, start and end values, and minimum and maximum values.</documentation>
+    <baseType>sap.ui.core/Element</baseType>
+    <properties>
+        <property group="Misc" defaultValue="Neutral" type="sap.m/ValueColor" name="color">
+            <documentation>The graphic element color.</documentation>
+        </property>
+        <property group="Misc" defaultValue="" type="sap.ui.core/string" name="label">
+            <documentation>The line title.</documentation>
+        </property>
+    </properties>
+</control>

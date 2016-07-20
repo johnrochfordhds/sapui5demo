@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ui5/types/Bubble</name>
+    <derived/>
+    <documentation>Module sap.viz.ui5.types.Bubble</documentation>
+    <since>1.7.2</since>
+    <developmentState since="1.7.2" state="experimental">Charting API is not finished yet and might change completely.</developmentState>
+    <deprecation since="1.32.0">The chart controls in the &lt;code&gt;sap.viz.ui5&lt;/code&gt; package (which were always marked as &lt;i&gt;experimental&lt;/i&gt;) have been deprecated since 1.32.0. 
+They are no longer actively developed and won't receive new features or improvements, only important bug fixes. They will only remain in the 
+SAPUI5 distribution for backward compatibility. 
+
+&lt;b&gt;SAP strongly recommends that existing consumers of those controls migrate to the new {@link sap.viz.ui5.controls.VizFrame VizFrame} 
+control to benefit from new charting enhancements and timely support. &lt;/b&gt;
+
+&lt;b&gt;Note&lt;/b&gt;: As the feature set, design and API usage of VizFrame might differ from the old chart controls, make sure you evaluate it thoroughly before migration.</deprecation>
+    <baseType>sap.viz/ui5/core/BaseStructuredType</baseType>
+    <properties>
+        <property defaultValue="['#748CB2','#9CC677','#EACF5E','#F9AD79','#D16A7C','#8873A2','#3A95B3','#B6D949','#FDD36C','#F47958','#A65084','#0063B1','#0DA841','#FCB71D','#F05620','#B22D6E','#3C368E','#8FB2CF','#95D4AB','#EAE98F','#F9BE92','#EC9A99','#BC98BD','#1EB7B2','#73C03C','#F48323','#EB271B','#D9B5CA','#AED1DA','#DFECB2','#FCDAB0','#F5BCB4']" type="sap.ui.core/string[]" name="colorPalette">
+            <documentation>Set the color of the bubbles</documentation>
+        </property>
+        <property defaultValue="['circle','square','diamond','triangleUp','triangleDown','triangleLeft','triangleRight','cross','intersection']" type="sap.ui.core/string[]" name="shapePalette">
+            <documentation>Set the shape of the bubbles</documentation>
+        </property>
+        <property type="sap.ui.core/int" name="minMarkerSize">
+            <documentation>Set the minimum size of the data points</documentation>
+        </property>
+        <property defaultValue="0" type="sap.ui.core/float" name="maxPriValue">
+            <documentation>Set the max value of primary values</documentation>
+            <deprecation since="1.20">This Property has been deprecated. This interface will be removed from the SAPUI5 delivery in one of the next releases.</deprecation>
+        </property>
+        <property defaultValue="0" type="sap.ui.core/float" name="minPriValue">
+            <documentation>Set the minimum value of primary values</documentation>
+            <deprecation since="1.20">This Property has been deprecated. This interface will be removed from the SAPUI5 delivery in one of the next releases.</deprecation>
+        </property>
+        <property defaultValue="0" type="sap.ui.core/float" name="maxSecValue">
+            <documentation>Set the max value of secondary values</documentation>
+            <deprecation since="1.20">This Property has been deprecated. This interface will be removed from the SAPUI5 delivery in one of the next releases.</deprecation>
+        </property>
+        <property defaultValue="0" type="sap.ui.core/float" name="minSecValue">
+            <documentation>Set the minimum value of secondary values</documentation>
+            <deprecation since="1.20">This Property has been deprecated. This interface will be removed from the SAPUI5 delivery in one of the next releases.</deprecation>
+        </property>
+        <property defaultValue="0" type="sap.ui.core/float" name="maxBubbleWidth">
+            <documentation>Set the max value of bubble width values</documentation>
+            <deprecation since="1.12">This Property has been deprecated. This interface will be removed from the SAPUI5 delivery in one of the next releases.</deprecation>
+        </property>
+        <property defaultValue="0" type="sap.ui.core/float" name="minBubbleWidth">
+            <documentation>Set the minimum value of bubble width values</documentation>
+            <deprecation since="1.12">This Property has been deprecated. This interface will be removed from the SAPUI5 delivery in one of the next releases.</deprecation>
+        </property>
+        <property defaultValue="0" type="sap.ui.core/float" name="maxBubbleHeight">
+            <documentation>Set the max value of bubble height values</documentation>
+            <deprecation since="1.12">This Property has been deprecated. This interface will be removed from the SAPUI5 delivery in one of the next releases.</deprecation>
+        </property>
+        <property defaultValue="0" type="sap.ui.core/float" name="minBubbleHeight">
+            <documentation>Set the minimum value of bubble height values</documentation>
+            <deprecation since="1.12">This Property has been deprecated. This interface will be removed from the SAPUI5 delivery in one of the next releases.</deprecation>
+        </property>
+        <property defaultValue="false" type="sap.ui.core/boolean" name="timeBased">
+            <documentation>Set whether it is time based scatter/bubble</documentation>
+            <deprecation since="1.20">This Property has been deprecated. This interface will be removed from the SAPUI5 delivery in one of the next releases.</deprecation>
+        </property>
+        <property defaultValue="normal" type="sap.viz/ui5/types/Bubble_drawingEffect" name="drawingEffect">
+            <documentation>Set the drawing effect for the bubbles</documentation>
+        </property>
+        <property type="sap.ui.core/object[]" name="formatRules">
+            <documentation>Sample value for formatRules:  [{condition: [{Key1:Value1, Key2:Value2}], color:&quot;#00ff00&quot;}, {condition: [{Key3:Value3}], color:&quot;#00ffff&quot;}].   Each rule has two properties: the &quot;condition&quot; and the &quot;color&quot;.   Value1, Value2 and Value3 are values. &lt;br /&gt;  The value of a dimension may be &lt;br /&gt;  1, Single value (string), like &quot;China&quot; . &lt;br /&gt;  2. Array (enumeration), like [&quot;UK&quot;,&quot;USA&quot;] . &lt;br /&gt;  The value of a measure may be &lt;br /&gt;  1, Single value (number), like 20 . &lt;br /&gt;  2. Arry (enumeration), like [121,122] . &lt;br /&gt;  3. Object (range), like {min:100, max 200} . Min and max are inclusive.   If users want to inlcude 200, but not 100 in the range, they may use {min:100.00001, max:200}.   If users want values larger than 100, they may write {min:100}. &lt;br /&gt;   The color is applied if one or more conditions in the condition array is met.   If multiple rules could apply on the same data point, it is the last rule that takes effect.</documentation>
+        </property>
+        <property defaultValue="true" type="sap.ui.core/boolean" name="showNegativeValues">
+            <documentation>Show/hide the data of negetive value.</documentation>
+            <deprecation since="1.12">This Property has been deprecated. This interface will be removed from the SAPUI5 delivery in one of the next releases.</deprecation>
+        </property>
+    </properties>
+    <aggregations>
+        <aggregation cardinality="0..1" type="sap.viz/ui5/types/Bubble_animation" name="animation">
+            <documentation>Settings for animations in bubble and scatter charts</documentation>
+        </aggregation>
+        <aggregation cardinality="0..1" type="sap.viz/ui5/types/Bubble_axisTooltip" name="axisTooltip">
+            <documentation>Set tooltip related properties.</documentation>
+            <deprecation since="1.19">This Property has been deprecated. This interface will be removed from the SAPUI5 delivery in one of the next releases.</deprecation>
+        </aggregation>
+        <aggregation cardinality="0..1" type="sap.viz/ui5/types/Bubble_hoverline" name="hoverline">
+            <documentation>Settings for hoverline properties.</documentation>
+            <deprecation since="1.19">This Property has been deprecated. This interface will be removed from the SAPUI5 delivery in one of the next releases.</deprecation>
+        </aggregation>
+    </aggregations>
+</control>

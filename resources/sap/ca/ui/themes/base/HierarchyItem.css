@@ -1,0 +1,58 @@
+
+/* ============================================= */
+/* CSS for control sap.ca.ui/HierarchyItem.control */
+/* ============================================= */
+
+.sapCaUiHierarchyItem{
+
+}
+
+.sapCaUiHierarchyItemBlockContainer{
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sapCaUiHierarchyItemEmphasized{
+    font-weight: bold;
+}
+
+.sapCaUiHierarchyItemIcon{
+    color: @sapUiLightText;
+    font-size: 0.75em;
+    padding-right: .5em;
+    overflow: visible;
+    white-space: normal;
+}
+
+.sapCaUiHierarchyItemLevelTypeLbl{
+    color: @sapUiLightText;
+    font-size: 0.75em;
+    padding-right: .5em;
+    overflow: visible;
+    white-space: normal;
+}
+
+.sapCaUiHierarchyItemIdentifierLbl{
+    color: @sapUiLightText;
+    font-size: 0.75em;
+    overflow: visible;
+    white-space: normal;
+    word-break: break-all;
+}
+
+
+.sapCaUiHierarchyItemTitleLbl {
+    font-size: 0.875em;
+    min-height: 1.125em;
+    padding-right: .5em;
+    overflow: visible;
+    white-space: normal;
+}
+
+.sapCaUiHierarchyItemLink {
+    font-size: 0.875em;
+    min-height: 1.125em;
+    overflow: visible;
+    white-space: normal;
+}

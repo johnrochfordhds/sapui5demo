@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>variants/EditableVariantItem</name>
+    <derived/>
+    <documentation>The EditableVariantItem class describes an editable variant list item for the Manage Variants popup.</documentation>
+    <baseType>sap.m/ColumnListItem</baseType>
+    <properties>
+        <property since="1.22.0" group="Misc" type="sap.ui.core/string" name="key">
+            <documentation>Key of the List Item</documentation>
+        </property>
+        <property since="1.26.0" group="Misc" type="sap.ui.core/boolean" name="global">
+            <documentation>Indicator if a variant is visible for all users.</documentation>
+        </property>
+        <property since="1.26.0" group="Misc" type="sap.ui.core/string" name="lifecyclePackage">
+            <documentation>ABAP Package the variant is assigned. Used for transport functionality</documentation>
+        </property>
+        <property since="1.26.0" group="Misc" type="sap.ui.core/string" name="lifecycleTransportId">
+            <documentation>Identifier of the transport object the variant is assigned to.</documentation>
+        </property>
+        <property since="1.26.0" group="Misc" type="sap.ui.core/string" name="namespace">
+            <documentation>Variant namespace</documentation>
+        </property>
+        <property since="1.26.0" group="Misc" defaultValue="false" type="sap.ui.core/boolean" name="readOnly">
+            <documentation>Indication if variant can be changed</documentation>
+        </property>
+        <property since="1.26.0" group="Misc" type="sap.ui.core/string" name="accessOptions">
+            <documentation>Flags for a variant to indicate why it might be read-only</documentation>
+            <deprecation since="1.28.0">Replaced by property &lt;code&gt;labelReadOnly&lt;/code&gt;</deprecation>
+        </property>
+        <property since="1.28.0" group="Misc" defaultValue="false" type="sap.ui.core/boolean" name="labelReadOnly">
+            <documentation>Indicates if the variant label can be changed</documentation>
+        </property>
+    </properties>
+</control>

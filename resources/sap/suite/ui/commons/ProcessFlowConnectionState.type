@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+  <name>ProcessFlowConnectionState</name>
+  <author></author>
+  <documentation>Describes the state of a connection.</documentation>
+  <baseType>sap.ui.core/string</baseType>
+  <enumeration>
+    <value name="Highlighted">
+      <documentation>Highlighted connection.</documentation>
+    </value>
+    <value name="Dimmed">
+      <documentation>Dimmed connection.</documentation>
+    </value>
+    <value name="Regular">
+      <documentation>Regular connection.</documentation>
+    </value>
+    <value name="Selected">
+      <documentation>Selected connection.</documentation>
+    </value>
+  </enumeration>
+</simple-type>

@@ -1,0 +1,21 @@
+/* ===================================================== */
+/* CSS for control sap.ca.ui.CustomerContext.control */
+/* ===================================================== */
+
+/* remove the inner content padding */
+.sapCaUiCCD.sapMDialog.sapUiPopupWithPadding .sapMDialogScrollCont {
+    padding:0;
+}
+
+/* remove the default background on the table subrows */
+.sapCaUiCCD .sapMListTblSubRow {
+    background:none;
+}
+
+.sapCaUiCustomerContextListItem {
+    padding: .875rem .5rem;
+}
+
+.sapCaUiCustomerContextListItem .sapMObjectIdentifierText {
+    overflow: hidden;
+}

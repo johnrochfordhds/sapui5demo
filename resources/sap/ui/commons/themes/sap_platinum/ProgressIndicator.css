@@ -1,0 +1,153 @@
+/* ======================================================== */
+/* CSS for control sap.ui.commons/ProgressIndicator.control */
+/* ======================================================== */
+
+.sapUiProgInd {
+	display: inline-block;
+}
+
+html[data-sap-ui-browser^="ie"] .sapUiProgInd:focus { /* IE only */
+	outline: 1px dotted;
+}
+
+.sapUiProgIndBorder {
+	display: inline-block;
+	background-position: center;
+	background-repeat: repeat-x;
+	background-image: url(img/progressindicator/pi_box.png);
+	border: 1px solid #878787;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.sapUiProgIndBar {
+	position: relative;
+	background-position: left, right, center;
+	background-repeat: no-repeat, no-repeat, repeat-x;
+	background-image: url(img/progressindicator/pi_neutral_border.png), url(img/progressindicator/pi_neutral_border.png), url(img/progressindicator/pi_neutral.png);
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 14px;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+html[data-sap-ui-browser="ie8"] .sapUiProgIndBar {
+	background-position: center;
+	background-repeat: repeat-x;
+	background-image: url(img/progressindicator/pi_neutral.png);
+}
+
+.sapUiProgIndBarPos {
+	position: relative;
+	background-position: left, right, center;
+	background-repeat: no-repeat, no-repeat, repeat-x;
+	background-image: url(img/progressindicator/pi_positive_border.png), url(img/progressindicator/pi_positive_border.png), url(img/progressindicator/pi_positive.png);
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 14px;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+html[data-sap-ui-browser="ie8"] .sapUiProgIndBarPos {
+	background-position: center;
+	background-repeat: repeat-x;
+	background-image: url(img/progressindicator/pi_positive.png);
+}
+
+.sapUiProgIndBarNeg {
+	position: relative;
+	background-position: left, right, center;
+	background-repeat: no-repeat, no-repeat, repeat-x;
+	background-image: url(img/progressindicator/pi_negative_border.png), url(img/progressindicator/pi_negative_border.png), url(img/progressindicator/pi_negative.png);
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 14px;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+html[data-sap-ui-browser="ie8"] .sapUiProgIndBarNeg {
+	background-position: center;
+	background-repeat: repeat-x;
+	background-image: url(img/progressindicator/pi_negative.png);
+}
+
+.sapUiProgIndBarCrit {
+	position: relative;
+	background-position: left, right, center;
+	background-repeat: no-repeat, no-repeat, repeat-x;
+	background-image: url(img/progressindicator/pi_critical_border.png), url(img/progressindicator/pi_critical_border.png), url(img/progressindicator/pi_critical.png);
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 14px;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+html[data-sap-ui-browser="ie8"] .sapUiProgIndBarCrit {
+	background-position: center;
+	background-repeat: repeat-x;
+	background-image: url(img/progressindicator/pi_critical.png);
+}
+
+.sapUiProgIndFont {
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 14px;
+	padding-left: 5px;
+	vertical-align: top;
+	font-size: 11px;
+}
+
+.sapUiProgIndEndHidden {
+	display: inline-block;
+	width: 1px;
+	height: 14px;
+	visibility: hidden;
+}
+
+.sapUiProgIndEnd {
+	display: inline-block;
+	width: 1px;
+	height: 14px;
+	visibility: visible;
+	background-image: url(img/progressindicator/pi_neutral_end.png);
+}
+
+.sapUiProgIndPosEnd {
+	display: inline-block;
+	width: 1px;
+	height: 14px;
+	visibility: visible;
+	background-image: url(img/progressindicator/pi_positive_end.png);
+}
+
+.sapUiProgIndNegEnd {
+	display: inline-block;
+	width: 1px;
+	height: 14px;
+	visibility: visible;
+	background-image: url(img/progressindicator/pi_negative_end.png);
+}
+
+.sapUiProgIndCritEnd {
+	display: inline-block;
+	width: 1px;
+	height: 14px;
+	visibility: visible;
+	background-image: url(img/progressindicator/pi_critical_end.png);
+}

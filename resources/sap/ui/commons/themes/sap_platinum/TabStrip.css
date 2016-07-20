@@ -1,0 +1,126 @@
+.sapUiTabBar {
+	background-image: url(img/tabstrip/tab-bar.png);
+	background-repeat: repeat-x;
+	padding: 4px 4px 4px 5px;
+	height:23px;
+}
+
+.sapUiTabBarCnt {
+	height:23px;
+}
+
+.sapUiTab, 
+.sapUiTabSel,
+.sapUiTabDsbl {
+	-moz-background-origin: padding, padding, content;
+	-webkit-background-origin: padding, padding, content;
+	background-origin: padding-box, padding-box, content-box;
+	-moz-background-size: auto auto, auto auto, 100% 28px;
+	-webkit-background-size: auto auto, auto auto, 100% 28px;
+	background-size: auto auto, auto auto, 100% 28px;
+	background-repeat: no-repeat, no-repeat, no-repeat;
+	background-position:top left, top right, top left;
+	padding: 0 5px 0 20px;
+	height:20px;
+	line-height:20px;
+	outline-offset: -1px;
+}
+
+html[data-sap-ui-browser="ie8"] .sapUiTab,
+html[data-sap-ui-browser="ie8"] .sapUiTabSel,
+html[data-sap-ui-browser="ie8"] .sapUiTabDsbl{
+	background-repeat: no-repeat;
+	background-position:top left;
+}
+
+.sapUiTabBarCnt .sapUiTabSel {
+	margin-left:-4px;
+}
+
+.sapUiTabBarCnt .sapUiTabSel:first-child {
+	margin-left:0px;
+}
+
+.sapUiTabBarCnt .sapUiTab:first-child,
+.sapUiTabBarCnt .sapUiTabDsbl:first-child {
+	margin-left:5px;
+}
+
+.sapUiTabBarCnt .sapUiTab,
+.sapUiTabBarCnt .sapUiTabDsbl {
+	margin-left:1px;
+}
+
+.sapUiTab, 
+.sapUiTabDsbl {
+	background-image:url(img/tabstrip/tab-left.png), url(img/tabstrip/tab-right.png),url(img/tabstrip/tab.png);
+}
+
+html[data-sap-ui-browser="ie8"] .sapUiTab,
+html[data-sap-ui-browser="ie8"] .sapUiTabDsbl{
+	background-image:url(img/tabstrip/tab-ie.png);
+	margin-left:-2px;
+	padding-left: 23px;
+}
+
+html[data-sap-ui-browser="ie8"] .sapUiTabBarCnt .sapUiTab:first-child,
+html[data-sap-ui-browser="ie8"] .sapUiTabBarCnt .sapUiTabDsbl:first-child{
+	background-image:url(img/tabstrip/tab-first-ie.png);
+	margin-left:5px;
+	padding-left: 20px;
+}
+
+.sapUiTabSel {
+	background-image:url(img/tabstrip/tab-left-sel.png), url(img/tabstrip/tab-right-sel.png),url(img/tabstrip/tab-sel.png);
+	padding: 0 5px 0 25px;
+	height:21px;
+}
+
+html[data-sap-ui-browser="ie8"] .sapUiTabSel{
+	background-image:url(img/tabstrip/tab-sel-ie.png);
+}
+
+html[data-sap-ui-browser="ie8"] .sapUiTabAfterSel{
+	background-image:url(img/tabstrip/tab-afterSel-ie.png);
+}
+
+html[data-sap-ui-browser="ie8"] .sapUiTabBarCnt .sapUiTabSel:first-child{
+	background-image:url(img/tabstrip/tab-sel-first-ie.png);
+}
+
+html[data-sap-ui-browser="ie8"] .sapUiTabLast{
+	border-right: 1px solid #738AA9;
+}
+
+.sapUiTabClose {
+	background-image:url(img/tabstrip/tab-close.png);
+	background-repeat:no-repeat;
+	width:16px;
+	height:16px;
+	margin-left:2px;
+	margin-top: 1px;
+}
+
+.sapUiTabClose:hover {
+	background-image:url(img/tabstrip/tab-close-hov.gif);
+}
+
+.sapUiTabIco {
+	margin-right:4px;
+	margin-top: 3px;
+}
+
+html[data-sap-ui-browser="ie8"].sapUiTabIco {
+	margin-top: 2px;
+}
+
+.sapUiTabBar .sapUiTabMenu {
+	background-image: url(img/tabstrip/tab-menu.png);
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 21px;
+}
+
+.sapUiTabPanel {
+	top: 31px;
+}

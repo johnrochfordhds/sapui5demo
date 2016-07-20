@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>AreaMicroChart</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>Chart that displays the history of values and target values as segmented lines and shows thresholds as colored background. This control replaces the deprecated sap.suite.ui.commons.MicroAreaChart.</documentation>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property group="Misc" type="sap.ui.core/CSSSize" name="width">
+            <documentation>The width of the chart.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/CSSSize" name="height">
+            <documentation>The height of the chart.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/float" name="maxXValue">
+            <documentation>If this property is set it indicates the value X axis ends with.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/float" name="minXValue">
+            <documentation>If this property is set it indicates the value X axis ends with.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/float" name="maxYValue">
+            <documentation>If this property is set it indicates the value X axis ends with.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/float" name="minYValue">
+            <documentation>If this property is set it indicates the value X axis ends with.</documentation>
+        </property>
+        <property group="Appearance" defaultValue="Normal" type="sap.suite.ui.microchart/AreaMicroChartViewType" name="view">
+            <documentation>The view of the chart.</documentation>
+        </property>
+        <property group="Appearance" defaultValue="[]" type="sap.ui.core/string[]" name="colorPalette">
+            <documentation>The color palette for the chart. If this property is set,
+semantic colors defined in AreaMicroChartItem are ignored.
+Colors from the palette are assigned to each line consequentially.
+When all the palette colors are used, assignment of the colors begins
+from the first palette color.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event allowPreventDefault="false" name="press">
+            <documentation>The event is fired when the user chooses the micro area chart.</documentation>
+        </event>
+    </events>
+    <aggregations>
+        <aggregation cardinality="0..1" type="sap.suite.ui.microchart/AreaMicroChartItem" name="chart">
+            <documentation>The configuration of the actual values line.
+The color property defines the color of the line.
+Points are rendered in the same sequence as in this aggregation.</documentation>
+        </aggregation>
+        <aggregation cardinality="0..1" type="sap.suite.ui.microchart/AreaMicroChartItem" name="maxThreshold">
+            <documentation>The configuration of the max threshold area. The color property defines the color of the area above the max threshold line. Points are rendered in the same sequence as in this aggregation.</documentation>
+        </aggregation>
+        <aggregation cardinality="0..1" type="sap.suite.ui.microchart/AreaMicroChartItem" name="innerMaxThreshold">
+            <documentation>The configuration of the upper line of the inner threshold area. The color property defines the color of the area between inner thresholds. For rendering of the inner threshold area, both innerMaxThreshold and innerMinThreshold aggregations must be defined. Points are rendered in the same sequence as in this aggregation.</documentation>
+        </aggregation>
+        <aggregation cardinality="0..1" type="sap.suite.ui.microchart/AreaMicroChartItem" name="innerMinThreshold">
+            <documentation>The configuration of the bottom line of the inner threshold area. The color property is ignored. For rendering of the inner threshold area, both innerMaxThreshold and innerMinThreshold aggregations must be defined. Points are rendered in the same sequence as in this aggregation.</documentation>
+        </aggregation>
+        <aggregation cardinality="0..1" type="sap.suite.ui.microchart/AreaMicroChartItem" name="minThreshold">
+            <documentation>The configuration of the min threshold area. The color property defines the color of the area below the min threshold line. Points are rendered in the same sequence as in this aggregation.</documentation>
+        </aggregation>
+        <aggregation cardinality="0..1" type="sap.suite.ui.microchart/AreaMicroChartItem" name="target">
+            <documentation>The configuration of the target values line. The color property defines the color of the line. Points are rendered in the same sequence as in this aggregation.</documentation>
+        </aggregation>
+        <aggregation cardinality="0..1" type="sap.suite.ui.microchart/AreaMicroChartLabel" name="firstXLabel">
+            <documentation>The label on X axis for the first point of the chart.</documentation>
+        </aggregation>
+        <aggregation cardinality="0..1" type="sap.suite.ui.microchart/AreaMicroChartLabel" name="firstYLabel">
+            <documentation>The label on Y axis for the first point of the chart.</documentation>
+        </aggregation>
+        <aggregation cardinality="0..1" type="sap.suite.ui.microchart/AreaMicroChartLabel" name="lastXLabel">
+            <documentation>The label on X axis for the last point of the chart.</documentation>
+        </aggregation>
+        <aggregation cardinality="0..1" type="sap.suite.ui.microchart/AreaMicroChartLabel" name="lastYLabel">
+            <documentation>The label on Y axis for the last point of the chart.</documentation>
+        </aggregation>
+        <aggregation cardinality="0..1" type="sap.suite.ui.microchart/AreaMicroChartLabel" name="maxLabel">
+            <documentation>The label for the maximum point of the chart.</documentation>
+        </aggregation>
+        <aggregation cardinality="0..1" type="sap.suite.ui.microchart/AreaMicroChartLabel" name="minLabel">
+            <documentation>The label for the minimum point of the chart.</documentation>
+        </aggregation>
+        <aggregation cardinality="0..n" type="sap.suite.ui.microchart/AreaMicroChartItem" name="lines">
+            <documentation>The set of lines.</documentation>
+        </aggregation>
+    </aggregations>
+</control>

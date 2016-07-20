@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>smartform/flexibility/DialogContent</name>
+    <derived/>
+    <documentation>The content of the personalization dialog of the SmartForm</documentation>
+    <baseType>sap.ui.core/Control</baseType>
+    <aggregations>
+        <aggregation cardinality="0..1" type="sap.ui.core/Control" name="content">
+            <documentation>Content of the control itself</documentation>
+        </aggregation>
+    </aggregations>
+</control>

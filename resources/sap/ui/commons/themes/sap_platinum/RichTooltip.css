@@ -1,0 +1,62 @@
+/* RichTooltip Platinum */
+.sapUiRtt {
+	background-color: #4F5C72; /* this is the outer border right and left of the content */
+}
+
+.sapUiRttTopL {
+	display: block;
+	margin-right: 9px; /* clip right corner */
+	background-image: url(img/richtooltip/rtt.png);
+	background-position: left top;
+	height: 9px;
+	/* vertical: show first half of the image with the top-corners in it */
+}
+
+.sapUiRttTopR {
+	display: block;
+	margin-top: -9px; /* to level of top-left corner */
+	margin-left: 9px; /* clip left corner */
+	background-image: url(img/richtooltip/rtt.png);
+	background-position: right top;
+	height: 9px;
+}
+
+.sapUiRttContent {
+	border-left: 1px solid #FFF; /* the INNER border line */
+	border-right: 1px solid #FFF;
+	margin: 0 1px; /* this lets the main background shine around to give the dark outer border line */
+	background-color: #E4EAF3;
+	background-image: url(img/richtooltip/rttC.png);
+	background-repeat: repeat-x;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.sapUiRttSep {
+	margin: 3px 0 2px 0;
+	border-width: 1px 0 0 0;
+	border-color: #FFFFFF;   /* top line */
+	border-style: solid;
+	background-color: #C4D2E3; /* bottom line */
+}
+
+.sapUiRttBotL {
+	display: block;
+	margin-right: 9px;           /* clip right corner */
+	background-image: url(img/richtooltip/rtt.png);
+	background-position: left -9px; /* show lower half of the image */
+	height: 9px;
+}
+
+.sapUiRttBotR {
+	display: block;
+	margin-top: -9px; /* to level of bottom-left corner */
+	margin-left: 9px; /* clip left corner */
+	background-image: url(img/richtooltip/rtt.png);
+	background-position: right -9px; /* lower half, right side */
+	height: 9px;
+}
+
+.sapUiRttValueStateText.individual {
+	margin-top: -3px;
+}

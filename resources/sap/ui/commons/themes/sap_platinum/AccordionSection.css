@@ -1,0 +1,71 @@
+/* ****************************************
+* PLATINUM
+* *****************************************/
+.sapUiAcdSectionHdr {
+	background-image: url(img/accordionsection/titlebardefault.gif);
+	background-repeat: repeat-x;
+	border-bottom: 	1px solid @sapUiMediumBorder;
+}
+
+.sapUiAcdSectionHdr:hover {
+	background-image: url(img/accordionsection/titlebarhover.gif);
+}
+
+.sapUiAcdSectionDis .sapUiAcdSectionHdr {
+	background-image: url(img/accordionsection/titlebardisabled.gif);
+}
+
+.sapUiAcdSectionDis .sapUiAcdSectionHdr > div > span  {
+	opacity: 0.5;
+}
+
+
+.sapUiAcdSectionHdr > div > span {
+	color: black;
+	height: 16px;
+	font-weight: normal;
+	font-size: 8.5pt;
+}
+
+.sapUiAcdSectionColl .sapUiAcdSectionHdr > div > span { 
+	/* collapsed state needs higher panel */
+	height: 16px;
+}
+
+.sapUiAcdSectionHdr > div > span > a { /* the collapse arrow */
+	/*margin: 3px;*/
+}
+
+.sapUiAcdSectionHdr > div > span > img { /* the header icon */
+	margin: 0;
+}
+
+.sapUiAcdSectionHdr > div > span > span { /* the header title */
+	/*margin: 2px 4px 0 4px;*/
+}
+
+.sapUiAcdSectionHdrRight {
+	/* the button row on the right-hand side of the panel header */
+	top: 4px;
+}
+
+
+.sapUiAcdSectionMinBtn {
+	/* the 'collapse' button on the right-hand side of the panel header */
+	background-image: url(img/panel/PanelMaximize.gif);
+}
+
+.sapUiAcdSectionMinBtn:hover {
+	/* the 'collapse' button on the right-hand side of the panel header */
+	background-image: url(img/panel/PanelMaximizeHover.gif);
+}
+
+.sapUiAcdSectionCont {
+	/* 'position' will be set by the renderer if required. Do not set any positioning here! */
+	/* It will be set to 'absolute' if sizes are set, in order to extend the content to fully use the available space. 
+      Otherwise to 'relative', to fix an IE7 bug which would leave overflowing content with 'position relative' visible. */
+	top: 17px;      /* must equal the header height */
+	border-top: 0;
+	padding: 6px;
+	border-bottom-color: @sapUiMediumBorder;
+}

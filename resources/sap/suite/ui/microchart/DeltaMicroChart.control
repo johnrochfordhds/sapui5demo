@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>DeltaMicroChart</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>Represents the delta of two values as a chart. This control replaces the deprecated sap.suite.ui.commons.DeltaMicroChart.</documentation>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property group="Misc" type="sap.ui.core/float" name="value1">
+            <documentation>The first value for delta calculation.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/float" name="value2">
+            <documentation>The second value for delta calculation.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="title1">
+            <documentation>The first value title.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="title2">
+            <documentation>The second value title.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="displayValue1">
+            <documentation>If this property is set, it is rendered instead of value1.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="displayValue2">
+            <documentation>If this property is set, it is rendered instead of value2.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="deltaDisplayValue">
+            <documentation>If this property is set, it is rendered instead of a calculated delta.</documentation>
+        </property>
+        <property group="Misc" defaultValue="Neutral" type="sap.m/ValueColor" name="color">
+            <documentation>The semantic color of the delta value.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/CSSSize" name="width">
+            <documentation>The width of the chart.</documentation>
+        </property>
+        <property group="Misc" defaultValue="Auto" type="sap.m/Size" name="size">
+            <documentation>The size of the chart. If is not set, the default size is applied based on the device type.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event allowPreventDefault="false" name="press">
+            <documentation>The event is fired when the user chooses the delta micro chart.</documentation>
+        </event>
+    </events>
+</control>

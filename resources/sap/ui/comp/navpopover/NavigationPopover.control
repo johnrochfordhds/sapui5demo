@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>navpopover/NavigationPopover</name>
+    <derived/>
+    <documentation>The NavigationPopover allows navigating to different destinations by providing links on a popover.&lt;br&gt;
+       The links are fetched using the {@link sap.ushell.services.CrossApplicationNavigation CrossApplicationNavigation} service of the unified
+       shell.&lt;br&gt;
+       This class gets instantiated by {@link sap.ui.comp.navpopover.SmartLink SmartLink}. It is recommended to use
+       {@link sap.ui.comp.navpopover.SmartLink SmartLink} instead of creating NavigationPopover manually.</documentation>
+    <baseType>sap.m/Popover</baseType>
+    <properties>
+        <property since="1.28.0" group="Misc" type="sap.ui.core/string" name="title">
+            <documentation>popover title</documentation>
+        </property>
+        <property since="1.28.0" group="Misc" type="sap.ui.core/string" name="semanticObjectName">
+            <documentation>the name of the semantic object</documentation>
+        </property>
+        <property since="1.28.0" group="Misc" type="sap.ui.core/object" name="semanticAttributes">
+            <documentation>describes the semantic attributes. The attribute has to be a map</documentation>
+        </property>
+        <property since="1.28.0" group="Misc" type="sap.ui.core/string" name="appStateKey">
+            <documentation>The application state key passed to retrieve the navigation targets.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="mainNavigationId">
+            <documentation>Sets the visible text for the main navigation. If empty, the navigationPopover will try to get the Id from the given sourceObject.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event allowPreventDefault="false" since="1.28.0" name="targetsObtained">
+            <documentation>The navigation targets that are shown.</documentation>
+        </event>
+        <event allowPreventDefault="false" since="1.28.0" name="navigate">
+            <documentation>Event is triggered when a link is pressed.</documentation>
+        </event>
+    </events>
+    <aggregations>
+        <aggregation cardinality="0..n" since="1.28.0" type="sap.ui.comp/navpopover/LinkData" name="availableActions">
+            <documentation>A list of available actions shown to the user.</documentation>
+        </aggregation>
+        <aggregation cardinality="0..1" since="1.28.0" type="sap.ui.comp/navpopover/LinkData" name="mainNavigation">
+            <documentation>The main navigation displayed first on the popover.</documentation>
+        </aggregation>
+        <aggregation cardinality="0..1" since="1.28.0" type="sap.ui.comp/navpopover/LinkData" name="ownNavigation">
+            <documentation>The navigation taking the user back to the source application.</documentation>
+        </aggregation>
+    </aggregations>
+    <associations>
+        <association since="1.28.0" cardinality="0..1" type="sap.ui.core/Control" name="source">
+            <documentation>Source control for which the popover is displayed.</documentation>
+        </association>
+        <association since="1.28.0" cardinality="0..1" type="sap.ui.core/Control" name="extraContent">
+            <documentation>ExtraContent is displayed between the main navigation and the additional available links.</documentation>
+        </association>
+        <association cardinality="0..1" type="sap.ui.core/Element" name="component">
+            <documentation>The parent component.</documentation>
+        </association>
+    </associations>
+</control>

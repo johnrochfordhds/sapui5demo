@@ -1,0 +1,47 @@
+
+/* ============================================= */
+/* CSS for control sap.ca.ui/ExpansibleFeedListItem.control */
+/* ============================================= */
+
+.sapCaUiExpansibleFeedListItem  {
+    .sapCaUiExpansibleFeedListItemSeeMoreLink {
+        display: none;
+    }
+    
+    /*
+    uncomment this class to fix a visualization issue with IE and Firefox. The bug actually belongs to the original sap.m.FeedListItem.
+    .sapMLnk {
+        overflow: visible;
+    }
+    */
+}
+
+.sapCaUiExpansibleFeedListItem .sapMFeedListItemTextName,
+.sapCaUiExpansibleFeedListItem .sapMFeedListItemTextText  {
+    text-align: match-parent;
+    line-height: 1.2rem;
+}
+
+.sapCaUiExpansibleFeedListItemSeeMoreLink,
+.sapCaUiExpansibleFeedListItemSeeMoreLinkDots {
+	font-size: 0.875rem;
+    margin: 0;
+}
+
+
+/*Add this class to show the See more link*/
+.sapCaUiExpansibleFeedListItemSeeMore {
+	.sapMFeedListItemTextText {
+        overflow: hidden;
+    }
+    .sapCaUiExpansibleFeedListItemSeeMoreLink {
+        display: block;
+    }
+}
+
+/*When the text is unfolded, this class is applied: Dots are hidden, thanks LESS!*/
+.sapCaUiExpansibleFeedListItemSeeLess {
+    .sapCaUiExpansibleFeedListItemSeeMoreLinkDots {
+        display: none;
+    }
+}

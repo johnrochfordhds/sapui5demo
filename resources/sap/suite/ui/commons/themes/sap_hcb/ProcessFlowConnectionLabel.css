@@ -1,0 +1,20 @@
+/* ====================================================================================== */
+/* CSS for control sap.suite.ui.commons/ProcessFlowConnectionLabel.control (HCB theme)    */
+/* ====================================================================================== */
+
+/* Used for box-shadow in selected connection state */
+.sapSuiteUiCommonsProcessFlowConnectionLabel.sapMBtn.labelSelected > .sapMBtnInner {
+  box-shadow: 0 0 2.5rem 0.1rem fade(@sapHCStandardFG, 20%);
+}
+
+/* Used for box-shadow in highlighted connection state */
+.sapSuiteUiCommonsProcessFlowConnectionLabel.sapMBtn.labelHighlighted > .sapMBtnInner {
+  box-shadow: 0 0 2.5rem 0.1rem fade(@sapHCStandardFG, 20%);
+}
+
+/* Configure inner element of Label for specific state (e.g. for Text) */
+
+/* Needs to be in the theme file since font variables are only available there */
+.sapSuiteUiCommonsProcessFlowConnectionLabel.sapMBtn > .sapMBtnInner {
+  font-size: @sapMFontMediumSize;
+}

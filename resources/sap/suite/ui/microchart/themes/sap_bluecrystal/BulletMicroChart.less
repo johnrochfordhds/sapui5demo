@@ -1,0 +1,139 @@
+
+/* ============================================================ */
+/* CSS for BulletMicroChart control for 'sap_bluecrystal' theme */
+/* ============================================================ */
+
+.sapSuiteBMCContent {
+	font-family: @sapUiFontHeaderFamily;
+}
+
+.sap-desktop .sapSuiteBMCContent:focus {
+	outline-color: @sapUiFocus;
+	outline-style: dotted;
+	outline-width: .0625rem;
+}
+
+.sapSuiteBMCContent:focus:not([tabindex]) {
+	outline: none;
+}
+
+.sap-desktop .XS.sapSuiteBMCContent:focus {
+	outline: none;
+} 
+
+.sap-desktop .XS.sapSuiteBMCContent:focus::after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	top: -.3125rem;
+	left: -.125rem;
+	right: -.125rem;
+	bottom: -.75rem;
+	border: .0625rem dotted @sapUiFocus;
+}
+
+.sapSuiteBMCBarValue.Neutral,
+.sapSuiteBMCBarValueMarker.Neutral,
+.sapSuiteBMCThreshold.Neutral {
+	background-color: @sapUiChartNeutral;
+}
+
+.sapSuiteBMCBarValue.Good,
+.sapSuiteBMCBarValueMarker.Good,
+.sapSuiteBMCThreshold.Good {
+	background-color: @sapUiChartGood;
+}
+
+.sapSuiteBMCBarValue.Critical,
+.sapSuiteBMCBarValueMarker.Critical,
+.sapSuiteBMCThreshold.Critical {
+	background-color: @sapUiChartCritical;
+}
+
+.sapSuiteBMCBarValue.Error,
+.sapSuiteBMCBarValueMarker.Error,
+.sapSuiteBMCThreshold.Error {
+	background-color: @sapUiChartBad;
+}
+
+.sapSuiteBMCItemValue.Neutral {
+	color: @sapUiLightText;
+}
+
+.sapSuiteBMCItemValue.Good {
+	color: @sapUiPositiveText;
+}
+
+.sapSuiteBMCItemValue.Critical {
+	color: @sapUiCriticalText;
+}
+
+.sapSuiteBMCItemValue.Error {
+	color: @sapUiNegativeText;
+}
+
+.sapSuiteBMCTargetBarValue {
+	border-left: .0625rem solid @sapUiLightestBorder;
+	background-color: darken(@sapUiExtraDarkBorder,33);
+}
+
+.sapSuiteBMCTargetValue {
+	color: @sapUiDarkText;
+}
+
+.sapSuiteBMCDiamond {
+	background-color: @sapUiChartBad;
+}
+
+.sapSuiteBMCForecastBarValue.Neutral {
+	background-color: lighten(@sapUiChartNeutral,30);
+}
+
+.sapSuiteBMCForecastBarValue.Good {
+	background-color: lighten(@sapUiChartGood,30);
+}
+
+.sapSuiteBMCForecastBarValue.Critical {
+	background-color: lighten(@sapUiChartCritical,30);
+}
+
+.sapSuiteBMCForecastBarValue.Error {
+	background-color: lighten(@sapUiChartBad,35);
+}
+
+.sapSuiteBMCBar.Lightest {
+	background-color: @sapUiLightestBG;
+}
+
+.sapSuiteBMCBar.ExtraLight {
+	background-color: @sapUiExtraLightBG;
+}
+
+.sapSuiteBMCBar.Light {
+	background-color: @sapUiLightBG;
+}
+
+.sapSuiteBMCBar.Medium {
+	background-color: @sapUiMediumBG;
+}
+
+.sapSuiteBMCBar.MediumLight {
+	background-color: lighten(@sapUiChartNeutral,38.5);
+}
+
+.sapSuiteBMCBar.Dark {
+	background-color: @sapUiDarkBG;
+}
+
+.sapSuiteBMCBar.ExtraDark {
+	background-color: @sapUiExtraDarkBG;
+}
+
+.sapSuiteBMCBar.Darkest {
+	background-color: @sapUiDarkestBG;
+}
+
+.sapSuiteBMCBar.Transparent {
+	background-color: transparent;
+}
+

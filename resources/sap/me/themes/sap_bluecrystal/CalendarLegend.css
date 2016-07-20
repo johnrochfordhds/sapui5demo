@@ -1,0 +1,95 @@
+/* ============================================= */
+/* CSS for control sap.me/CalendarLegend.control */
+/* ============================================= */
+
+.sapUIMeLegendOuterContainer {
+	background-color: @sapUiLightestBG;
+}
+
+/* Approval Design*/
+.sapMeCalendarLegendApproval .sapUIMeLegendColorForType00 {
+	background-color: @sapMeOverlapCalendarType00;
+}
+
+.sapMeCalendarLegendApproval .sapUIMeLegendColorForType01 {
+	background-color: @sapMeOverlapCalendarType01;
+}
+
+.sapMeCalendarLegendApproval .sapUIMeLegendColorForType04 {
+	background-color: @sapMeOverlapCalendarType04;
+	background-image: url(img/bg_white_transparent.png);
+}
+
+.sapMeCalendarLegendApproval .sapUIMeLegendColorForType06 {
+	background-color: @sapMeOverlapCalendarType06;
+}
+
+.sapMeCalendarLegendApproval .sapUIMeLegendColorForType07 {
+	background-color: @sapMeOverlapCalendarType07;
+	background-image: url(img/bg_white_transparent.png);
+}
+
+.sapMeCalendarLegendApproval .sapUIMeLegendColorForToday {
+	border: .125rem solid@sapUiHighlight;
+	width: 0.875rem;
+	height: 0.875rem;
+}
+
+.sapMeCalendarLegendApproval .sapUIMeLegendColorForSelected {
+	background-color: @sapUiHighlight;
+}
+
+.sapMeCalendarLegendApproval .sapUIMeLegendColorForSelected00 {
+	background-color: @sapUiLightLine;
+}
+
+.sapMeCalendarLegendApproval .sapUIMeLegendColorForNormal {
+	background-color: @sapUiExtraLightBG;
+}
+/* Action Design*/
+.sapMeCalendarLegendAction .sapUIMeLegendColorForType00 {
+	background-color: @sapMeOverlapCalendarType00;
+}
+.sapMeCalendarLegendAction .sapUIMeLegendColorForType01 {
+	background-color: @sapMeOverlapCalendarType01Action;
+}
+
+.sapMeCalendarLegendAction .sapUIMeLegendColorForType04 {
+	background-color: @sapMeOverlapCalendarType01Action;
+	background-image: url(img/bg_white_transparent.png);
+}
+
+.sapMeCalendarLegendAction .sapUIMeLegendColorForType06 {
+	background-color: @sapMeOverlapCalendarType06;
+}
+
+.sapMeCalendarLegendAction .sapUIMeLegendColorForType07 {
+	background-color: mix(@sapUiAccent3, @sapUiWhite, 20%);
+	background-image: url(img/bg_white_transparent.png);
+}
+
+.sapMeCalendarLegendAction .sapUIMeLegendColorForToday {
+	border: .125rem solid@sapUiHighlight;
+	width: 0.875rem;
+	height: 0.875rem;
+}
+
+.sapMeCalendarLegendAction .sapUIMeLegendColorForSelected {
+	background-color: @sapUiHighlight;
+}
+
+.sapMeCalendarLegendAction .sapUIMeLegendColorForSelected00 {
+	background-color: @sapUiLightLine;
+}
+
+.sapMeCalendarLegendAction .sapUIMeLegendColorForNormal {
+	background-color: @sapUiExtraLightBG;
+}
+
+.sapUIMeLegendIcon {
+	background-color: @sapUiLightestBG;
+}
+
+.sapUIMeLegendArrow {
+	font-color: @sapUiStandardText;
+}

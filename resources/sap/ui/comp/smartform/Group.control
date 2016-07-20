@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>smartform/Group</name>
+    <derived/>
+    <author>Alexander Fürbach</author>
+    <documentation>Groups are used to group group elements.</documentation>
+    <baseType>sap.ui.layout/form/FormContainer</baseType>
+    <properties>
+        <property group="Misc" type="sap.ui.core/boolean" name="useHorizontalLayout">
+            <documentation>Specifies whether the groups shall be rendered in a ResponsiveLayout with label on top of the group element. Each group will be
+rendered in a new line.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/int" name="horizontalLayoutGroupElementMinWidth">
+            <documentation>Specifies the minimal size in pixels of all group elements of the form if horizontal Layout is used.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="label">
+            <documentation>Label for the group.</documentation>
+        </property>
+    </properties>
+    <aggregations default="groupElements">
+        <aggregation cardinality="0..n" type="sap.ui.comp/smartform/GroupElement" name="groupElements">
+            <documentation>A GroupElement is a combination of one label and different controls associated to this label.</documentation>
+        </aggregation>
+        <aggregation cardinality="0..1" type="sap.ui.layout/GridData" name="layout">
+            <documentation>Layout to specify how the group shall be rendered (e.g. span and line-break)</documentation>
+        </aggregation>
+    </aggregations>
+</control>

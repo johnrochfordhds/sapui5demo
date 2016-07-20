@@ -1,0 +1,44 @@
+/* ================================================== */
+/* CSS for control sap.ui.commons/ColorPicker.control */
+/* Platinum Theme                                     */
+/* ================================================== */
+.sapUiColorPicker-ColorPickerSlider.sapUiSliHori .sapUiSliBar,
+.sapUiColorPicker-ColorPickerSlider.sapUiSliHori .sapUiSliBar .sapUiSliHiLi {
+	background-color: transparent;
+}
+
+.sapUiColorPicker-ColorPickerSlider.sapUiSliHori .sapUiSliBar {
+	height: 4px;
+}
+
+.sapUiColorPicker-ColorPickerSlider.sapUiSliHori .sapUiSliGrip {
+	top: -5px;
+}
+
+.sapUiColorPicker-ColorPickerMatrix .sapUiSli.sapUiSliHori {
+	padding: 6px 0 0 0;
+}
+
+.sapUiColorPicker-ColorPickerSlider.sapUiSliHori .sapUiSliGrip {
+	height: 16px;
+	top: -6px;
+}
+
+.sapUiColorPicker-ColorPickerAlphaSlider.sapUiSliHori .sapUiSliBar {
+	height: 4px;
+}
+
+.sapUiColorPicker-ColorPickerAlphaSlider.sapUiSliHori .sapUiSliBar,
+.sapUiColorPicker-ColorPickerAlphaSlider.sapUiSliHori .sapUiSliBar .sapUiSliHiLi {
+	background-color: transparent;
+}
+
+.sapUiColorPicker-ColorPickerAlphaSlider.sapUiSliHori .sapUiSliGrip {
+	height: 16px;
+	top: -6px;
+}
+
+.sapUiColorPicker-ColorPickerLabels {
+	margin-top: 5px;
+	width: 1.2em;
+}

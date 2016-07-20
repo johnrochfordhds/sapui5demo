@@ -1,0 +1,105 @@
+@text-color: #666;
+
+.sapOvpBaseCard {
+  background-color: @sapHCStandardBG;
+  border: 1px solid @sapHCStandardFG;
+  //outline: @sapHCStandardFG solid 1px;
+}
+.sapOvpCardHeader {
+  color : @sapHCStandardFG;
+  background-color: @sapHCStandardBG;
+  border-bottom: 1px solid @sapHCStandardFG;
+}
+.sapOvpCardFooter {
+  color: @sapHCStandardFG;
+  font-size: @sapMFontHeader5Size;
+}
+
+.sapOvpCardContentRightHeader .sapOvpCardHeader{
+  background-color: @sapUiButtonEmphasizedBG;
+  border-bottom: 0px;
+}
+
+.sapOvpCardContent{
+  background-color: @sapUiLightestBG;
+}
+
+.sapOvpBaseCard tr {
+  &:hover {
+    background: @sapUiHighlight;
+  }
+}
+
+.sapOvpStackCardIcon {
+  background-color: @sapHCStandardBG;
+}
+
+.sapMListShowSeparatorsAll .sapMListTblSubRow:last-child>td, .sapMListShowSeparatorsAll .sapMLIBShowSeparator:last-child>td {
+  border-bottom-color: @sapUiLightBG;
+}
+
+.sapOvpStackCardContent{
+  background-color: @sapHCReducedBG;
+  &> .sapMFlexItem, .sapMLabel {
+    color: @sapUiBrand;
+  }
+  &:hover {
+    background-color: @sapUiHighlight;
+  }
+}
+
+.sapOvpBaseCard .sapMObjLNumber {
+  font-size: @sapMFontHeader6Size;
+}
+.sapMListTbl th{
+  background-color: @sapHCReducedBG;
+  border-bottom: 1px solid @sapHCStandardFG;
+}
+.sapMListTbl{
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid @sapHCStandardFG;
+}
+
+.sapOvpBaseCard {
+  .sapMListTblCell.sapMListTblCellNoData, .sapMListTblRow > :nth-last-child(2) {
+    border-left: 1px solid @sapHCStandardFG;
+  }
+  .sapMListTblCell:first-child, .sapMListTblNone:first-child + .sapMListTblCell {
+    border-right: 1px solid @sapHCStandardFG;
+  }
+}
+
+.sapMLIB{
+  border-bottom:1px solid @sapHCStandardFG;
+}
+.sapMLIBShowSeparator>td {
+  border-top:1px solid @sapHCStandardFG;
+}
+
+/* KPI Header Style Class */
+
+
+.sapOvpCardHeader .sapOvpKPIHeaderTitleStyle {
+  color: @sapUiLightText;
+  font-size: @sapMFontHeader5Size;
+}
+
+.sapOvpCardHeader .sapOvpKPIHeaderDimensionStyle {
+  color: @sapUiLightText;
+  font-size: @sapMFontSmallSize;
+}
+
+.sapOvpCardHeader .sapOvpKPIHeaderFilterStyle {
+  color: @sapUiLightText;
+  font-size: @sapMFontSmallSize;
+}
+
+.sapOvpCardHeader .sapOvpKPIHeaderTrendPercentStyle {
+  font-size: @sapMFontHeader6Size;
+
+}
+.sapUshellEasyScanLayout .easyScanLayoutItemWrapper:focus, .sapOvpCardHeader:focus, .sapOvpStackCardContent:focus {
+  outline-color: @sapHCStandardFG;
+}

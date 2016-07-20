@@ -1,0 +1,206 @@
+/* =============================================== */
+/* CSS for control sap.ui.unified/Calendar.control */
+/* Platinum                                        */
+/* =============================================== */
+
+.sapUiCal{
+	padding: 2px 1px 0 1px;
+}
+
+/* calendar should have only a border if on popup */
+.sapUiCal.sapUiShd{
+	border: 0.0625rem solid #96a8c3;
+}
+
+.sapUiCalMulti{
+	max-width: 714px; /* maximal 4 months in one row */
+}
+
+/*** HEADER ***/
+.sapUiCalHead{
+	height: 24px;
+}
+
+.sapUiCalHead > button{
+	height: 22px;
+	padding: 0;
+}
+
+.sapUiCalHeadPrev,
+.sapUiCalHeadNext{
+	width: 22px;
+	padding-top: 2px; /* to set arrows in middle */
+}
+
+.sapUiCal .sapUiCalHeadPrev{
+	left: 1px;
+}
+
+.sapUiCal .sapUiCalHeadNext{
+	right: 1px;
+}
+
+.sapUiCalHeadB{
+	width: 63px;
+}
+
+.sapUiCalMulti .sapUiCalHeadB1{
+	width: 130px;
+}
+
+/*** days, months, years ***/
+.sapUiCalMonthView,
+.sapUiCalMonthPicker,
+.sapUiCalYearPicker{
+	width: 176px;
+	background-color: @sapUiFieldBackground;
+}
+
+.sapUiCalHeadText{
+	color: @sapUiHighlight;
+}
+
+.sapUiCal .sapUiCalMonthView{
+	padding: 0 1px 2px 1px;
+}
+
+.sapUiCalWH,
+.sapUiCalItem,
+.sapUiCalWeekNum{
+	height: 22px;
+	line-height: 19px;
+}
+
+.sapUiCalWH,
+.sapUiCalItem{
+	border: 1px solid @sapUiFieldBorderColor;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.sapUiCalItem{
+	background-color: @sapUiExtraLightBG;
+	border-width: 0 1px 1px 0;
+}
+
+.sapUiCalWH{
+	border-width: 0 0 1px 0;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	color: @sapUiBaseText;
+	font-weight: bold;
+}
+
+.sapUiCalItemText{
+	border: 1px solid @sapUiFieldFocusBackground;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.sapUiCalWeekNum{
+	top: -1px;
+	color: @sapUiHighlight;
+	height: 22px;
+	line-height: 22px;
+}
+
+.sapUiCalItem.sapUiCalFirstWDay{
+	border-width: 0 1px 1px 1px;
+}
+
+.sapUiCalItemNow{
+	color: @sapUiBaseText;
+	background-color: @sapUiMediumBG;
+}
+
+.sapUiCalItemWeekEnd{
+	background-color: @sapUiLightBG;
+}
+
+.sapUiCalItemSel{
+	background-color: @sapUiHighlight;
+}
+
+.sap-desktop .sapUiCalItem:focus,
+.sap-desktop .sapUiCalItem:hover{
+	background-color: @sapUiDarkBG;
+	outline: none;
+}
+
+.sapUiCalContent > .sapUiCalMonthPicker,
+.sapUiCalContent > .sapUiCalYearPicker{
+	top: 0;
+	padding: 24px 1px 2px 1px;
+	left: 50%;
+	margin-left: -89px; /* to position in the middle (for multi-month) */
+}
+
+.sapUiCalContentOver{
+	background-color: #CCCCCC;
+}
+
+.sapUiCalInt > .sapUiCalContent > .sapUiCalMonthPicker,
+.sapUiCalInt > .sapUiCalContent > .sapUiCalYearPicker{
+	margin-left: 0;
+	left: 0;
+	padding-bottom: 0;
+	padding-top: 22px;
+}
+
+.sapUiCalRow .sapUiCalItems > .sapUiCalItem:first-child{
+	border-left-width: 1px;
+}
+
+.sapUiCalTimesRow .sapUiCalItem,
+.sapUiCalMonthsRow .sapUiCalItem{
+	border-top-width: 1px;
+}
+
+.sapUiCalTimeInt > .sapUiCalContent > .sapUiCalDatesRow{
+	top: 0;
+}
+
+.sapUiCalTimeInt > .sapUiCalContent > .sapUiCalDatesRow > .sapUiCalItems > .sapUiCalItem{
+	border-top-width: 1px;
+}
+
+.sapUiCalTimeInt > .sapUiCalContent > .sapUiCalMonthPicker,
+.sapUiCalTimeInt > .sapUiCalContent > .sapUiCalYearPicker,
+.sapUiCalMonthInt > .sapUiCalContent > .sapUiCalYearPicker{
+	padding-top: 0;
+}
+
+.sapUiCalInt.sapUiCalIntHead > .sapUiCalContent > .sapUiCalMonthPicker,
+.sapUiCalInt.sapUiCalIntHead > .sapUiCalContent > .sapUiCalYearPicker{
+	padding-top: 34px;
+}
+
+.sapUiCalTimeInt.sapUiCalIntHead > .sapUiCalContent > .sapUiCalMonthPicker,
+.sapUiCalTimeInt.sapUiCalIntHead > .sapUiCalContent > .sapUiCalYearPicker,
+.sapUiCalTimeInt.sapUiCalIntHead > .sapUiCalContent > .sapUiCalDatesRow,
+.sapUiCalMonthInt.sapUiCalIntHead > .sapUiCalContent > .sapUiCalYearPicker{
+	padding-top: 13px;
+}
+
+.sapUiCalMulti > .sapUiCalContent > .sapUiCalMonthPicker,
+.sapUiCalMulti > .sapUiCalContent > .sapUiCalYearPicker{
+	top: 20px;
+	bottom: auto;
+	padding: 2px;
+	margin-left: -91px;
+}
+
+.sapUiCalYearPicker.sapUiCalYearNoTop{
+	padding-top: 0;
+}
+
+.sapUiCalMonthPicker .sapUiCalItem,
+.sapUiCalYearPicker .sapUiCalItem{
+	padding: 0 4px;
+	overflow: hidden;
+	height: 22px;
+	line-height: 20px;
+	border-width: 1px;
+}

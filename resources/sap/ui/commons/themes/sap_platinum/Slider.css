@@ -1,0 +1,320 @@
+/* ================================================= */
+/* CSS for control sap.ui.commons/Slider.control     */
+/* Platinum Theme                                    */
+/* ================================================= */
+
+.sapUiSli{
+	border: none;
+}
+
+.sapUiSliHori.sapUiSli{
+	padding: 7px 0 0 0;
+	height: 15px;
+}
+
+.sapUiSliVert.sapUiSli{
+	padding: 0 0 0 15px;
+	width: 15px;
+}
+
+.sapUiSliR,
+.sapUiSliL,
+.sapUiSliBar,
+.sapUiSliHiLi {
+	background-repeat: repeat-x;
+}
+
+.sapUiSliHori > .sapUiSliR,
+.sapUiSliHori .sapUiSliL,
+.sapUiSliHori .sapUiSliBar,
+.sapUiSliHori .sapUiSliHiLi {
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	height: 4px;
+}
+
+.sapUiSliVert > .sapUiSliR,
+.sapUiSliVert .sapUiSliL,
+.sapUiSliVert .sapUiSliBar,
+.sapUiSliVert .sapUiSliHiLi {
+	border-left: 1px solid;
+	border-right: 1px solid;
+	width: 4px;
+	background-repeat: repeat-y;
+}
+
+.sapUiSliStd.sapUiSliHori  > .sapUiSliR,
+.sapUiSliStd.sapUiSliHori .sapUiSliBar {
+	background-image: url('img/slider/bar.png');
+	background-image: -moz-linear-gradient(top , #BBC8DE, #9DAEC8 );
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#BBC8DE), to(#9DAEC8));
+}
+
+.sapUiSliStd.sapUiSliVert .sapUiSliL,
+.sapUiSliStd.sapUiSliVert .sapUiSliBar {
+	background-image: url('img/slider/bar_v.png');
+	background-image: -moz-linear-gradient(left , #BBC8DE, #9DAEC8 );
+	background-image: -webkit-gradient(linear, left top, right top, from(#BBC8DE), to(#9DAEC8));
+}
+
+.sapUiSliHori.sapUiSliRo > .sapUiSliR,
+.sapUiSliHori.sapUiSliRo .sapUiSliBar {
+	background-image: url('img/slider/bar_readonly.png');
+	background-image: -moz-linear-gradient(top , #D8E0EC, #C8D4E3 );
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#D8E0EC), to(#C8D4E3));
+}
+
+.sapUiSliVert.sapUiSliRo .sapUiSliL,
+.sapUiSliVert.sapUiSliRo .sapUiSliBar {
+	background-image: url('img/slider/bar_readonly_v.png');
+	background-image: -moz-linear-gradient(left , #D8E0EC, #C8D4E3 );
+	background-image: -webkit-gradient(linear, left top, right top, from(#D8E0EC), to(#C8D4E3));
+}
+
+.sapUiSliHori.sapUiSliDsbl > .sapUiSliR,
+.sapUiSliHori.sapUiSliDsbl .sapUiSliBar {
+	background-image: url('img/slider/bar_disabled.png');  
+	background-image: -moz-linear-gradient(top , #F8FAFC, #EBF2F7 );
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#F8FAFC), to(#EBF2F7));
+}
+
+.sapUiSliVert.sapUiSliDsbl .sapUiSliL,
+.sapUiSliVert.sapUiSliDsbl .sapUiSliBar {
+	background-image: url('img/slider/bar_disabled_v.png');  
+	background-image: -moz-linear-gradient(left , #F8FAFC, #EBF2F7 );
+	background-image: -webkit-gradient(linear, left top, right top, from(#F8FAFC), to(#EBF2F7));
+}
+
+.sapUiSliHori > .sapUiSliR {
+	border-right: 1px solid;
+	padding: 0 3px 0 0;
+	margin-right: 3px;
+	margin-left: 3px;
+}
+
+.sapUiSliVert > .sapUiSliR {
+  border-bottom: 1px solid;
+	padding: 0 0 3px 0;
+	margin-bottom: 3px;
+	margin-top: 3px;
+}
+
+.sapUiSliStd > .sapUiSliR,
+.sapUiSliStd .sapUiSliBar {
+	border-color: @sapUiMediumBorder;
+	background-color: @sapUiMediumBG;
+}
+
+.sapUiSliRo > .sapUiSliR,
+.sapUiSliRo .sapUiSliBar {
+	border-color: @sapUiMediumBorder;
+	background-color: @sapUiMediumBG;
+}
+
+.sapUiSliDsbl > .sapUiSliR,
+.sapUiSliDsbl .sapUiSliBar {
+	border-color: @sapUiMediumBorder;
+	background-color: @sapUiLightBG;
+}
+
+.sapUiSliHori .sapUiSliL {
+	border-left: 1px solid;
+	padding: 0 0 0 3px;
+	top: -1px;
+}
+
+.sapUiSliVert .sapUiSliL {
+	border-top: 1px solid;
+	padding: 3px 0 0 0;
+	left: -1px;
+	margin-bottom: 3px; /*because position absolute ignores paddings*/
+}
+
+.sapUiSliVert .sapUiSliBar{
+	margin-top: 3px; /*because position absolute ignores paddings*/
+}
+
+.sapUiSliHori .sapUiSliBar,
+.sapUiSliHori .sapUiSliHiLi {
+	top: -1px;
+}
+
+.sapUiSliVert .sapUiSliBar,
+.sapUiSliVert .sapUiSliHiLi {
+	left: -1px;
+}
+
+.sapUiSliStd .sapUiSliL,
+.sapUiSliStd .sapUiSliHiLi {
+	border-color: @sapUiMediumBorder;
+	background-color: @sapUiHighlight;
+}
+
+.sapUiSliStd.sapUiSliHori .sapUiSliL,
+.sapUiSliStd.sapUiSliHori .sapUiSliHiLi {
+	background-image: url('img/slider/bar_highlight.png');
+	background-image: -moz-linear-gradient(top , #D0F0FF, #B5E7FF );
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#D0F0FF), to(#B5E7FF));
+}
+
+.sapUiSliStd.sapUiSliVert > .sapUiSliR,
+.sapUiSliStd.sapUiSliVert .sapUiSliHiLi {
+	background-image: url('img/slider/bar_highlight_v.png');
+	background-image: -moz-linear-gradient(left , #D0F0FF, #B5E7FF );
+	background-image: -webkit-gradient(linear, left top, right top, from(#D0F0FF), to(#B5E7FF));
+}
+
+.sapUiSliRo .sapUiSliL,
+.sapUiSliRo .sapUiSliHiLi {
+	border-color: @sapUiMediumBorder;
+	background-color: @sapUiLightBG;
+}
+
+.sapUiSliHori.sapUiSliRo .sapUiSliL,
+.sapUiSliHori.sapUiSliRo .sapUiSliHiLi {
+	background-image: url('img/slider/bar_readonly_hili.png');
+	background-image: -moz-linear-gradient(top , #F8FAFC, #EBF2F7 );
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#F8FAFC), to(#EBF2F7));
+}
+
+.sapUiSliVert.sapUiSliRo > .sapUiSliR,
+.sapUiSliVert.sapUiSliRo .sapUiSliHiLi {
+	background-image: url('img/slider/bar_readonly_hili_v.png');
+	background-image: -moz-linear-gradient(left , #F8FAFC, #EBF2F7 );
+	background-image: -webkit-gradient(linear, left top, right top, from(#F8FAFC), to(#EBF2F7));
+}
+
+.sapUiSliDsbl .sapUiSliL,
+.sapUiSliDsbl .sapUiSliHiLi {
+	border-color: @sapUiMediumBorder;
+	background-color: @sapUiLightBG;
+}
+
+.sapUiSliHori.sapUiSliDsbl .sapUiSliL,
+.sapUiSliHori.sapUiSliDsbl .sapUiSliHiLi {
+	background-image: url('img/slider/bar_disabled.png');
+	background-image: -moz-linear-gradient(top , #F8FAFC, #EBF2F7 );
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#F8FAFC), to(#EBF2F7));
+}
+
+.sapUiSliVert.sapUiSliDsbl > .sapUiSliR,
+.sapUiSliVert.sapUiSliDsbl .sapUiSliHiLi {
+	background-image: url('img/slider/bar_disabled_v.png');
+	background-image: -moz-linear-gradient(left , #F8FAFC, #EBF2F7 );
+	background-image: -webkit-gradient(linear, left top, right top, from(#F8FAFC), to(#EBF2F7));
+}
+
+ .sapUiSliGrip {
+	border: none; 
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+
+.sapUiSliHori .sapUiSliGrip {
+	height: 16px;
+	width: 11px;
+	top: -8px;
+}
+
+.sapUiSliVert .sapUiSliGrip {
+	height: 11px;
+	width: 16px;
+	left: -8px;
+}
+
+.sapUiSliStd.sapUiSliHori .sapUiSliGrip {
+	background-image: url('img/slider/grip.png');
+}
+
+.sapUiSliStd.sapUiSliVert .sapUiSliGrip {
+	background-image: url('img/slider/grip_v.png');
+}
+
+.sapUiSliStd.sapUiSliHori .sapUiSliGrip:hover {
+	background-image: url('img/slider/grip_hover.png');
+}
+
+.sapUiSliStd.sapUiSliVert .sapUiSliGrip:hover {
+	background-image: url('img/slider/grip_hover_v.png');
+}
+
+html[data-sap-ui-browser^="ff"] .sapUiSliStd .sapUiSliGrip:focus,
+html[data-sap-ui-browser^="ff"] .sapUiSliRo .sapUiSliGrip:focus,
+html[data-sap-ui-browser^="ie"] .sapUiSliRo .sapUiSliGrip:focus{
+	outline: 1px dotted black;
+}
+
+.sapUiSliHori.sapUiSliRo .sapUiSliGrip {
+	background-image: url('img/slider/grip_readonly.png');
+}
+
+.sapUiSliVert.sapUiSliRo .sapUiSliGrip {
+	background-image: url('img/slider/grip_readonly_v.png');
+}
+
+.sapUiSliHori.sapUiSliDsbl .sapUiSliGrip {
+	background-image: url('img/slider/grip_disabled.png');
+}
+
+.sapUiSliVert.sapUiSliDsbl .sapUiSliGrip {
+	background-image: url('img/slider/grip_disabled_v.png');
+}
+
+.sapUiSliTick {
+	border: 1px solid;
+}
+
+.sapUiSliHori .sapUiSliTick {
+	height: 4px;
+	width: 1px;
+	top: -8px;
+}
+
+.sapUiSliVert .sapUiSliTick {
+	height: 1px;
+	width: 4px;
+	left: -8px;
+}
+
+.sapUiSliStd .sapUiSliTick {
+	border-color: @sapUiMediumBorder;
+	background-color: @sapUiMediumBG;
+}
+
+.sapUiSliRo .sapUiSliTick {
+	border-color: @sapUiMediumBorder;
+	background-color: @sapUiMediumBG;
+}
+
+.sapUiSliDsbl .sapUiSliTick {
+	border-color: @sapUiMediumBorder;
+	background-color: @sapUiLightBG;
+}
+
+.sapUiSliText {
+	font-size: 8px;
+}
+
+.sapUiSliHori .sapUiSliText {
+	top: 4px;
+}
+
+.sapUiSliVert .sapUiSliText {
+	left: 6px;
+}
+
+.sapUiSliHori .sapUiSliTextLeft {
+	left: -3px;
+}
+
+.sapUiSliVert .sapUiSliTextLeft {
+	bottom: -3px;
+}
+
+.sapUiSliHori .sapUiSliTextRight {
+	right: -3px;
+}
+
+.sapUiSliVert .sapUiSliTextRight {
+	top: -3px;
+}

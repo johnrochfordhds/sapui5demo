@@ -1,0 +1,28 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core"
+	visible="true" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout"
+	xmlns="sap.m" class="sapUiSizeCompact">
+	<f:SimpleForm id="idRequestOptionsForm" maxContainerCols="1"
+		editable="false" labelMinWidth="300" layout="ResponsiveGridLayout"
+		labelSpanL="4" labelSpanM="4" labelSpanS="4" emptySpanL="2"
+		emptySpanM="2" emptySpanS="2" columnsL="1" columnsM="1" width="100%">
+		<f:content>
+			<Label xmlns="sap.m" id="idSourceLabel" />
+			<Input xmlns="sap.m" id="idSource" editable="true"
+				showValueHelp="true" change="handleChangeForSource"
+				valueHelpRequest="handleShowValueHelpRequest" />
+			<Label xmlns="sap.m" id="idEntityLabel" />
+			<Select xmlns="sap.m" id="idEntity" visible="true" enabled="true"
+				width="100%" maxWidth="100%" type="Default" autoAdjustWidth="false"
+				change="handleChangeForEntity" items="{/Objects}">
+				<core:Item key="{key}" text="{name}" />
+			</Select>
+			<Label xmlns="sap.m" id="idSelectPropertiesLabel" />
+			<MultiComboBox xmlns="sap.m" id="idSelectProperties"
+				value="" width="" enabled="true" visible="true" valueState="None"
+				editable="true" selectionFinish="handleChangeForSelectProperty"
+				items="{/Objects}">
+				<core:Item key="{key}" text="{name}" />
+			</MultiComboBox>
+		</f:content>
+	</f:SimpleForm>
+</mvc:View>

@@ -1,0 +1,238 @@
+/* ================================================== */
+/* CSS for control sap.ca.ui/InPlaceEdit.control */
+/* ================================================== */
+
+.sapCaUiIpe{
+    border: 1px solid transparent; /* to avoid reposition if border is painted on focus */
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+/* Content area if revert button is available*/
+.sapCaUiIpeUndo .sapMInputBaseInner{
+    padding-right: 3rem;
+}
+
+.sapCaUiIpeEdit .sapMInputBaseInner,
+.sapCaUiIpeEdit .sapMInputBaseInner:focus:not(.sapMInputBaseWarningInner):not(.sapMInputBaseErrorInner):not(.sapMInputBaseSuccessInner):not(.sapMInputBaseReadonlyInner) {
+    border: none;
+}
+
+.sapCaUiIpe:hover,
+.sapCaUiIpeFocus{
+    border-color: @sapUiHighlight;
+    cursor: text;
+    outline: none;
+}
+
+.sapCaUiIpe.sapCaUiIpeRo:hover,
+.sapCaUiIpeFocus.sapCaUiIpeRo,
+.sapCaUiIpe.sapCaUiIpeLink:hover,
+.sapCaUiIpeFocus.sapCaUiIpeLink{
+    border-color: transparent;
+    cursor: default;
+}
+
+/* disable outline on display controls - focus is visualized on outer DIV */
+.sapCaUiIpeFocus .sapUiTv,
+.sapCaUiIpeFocus .sapUiLnk:focus{
+    outline: none;
+}
+
+.sapCaUiIpeUndo{
+    background-color: @sapUiListHoverBackground;
+}
+
+.sapCaUiIpeEdit,
+.sapCaUiIpeEdit.sapCaUiIpeUndo{
+    border: none;
+    background-color: @sapUiFieldBackground;
+}
+
+/* success state */
+.sapCaUiIpeSucc,
+.sapCaUiIpeUndo.sapCaUiIpeSucc{
+    background-color: @sapUiFieldSuccessBackground;
+}
+
+/* invalid state */
+.sapCaUiIpeErr,
+.sapCaUiIpeUndo.sapCaUiIpeErr{
+    border-color: @sapUiFieldInvalidColor;
+    background-color: @sapUiFieldInvalidBackground;
+}
+
+/* warning state */
+.sapCaUiIpeWarn,
+.sapCaUiIpeUndo.sapCaUiIpeWarn{
+    background-color: @sapUiFieldWarningBackground;
+}
+
+/* Content area if revert button is available*/
+.sapCaUiIpeCont{
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.sapCaUiIpeLink > .sapCaUiIpeCont{
+    display: inline-block;
+    box-sizing: border-box;
+    -moz-box-sizing: padding-box;
+    -webkit-box-sizing: border-box;
+    max-width: 100%;
+}
+
+html[data-sap-ui-browser="ie8"] .sapCaUiIpeLink > .sapCaUiIpeCont{
+    width:100%; /* as max-width seems not to work in IE8 */
+}
+
+.sapCaUiIpeEdit.sapCaUiIpeLink > .sapCaUiIpeCont{
+    display: block;
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    padding-right: auto;
+}
+
+.sapCaUiIpeLink:hover > .sapCaUiIpeCont,
+.sapCaUiIpeFocus.sapCaUiIpeLink > .sapCaUiIpeCont{
+    padding-right: 20px;
+}
+
+.sapCaUiIpeEdit.sapCaUiIpeFocus.sapCaUiIpeLink > .sapCaUiIpeCont{
+    padding-right: 0;
+}
+
+/* Revert/Edit Button */
+.sapCaUiIpe > .sapUiBtnS.sapUiBtnLite,
+.sapCaUiIpeCont > .sapUiBtnS.sapUiBtnLite{
+    position: absolute;
+    right: -1px; /*because of border of outer DIV in display mode*/
+    /*top: -1px;*/ /*because of border of outer DIV in display mode*/
+    top: 0;
+    height: 100%;
+}
+
+.sapCaUiIpeEdit > .sapUiBtnS.sapUiBtnLite{
+    visibility: hidden;
+    border-color: @sapUiHighlight;
+    right: 0;
+    top: 0;
+    border-style: solid;
+    border-width: 1px 1px 1px 0;
+}
+
+.sapCaUiIpeEdit.sapCaUiIpeUndo > .sapUiBtnS.sapUiBtnLite{
+    visibility: visible;
+}
+
+.sapCaUiIpeCont > a{
+    height: 100%;
+    padding-right: 2px; /* to have some space before edit button */
+}
+
+.sapCaUiIpeEBtn{
+    visibility: hidden;
+}
+
+.sapCaUiIpe:hover > .sapCaUiIpeEBtn,
+.sapCaUiIpeFocus > .sapCaUiIpeEBtn,
+.sapCaUiIpe:hover > .sapCaUiIpeCont > .sapCaUiIpeEBtn,
+.sapCaUiIpeFocus > .sapCaUiIpeCont > .sapCaUiIpeEBtn{
+    visibility: visible;
+}
+
+
+
+.sapCaUiIpe {
+
+    height: 2.5rem;
+    line-height: 1.675rem;
+    border: 1px solid transparent;
+    font-size: 0.875rem;
+
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    position: relative;
+
+}
+
+.sapCaUiIpe:not(.sapCaUiIpeEdit) {
+    transition: background-color 1s linear;
+    -moz-transition: background-color 1s linear;
+    -webkit-transition: background-color 1s linear;
+    -ms-transition: background-color 1s linear;
+    padding: 0.375rem;
+
+}
+
+.sapCaUiIpe:hover, .sapCaUiIpeFocus {
+    border-color: #007cc0;
+    cursor: text;
+    outline: none;
+}
+
+.sapCaUiIpeCont   {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.sapCaUiIpeEdit .sapMInputBase {
+    margin: 0;
+}
+
+
+.sapCaUiIpe:hover>.sapCaUiIpeEBtn,
+.sapCaUiIpeFocus>.sapCaUiIpeEBtn,
+.sapCaUiIpe:hover>.sapCaUiIpeCont>.sapCaUiIpeEBtn,
+.sapCaUiIpeFocus>.sapCaUiIpeCont>.sapCaUiIpeEBtn {
+    visibility: visible;
+}
+
+.sapCaUiIpeEBtn {
+    min-width: 1.375rem;
+    line-height: 1.675rem;
+    height: auto;
+    background-color: transparent;
+    border: none;
+}
+
+.sapCaUiIpeEBtn > .sapMBtnContent > .sapUiIcon {
+    font-size: 0.875rem;
+    line-height: 1.675rem;
+    width: 1.875rem;
+}
+
+
+.sapCaUiIpe > .sapMBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2.5rem;
+
+}
+
+.sapCaUiIpe > .sapMBtn > .sapMBtnContent > .sapUiIcon {
+    line-height: 2.375rem;
+}
+
+
+/*
+TEMPORARY, WAIT FOR UI5
+*/
+.sapUiForm:not(.sapUiFormEdit) .sapMText {
+    vertical-align: inherit;
+}
+
+.sapUiFormEdit .sapCaUiIpeEdit {
+    vertical-align: middle;
+}

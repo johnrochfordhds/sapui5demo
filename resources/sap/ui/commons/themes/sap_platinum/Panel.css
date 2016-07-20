@@ -1,0 +1,54 @@
+.sapUiPanelHdr { /* header background */
+	background-color: @sapUiMediumBorder;
+	background-image: -moz-linear-gradient(top, #BBC8DE 0, @sapUiMediumBorder 4px, @sapUiMediumBorder);
+	background-image: -webkit-gradient(linear, center top, center bottom, color-stop(0, #BBC8DE), color-stop(20%, @sapUiMediumBorder), color-stop(100%, @sapUiMediumBorder));
+	color: white;
+	line-height: 16px;
+	min-height: 19px;
+	padding: 0 10px 0 10px;
+}
+
+.sapUiPanelCollArrow {
+	display: none; /* not this one in Platinum */
+}
+
+.sapUiPanelCollIco {
+	/* the 'collapse' button on the right-hand side of the panel header */
+	display: block;
+	background-image: url(img/panel/PanelMaximize.gif);
+	outline-color: white;
+}
+
+html[data-sap-ui-browser*="ie"] .sapUiPanelCollIco:focus {
+	outline: 1px dotted white;
+}
+
+.sapUiPanelCollIco:hover {
+	/* the 'collapse' button on the right-hand side of the panel header */
+	background-image: url(img/panel/PanelMaximizeHover.gif);
+}
+
+.sapUiPanelHeightSet > .sapUiPanelCont {
+	top: 19px;
+}
+
+html[data-sap-ui-browser*="ie"] .sapUiPanelCollArrow {
+	display: none;
+}
+
+html[data-sap-ui-browser*="ie"] .sapUiPanelCollIco {
+	display: inline-block;
+}
+
+.sapUiPanelHdr .sapUiBtnNoGradient.sapUiBtnStd {
+	background-color: transparent;
+}
+
+.sapUiPanelTitle.sapUiTvH4,
+.sapUiPanelTitle.sapUiTvH5{
+	font-size: 11px; /* to be compatible */
+}
+
+.sapUiPanelHdr > .sapUiPanelTitle{
+	color: white;
+}

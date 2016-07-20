@@ -1,0 +1,9 @@
+
+/* ============================================= */
+/* CSS for control sap.ca.ui/HierarchicalSelectDialogItem.control */
+/* ============================================= */
+
+.sapCaUiHierarchicalSelectDialogItem{
+  color: @sapUiTextColor;
+  border: 1px solid blue;
+}

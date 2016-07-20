@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>AreaMicroChartItem</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>Graphical representation of the area micro chart regarding the value lines, the thresholds, and the target values.</documentation>
+    <baseType>sap.ui.core/Element</baseType>
+    <properties>
+        <property group="Misc" defaultValue="Neutral" type="sap.m/ValueColor" name="color">
+            <documentation>The graphic element color.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="title">
+            <documentation>The line title.</documentation>
+        </property>
+    </properties>
+    <aggregations>
+        <aggregation cardinality="0..n" type="sap.suite.ui.microchart/AreaMicroChartPoint" name="points">
+            <documentation>The set of points for this graphic element.</documentation>
+        </aggregation>
+    </aggregations>
+</control>

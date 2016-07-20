@@ -1,0 +1,980 @@
+<?xml version="1.0" ?>
+<library  version="2.0" name="sap.gantt">
+  <module name="sap/gantt/GanttChart.js" size="108043" compressedSize="57308" dynamicDependencies="true">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/gantt/GanttChartBase.js"/>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="sap/ui/table/TreeTable.js"/>
+      <module name="sap/ui/table/Row.js"/>
+      <module name="sap/gantt/misc/Utility.js"/>
+      <module name="sap/ui/core/theming/Parameters.js"/>
+      <module name="sap/gantt/shape/SelectedShape.js"/>
+      <module name="sap/gantt/shape/ext/rls/SelectedRelationship.js"/>
+      <module name="sap/gantt/drawer/ShapeInRow.js"/>
+      <module name="sap/gantt/drawer/ShapeCrossRow.js"/>
+      <module name="sap/gantt/drawer/CursorLine.js"/>
+      <module name="sap/gantt/drawer/NowLine.js"/>
+      <module name="sap/gantt/drawer/VerticalLine.js"/>
+      <module name="sap/gantt/drawer/CalendarPattern.js"/>
+      <module name="sap/gantt/misc/AxisTime.js"/>
+      <module name="sap/gantt/misc/AxisOrdinal.js"/>
+      <module name="sap/gantt/misc/Format.js"/>
+      <module name="sap/gantt/misc/TreeTableHelper.js"/>
+      <module name="sap/ui/thirdparty/d3.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/GanttChartBase.js" size="18657" compressedSize="3752">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/gantt/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/gantt/misc/Utility.js"/>
+      <module name="sap/gantt/config/TimeHorizon.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/GanttChartContainer.js" size="44401" compressedSize="19127">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/layout/Splitter.js"/>
+      <module name="sap/ui/layout/SplitterLayoutData.js"/>
+      <module name="sap/ui/core/Orientation.js"/>
+      <module name="sap/gantt/legend/LegendContainer.js"/>
+      <module name="sap/gantt/control/Toolbar.js"/>
+      <module name="sap/gantt/control/AssociateContainer.js"/>
+      <module name="sap/gantt/config/TimeHorizon.js"/>
+      <module name="sap/gantt/misc/Utility.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/GanttChartContainerRenderer.js" size="3139" compressedSize="2089">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/core/theming/Parameters.js"/>
+      <module name="sap/gantt/misc/Utility.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/GanttChartRenderer.js" size="4063" compressedSize="2539">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/GanttChartWithTable.js" size="48166" compressedSize="23797">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/GanttChartBase.js"/>
+      <module name="sap/ui/table/Column.js"/>
+      <module name="sap/ui/table/TreeTable.js"/>
+      <module name="sap/ui/core/ScrollBar.js"/>
+      <module name="sap/ui/layout/Splitter.js"/>
+      <module name="sap/ui/layout/SplitterLayoutData.js"/>
+      <module name="sap/gantt/GanttChart.js"/>
+      <module name="sap/gantt/control/Cell.js"/>
+      <module name="sap/gantt/control/Toolbar.js"/>
+      <module name="sap/gantt/control/AssociateContainer.js"/>
+      <module name="sap/gantt/drawer/SelectionPanel.js"/>
+      <module name="sap/gantt/misc/TreeTableHelper.js"/>
+      <module name="sap/gantt/misc/Utility.js"/>
+      <module name="sap/gantt/misc/AxisOrdinal.js"/>
+      <module name="sap/ui/thirdparty/d3.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/GanttChartWithTableRenderer.js" size="1315" compressedSize="717">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/core/theming/Parameters.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/config/ChartScheme.js" size="2130" compressedSize="613">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Element.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/config/ColumnAttribute.js" size="1118" compressedSize="386">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Element.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/config/ContainerLayout.js" size="2305" compressedSize="889">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/ui/core/Orientation.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/config/ExpandChart.js" size="1549" compressedSize="429">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Element.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/config/ExpandChartGroup.js" size="1486" compressedSize="397">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/gantt/config/ToolbarGroup.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/config/GanttChartLayout.js" size="1492" compressedSize="515">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Element.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/config/Hierarchy.js" size="2446" compressedSize="792">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Element.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/config/HierarchyColumn.js" size="1967" compressedSize="637">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Element.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/config/LayoutGroup.js" size="1168" compressedSize="336">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/gantt/config/ToolbarGroup.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/config/Locale.js" size="1511" compressedSize="459">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Element.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/config/Mode.js" size="1309" compressedSize="444">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Element.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/config/ModeGroup.js" size="1017" compressedSize="323">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/gantt/config/ToolbarGroup.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/config/ObjectType.js" size="1582" compressedSize="523">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Element.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/config/SettingGroup.js" size="1168" compressedSize="383">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/config/ToolbarGroup.js"/>
+      <module name="sap/gantt/config/SettingItem.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/config/SettingItem.js" size="1377" compressedSize="435">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/gantt/config/ToolbarGroup.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/config/Shape.js" size="4990" compressedSize="897">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Element.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/config/TimeAxis.js" size="1963" compressedSize="790">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Element.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/config/TimeHorizon.js" size="1820" compressedSize="760">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/gantt/misc/Format.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/config/ToolbarGroup.js" size="1430" compressedSize="443">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/m/OverflowToolbarPriority.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/config/ToolbarScheme.js" size="2331" compressedSize="1003">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Element.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/control/AssociateContainer.js" size="881" compressedSize="554">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/control/AssociateContainerRenderer.js" size="908" compressedSize="539">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/control/Cell.js" size="5000" compressedSize="1470">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/m/Label.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/control/CellRenderer.js" size="481" compressedSize="262">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/control/Toolbar.js" size="38145" compressedSize="23663">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="sap/m/OverflowToolbar.js"/>
+      <module name="sap/m/OverflowToolbarLayoutData.js"/>
+      <module name="sap/m/OverflowToolbarPriority.js"/>
+      <module name="sap/m/ToolbarSpacer.js"/>
+      <module name="sap/m/FlexBox.js"/>
+      <module name="sap/m/FlexDirection.js"/>
+      <module name="sap/m/FlexJustifyContent.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/ButtonType.js"/>
+      <module name="sap/m/SegmentedButton.js"/>
+      <module name="sap/m/Select.js"/>
+      <module name="sap/ui/core/Item.js"/>
+      <module name="sap/m/ViewSettingsDialog.js"/>
+      <module name="sap/m/ViewSettingsCustomTab.js"/>
+      <module name="sap/m/PlacementType.js"/>
+      <module name="sap/m/CheckBox.js"/>
+      <module name="sap/ui/core/Orientation.js"/>
+      <module name="sap/gantt/control/AssociateContainer.js"/>
+      <module name="sap/gantt/legend/LegendContainer.js"/>
+      <module name="sap/gantt/misc/Utility.js"/>
+      <module name="sap/m/Slider.js"/>
+      <module name="sap/m/Popover.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/control/ToolbarRenderer.js" size="711" compressedSize="449">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/def/DefBase.js" size="2113" compressedSize="542">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/def/SvgDefs.js" size="2448" compressedSize="725">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/base/ManagedObject.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/def/cal/Calendar.js" size="3217" compressedSize="1383">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/def/DefBase.js"/>
+      <module name="sap/gantt/misc/Format.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/def/cal/CalendarDefs.js" size="1581" compressedSize="387">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/def/SvgDefs.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/def/cal/TimeInterval.js" size="2489" compressedSize="1242">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/def/DefBase.js"/>
+      <module name="sap/gantt/misc/Format.js"/>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/def/filter/MorphologyFilter.js" size="5115" compressedSize="883">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/def/DefBase.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/def/gradient/LinearGradient.js" size="3519" compressedSize="804">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/def/DefBase.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/def/gradient/RadialGradient.js" size="3486" compressedSize="539">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/def/DefBase.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/def/gradient/Stop.js" size="1730" compressedSize="515">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/def/DefBase.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/def/pattern/BackSlashPattern.js" size="5864" compressedSize="1375">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/def/pattern/PatternBase.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/def/pattern/PatternBase.js" size="2606" compressedSize="487">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/def/DefBase.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/def/pattern/SlashPattern.js" size="5858" compressedSize="1384">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/def/pattern/PatternBase.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/drawer/CalendarPattern.js" size="2468" compressedSize="1418">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="sap/gantt/misc/Format.js"/>
+      <module name="sap/ui/core/format/DateFormat.js"/>
+      <module name="sap/gantt/drawer/Drawer.js"/>
+      <module name="sap/ui/thirdparty/d3.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/drawer/CursorLine.js" size="7041" compressedSize="3099">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/gantt/misc/Format.js"/>
+      <module name="sap/ui/core/format/DateFormat.js"/>
+      <module name="sap/gantt/drawer/Drawer.js"/>
+      <module name="sap/ui/thirdparty/d3.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/drawer/Drawer.js" size="1867" compressedSize="265">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/base/Object.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/drawer/ListLegend.js" size="7110" compressedSize="4411">
+    <requires>
+      <module name="sap/gantt/drawer/Drawer.js"/>
+      <module name="sap/gantt/misc/Utility.js"/>
+      <module name="sap/gantt/misc/Format.js"/>
+      <module name="sap/ui/thirdparty/d3.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/drawer/NowLine.js" size="4033" compressedSize="1556">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/misc/Utility.js"/>
+      <module name="sap/gantt/drawer/Drawer.js"/>
+      <module name="sap/ui/thirdparty/d3.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/drawer/SelectionPanel.js" size="5128" compressedSize="3054">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/drawer/Drawer.js"/>
+      <module name="sap/gantt/misc/Utility.js"/>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="sap/ui/thirdparty/d3.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/drawer/ShapeCrossRow.js" size="13116" compressedSize="3536">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/drawer/Drawer.js"/>
+      <module name="sap/gantt/misc/Utility.js"/>
+      <module name="sap/ui/thirdparty/d3.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/drawer/ShapeInRow.js" size="21709" compressedSize="12041">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/drawer/Drawer.js"/>
+      <module name="sap/gantt/misc/Utility.js"/>
+      <module name="sap/gantt/misc/Format.js"/>
+      <module name="sap/ui/thirdparty/d3.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/drawer/VerticalLine.js" size="2605" compressedSize="1227">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/misc/Utility.js"/>
+      <module name="sap/gantt/drawer/Drawer.js"/>
+      <module name="sap/ui/thirdparty/d3.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/legend/DimensionLegend.js" size="486" compressedSize="368">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/legend/LegendBase.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/legend/LegendBase.js" size="1979" compressedSize="1324">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/gantt/misc/Utility.js"/>
+      <module name="sap/gantt/misc/AxisTime.js"/>
+      <module name="sap/ui/thirdparty/d3.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/legend/LegendContainer.js" size="8427" compressedSize="4111">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/m/NavContainer.js"/>
+      <module name="sap/m/Page.js"/>
+      <module name="sap/m/List.js"/>
+      <module name="sap/m/StandardListItem.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/legend/LegendContainerRenderer.js" size="643" compressedSize="404">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/legend/ListLegend.js" size="3025" compressedSize="1826" dynamicDependencies="true">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/legend/LegendBase.js"/>
+      <module name="sap/gantt/drawer/ListLegend.js"/>
+      <module name="sap/gantt/drawer/CalendarPattern.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/legend/ListLegendRenderer.js" size="3982" compressedSize="2400">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/library.js" size="37426" compressedSize="14474">
+    <description>Initialization Code and shared classes of library sap.gantt.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/library.js"/>
+      <module name="sap/gantt/misc/Utility.js"/>
+      <module name="sap/ui/base/DataType.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/manifest.json" size="995">
+  </module>
+  <module name="sap/gantt/messagebundle.properties" size="4310">
+  </module>
+  <module name="sap/gantt/messagebundle_ar.properties" size="6691">
+  </module>
+  <module name="sap/gantt/messagebundle_bg.properties" size="8822">
+  </module>
+  <module name="sap/gantt/messagebundle_ca.properties" size="4401">
+  </module>
+  <module name="sap/gantt/messagebundle_cs.properties" size="4423">
+  </module>
+  <module name="sap/gantt/messagebundle_da.properties" size="4012">
+  </module>
+  <module name="sap/gantt/messagebundle_de.properties" size="4135">
+  </module>
+  <module name="sap/gantt/messagebundle_el.properties" size="9218">
+  </module>
+  <module name="sap/gantt/messagebundle_en.properties" size="3925">
+  </module>
+  <module name="sap/gantt/messagebundle_es.properties" size="4314">
+  </module>
+  <module name="sap/gantt/messagebundle_et.properties" size="4006">
+  </module>
+  <module name="sap/gantt/messagebundle_fi.properties" size="4281">
+  </module>
+  <module name="sap/gantt/messagebundle_fr.properties" size="4277">
+  </module>
+  <module name="sap/gantt/messagebundle_hi.properties" size="7600">
+  </module>
+  <module name="sap/gantt/messagebundle_hr.properties" size="4061">
+  </module>
+  <module name="sap/gantt/messagebundle_hu.properties" size="4563">
+  </module>
+  <module name="sap/gantt/messagebundle_it.properties" size="4191">
+  </module>
+  <module name="sap/gantt/messagebundle_iw.properties" size="6513">
+  </module>
+  <module name="sap/gantt/messagebundle_ja.properties" size="5374">
+  </module>
+  <module name="sap/gantt/messagebundle_ko.properties" size="4896">
+  </module>
+  <module name="sap/gantt/messagebundle_lt.properties" size="4330">
+  </module>
+  <module name="sap/gantt/messagebundle_lv.properties" size="4596">
+  </module>
+  <module name="sap/gantt/messagebundle_nl.properties" size="4013">
+  </module>
+  <module name="sap/gantt/messagebundle_no.properties" size="3971">
+  </module>
+  <module name="sap/gantt/messagebundle_pl.properties" size="4273">
+  </module>
+  <module name="sap/gantt/messagebundle_pt.properties" size="4250">
+  </module>
+  <module name="sap/gantt/messagebundle_ro.properties" size="4294">
+  </module>
+  <module name="sap/gantt/messagebundle_ru.properties" size="8751">
+  </module>
+  <module name="sap/gantt/messagebundle_sh.properties" size="4105">
+  </module>
+  <module name="sap/gantt/messagebundle_sk.properties" size="4373">
+  </module>
+  <module name="sap/gantt/messagebundle_sl.properties" size="4125">
+  </module>
+  <module name="sap/gantt/messagebundle_sv.properties" size="4156">
+  </module>
+  <module name="sap/gantt/messagebundle_th.properties" size="8426">
+  </module>
+  <module name="sap/gantt/messagebundle_tr.properties" size="4526">
+  </module>
+  <module name="sap/gantt/messagebundle_uk.properties" size="8205">
+  </module>
+  <module name="sap/gantt/messagebundle_vi.properties" size="5412">
+  </module>
+  <module name="sap/gantt/messagebundle_zh_CN.properties" size="4552">
+  </module>
+  <module name="sap/gantt/messagebundle_zh_TW.properties" size="4428">
+  </module>
+  <module name="sap/gantt/misc/AxisOrdinal.js" size="12586" compressedSize="4771">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/misc/Utility.js"/>
+      <module name="sap/ui/thirdparty/d3.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/misc/AxisTime.js" size="25996" compressedSize="11320">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/base/Object.js"/>
+      <module name="sap/gantt/misc/Utility.js"/>
+      <module name="sap/ui/thirdparty/d3.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/misc/Format.js" size="3923" compressedSize="1535">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/misc/TreeTableHelper.js" size="29538" compressedSize="11512">
+    <description>Provides class sap.gantt.misc.TreeTableHelper</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/model/FilterProcessor.js"/>
+      <module name="sap/ui/model/Filter.js"/>
+      <module name="sap/ui/model/SorterProcessor.js"/>
+      <module name="sap/ui/model/Sorter.js"/>
+      <module name="sap/ui/model/Context.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/misc/Utility.js" size="8530" compressedSize="2964">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/misc/Format.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/shape/Circle.js" size="4658" compressedSize="886">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/shape/Shape.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/shape/ClipPath.js" size="3664" compressedSize="395">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/shape/Shape.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/shape/Group.js" size="2507" compressedSize="495">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/shape/Shape.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/shape/Image.js" size="6041" compressedSize="1501">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/shape/Shape.js"/>
+      <module name="sap/gantt/misc/Utility.js"/>
+      <module name="sap/gantt/misc/Format.js"/>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/shape/Line.js" size="6765" compressedSize="1336">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/shape/Shape.js"/>
+      <module name="sap/gantt/misc/Utility.js"/>
+      <module name="sap/gantt/misc/Format.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/shape/Path.js" size="7277" compressedSize="1036">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/shape/Shape.js"/>
+      <module name="sap/gantt/misc/Utility.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/shape/Polygon.js" size="5459" compressedSize="1025">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/shape/Shape.js"/>
+      <module name="sap/gantt/misc/Utility.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/shape/Polyline.js" size="5956" compressedSize="1024">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/shape/Shape.js"/>
+      <module name="sap/gantt/misc/Utility.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/shape/Rectangle.js" size="9043" compressedSize="1993">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/shape/Shape.js"/>
+      <module name="sap/gantt/misc/Utility.js"/>
+      <module name="sap/gantt/misc/Format.js"/>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/shape/SelectedShape.js" size="10485" compressedSize="3055">
+    <description>Provides control sap.gantt.shape.SelectedShape.</description>
+    <requires>
+      <module name="sap/gantt/shape/Path.js"/>
+      <module name="sap/gantt/misc/Utility.js"/>
+      <module name="sap/gantt/misc/Format.js"/>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/shape/Shape.js" size="31019" compressedSize="7055">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/gantt/misc/Utility.js"/>
+      <module name="sap/gantt/misc/Format.js"/>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="sap/ui/core/format/NumberFormat.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/shape/Text.js" size="9394" compressedSize="1720">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/shape/Shape.js"/>
+      <module name="sap/gantt/misc/Utility.js"/>
+      <module name="sap/gantt/misc/Format.js"/>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/shape/cal/Calendar.js" size="6824" compressedSize="1707">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/shape/Rectangle.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/shape/ext/Chevron.js" size="8795" compressedSize="2159">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/shape/Path.js"/>
+      <module name="sap/gantt/misc/Utility.js"/>
+      <module name="sap/gantt/misc/Format.js"/>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/shape/ext/Cursor.js" size="6600" compressedSize="1155">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/shape/Path.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/shape/ext/Diamond.js" size="6072" compressedSize="1067">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/shape/Path.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/shape/ext/Pentangle.js" size="6968" compressedSize="1667">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/shape/Polygon.js"/>
+      <module name="sap/gantt/misc/Utility.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/shape/ext/RowBackgroundRectangle.js" size="9410" compressedSize="2044">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/shape/Rectangle.js"/>
+      <module name="sap/gantt/misc/Utility.js"/>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/shape/ext/Triangle.js" size="6787" compressedSize="1222">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/shape/Path.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/shape/ext/rls/Relationship.js" size="23332" compressedSize="8217">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/shape/Path.js"/>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/shape/ext/rls/SelectedRelationship.js" size="2565" compressedSize="493">
+    <description>Provides control sap.gantt.shape.ext.rls.SelectedRelationship.</description>
+    <requires>
+      <module name="sap/gantt/shape/ext/rls/Relationship.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/shape/ext/ubc/UbcBorderPath.js" size="8395" compressedSize="2205">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/misc/Utility.js"/>
+      <module name="sap/gantt/misc/Format.js"/>
+      <module name="sap/gantt/shape/Path.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/shape/ext/ubc/UbcOverCapacityZonePolygon.js" size="7125" compressedSize="1365">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/misc/Utility.js"/>
+      <module name="sap/gantt/shape/ext/ubc/UbcPolygon.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/shape/ext/ubc/UbcPolygon.js" size="2986" compressedSize="1028">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/misc/Utility.js"/>
+      <module name="sap/gantt/shape/Polygon.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/shape/ext/ubc/UbcShortageCapacityPolygon.js" size="8013" compressedSize="1609">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/misc/Utility.js"/>
+      <module name="sap/gantt/misc/Format.js"/>
+      <module name="sap/gantt/shape/ext/ubc/UbcPolygon.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/shape/ext/ubc/UbcTooltipRectangle.js" size="11483" compressedSize="2185">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/misc/Utility.js"/>
+      <module name="sap/gantt/misc/Format.js"/>
+      <module name="sap/gantt/shape/Rectangle.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/shape/ext/ubc/UbcUnderCapacityZonePolygon.js" size="6155" compressedSize="1253">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/misc/Utility.js"/>
+      <module name="sap/gantt/misc/Format.js"/>
+      <module name="sap/gantt/shape/ext/ubc/UbcPolygon.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/shape/ext/ubc/UbcUsedPolygon.js" size="6191" compressedSize="1289">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/misc/Utility.js"/>
+      <module name="sap/gantt/misc/Format.js"/>
+      <module name="sap/gantt/shape/ext/ubc/UbcPolygon.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/shape/ext/ubc/UtilizationBarChart.js" size="10108" compressedSize="1634">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/shape/Group.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/shape/ext/ulc/UlcBorderPath.js" size="6008" compressedSize="1424">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/shape/Path.js"/>
+      <module name="sap/gantt/misc/Utility.js"/>
+      <module name="sap/gantt/misc/Format.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/shape/ext/ulc/UlcClipPath.js" size="1832" compressedSize="498">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/shape/ClipPath.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/shape/ext/ulc/UlcClipingPath.js" size="2826" compressedSize="1013">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/shape/Path.js"/>
+      <module name="sap/gantt/misc/Utility.js"/>
+      <module name="sap/gantt/misc/Format.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/shape/ext/ulc/UlcDimension.js" size="1811" compressedSize="255">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/shape/Group.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/shape/ext/ulc/UlcMiddleLine.js" size="8566" compressedSize="1575">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/shape/Line.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/shape/ext/ulc/UlcOverCapacityZoneRectangle.js" size="5996" compressedSize="1064">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/shape/ext/ulc/UlcRectangle.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/shape/ext/ulc/UlcOverClipRectangle.js" size="5125" compressedSize="662">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/shape/ext/ulc/UlcRectangle.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/shape/ext/ulc/UlcRectangle.js" size="4873" compressedSize="1030">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/shape/Rectangle.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/shape/ext/ulc/UlcTooltipRectangle.js" size="8846" compressedSize="1776">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/shape/ext/ulc/UlcRectangle.js"/>
+      <module name="sap/gantt/misc/Utility.js"/>
+      <module name="sap/gantt/misc/Format.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/shape/ext/ulc/UlcUnderClipRectangle.js" size="7830" compressedSize="1498">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/shape/ext/ulc/UlcRectangle.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/gantt/shape/ext/ulc/UtilizationLineChart.js" size="9279" compressedSize="428">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/gantt/shape/Group.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+</library>

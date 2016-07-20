@@ -1,0 +1,20 @@
+.sapCaUiPTDeleteButton .sapUiIcon:before {
+	background-color: @sapUiWhiteBG;
+	border-radius: 2rem;
+	color: @sapUiText;
+}
+
+.sapMBtn.sapCaUiPTDeleteButton.sapMBtnActive {
+	background-color: transparent;
+	border: none;
+}
+
+.sapCaUiPTDeleteButton.sapMBtnActive .sapUiIcon:before {
+	color: @sapUiBtnBGTransparentDown;	
+
+}
+.sapCaUiPTDeleteButton .sapUiIcon{
+	outline: none;
+}
+	
+

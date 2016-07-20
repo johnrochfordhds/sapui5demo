@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<library xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+  <name>sap.ui.vbm</name>
+  <vendor>SAP SE</vendor>
+  <copyright>SAP UI development toolkit for HTML5 (SAPUI5) (c) Copyright 2009-2012 SAP AG. All rights reserved</copyright>
+  <version>1.36.9</version>
+  
+  <documentation>SAP UI library: sap.ui.vbm</documentation>
+  
+  <dependencies>
+    <dependency>
+      <libraryName>sap.ui.core</libraryName>
+    </dependency>
+    <dependency>
+      <libraryName>sap.ui.commons</libraryName>
+    </dependency>
+    <dependency>
+      <libraryName>sap.ui.unified</libraryName>
+    </dependency>    
+  </dependencies>
+  
+  <appData>
+    <!-- package name for selenium -->
+    <selenium xmlns="http://www.sap.com/ui5/buildext/selenium" package="com.sap.ui5.selenium.vbm" />
+    <!-- excludes for the JSDoc -->
+    <jsdoc xmlns="http://www.sap.com/ui5/buildext/jsdoc" >
+        <exclude name="sap.ui.vbm.js." />
+        <exclude name="sap.ui.vbm.lib." />
+    </jsdoc>
+    <!-- excludes for the JSCoverage -->
+    <jscoverage xmlns="http://www.sap.com/ui5/buildext/jscoverage" >
+        <exclude name="sap.ui.vbm.js." />
+        <exclude name="sap.ui.vbm.lib." />
+    </jscoverage>
+    <documentation xmlns="http://www.sap.com/ui5/buildext/documentation"
+        indexUrl="../../../../test-resources/sap/ui/vbm/demokit/docuindex.json"
+        resolve="lib" />
+  </appData>
+
+</library>

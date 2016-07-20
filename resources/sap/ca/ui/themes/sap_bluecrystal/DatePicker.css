@@ -1,0 +1,28 @@
+
+/* ============================================= */
+/* CSS for control sap.ca.ui/DatePicker.control */
+/* ============================================= */
+/*
+.sapMInputValHelp {
+    border: 1px solid @sapUiInputBaseBorder;
+    border-left: none;
+}
+
+.sapCaUiDatePickerCalendarIcon {
+    speak: none;
+    color: @sapUiElement;
+}
+
+.sapCaUiDatePicker:not(.sapMInputBaseReadonly) > .sapMInputValHelp > .sapCaUiDatePickerCalendarIcon:hover,
+.sapCaUiDatePicker:not(.sapMInputBaseReadonly) > .sapMInputValHelp > .sapCaUiDatePickerCalendarIcon:focus {
+    background-color: @sapUiBtnBGTransparentHover;
+}
+.sapCaUiDatePicker:not(.sapMInputBaseReadonly) > .sapMInputValHelp > .sapCaUiDatePickerCalendarIcon:focus {
+    outline: 1px dotted @sapUiFocus;
+    outline-offset: -1px;
+}
+.sapCaUiDatePicker:not(.sapMInputBaseReadonly) > .sapMInputValHelp > .sapCaUiDatePickerCalendarIcon:active {
+    background-color: @sapUiBtnBGTransparentDown;
+    color: @sapUiBtnTextActive;
+    outline: 1px dotted @sapUiInvertedFocus;
+}*/

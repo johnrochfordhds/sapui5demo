@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>variants/VariantManagement</name>
+    <derived/>
+    <documentation>The VariantManagement control can be used to manage variants, such as filter bar variants or table variants.</documentation>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property since="1.22.0" group="Misc" type="sap.ui.core/string" name="initialSelectionKey">
+            <documentation>Enables the setting of the initially selected variant.</documentation>
+        </property>
+        <property since="1.22.0" group="Misc" defaultValue="true" type="sap.ui.core/boolean" name="enabled">
+            <documentation>Can be set to true or false depending on whether you want to enable or disable the control.</documentation>
+        </property>
+        <property since="1.22.0" group="Misc" type="sap.ui.core/string" name="defaultVariantKey">
+            <documentation>Provides a string value to set the default variant. Used for the save dialog. Has no effect on the selected variant.</documentation>
+        </property>
+        <property since="1.24.0" group="Misc" type="sap.ui.core/string" name="selectionKey">
+            <documentation>The key of the currently selected item. Returns null if the default item list is selected.</documentation>
+        </property>
+        <property since="1.26.0" group="Misc" defaultValue="false" type="sap.ui.core/boolean" name="showCreateTile">
+            <documentation>Indicates that a Create Tile is visible in the Create dialog.</documentation>
+            <deprecation since="1.32.0"></deprecation>
+        </property>
+        <property since="1.26.0" group="Misc" defaultValue="false" type="sap.ui.core/boolean" name="showExecuteOnSelection">
+            <documentation>Indicates that Execute on Selection is visible in the Save Variant and the Manage Variants dialogs.</documentation>
+        </property>
+        <property since="1.26.0" group="Misc" defaultValue="false" type="sap.ui.core/boolean" name="showShare">
+            <documentation>Indicates that Share is visible in the Save Variant and the Manage Variants dialogs. Share allows you to share variants with other
+users.</documentation>
+        </property>
+        <property since="1.26.0" group="Misc" defaultValue="false" type="sap.ui.core/boolean" name="lifecycleSupport">
+            <documentation>Enables the lifecycle support. If set to true, the VariantManagement control handles the transport information for shared variants.</documentation>
+        </property>
+        <property since="1.28.0" group="Misc" type="sap.ui.core/string" name="standardItemText">
+            <documentation>Overwrites the default Standard variant title.</documentation>
+        </property>
+        <property since="1.32.0" group="Misc" defaultValue="false" type="sap.ui.core/boolean" name="industrySolutionMode">
+            <documentation>If set to true, the scenario is an industry-specific solution. This flag is only used internally in the app variant scenarios.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event allowPreventDefault="false" since="1.22.0" name="save">
+            <documentation>This event is fired when the Save Variant dialog is closed with OK for a variant.</documentation>
+            <parameters>
+                <parameter type="sap.ui.core/string" name="name">
+                    <documentation>The variant title</documentation>
+                </parameter>
+                <parameter type="sap.ui.core/boolean" name="overwrite">
+                    <documentation>Indicates if an existing variant is overwritten or if a new variant is created</documentation>
+                </parameter>
+                <parameter type="sap.ui.core/string" name="key">
+                    <documentation>The variant key</documentation>
+                </parameter>
+                <parameter type="sap.ui.core/boolean" name="exe">
+                    <documentation>The Execute on Selection indicator</documentation>
+                </parameter>
+                <parameter type="sap.ui.core/boolean" name="def">
+                    <documentation>The default variant indicator</documentation>
+                </parameter>
+                <parameter type="sap.ui.core/boolean" name="global">
+                    <documentation>The shared variant indicator</documentation>
+                </parameter>
+                <parameter type="sap.ui.core/string" name="lifecyclePackage">
+                    <documentation>The package name</documentation>
+                </parameter>
+                <parameter type="sap.ui.core/string" name="lifecycleTransportId">
+                    <documentation>The transport ID</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event allowPreventDefault="false" since="1.22.0" name="manage">
+            <documentation>This event is fired when users apply changes to variants in the Manage Variants dialog.</documentation>
+            <parameters>
+                <parameter type="sap.ui.core/string[]" name="renamed">
+                    <documentation>List of changed variant keys</documentation>
+                </parameter>
+                <parameter type="sap.ui.core/string[]" name="deleted">
+                    <documentation>List of deleted variant keys</documentation>
+                </parameter>
+                <parameter type="sap.ui.core/object[]" name="exe">
+                    <documentation>List of variant keys and the associated Execute on Selection indicator</documentation>
+                </parameter>
+                <parameter type="sap.ui.core/boolean" name="def">
+                    <documentation>The default variant key</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event allowPreventDefault="false" since="1.22.0" name="select">
+            <documentation>This event is fired when a new variant is selected.</documentation>
+            <parameters>
+                <parameter type="sap.ui.core/string" name="key">
+                    <documentation>The variant key</documentation>
+                </parameter>
+            </parameters>
+        </event>
+    </events>
+    <aggregations default="items">
+        <aggregation cardinality="0..n" since="1.22.0" type="sap.ui.core/Item" name="items">
+            <documentation>Items displayed by the VariantManagement control.</documentation>
+            <deprecation since="1.26.0">Replaced by association &lt;code&gt;variantItems&lt;/code&gt;</deprecation>
+        </aggregation>
+        <aggregation cardinality="0..n" since="1.26.0" type="sap.ui.comp/variants/VariantItem" name="variantItems">
+            <documentation>Variant items displayed by the VariantManagement control.</documentation>
+        </aggregation>
+    </aggregations>
+    <methods>
+        <method since="1.22.0" name="clearVariantSelection">
+            <documentation>Removes the current variant selection and resets to default value.</documentation>
+        </method>
+    </methods>
+</control>

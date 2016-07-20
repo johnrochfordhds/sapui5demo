@@ -1,0 +1,24 @@
+/* ============================================= */
+/* CSS for reuse component Quickoverview */
+/* ============================================= */
+
+.sapCaUiQuickOverviewHdrImgColor {
+	color: @sapUiLightText;
+}
+
+/* ============================================= */
+/* CSS for specializations Employee and Company : spacing between formcontainers*/
+/* ============================================= */
+.bcUpperContainer .sapUiFormResLayout > div,
+.bcLowerContainer .sapUiFormResLayout > div{
+	padding:1rem 1rem 0 1rem;
+}
+
+.bcUpperContainer .sapUiRLContainer{
+	padding:0 1rem !important;
+}
+
+.bcUpperContainer .sapUiRLContainer > .sapUiFormTitle,
+.bcLowerContainer .sapUiRLContainer > .sapUiFormTitle  {
+margin-bottom: 0.5rem;
+}

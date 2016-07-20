@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ui5/controls/Popover</name>
+    <derived/>
+    <documentation>Viz Chart Popover</documentation>
+    <since>1.22.0</since>
+    <developmentState since="1.22.0" state="experimental">API is not finished yet and might change completely</developmentState>
+    <baseType>sap.viz/ui5/controls/common/BaseControl</baseType>
+    <properties>
+        <property type="sap.ui.core/any" name="customDataControl">
+            <documentation>A callback function let user customize Popover's content panel.</documentation>
+        </property>
+        <property type="sap.ui.core/object[]" name="actionItems">
+            <documentation>The items of this list or rows of Action List in Home Page inside the Popover.</documentation>
+        </property>
+        <property type="sap.ui.core/any" name="formatString">
+            <documentation>The pattern is used to format the measures displayed in Popover. 
+If value type of format string is String, the format string will be used to format all measures. 
+If value type is Object, each format string in the Object will be used to format the specified measure or time dimension.</documentation>
+        </property>
+    </properties>
+    <methods>
+        <method type="sap.ui.core/void" name="close">
+            <documentation>Close Chart's Popover.</documentation>
+        </method>
+        <method type="sap.ui.core/void" name="connect">
+            <documentation>Connect Chart's Popover with VizFrame.</documentation>
+            <parameters>
+                <parameter type="sap.ui.core/string" name="vizFrameId">
+                    <documentation>Set Uid of VizFrame.</documentation>
+                </parameter>
+            </parameters>
+        </method>
+    </methods>
+</control>

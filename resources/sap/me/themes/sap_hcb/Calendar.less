@@ -1,0 +1,169 @@
+.sapMeCalendar{
+	background-color:@sapUiLightestBG;
+}
+
+.sapMeCalendar > .sapMeCalendarMonth > div.sapMeCalendarMonthName {
+	height:3rem;
+	line-height:3rem;
+	padding:0;
+	font-family:@sapUiFontFamily;
+	font-size:1rem;
+	color:@sapUiDarkText;
+}
+
+.sapMeCalendar > .sapMBtn > .sapMBtnContent{
+	font-size:0;
+}
+
+.sapMeCalendar > .sapMeCalendarMonthNotSingle > div.sapMeCalendarMonthDayNames,
+.sapMeCalendar > .sapMeCalendarMonthNotSingle > div.sapMeCalendarMonthDays {
+	margin-left:0.5rem;
+	margin-right:0.5rem;
+}
+
+.sapMeCalendar > .sapMeCalendarPrevious {
+	font-size:1.375rem;
+	width:3rem;
+	height:3rem;
+	line-height:3rem;
+}
+
+.sapMeCalendar > .sapMeCalendarNext{
+	font-size:1.375rem;
+	width:3rem;
+	height:3rem;
+	line-height:3rem;
+}
+
+.sapMeCalendar > .sapMeCalendarPrevious:active{
+	background: @sapUiHighlight;
+	color:@sapUiTextInverted;
+}
+
+.sapMeCalendar > .sapMeCalendarNext:active{
+	background: @sapUiHighlight;
+	color:@sapUiTextInverted;
+}
+
+.sapMeCalendar > .sapMeCalendarMonth > div > .sapMeCalendarMonthDay{
+	font-family:@sapUiFontFamily;
+	font-size:0.625rem;
+	color:@sapUiLightText;
+	text-transform:uppercase;
+}
+
+.sapMeCalendar > .sapMeCalendarMonth > div.sapMeCalendarMonthDayNames{
+	font-size:0;
+	height:0.9375rem;
+}
+
+.sapMeCalendar > .sapMeCalendarMonth > div.sapMeCalendarMonthDayNames {
+	margin-top:1rem;
+}
+
+.sapMeCalendar > .sapMeCalendarMonth > div.sapMeCalendarMonthDays {
+	margin-bottom:1rem;
+}
+
+.sapMeCalendar > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarSelected:not(.sapMeCalendarDayNotInCurrentMonth).sapMeCalendarDayNow:before {
+	content: "";
+	position: absolute;
+	top:-0.063rem;
+	right:0;
+	bottom:0;
+	left:-0.063rem;
+}
+
+.sapMeCalendar > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay {
+	font-family:@sapUiFontFamily;
+	font-weight: bold;
+	font-size:1.125rem;
+	padding: 0.688rem 0;
+	position:relative;
+}
+
+.sapMeCalendar > .sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarDayNow:before {
+	content: "";
+	position: absolute;
+	top:-0.063rem;
+	right:0;
+	bottom:0;
+	left:-0.063rem;
+}
+
+/* Normal day */
+.sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay {
+  color:@sapUiLightText;
+  background:@sapUiExtraLightBG;
+  vertical-align: top;
+}
+
+.sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay:not(.sapMeCalendarDayNotInCurrentMonth) {
+  border: 0.063rem solid @sapHCReducedAltFG;
+}
+
+/* Today */
+.sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarDayNow:not(.sapMeCalendarDayNotInCurrentMonth) {
+  color: @sapUiLightText;
+}
+
+/* Today */
+.sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarDayNow:before {
+  border:0.225rem solid  @sapHCStandardFG;
+}
+
+/* Today not in month*/
+.sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarDayNow:before.sapMeCalendarDayNotInCurrentMonth{
+  border:none;
+}
+
+/* Weekend (00) */
+.sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarWeekendDay {
+  color: @sapUiTextInverted;
+  background: @sapHCReducedBG;
+}
+
+.sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarWeekendDay.sapMeCalendarDayNotInCurrentMonth {
+  color: @sapUiTextInverted;
+  background: @sapUiExtraLightBG;
+}
+
+/* Selected */
+.sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarSelected:not(.sapMeCalendarDayNotInCurrentMonth) {
+  color: @sapUiTextInverted;
+  background: @sapHCHighlightAltBG;
+}
+
+.sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarType00 {
+  color: @sapUiTextInverted;
+  background: @sapHCHighlightAltBG;
+}
+.sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarSelected:not(.sapMeCalendarDayNotInCurrentMonth).sapMeCalendarType00 {
+  color: @sapUiTextInverted;
+  background: @sapHCHighlightAltBG;
+}
+.sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarType01 {
+  color: @sapUiTextInverted;
+  background-color : darken(@sapHCPositive,15);
+}
+.sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarType04 {
+  color: @sapUiTextInverted;
+  background-color : lighten(@sapHCPositive,10);
+}
+.sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarType06 {
+  color: @sapUiTextInverted;
+  background-color : @sapHCCritical;
+}
+.sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarType07 {
+  color: @sapUiTextInverted;
+  background-color : lighten(@sapHCNegative,10);
+}
+
+
+/* Type 10 to force to be displayed as working day */
+.sapMeCalendarMonth > div.sapMeCalendarMonthDays > .sapMeCalendarMonthDay.sapMeCalendarType10 {
+  color: @sapUiLightText;
+  background: @sapHCStandardBG;
+}
+
+

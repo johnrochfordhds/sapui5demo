@@ -1,0 +1,7 @@
+
+/* ============================================= */
+/* CSS for control sap.ui.comp/VariantManagement.control */
+/* ============================================= */
+.sapUiCompVarMngmtDel .sapMBtnTransparent > .sapMBtnIcon {
+	color: @sapUiNegativeElement;
+}

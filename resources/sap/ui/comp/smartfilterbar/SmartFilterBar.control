@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>smartfilterbar/SmartFilterBar</name>
+    <derived/>
+    <author>Pavan Nayak, Thomas Biesemann</author>
+    <documentation>The SmartFilterBar control uses the OData metadata of an entity in order to create a filter bar.&lt;br&gt;
+       Whether a field is visible on the filter bar, supports type-ahead and value help, for example, is automatically determined. When you use
+       control configurations and group configurations it is possible to configure the filter bar and adapt it according to your needs.&lt;br&gt;
+       &lt;b&gt;&lt;i&gt;Note:&lt;/i&gt;&lt;/b&gt;&lt;br&gt;
+       Most of the attributes/properties are not dynamic and cannot be changed once the control has been initialized.</documentation>
+    <baseType>sap.ui.comp/filterbar/FilterBar</baseType>
+    <properties>
+        <property group="Misc" type="sap.ui.core/string" name="entityType">
+            <documentation>The OData entity type whose metadata is used to create the SmartFilterBar. Note: Changing this value after the SmartFilterBar is
+initialized (initialise event was fired) has no effect.</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="resourceUri">
+            <documentation>Optional. The OData service URL. If it is not specified, the service URL from the OData model (this.getModel()) will be used. Note:
+Changing this value after the SmartFilterBar is initialized (initialise event was fired) has no effect.</documentation>
+            <deprecation since="1.29">Set an ODataModel as the main model on your control/view instead</deprecation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="basicSearchFieldName">
+            <documentation>Name of the field that has to be the focus of basic search. This is only relevant for SmartFilterBar in combination with
+ValueHelpDialog.</documentation>
+        </property>
+        <property group="Misc" defaultValue="false" type="sap.ui.core/boolean" name="enableBasicSearch">
+            <documentation>Enables basic search field in the SmartFilterBar control. This must only be enabled for entities that support such search behavior.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event allowPreventDefault="false" since="1.36" name="pendingChange">
+            <documentation>This event is fired after the pending state of the FilterBar control changes.</documentation>
+        </event>
+    </events>
+    <aggregations>
+        <aggregation cardinality="0..n" type="sap.ui.comp/smartfilterbar/ControlConfiguration" name="controlConfiguration">
+            <documentation>Using control configurations you can add additional configuration to filter fields, for example set custom labels, change the order
+of fields, or change the filter field control type. Note: Changing the values here after the SmartFilter is initialized (initialise
+event was fired) has no effect.</documentation>
+        </aggregation>
+        <aggregation cardinality="0..n" type="sap.ui.comp/smartfilterbar/GroupConfiguration" name="groupConfiguration">
+            <documentation>Provides the possibility to add additional configuration to groups. Groups are used to show fields in the advanced area of the
+SmartFilterBar. With additional configuration, you can for example set custom labels or change the order of groups. Note: Changing
+the values here after the SmartFilter is initialized (initialise event was fired) has no effect.</documentation>
+        </aggregation>
+    </aggregations>
+    <methods>
+        <method type="sap.ui.core/object" name="fetchVariant">
+            <documentation>Retrieves the currently visible filters and the values for storing them as variants. The result will be passed on as a JSON object to the
+callee smart variant control.</documentation>
+        </method>
+        <method type="sap.ui.core/void" name="applyVariant">
+            <documentation>Applies the current variant as opposed to fetchVariant. The variant is retrieved via the flex layer.</documentation>
+            <parameters>
+                <parameter type="sap.ui.core/object" name="variant">
+                    <documentation>The variant that must be applied. oVariant must contain a valid JSON object.</documentation>
+                </parameter>
+            </parameters>
+        </method>
+    </methods>
+</control>

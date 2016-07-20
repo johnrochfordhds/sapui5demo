@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>ui5/data/FlattenedDataset</name>
+    <derived/>
+    <documentation>A dataset for flattened (redundant) data using a tabular format.</documentation>
+    <since>1.7.2</since>
+    <baseType>sap.viz/ui5/data/Dataset</baseType>
+    <properties>
+        <property type="sap.ui.core/any" name="context">
+            <documentation>Additional data which works with data context in this dataset. The input could be an array. Each item represents a dimension that is added as the additional information based on data context. The input could be a string of dimension id,
+or object like this {id: &quot;name&quot;, showInTooltip: true}. If showInTooltip is false, the dimensions set in this API will not show in 
+popover or tooltip. However other dimensions in data context will show. In selection event, all dimension information (including the dimension set in this API) will be included.
+Context will be shown by default in tooltip if only set context with string or string of array.</documentation>
+        </property>
+    </properties>
+    <aggregations>
+        <aggregation cardinality="0..n" type="sap.viz/ui5/data/DimensionDefinition" name="dimensions">
+            <documentation>List of definitions of all dimensions in this dataset</documentation>
+        </aggregation>
+        <aggregation cardinality="0..n" type="sap.viz/ui5/data/MeasureDefinition" name="measures">
+            <documentation>list of definitions of all measures in this dataset</documentation>
+        </aggregation>
+        <aggregation bindable="bindable" cardinality="0..n" type="sap.ui.core/Element" name="data">
+            <documentation>Data containing dimensions and measures.
+
+&lt;b&gt;Note:&lt;/b&gt; This aggregation can only be bound against a model, it cannot be managed
+programmatically using the aggregation mutator methods like addData.</documentation>
+        </aggregation>
+    </aggregations>
+</control>

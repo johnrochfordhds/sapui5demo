@@ -1,0 +1,42 @@
+/* ============================================= */
+/* CSS for control sap.ui.commons/Paginator      */
+/* SAP PLATINUM                                  */
+/* ============================================= */
+
+.sapUiPagBtn {
+	padding-top: 1px;
+}
+
+.sapUiPagFirst {
+	margin-right: 4px;
+}
+
+.sapUiPagBack {
+	background-image: url(img/paginator/ico_h_Prev_item.gif);
+	background-position: left -5px;
+	padding-left: 16px;
+}
+
+.sapUiPagPage {
+	padding-bottom: 1px;
+}
+
+.sapUiPagCurrentPage {
+	background: #eef5fc;
+	background: -moz-linear-gradient(top, #eef5fc 0%, #c6d7e6 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eef5fc), color-stop(100%,#c6d7e6));
+	background: -webkit-linear-gradient(top, #eef5fc 0%,#c6d7e6 100%);
+	background: -ms-linear-gradient(top, #eef5fc 0%,#c6d7e6 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eef5fc', endColorstr='#c6d7e6',GradientType=0 );
+	background: linear-gradient(top, #eef5fc 0%,#c6d7e6 100%);
+}
+
+.sapUiPagForward {
+	background-image: url(img/paginator/ico_h_Next_item.gif);
+	background-position: right -5px;
+	padding-right: 16px;
+}
+
+.sapUiPagLast {
+	margin-left: 4px;
+}

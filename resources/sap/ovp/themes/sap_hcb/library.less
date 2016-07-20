@@ -1,0 +1,292 @@
+/* NOTE: This file was generated as an optimized version of "library.source.less" for the Theme Designer. */
+
+/*!
+ * SAP UI development toolkit for HTML5 (SAPUI5)
+ *
+ * (c) Copyright 2009-2016 SAP SE. All rights reserved
+ */
+
+@import "../base/library.less";
+@import "../../../../sap/ui/core/themes/sap_hcb/global.less";
+
+/* START "BarListCard.less" */
+.sapOvpBarListDataField {
+  color: @sapUiDarkText;
+  font-size: @sapMFontMediumSize;
+}
+
+.sapOvpBarListProgressIndicator {
+  background-color: inherit;
+  .sapMPIText {
+    font-size: @sapMFontMediumSize;
+  }
+}
+
+.sapOvpBarListProgressIndicatorBackground {
+  background-color: @sapUiLightBG;
+}
+
+.sapOvpBarListObjectNumberWithoutState {.sapOvpBarListDataField {
+  color: @sapUiDarkText;
+  font-size: @sapMFontMediumSize;
+}
+
+  .sapOvpBarListProgressIndicator {
+    background-color: inherit;
+    .sapMPIText {
+      font-size: @sapMFontMediumSize;
+    }
+  }
+
+  .sapOvpBarListProgressIndicatorBackground {
+    background-color: @sapUiLightBG;
+  }
+
+  .sapOvpBarListObjectNumberWithoutState {
+    color: @sapUiDarkText;
+    font-size: @sapMFontMediumSize;
+  }
+
+  .sapOvpExtendedBarListFirstDataField {
+    color: @sapUiDarkText;
+  }
+
+  .sapOvpBarListObjectNumber {
+    font-size: @sapMFontMediumSize;
+  }
+
+
+  color: @sapUiDarkText;
+  font-size: @sapMFontMediumSize;
+}
+
+.sapOvpExtendedBarListFirstDataField {
+  color: @sapHCStandardFG;
+  font-size: @sapMFontHeader5Size;
+}
+.sapOvpBarListObjectNumber {
+  font-size: @sapMFontMediumSize;
+}
+
+
+/* END "BarListCard.less" */
+
+/* START "Card.less" */
+@text-color: #666;
+
+.sapOvpBaseCard {
+  background-color: @sapHCStandardBG;
+  border: 1px solid @sapHCStandardFG;
+  //outline: @sapHCStandardFG solid 1px;
+}
+.sapOvpCardHeader {
+  color : @sapHCStandardFG;
+  background-color: @sapHCStandardBG;
+  border-bottom: 1px solid @sapHCStandardFG;
+}
+.sapOvpCardFooter {
+  color: @sapHCStandardFG;
+  font-size: @sapMFontHeader5Size;
+}
+
+.sapOvpCardContentRightHeader .sapOvpCardHeader{
+  background-color: @sapUiButtonEmphasizedBG;
+  border-bottom: 0px;
+}
+
+.sapOvpCardContent{
+  background-color: @sapUiLightestBG;
+}
+
+.sapOvpBaseCard tr {
+  &:hover {
+    background: @sapUiHighlight;
+  }
+}
+
+.sapOvpStackCardIcon {
+  background-color: @sapHCStandardBG;
+}
+
+.sapMListShowSeparatorsAll .sapMListTblSubRow:last-child>td, .sapMListShowSeparatorsAll .sapMLIBShowSeparator:last-child>td {
+  border-bottom-color: @sapUiLightBG;
+}
+
+.sapOvpStackCardContent{
+  background-color: @sapHCReducedBG;
+  &> .sapMFlexItem, .sapMLabel {
+    color: @sapUiBrand;
+  }
+  &:hover {
+    background-color: @sapUiHighlight;
+  }
+}
+
+.sapOvpBaseCard .sapMObjLNumber {
+  font-size: @sapMFontHeader6Size;
+}
+.sapMListTbl th{
+  background-color: @sapHCReducedBG;
+  border-bottom: 1px solid @sapHCStandardFG;
+}
+.sapMListTbl{
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid @sapHCStandardFG;
+}
+
+.sapOvpBaseCard {
+  .sapMListTblCell.sapMListTblCellNoData, .sapMListTblRow > :nth-last-child(2) {
+    border-left: 1px solid @sapHCStandardFG;
+  }
+  .sapMListTblCell:first-child, .sapMListTblNone:first-child + .sapMListTblCell {
+    border-right: 1px solid @sapHCStandardFG;
+  }
+}
+
+.sapMLIB{
+  border-bottom:1px solid @sapHCStandardFG;
+}
+.sapMLIBShowSeparator>td {
+  border-top:1px solid @sapHCStandardFG;
+}
+
+/* KPI Header Style Class */
+
+
+.sapOvpCardHeader .sapOvpKPIHeaderTitleStyle {
+  color: @sapUiLightText;
+  font-size: @sapMFontHeader5Size;
+}
+
+.sapOvpCardHeader .sapOvpKPIHeaderDimensionStyle {
+  color: @sapUiLightText;
+  font-size: @sapMFontSmallSize;
+}
+
+.sapOvpCardHeader .sapOvpKPIHeaderFilterStyle {
+  color: @sapUiLightText;
+  font-size: @sapMFontSmallSize;
+}
+
+.sapOvpCardHeader .sapOvpKPIHeaderTrendPercentStyle {
+  font-size: @sapMFontHeader6Size;
+
+}
+.sapUshellEasyScanLayout .easyScanLayoutItemWrapper:focus, .sapOvpCardHeader:focus, .sapOvpStackCardContent:focus {
+  outline-color: @sapHCStandardFG;
+}
+/* END "Card.less" */
+
+/* START "ObjectStream.less" */
+.sapOvpStackedCardPopup {
+  background: fade(@sapHCReducedBG, 100%);
+  box-shadow: 0 0 2.5rem 0.125rem rgba(255,255,255,0.8);
+  .sapMDialogSection {
+    background-color: transparent;
+  }
+  .sapOvpObjectStreamHeader {
+    color: @sapHCStandardFG;
+  }
+  .sapOvpObjectStreamClose {
+    color: @sapHCStandardFG;
+    &:hover {
+      .sapUiIcon {
+        background-color: @sapHCHighlightBG;
+        border-color: white;
+        box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
+}
+
+.sapOvpOSEdgeLeft, .sapOvpOSEdgeRight {
+  & > span {
+    background-color: @sapUiButtonEmphasizedBG;
+    color: @sapHCStandardFG;
+    border-color: @sapHCStandardFG;
+    box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.1);
+  }
+  &:hover > span {
+    box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.4);
+    background-color: @sapHCHighlightBG;
+  }
+}
+
+.sapOvpBaseCard .sapOvpCardContentContainer {
+  &::after {
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+  }
+}
+
+.sapOvpStackedCardPopup {
+  .sapOvpObjectStreamHeader { @sapMFontHeader2Size; }
+  .sapOvpObjectStreamClose {
+    font-size: @sapMFontHeader5Size;
+  }
+  .sapMTB {
+    border-bottom: 0px;
+    border-top: 1px solid @sapHCStandardFG;
+  }
+}
+
+
+
+
+/* END "ObjectStream.less" */
+
+/* START "OVPApp.less" */
+.ovpApplication {
+  .ovpGlobalFilterWrapper {
+    border-bottom-color: @sapHCStandardFG;
+  }
+}
+.ovpApplication .ovpSmartFilterBar label, .ovpApplication .ovpSmartFilterBar button span.sapMBtnContent, .ovpApplication .ovpSmartFilterBar button .sapMBtnIcon {
+  color: @sapHCStandardFG !important;
+}
+
+/* Object Page Header - remove background color and mimic dark font color - since the dark loads an unnecessary image  */
+.ovpPageHeader {
+  .sapUxAPObjectPageHeaderIdentifier .sapUxAPObjectPageHeaderIdentifierContainer {
+    .sapUxAPObjectPageHeaderIdentifierTitle, .sapUxAPObjectPageHeaderIdentifierDescription {
+      color: @sapHCStandardFG;
+    }
+  }
+
+  .sapUxAPObjectPageHeaderIdentifier .sapUxAPObjectPageHeaderIdentifierActions {
+    .sapMBtnIcon, .sapMBtnTransparent, .sapMBtnTransparent > .sapMBtnIcon, .sapMBtnIcon, .sapMBtnTransparent, .sapMBtnTransparent > .sapMBtnIcon {
+      color: @sapHCStandardFG;
+    }
+  }
+}
+
+
+/* END "OVPApp.less" */
+
+/* START "StackPlaceHolder.less" */
+.sapOvpStackPlaceHolder {
+  background-color: @sapHCStandardBG;
+  border: 1px solid @sapHCStandardFG;
+}
+.sapOvpStackPlaceHolderIcon{
+  color: @sapHCStandardFG;
+}
+
+.sapOvpStackPlaceHolderTextLine{
+  color: @sapHCStandardFG;
+  font-size: @sapMFontHeader3Size;
+
+}
+
+.sapOvpStackPlaceHolderLabelsContainer{
+  background-color: @sapUiLightestBG;
+  border-top: 1px solid @sapHCStandardFG;
+}
+
+.sapOvpStackPlaceHolderAppName{
+  font-size: @sapMFontHeader6Size;
+}
+/* END "StackPlaceHolder.less" */
+

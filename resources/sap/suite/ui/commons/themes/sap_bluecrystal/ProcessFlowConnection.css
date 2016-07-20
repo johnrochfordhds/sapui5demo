@@ -1,0 +1,65 @@
+/* ====================================================================================== */
+/* CSS for control sap.suite.ui.commons/ProcessFlowConnection.control (bluecrystal theme) */
+/* ====================================================================================== */
+.borderLeft {
+  border-left-width: 0.125rem;
+}
+.borderBottom {
+  border-bottom-width: 0.125rem;
+}
+.borderLeftTypeNormal {
+  border-left-style: solid;
+}
+.borderLeftTypePlanned {
+  border-left-style: dashed;
+}
+.borderBottomTypeNormal {
+  border-bottom-style: solid;
+}
+.borderBottomTypePlanned {
+  border-bottom-style: dashed;
+}
+.borderLeftStateRegular {
+  border-left-color:@sapUiExtraDarkBorder;
+}
+.borderLeftStateHighlighted {
+  border-left-color: @sapUiHighlight;
+}
+.borderLeftStateDimmed {
+  border-left-color: lighten(@sapUiExtraDarkBorder, 20);
+}
+.borderLeftStateSelected {
+  border-left-color: darken(@sapUiExtraDarkBorder, 16);
+}
+.borderBottomStateRegular {
+  border-bottom-color: @sapUiExtraDarkBorder;
+}
+.borderBottomStateHighlighted {
+  border-bottom-color: @sapUiHighlight;
+}
+.borderBottomStateDimmed {
+  border-bottom-color: lighten(@sapUiExtraDarkBorder, 20);
+}
+.borderBottomStateSelected {
+  border-bottom-color: darken(@sapUiExtraDarkBorder, 16);
+}
+.stateRegular {
+  opacity: 0.8;
+}
+.stateHighlighted {
+  opacity: 1;
+}
+.stateSelected {
+  opacity: 1;
+}
+.stateDimmed {
+  opacity: 0.5;
+}
+
+.arrowRight {
+  border-style: solid;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-width: 0.25rem 0.5rem 0.25rem 0.5rem;
+}

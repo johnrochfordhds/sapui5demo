@@ -1,0 +1,64 @@
+/* ============================================================================================ */
+/* CSS for sap.suite.ui.microchart/RadialMicroChart.control for 'sap_bluecrystal' theme         */
+/* ============================================================================================ */
+
+.sap-desktop .sapSuiteUiMicroChartRMC:focus {
+	outline-color: @sapUiFocus;
+	outline-style: dotted;
+	outline-width: 0.0625rem;
+}
+
+.sapSuiteUiMicroChartRMC:focus:not([tabindex]) {
+	outline: none;
+}
+
+.sapSuiteUiMicroChartRMCPathNeutral {
+	stroke: @sapUiChartPaletteSequentialHue1;
+}
+/* Inner borders are transparent for blue crystal */
+.sapSuiteUiMicroChartRMCHCBIncompleteBorder{
+	fill: transparent;
+	stroke: transparent;
+	stroke-width: 0.25rem;
+}
+
+.sapSuiteUiMicroChartRMCPathIncomplete {
+	stroke: @sapUiLightBG;
+}
+
+.sapSuiteUiMicroChartRMCPathGood {
+	stroke: @sapUiChartPaletteSemanticGood;
+}
+
+.sapSuiteUiMicroChartRMCPathError {
+	stroke: @sapUiChartPaletteSemanticBad;
+}
+
+.sapSuiteUiMicroChartRMCPathCritical {
+	stroke: @sapUiChartPaletteSemanticCritical;
+}
+
+.sapSuiteUiMicroChartRMCNeutralTextColor {
+	fill: @sapUiLightText;
+}
+
+.sapSuiteUiMicroChartRMCAccessibleTextColor {
+	fill: @sapUiMediumText;
+}
+
+.sapSuiteUiMicroChartRMCGoodTextColor {
+	fill: @sapUiPositiveText;
+}
+
+.sapSuiteUiMicroChartRMCErrorTextColor {
+	fill: @sapUiNegativeText;
+}
+
+.sapSuiteUiMicroChartRMCCriticalTextColor {
+	fill: @sapUiCriticalText;
+}
+
+.sapSuiteUiMicroChartRMCCircleBackground {
+	fill: @sapUiLightestBG;
+	stroke: @sapUiLightestBG;
+}

@@ -1,0 +1,37 @@
+/* ======================================================= */
+/* CSS for control sap.ui.commons/ToggleButton.control     */
+/* Platinum theme                                          */
+/* ======================================================= */
+
+.sapUiBtn.sapUiBtnS.sapUiBtnNorm.sapUiToggleBtn.sapUiToggleBtnPressed,
+.sapUiBtnStd.sapUiBtnS.sapUiBtnNorm.sapUiBtnNoGradient.sapUiToggleBtn.sapUiToggleBtnPressed {
+	border-color: #749AAD #749AAD #90BFD7 #749AAD;
+	background: -moz-linear-gradient(top, #a3c1d3 0%, #c6deef 5%, #e0f5f9 47%, #fff 90%, #c7dce7 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a3c1d3), color-stop(5%,#c6deef), color-stop(47%,#e0f5f9), color-stop(90%,#fff), color-stop(100%,#c7dce7));
+	background: -webkit-linear-gradient(top, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#fff 90%,#c7dce7 100%);
+	background: -ms-linear-gradient(top, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#fff 90%,#c7dce7 100%);
+	background: linear-gradient(top, #a3c1d3 0%,#c6deef 5%,#e0f5f9 47%,#fff 90%,#c7dce7 100%);
+	-moz-box-shadow: inset 1px 0px 0px 0px #BAD7E4, inset -1px 0px 0px 0px #BAD7E4;
+	-webkit-box-shadow: inset 1px 0px 0px 0px #BAD7E4, inset -1px 0px 0px 0px #BAD7E4;
+	box-shadow: inset 1px 0px 0px 0px #BAD7E4, inset -1px 0px 0px 0px #BAD7E4;
+	background-color: #E2EEF6; /* background color other than 'transparent' required to make the button clickable */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfd9ec', endColorstr='#fdfefe',GradientType=0 );
+}
+
+.sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapUiBtnAccept.sapUiToggleBtn.sapUiToggleBtnPressed,
+.sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapUiBtnAccept.sapUiToggleBtn.sapUiToggleBtnPressed:active {
+	color: green;
+}
+
+.sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapUiBtnReject.sapUiToggleBtn.sapUiToggleBtnPressed,
+.sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapUiBtnReject.sapUiToggleBtn.sapUiToggleBtnPressed:active {
+	color: #CC0000;
+}
+
+.sapUiBtnS.sapUiBtnLite.sapUiToggleBtn.sapUiToggleBtnPressed {
+	border-color: #8BC1D9;
+	background-image: url('img/button/btn_flat_act.png');
+	background-image: -moz-linear-gradient(center 0px, #D5EEF7, #73C8EC 5%, #D5EEF7 65%, #D5EEF7 90%, #F1FAFC);
+	background-image: -webkit-gradient(linear, 0 1, 0 20, from(#D5EEF7), color-stop(0.05, #73C8EC), color-stop(0.65, #D5EEF7), color-stop(0.9, #D5EEF7), to(#F1FAFC));
+	background-image: linear-gradient(center 0px, #D5EEF7, #73C8EC 5%, #D5EEF7 65%, #D5EEF7 90%, #F1FAFC);
+}

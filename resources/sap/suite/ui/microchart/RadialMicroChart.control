@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>RadialMicroChart</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>Displays a ring chart highlighting a current status. The status is displayed with a semantically colored radial bar and a percentage value.</documentation>
+    <since>1.36.0</since>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property group="Data" type="sap.ui.core/float" name="total">
+            <documentation>The total value. This is taken as 360 degrees value on the chart.</documentation>
+        </property>
+        <property group="Data" type="sap.ui.core/float" name="fraction">
+            <documentation>The fraction of the total value that is displayed.</documentation>
+        </property>
+        <property group="Data" type="sap.ui.core/float" name="percentage">
+            <documentation>The percentage that is displayed.
+When a percentage is set, properties total and fraction are not considered.</documentation>
+        </property>
+        <property group="Appearance" defaultValue="Neutral" type="sap.m/ValueCSSColor" name="valueColor">
+            <documentation>The color shown in the completed path.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event allowPreventDefault="false" name="press">
+            <documentation>The event is fired when the user chooses the control.</documentation>
+        </event>
+    </events>
+</control>

@@ -1,0 +1,59 @@
+@sapUiListBoxBorderRadius: 3px;
+
+.sapUiLbxStd {
+	background-image: -moz-linear-gradient(center 1px, white, #EBF0F6 0px, @sapUiFieldBackground 9px);
+	background-image: -webkit-gradient(linear, 0 1, 0 11, from(white), color-stop(0.05, #EBF0F6), to(@sapUiFieldBackground));
+}
+
+.sapUiLbxI {
+	line-height: 13px;
+}
+
+.sapUiLbxI > span {
+	border: 1px dotted transparent;
+	padding: 1px 5px;
+	border-right-width: 0;
+	border-left-width: 0;
+}
+
+.sapUiLbxI:focus {
+	outline: none;
+}
+
+.sapUiLbxI:focus > span {
+	border-top-color: black;
+	border-bottom-color: black;
+}
+
+.sapUiLbxI > span:first-child {
+
+}
+.sapUiLbxI > span:last-child {
+
+}
+
+.sapUiLbxI:focus > span:first-child {
+	border-left-color: black;
+	padding-left: 5px;
+	border-left-width: 1px;
+}
+
+.sapUiLbxI:focus > span:last-child {
+	border-right-color: black;
+	padding-right: 5px;
+	border-right-width: 1px;
+}
+
+.sapUiLbx.sapUiLbxFlexWidth > ul > li:focus > span:last-child {
+	padding-right: 17px;
+}
+
+.sapUiLbxDis,
+.sapUiLbxIDis {
+	border-color: #BFCDE2;
+}
+
+.sapUiLbxIIcoFont{
+	font-size: 14px;
+	line-height: 14px;
+}

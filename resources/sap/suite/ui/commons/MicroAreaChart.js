@@ -1,0 +1,11 @@
+/*!
+ * 
+ * 		SAP UI development toolkit for HTML5 (SAPUI5)
+ * 		(c) Copyright 2009-2015 SAP SE. All rights reserved
+ * 	
+ */
+jQuery.sap.declare("sap.suite.ui.commons.MicroAreaChart");jQuery.sap.require("sap.suite.ui.commons.library");jQuery.sap.require("sap.ui.core.Control");sap.ui.core.Control.extend("sap.suite.ui.commons.MicroAreaChart",{metadata:{deprecated:true,library:"sap.suite.ui.commons",properties:{"width":{type:"sap.ui.core.CSSSize",group:"Misc",defaultValue:'200px'},"height":{type:"sap.ui.core.CSSSize",group:"Misc",defaultValue:'190px'},"maxXValue":{type:"float",group:"Misc",defaultValue:null},"minXValue":{type:"float",group:"Misc",defaultValue:null},"maxYValue":{type:"float",group:"Misc",defaultValue:null},"minYValue":{type:"float",group:"Misc",defaultValue:null},"view":{type:"sap.suite.ui.commons.MicroAreaChartView",group:"Appearance",defaultValue:sap.suite.ui.commons.MicroAreaChartView.Normal},"colorPalette":{type:"string[]",group:"Misc",defaultValue:[]}},aggregations:{"chart":{type:"sap.suite.ui.commons.MicroAreaChartItem",multiple:false},"maxThreshold":{type:"sap.suite.ui.commons.MicroAreaChartItem",multiple:false},"innerMaxThreshold":{type:"sap.suite.ui.commons.MicroAreaChartItem",multiple:false},"innerMinThreshold":{type:"sap.suite.ui.commons.MicroAreaChartItem",multiple:false},"minThreshold":{type:"sap.suite.ui.commons.MicroAreaChartItem",multiple:false},"target":{type:"sap.suite.ui.commons.MicroAreaChartItem",multiple:false},"firstXLabel":{type:"sap.suite.ui.commons.MicroAreaChartLabel",multiple:false},"firstYLabel":{type:"sap.suite.ui.commons.MicroAreaChartLabel",multiple:false},"lastXLabel":{type:"sap.suite.ui.commons.MicroAreaChartLabel",multiple:false},"lastYLabel":{type:"sap.suite.ui.commons.MicroAreaChartLabel",multiple:false},"maxLabel":{type:"sap.suite.ui.commons.MicroAreaChartLabel",multiple:false},"minLabel":{type:"sap.suite.ui.commons.MicroAreaChartLabel",multiple:false},"lines":{type:"sap.suite.ui.commons.MicroAreaChartItem",multiple:true,singularName:"line"}},events:{"press":{}}}});sap.suite.ui.commons.MicroAreaChart.M_EVENTS={'press':'press'};
+/*!
+ * ${copyright}
+ */
+jQuery.sap.require("sap.suite.ui.microchart.AreaMicroChart");sap.suite.ui.microchart.AreaMicroChart.extend("sap.suite.ui.commons.MicroAreaChart",{metadata:{library:"sap.suite.ui.commons"}});

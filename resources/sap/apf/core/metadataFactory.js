@@ -1,0 +1,6 @@
+/*!
+ * SAP APF Analysis Path Framework
+ * 
+ * (c) Copyright 2012-2014 SAP AG. All rights reserved
+ */
+jQuery.sap.declare("sap.apf.core.metadataFactory");(function(){'use strict';sap.apf.core.MetadataFactory=function(i){this.type="metadataFactory";var t=this;var m=i.messageHandler;var c=i.configurationFactory;var H=i.hashtable;var M=i.metadata;var E=i.entityTypeMetadata;var a=i.metadataFacade;delete i.metadata;delete i.entityTypeMetadata;delete i.metadataFacade;delete i.metadataProperty;delete i.configurationFactory;var o=new H(m);this.getMetadata=function(A){var b;if(o.hasItem(A)===false){b=new M(i,A);if(!b.failed){o.setItem(A,{metadata:b});}else{return undefined;}}return o.getItem(A).metadata;};this.getEntityTypeMetadata=function(A,e){var b;var d=this.getMetadata(A);b=o.getItem(A).entityTypes;if(!b){b=new H(m);o.getItem(A).entityTypes=b;}if(!b.getItem(e)){b.setItem(e,new E(m,e,d));}return b.getItem(e);};this.getMetadataFacade=function(A){return new a({messageHandler:m,metadataProperty:sap.apf.core.MetadataProperty,metadataFactory:t},A);};this.getServiceDocuments=function(){return c.getServiceDocuments();};this.getEntitySets=function(s){var b=this.getMetadata(s);return b.getEntitySets();};};}());

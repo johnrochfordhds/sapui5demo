@@ -1,0 +1,20 @@
+.sapUiCompFilterBar {
+	background-color: fade(@sapUiLightestBG, 60%);		
+}
+
+.sapUiCompFilterBarDialog {	
+	background-color: lighten(@sapUiExtraLightBG,2)		
+}
+
+.sapUiCompAddRemoveFilterDialog {	
+	background-color: lighten(@sapUiExtraLightBG,2)		
+}
+
+
+.sapUiCompFilterBarGroupListItem .sapMLabel {
+	font-family: @sapUiFontHeaderFamily;  
+	font-size: @sapMFontHeader3Size; 
+	font-weight: @sapUiFontHeaderWeight; 
+	color: @sapUiHeaderText;	
+	padding-buttom: 1rem;
+}

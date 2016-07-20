@@ -1,0 +1,125 @@
+{
+  "_version": "1.1.0",
+  "resources": [
+    {
+      "name": ".theming",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "ChartContainer.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "ChartTile.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "FacetOverview.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "GenericTile2X2.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "HeaderContainer.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "KpiTile.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "LinkActionSheet.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "MonitoringTile.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "NumericTile.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "ProcessFlow.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "ProcessFlowConnection.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "ProcessFlowConnectionLabel.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "ProcessFlowLaneHeader.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "ProcessFlowNode.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "TargetFilter.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "TileContent2X2.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "Timeline.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "TimelineItem.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "UnifiedThingGroup.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "UnifiedThingInspector.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "library-RTL-dbg.css",
+      "isDebug": true,
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "library-RTL.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "library-dbg.css",
+      "isDebug": true,
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "library-parameters.json",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "library.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "library.less",
+      "designtime": true,
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "library.source.less",
+      "designtime": true,
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "shared.css",
+      "theme": "sap_bluecrystal"
+    }
+  ]
+}

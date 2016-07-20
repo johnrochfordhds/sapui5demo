@@ -1,0 +1,68 @@
+.sapUiCb > input { /* make the real checkbox vanish from the screen */
+	position: absolute;
+	visibility: hidden;
+}
+
+.sapUiCb > label { /* render an image as checkbox replacement */
+	background-image: url(img/checkbox.png);
+	background-repeat: no-repeat;
+	background-position: left 0px;
+	padding-left: 21px;
+}
+
+.sapUiCb .sapUiCbNoText {
+	padding-left: 13px;
+}
+
+.sapUiCbChk > label {
+	background-position: left -26px;
+}
+
+/* hover */
+.sapUiCbStd:hover > label {
+	background-position: left -52px;
+}
+
+.sapUiCbStd:hover.sapUiCbChk > label {
+	background-position: left -78px;
+}
+
+/* error */
+.sapUiCbErr > label {
+	background-position: left -208px;
+}
+
+.sapUiCbErr.sapUiCbChk > label {
+	background-position: left -234px;
+}
+
+/* warning */
+.sapUiCbWarn > label {
+	background-position: left -260px;
+}
+
+.sapUiCbWarn.sapUiCbChk > label {
+	background-position: left -286px;
+}
+
+/* readonly */
+.sapUiCbRo > label {
+	background-position: left -156px;
+}
+
+.sapUiCbRo.sapUiCbChk > label {
+	background-position: left -182px;
+}
+
+/* disabled */
+.sapUiCbDis > label {
+	background-position: left -104px;
+}
+
+.sapUiCbDis.sapUiCbChk > label {
+	background-position: left -130px;
+}
+
+html[data-sap-ui-browser^="ie"] .sapUiCb:focus:after {
+	border-color: @sapUiText;
+}

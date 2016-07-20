@@ -1,0 +1,17 @@
+.sapUiMboxCont {
+	margin-left: 14px;
+	margin-top: 10px;
+	margin-bottom: 12px;
+	margin-right: 25px;
+}
+
+.sapUiMboxText {
+	margin-top: 1px; /* to achieve the desired 26px between content top and baseline; highly depends on font-size! */
+	display:block;
+	/* white-space:nowrap; */
+	/* vertical-align: baseline; */
+}
+
+.sapUiMboxIcon {
+	margin-right:14px;
+}

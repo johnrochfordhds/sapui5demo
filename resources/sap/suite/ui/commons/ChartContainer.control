@@ -1,0 +1,92 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+    <name>ChartContainer</name>
+
+    <documentation>Provides a toolbar with generic functions for tables and charts based on the VizFrame control like zoom, display in fullscreen mode, toggle the legend, switch between chart types, and changes of the chart dimension. The controls of the content aggregation are positioned below the toolbar. Additional functions can be added to the toolbar with the customIcons aggregation.</documentation>
+
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property group="Misc" name="showPersonalization" type="sap.ui.core/boolean" defaultValue="false">
+            <documentation>Set to true to display the personalization icon. Set to false to hide it.</documentation>
+        </property>
+        <property group="Misc" name="showFullScreen" type="sap.ui.core/boolean" defaultValue="false">
+            <documentation>Set to true to display the full screen icon. Set to false to hide it.</documentation>
+        </property>
+        <property group="Misc" name="fullScreen" type="sap.ui.core/boolean" defaultValue="false">
+            <documentation>Display the chart and the toolbar in full screen or normal mode.</documentation>
+        </property>
+        <property group="Misc" name="showLegend" type="sap.ui.core/boolean" defaultValue="true">
+            <documentation>Set to true to display the charts' legends. Set to false to hide them.</documentation>
+        </property>
+        <property group="Misc" name="title" type="sap.ui.core/string" defaultValue="">
+            <documentation>String shown if there are no dimensions to display.</documentation>
+        </property>
+        <property group="Misc" name="selectorGroupLabel" type="sap.ui.core/string">
+            <documentation>Custom Label for Selectors Group.</documentation>
+            <deprecation since="1.32.0">Obsolete property as sap.m.Toolbar is replaced by sap.m.OverflowToolbar.</deprecation>
+        </property>
+        <property group="Misc" name="autoAdjustHeight" type="sap.ui.core/boolean" defaultValue="false">
+            <documentation>Determine whether to stretch the chart height to the maximum possible height of ChartContainer's parent container. As a prerequisite, the parent container needs to have a fixed value height or be able to determine height from its parent.</documentation>
+        </property>
+        <property group="Misc" name="showZoom" type="sap.ui.core/boolean" defaultValue="true">
+            <documentation>Set to true to display zoom icons. Set to false to hide them.</documentation>
+        </property>
+        <property group="Misc" name="showLegendButton" type="sap.ui.core/boolean" defaultValue="true">
+            <documentation>Set to true/false to display/hide a button for controlling the visbility of the chart's legend.</documentation>
+        </property>
+    </properties>
+    <aggregations default="content">
+        <aggregation cardinality="0..n" name="dimensionSelectors" type="sap.ui.core/Control">
+            <documentation>Dimension Selects.</documentation>
+        </aggregation>
+        <aggregation cardinality="0..n" name="content" type="ChartContainerContent">
+            <documentation>ChartToolBar Content aggregation. Only vizFrame, sap.m.Table and sap.ui.table.Table can be embedded.
+If not specified explicitly, the rendering order of the charts is determined by the sequence of contents provided by the application via this aggregation. That means, per default the first chart of the aggregation will be rendered within the container.</documentation>
+        </aggregation>
+        <aggregation cardinality="0..1" name="toolBar" type="sap.m/OverflowToolbar" visibility="hidden">
+            <documentation>Embedded ToolBar.</documentation>
+        </aggregation>
+        <aggregation cardinality="0..n" name="customIcons" type="sap.ui.core/Icon">
+            <documentation>This aggregation contains the custom icons that should be displayed additionally on the toolbar.
+			It is not guaranteed that the same instance of the sap.ui.core.Icon control will be used within the toolbar,
+			but the toolbar will contain a sap.m.OverflowToolbarButton with an icon property equal to the src property
+			of the sap.ui.core.Icon provided in the aggregation.
+			If a press event is triggered by the icon displayed on the toolbar, then the press handler of
+			the original sap.ui.core.Icon control is used. The instance of the control, that has triggered the press event,
+			can be accessed using the "controlReference" parameter of the event object.
+		</documentation>
+        </aggregation>
+    </aggregations>
+
+    <events>
+        <event name="personalizationPress">
+            <documentation>Event fired when a user clicks on the personalization icon.</documentation>
+        </event>
+        <event name="contentChange">
+            <documentation>Event fired when a user changes the displayed content.</documentation>
+            <parameters>
+                <parameter name="selectedItemId" type="sap.ui.core/string">
+                    <documentation>Id of the selected item.</documentation>
+                </parameter>
+            </parameters>
+        </event>
+        <event name="customZoomInPress">
+            <documentation>Custom event for zoom in.</documentation>
+        </event>
+        <event name="customZoomOutPress">
+            <documentation>Custom event for zoom out.</documentation>
+        </event>
+    </events>
+    <methods>
+        <method name="switchChart" type="ChartContainerContent">
+            <documentation>Switch display content in the container.</documentation>
+        </method>
+        <method name="updateChartContainer" type="sap.ui.core/void">
+            <documentation>Update ChartContainer rerendering all its contents.</documentation>
+        </method>
+        <method name="getSelectedContent" type="sap.ui.core/Control">
+            <documentation>Returns the currently selected content control.</documentation>
+        </method>
+    </methods>
+</control>
